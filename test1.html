@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="app.js"></script>
+    <script src="https://kit.fontawesome.com/a58c3ef6fc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="menu">
+        <div id="menu-items">
+            <a href="/" class="menu-item">Home</a>
+            <a href="/" class="menu-item">Shop</a>
+            <a href="/" class="menu-item">About</a>
+            <a href="/" class="menu-item">Contact</a>
+        </div>
+        <div id="menu-background"></div>
+        <div id="menu-img"></div>
+    </div>
+    
+</body>
+<style>
+    body{
+        background-color: rgb(20, 20, 20);
+        margin:0px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height:100vh;
+    }
+
+    #menu{
+        height:70vh;
+        width:70vw;
+        position:relative;
+        display:flex;
+        align-items: center;
+        border-radius:10px;
+    }
+
+    .menu-item{
+        color:white;
+        font-size:clamp(3rem, 8vw, 5rem);
+        font-family:'PT Sans', sans-serif;
+
+        display:block;
+        text-decoration:none;
+        padding:clamp(0.25rem, 0.5vw, 1rem) 0rem;
+        transition: all 400ms ease;
+    }
+
+    #menu-items{
+        margin-left:clamp(4rem,20vw,48rem);
+        position:relative;
+        z-index:2;
+    }
+
+    #menu-items:hover > .menu-item {
+        opacity:0.3;
+    }
+
+    #menu-items:hover > .menu-item:hover{
+        opacity:1;  
+    }
+
+    #menu-background{
+        height:100%;
+        width:100%;
+        background:radial-gradient(
+            rgba(255, 255, 255, 0.07) 9%,
+            transparent 9%
+        );
+        background-position:0% 0%;
+        background-size:17vmin 17vmin;
+        position:absolute;
+        left:0px;
+        top:0px;
+        z-index: 1;
+        transition: all 800ms ease;
+    }
+
+    #menu-items:hover ~ #menu-background{
+        background-size: 15vmin 15vmin;
+        opacity:0.5;
+    }
+
+    #menu[data-active-index="0"] > #menu-background{
+        background-position:0% -25%;
+    }
+    #menu[data-active-index="1"] > #menu-background{
+        background-position:0% -50%;
+    }
+    #menu[data-active-index="2"] > #menu-background{
+        background-position:0% -75%;
+    }
+    #menu[data-active-index="3"] > #menu-background{
+        background-position:0% -100%;
+    }
+
+    #menu-img{
+        height:100%;
+        border-radius:25px;
+        width:100%;
+        background-image:url("img/card-janus.png");
+        position:absolute;
+        left:0px;
+        top:0px;
+        z-index:0;
+
+        background-position:center 40%;
+        background-size: 100%;
+        opacity:0.15;
+        transition: all 800ms ease;
+    }
+
+    #menu-items:hover ~ #menu-img {
+        background-size:110%;
+        opacity:0.10;
+        background-position:right 40%;
+    }
+    #menu[data-active-index="0"] > #menu-img{
+        background-position:0% 5%;
+    }
+    #menu[data-active-index="1"] > #menu-img{
+        background-position:0% 10%;
+    }
+    #menu[data-active-index="2"] > #menu-img{
+        background-position:0% 15%;
+    }
+    #menu[data-active-index="3"] > #menu-img{
+        background-position:0% 20%;
+    }
+</style>
+
+<script>
+    const menu = document.getElementById("menu");
+
+    Array.from(document.getElementsByClassName("menu-item"))
+        .forEach((item, index) => {
+            item.onmouseover = () => {
+                menu.dataset.activeIndex = index;
+            }
+        });
+</script>
+</html>

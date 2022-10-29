@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grappul</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+    <script src="https://kit.fontawesome.com/a58c3ef6fc.js" crossorigin="anonymous"></script>
+</head>
+<body data-nav="false" class="light">
+    <header>
+        <div class="corner">
+            <a href="/" id="logo"><img src="img/logo.svg" /></a>
+        </div>
+        <div class="nav">
+            <ul>
+                <li class="nav-item has-dropdown">
+                    <a href="#">Builds</a>                    
+                    <ul class="dropdown">
+                        <li class="dropdown-item">
+                            <a id="light" href="#">light</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a id="dark" href="#">dark</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a id="solar" href="#">solarized</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="corner"><button><i class="fa-solid fa-moon"></i></button></div>
+    </header>
+    <div id="hero">
+        <img src="img/gods/janus.png" />
+        <h1>Real gamer shit</h1>
+        <p>I'm back for real this time ppl</p>
+    </div>
+    <main>
+        <button id="nav-toggle" type="button" onclick="toggleNav()">
+            <i class="open fa-solid fa-bars"></i>
+            <i class="close fa-solid fa-xmark"></i>
+        </button>
+        <div class="grid_con">
+            <div id="role-picker">
+                <div class="role"><i class="fa-solid fa-circle"></i></div>
+                <div class="role"><i class="fa-solid fa-circle"></i></div>
+            </div>
+            <div id="build-picker">
+                <div data-build="agni" onclick="showBuild(this)">
+                    <h2 ><img class="god-img" src="img/gods/agni.png"/>Agni</h2>
+                    <div class="itemrow">
+                        <img src="/img/items/s_sands.png">
+                        <img src="/img/items/divine.png">
+                        <img src="/img/items/spearofdeso.png">
+                        <img src="/img/items/spearmagus.png">
+                        <img src="/img/items/tahuti.png">
+                        <img src="/img/items/myrdin.png">
+                    </div>
+                </div>
+                <div data-build="he-bo" onclick="showBuild(this)">
+                    <h2 ><img class="god-img" src="img/gods/hebo.png"/>He Bo</h2>
+                    <div class="itemrow">
+                        <img src="/img/items/s_bumbas.png">
+                        <img src="/img/items/bancrofts.png">
+                        <img src="/img/items/spearmagus.png">
+                        <img src="/img/items/pythags.png">
+                        <img src="/img/items/typhons.png">
+                        <img src="/img/items/obshard.png">
+                    </div>
+                </div>
+                <div class="mercury">
+                    <h2 ><img class="god-img" src="img/gods/mercury.png"/>Mercury</h2>
+                    <div class="itemrow">
+                        <img src="/img/items/s_eye.png">
+                        <img src="/img/items/rage.png">
+                        <img src="/img/items/winddemon.png">
+                        <img src="/img/items/deathbringer.png">
+                        <img src="/img/items/asi.png">
+                        <img src="/img/items/serrated.png">
+                    </div>
+                </div>
+                <div class="nemesis">
+                    <h2 ><img class="god-img" src="img/gods/nemesis.png"/>Nemesis</h2>
+                    <div class="itemrow">
+                        <img src="/img/items/s_eye.png">
+                        <img src="/img/items/jotunns.png">
+                        <img src="/img/items/arondight.png">
+                        <img src="/img/items/exe_heavy.png">
+                        <img src="/img/items/voidshield.png">
+                        <img src="/img/items/qins.png">
+                    </div>
+                </div>
+                <div class="poseidon">
+                    <h2 ><img class="god-img" src="img/gods/poseidon.png"/>Poseidon</h2>
+                    <div class="itemrow">
+                        <img src="/img/items/s_sands.png">
+                        <img src="/img/items/spearofdeso.png">
+                        <img src="/img/items/spearmagus.png">
+                        <img src="/img/items/myrdin.png">
+                        <img src="/img/items/tahuti.png">
+                        <img src="/img/items/obshard.png">
+                    </div>
+                </div>
+                <div class="thanatos">
+                    <h2 ><img class="god-img" src="img/gods/thanatos.png"/>Thanatos</h2>
+                    <div class="itemrow">
+                        <img src="/img/items/s_manikin.png">
+                        <img src="/img/items/jotunns.png">
+                        <img src="/img/items/hydras.png">
+                        <img src="/img/items/arondight.png">
+                        <img src="/img/items/titans.png">
+                        <img src="/img/items/dom.png">
+                    </div>
+                </div>
+            </div>
+            <div id="explain">
+                <p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                    It has survived not only five centuries, but also the leap into electronic typesetting, 
+                    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset 
+                    sheets containing Lorem Ipsum passages, 
+                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."</p>    
+                
+            </div>
+
+        </div>
+
+    </main>
+    <section class="hidden">
+        <h1>Whats up ppl my name is shale</h1>
+        <p>I'm back</p>
+    </section>
+
+    <section class="hidden">
+        <h2>here's some builds</h2>
+        <p>build it</p>
+    </section>
+
+    <section class="hidden">
+        <h2>give me money</h2>
+    </section>
+</body>
+</html>

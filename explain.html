@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grappul</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+    <script src="https://kit.fontawesome.com/a58c3ef6fc.js" crossorigin="anonymous"></script>
+</head>
+<body data-nav="false" class="light">
+    <header>
+        <div class="corner">
+            <a href="/" id="logo"><img src="img/logo.svg" /></a>
+        </div>
+        <div class="nav">
+            <ul>
+                <li class="nav-item has-dropdown">
+                    <a href="#">Builds</a>                    
+                    <ul class="dropdown">
+                        <li class="dropdown-item">
+                            <a id="light" href="#">light</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a id="dark" href="#">dark</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a id="solar" href="#">solarized</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="corner"><button><i class="fa-solid fa-moon"></i></button></div>
+    </header>
+
+
+    <main style="max-width:800px">
+        <div id="guide-title">
+            <h2 ><img class="god-img" src="img/gods/agni.png"/>Agni</h2>
+            <h4>Mid</h4>
+        </div>
+        <div class="itemrow">
+            <img src="/img/items/s_sands.png">
+            <i class="fa-sharp fa-solid fa-arrow-right"></i>
+            <img src="/img/items/divine.png">
+            <img src="/img/items/spearofdeso.png">
+            <img src="/img/items/spearmagus.png">
+            <img src="/img/items/tahuti.png">
+            <img src="/img/items/myrdin.png">
+        </div>
+        <p>This character is <span class="green">bussing sheesh</span> on god</p>
+        
+
+    </main>
+    <section class="hidden">
+        <h1>Whats up ppl my name is shale</h1>
+        <p>I'm back</p>
+    </section>
+
+    <section class="hidden">
+        <h2>here's some builds</h2>
+        <p>build it</p>
+    </section>
+
+    <section class="hidden">
+        <h2>give me money</h2>
+    </section>
+</body>
+<style>
+    .itemrow{
+        justify-content: left;
+    }
+
+    #guide-title{
+        display:flex;
+        justify-content: space-between;
+        align-items:center;
+        border-top:1px solid white;
+    }
+    #guide-title>*{
+        margin:0;
+    }
+    #guide-title img{
+        vertical-align: middle;
+    }
+</style>
+</html>
