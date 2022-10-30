@@ -1,5 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+/* 
+/* Global Styles */
+/*  */
+
+ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+i{
+    vertical-align: middle;
+    text-align: center;
+}
+
+a{
+    color: currentColor;
+    text-decoration:none;
+}
+
+body{
+    background-color:var(--bg);
+    transition: background 500ms ease-in-out, color 800ms ease-in-out;
+    color: var(--text);
+    font-family:'PT Sans';
+    padding:0;
+    margin:0;
+}
+
 :root{
     --honeydew: #d5f2e3ff;
     --ocean-green: #73ba9bff;
@@ -22,26 +51,27 @@
     --gray6: #12181b;
 	--highlight-green: url("https://s2.svgbox.net/pen-brushes.svg?ic=brush-9&color=6cd77b");
 	--highlight-red: url("https://s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=ff3a3a");
+
+    --purple: rgb(123, 31, 162);
+    --violet: rgb(103, 58, 183);
+    --pink: rgb(244, 143, 177);
 }
 
-.light{
+
+
+/* 
+/* Dark Mode */
+/*  */
+body{
     --bg: var(--gray0);
     --text: var(--gray6);
 }
 
-.dark{
+body[data-dark]{
     --bg: var(--gray5);
     --text: var(--gray0);
 }
 
-body{
-    background-color:var(--bg);
-    transition: background 500ms ease-in-out, color 800ms ease-in-out;
-    color: var(--text);
-    font-family:'PT Sans';
-    padding:0;
-    margin:0;
-}
 
 header{
     display:flex;
@@ -53,17 +83,6 @@ header .corner{
     height: 3em;
 }
 
-ul{
-    list-style-type:none;
-    margin:0;
-    padding:0;
-}
-
-i{
-    vertical-align: middle;
-    text-align: center;
-}
-
 #hero{
     padding:1em;
     background: var(--mandarin);
@@ -73,10 +92,6 @@ i{
     clip-path:polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
 }
 
-a{
-    color: currentColor;
-    text-decoration:none;
-}
 
 #logo{
     display:flex;
@@ -90,6 +105,12 @@ a{
     fill: var(--mandarin);
 }
 
+#dark_mode{
+    padding:14px;
+    color:#fff;
+    background:#222;
+    border:none;
+}
 
 
 #hero > img:hover{
@@ -102,6 +123,10 @@ a{
     width:6em;
 }
 
+/* 🔽🔽🔽🔽🔽
+/*  Color animate  */
+/* 🔽🔽🔽🔽🔽 */
+
 @keyframes color-rotate{
     from{
         filter:hue-rotate(0deg);
@@ -112,31 +137,10 @@ a{
 }
 
 
-.dropdown{
-    position:absolute;
-    width: 500px;
-    opacity:0;
-    z-index:2;
-    background:blue;
-    border-top: 2px solid white;
-    border-bottom-right-radius:8px;
-    border-bottom-left-radius:8px;
-    display:flex;
-    align-items:center;
-    justify-content:space-around;
-    height:3rem;
-    margin-top: 2rem;
-    padding: 0.5rem;
-    box-shadow:rgba(2, 8, 20, 0.1) 0px 0.175em 0.5em;
-    transform:translateX(-40%);
 
-    transition: opacity .15s ease-out;
-}
-
-.has-dropdown:focus-within .dropdown{
-    opacity:1;
-    pointer-events:auto;
-}
+/* 💣💣💣💣💣
+/*  Scroll animations */
+/* 💣💣💣💣💣 */
 
 section{
     display:grid;
@@ -221,18 +225,160 @@ main{
     flex-direction: column;
     padding: 1rem;
     width: 100%;
-    margin: 0 150px auto;
+    max-width:80vw;
     margin: 0 auto;
     box-sizing: border-box;
     position: relative;
 }
 
+/* ✨✨✨✨
+/*  Sparkle animations */
+/* ✨✨✨✨ */
+
+@keyframes background-pan{
+    from {
+        background-position: 0% center;
+    }
+    to {
+        background-position: -200% center;
+    }
+}
+@keyframes scale {
+    from, to {
+      transform: scale(0);
+    }
+    
+    50% {
+      transform: scale(1);
+    }
+}
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    
+    to {
+      transform: rotate(180deg);
+    }
+}
+@keyframes drift {
+    from {
+      transform: translate(0, 0) scale(0);
+    }
+
+    50% {
+      transform: translate(150%, 100%) scale(1);
+    }
+    
+    to {
+        transform: translate(300%, 200%) scale(0);
+    }
+}
+
+main>h1{
+    font-size:4rem;
+}
+
+h1 > .glow{
+    display:inline-block;
+    position:relative;
+}
+
+h1 > .glow > .magic-star{
+    --size: clamp(20px, 1.5vw, 30px);
+
+    animation: scale 700ms ease forwards;
+    display:block;
+    height: var(--size);
+    left: var(--star-left);
+    position:absolute;
+    top: var(--star-top);
+    width: var(--size);
+}
+
+h1 > .glow > .magic-star > svg{
+    animation: rotate 1000ms linear infinite;
+    display:block;
+    opacity: 0.7;
+}
+
+h1 > .glow > .magic-star > svg > path{
+    fill: var(--violet);
+}
+
+main > h1 > .glow > .glow-text{
+    background: linear-gradient(
+        to right,
+        var(--purple),
+        var(--pink),
+        var(--violet),
+        var(--purple)
+    );
+    background-size:200%;
+    animation: background-pan 3s linear infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+    white-space:nowrap;
+}
+
+
+/* 🍃🍃🍃
+/*  JG  animations */
+/* 🍃🍃🍃 */
+h1 > .jungley{
+    display:inline-block;
+    position:relative;
+}
+
+h1 > .jungley > .leaf > svg{
+    animation: rotate 700ms linear infinite;
+    display:block;
+    opacity: 0.7;
+}
+
+h1 > .jungley > .leaf > svg > path{
+    fill:     #32e244;
+}
+
+h1 > .jungley > .leaf{
+    --size: clamp(20px, 1.5vw, 30px);
+
+    animation: drift 700ms linear;
+    display:block;
+    height: var(--size);
+    left: var(--star-left);
+    position:absolute;
+    top: var(--star-top);
+    width: var(--size);
+}
+
+
+ h1 > .jungley > .jg-text{
+    background: linear-gradient(
+        to right,
+        var(--british-racing-green),
+        #45aa77,
+        #32e244,
+        var(--british-racing-green)
+    );
+    background-size:200%;
+    animation: background-pan 3s linear infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+    white-space:nowrap;
+}
+
+
 .grid_con{
     display: grid;
     grid-template-columns: 1fr 5fr;
     gap:1rem;
-    padding: 40px;
+    padding: 40px 0px;
     column-gap: 40px;
+    grid-template-rows: auto auto 1fr;
     grid-template-areas:
     "❤  🧠"
     "💯 🧠"
@@ -240,6 +386,11 @@ main{
     "💥 🧠"
     "💥 🧠"
 }
+
+
+/*  💯 💯 💯 💯
+/* ❤ 💯 Filter Section */
+/* 💯 💯 💯 💯 */
 
 #role-picker{
     grid-area:❤;
@@ -251,6 +402,7 @@ main{
     grid-area:💯;
     display:flex;
     flex-direction: row;
+    justify-content: space-between;
     gap:10px;
 }
 
@@ -258,6 +410,7 @@ main{
     padding:10px;
     height:clamp(20px, 3vw, 40px);
     width:clamp(20px, 3vw, 40px);
+    color:#fff;
     display:flex;
     align-items:center;
     justify-content: center;
@@ -265,14 +418,18 @@ main{
     border-radius:50%;
     background:#222226;
     opacity:.5;
-    transition:all 400ms ease-in-out;
+    transition:all 400ms ease-in-out, transform 200ms ease;
     position:relative;
-    border: 0.5px solid #fff;
+    
 }
 
 .role{
     border-radius:20%;
     border-color:transparent;
+}
+
+.role:active, .class:active{
+    transform:scale(0.90);
 }
 
 .class::before{
@@ -282,37 +439,48 @@ main{
     border-radius:inherit;
     position: absolute;
     left: 0;
-    opacity:0.1;
+    opacity:0.3;
     transition:all 400ms ease;
+    z-index:2;
 }
 
-.class:nth-child(1)::before{
+.class:nth-child(5)::before{
     background:var(--medium-slate-blue);
 }
-.class:nth-child(2)::before{
+.class:nth-child(4)::before{
     background:var(--ocean-green);
 }
 .class:nth-child(3)::before{
     background:var(--carolina-blue);
 }
-.class:nth-child(4)::before{
+.class:nth-child(2)::before{
     background:var(--maximum-yellow-red);
 }
-.class:nth-child(5)::before{
+.class:nth-child(1)::before{
     background:var(--ruby);
 }
+.class svg path, .class svg polygon{
+    fill: #fff;
+}
+
+.class svg{
+    height:24px;
+    z-index:3;
+}
+
 
 .class:hover, .role:hover{
     opacity:1;
     border-color:transparent;
 }
 
-.class:hover::before, .role:hover::before{
+.class:hover::before, .class:active::before, .class.selected::before, .role:hover::before{
     opacity:0.5;
 }
 
-.role.selected{
+.role.selected, .class.selected{
     opacity:1.0;
+    border-color:transparent;
 }
 
 
@@ -321,7 +489,14 @@ main{
 }
 #build-picker{
     grid-area:💥;
+
 }
+
+
+/* 💥💥💥💥
+/* 💥 Build Section */
+/* 💥💥💥💥*/
+
 
 #build-picker > div{
     transition: all 0.6s, transform 300ms ease;
@@ -361,6 +536,11 @@ main{
     vertical-align: middle;
     margin-right:8px;
 }
+
+
+/* 🧠🧠🧠🧠
+/* 🧠 Explain Section */
+/* 🧠🧠🧠🧠*/
 
 .itemrow > img:not(:last-child){
     margin-right:8px;

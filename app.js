@@ -2,7 +2,6 @@
 /// On Scroll
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry)
         if (entry.isIntersecting){
             entry.target.classList.add('show');
         } else{
@@ -39,48 +38,83 @@ const toggleNav = () => {
 }
 
 // Filter
-Array.from(document.getElementsByClassName("role"))
+let role = "";
+
+function filter_role(x){
+    let old = document.querySelector("div.selected.class");
+    x.classList.toggle("selected");
+    if (old !== null){
+        old.classList.remove("selected");
+    }
+
+    let y = document.querySelector("div.selected.class");
+    if (y !== null){
+        role = "=" + y.dataset.role;
+    } else{
+        role = "";
+    }
+
+    let filterto = [...document.querySelectorAll('[data-build-role'+ role +']')];
+    let allbuilds = document.getElementById('build-picker');
+    for (child of allbuilds.children){
+        child.classList.remove('hidden-build');
+        if (!filterto.includes(child) && filterto.length > 0){
+            child.classList.add('hidden-build');
+        } 
+    }
+        
+    
+
+}
+
+Array.from(document.getElementsByClassName("class"))
     .forEach((item, index) => {
         item.onclick = () => {
-            let old = document.getElementsByClassName("selected role");
-            if (old.length > 0){
-                console.log("old is this")
-                console.log(old[0]);
-                old[0].classList.remove("selected");
-            }
-            console.log(item);
-            item.classList.add("selected");
-            
-            
-            let filterto = [...document.querySelectorAll('[data-build-role='+ item.dataset.role +']')];
-            let allbuilds = document.getElementById('build-picker');
-            for (child of allbuilds.children){
-                child.classList.remove('hidden-build');
-                if (!filterto.includes(child) && filterto.length > 0){
-                    child.classList.add('hidden-build');
-                } 
-            }
+            filter_role(item)
         }
     });
 
 
 // Dark modes
-const darkButton = document.getElementById('dark');
-const lightButton = document.getElementById('light');
-const solarButton = document.getElementById('solar');
-const body = document.body;
-
+const darkButton = document.getElementById('dark_mode');
 darkButton.onclick = () => {
-    body.classList.replace('light', 'dark');
-    localStorage.setItem('theme', 'dark');
+    document.body.toggleAttribute("data-dark");
+    localStorage.setItem('theme', document.body.dataset.dark);
 }
-
-lightButton.onclick = () => {
-    body.classList.replace('dark', 'light');
-    localStorage.setItem('theme', 'light');
-}
-
 const theme = localStorage.getItem('theme');
-if (theme) {
-    body.classList.add(theme);
+
+
+
+// Star effect
+let index = 0,
+    interval = 1000;
+
+const rand = (min, max) => 
+  Math.floor(Math.random() * (max - min + 1)) + min;
+
+const animate = star => {
+  star.style.setProperty("--star-left", `${rand(-10, 100)}%`);
+  star.style.setProperty("--star-top", `${rand(-40, 80)}%`);
+
+  star.style.animation = "none";
+  star.offsetHeight;
+  star.style.animation = "";
+}
+
+for(const star of document.getElementsByClassName("magic-star")) {
+    console.log("test");
+  setTimeout(() => {
+    animate(star);
+    
+    setInterval(() => animate(star), 1000);
+  }, index++ * (interval / 3))
+}
+
+for(const star of document.getElementsByClassName("leaf")) {
+    console.log("test2");
+  setTimeout(() => {
+    animate(star);
+    
+    setInterval(() => animate(star), 700);
+  }, index++ * (700 / 3))
 }
