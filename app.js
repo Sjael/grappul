@@ -38,7 +38,30 @@ const toggleNav = () => {
     document.body.dataset.nav = document.body.dataset.nav === "true" ? "false" : "true";
 }
 
-
+// Filter
+Array.from(document.getElementsByClassName("role"))
+    .forEach((item, index) => {
+        item.onclick = () => {
+            let old = document.getElementsByClassName("selected role");
+            if (old.length > 0){
+                console.log("old is this")
+                console.log(old[0]);
+                old[0].classList.remove("selected");
+            }
+            console.log(item);
+            item.classList.add("selected");
+            
+            
+            let filterto = [...document.querySelectorAll('[data-build-role='+ item.dataset.role +']')];
+            let allbuilds = document.getElementById('build-picker');
+            for (child of allbuilds.children){
+                child.classList.remove('hidden-build');
+                if (!filterto.includes(child) && filterto.length > 0){
+                    child.classList.add('hidden-build');
+                } 
+            }
+        }
+    });
 
 
 // Dark modes

@@ -6,6 +6,13 @@
     --british-racing-green: #003e1fff;
     --dark-jungle-green: #01110aff;
     --mandarin: #f4743bff;
+
+    --maximum-yellow-red: #ffbc42ff;
+    --ruby: #d81159ff;
+    --charcoal: #273e47ff;
+    --carolina-blue: #00a8e8ff;
+    --medium-slate-blue: #7678edff;
+
     --gray0: #f8f8f8;
     --gray1: #dbe1e8;
     --gray2: #b2becd;
@@ -79,13 +86,19 @@ a{
     height:100%;
 }
 
+#logo svg path, object svg path{
+    fill: var(--mandarin);
+}
+
+
+
 #hero > img:hover{
     animation: color-rotate 1s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
-#logo img{
+#logo svg{
     width:6em;
 }
 
@@ -221,8 +234,8 @@ main{
     padding: 40px;
     column-gap: 40px;
     grid-template-areas:
-    "❤ ❤"
-    "💥 🧠"
+    "❤  🧠"
+    "💯 🧠"
     "💥 🧠"
     "💥 🧠"
     "💥 🧠"
@@ -234,6 +247,75 @@ main{
     flex-direction: row;
     gap:10px;
 }
+#class-picker{
+    grid-area:💯;
+    display:flex;
+    flex-direction: row;
+    gap:10px;
+}
+
+.class, .role{
+    padding:10px;
+    height:clamp(20px, 3vw, 40px);
+    width:clamp(20px, 3vw, 40px);
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin-right: 8px;
+    border-radius:50%;
+    background:#222226;
+    opacity:.5;
+    transition:all 400ms ease-in-out;
+    position:relative;
+    border: 0.5px solid #fff;
+}
+
+.role{
+    border-radius:20%;
+    border-color:transparent;
+}
+
+.class::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius:inherit;
+    position: absolute;
+    left: 0;
+    opacity:0.1;
+    transition:all 400ms ease;
+}
+
+.class:nth-child(1)::before{
+    background:var(--medium-slate-blue);
+}
+.class:nth-child(2)::before{
+    background:var(--ocean-green);
+}
+.class:nth-child(3)::before{
+    background:var(--carolina-blue);
+}
+.class:nth-child(4)::before{
+    background:var(--maximum-yellow-red);
+}
+.class:nth-child(5)::before{
+    background:var(--ruby);
+}
+
+.class:hover, .role:hover{
+    opacity:1;
+    border-color:transparent;
+}
+
+.class:hover::before, .role:hover::before{
+    opacity:0.5;
+}
+
+.role.selected{
+    opacity:1.0;
+}
+
+
 #explain{
     grid-area:🧠;
 }
@@ -247,6 +329,15 @@ main{
     margin-bottom:20px;
     padding:10px;
     opacity:0.5;
+}
+
+#build-picker > div.hidden-build{
+    visibility:hidden;
+    opacity:0;
+    transition: all 1s;
+    transform: translateX(-200%);
+    height:0;
+    display:none;
 }
 
 #build-picker > .active-build{
