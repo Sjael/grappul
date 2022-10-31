@@ -40,7 +40,7 @@ const toggleNav = () => {
 // Filter
 let role = "";
 
-function filter_role(x){
+function filter_class(x){
     let old = document.querySelector("div.selected.class");
     x.classList.toggle("selected");
     if (old !== null){
@@ -62,12 +62,21 @@ function filter_role(x){
             child.classList.add('hidden-build');
         } 
     }
-        
-    
-
 }
 
 Array.from(document.getElementsByClassName("class"))
+    .forEach((item, index) => {
+        item.onclick = () => {
+            filter_class(item)
+        }
+    });
+
+
+function filter_role(x){
+    x.classList.toggle("selected");
+}
+
+Array.from(document.getElementById("role-picker").querySelector("svg").children)
     .forEach((item, index) => {
         item.onclick = () => {
             filter_role(item)
