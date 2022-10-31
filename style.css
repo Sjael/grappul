@@ -420,6 +420,10 @@ svg > #support:hover{
     fill:var(--carolina-blue);
 }
 
+#role-picker svg > *.selected{
+    fill:#ccc;
+}
+
 #class-picker{
     grid-area:💯;
     display:flex;
