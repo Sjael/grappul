@@ -37,34 +37,26 @@ const toggleNav = () => {
     document.body.dataset.nav = document.body.dataset.nav === "true" ? "false" : "true";
 }
 
-// Filter
-let role = "";
+// Filter Classes
+let god_class = "";
 
 function filter_class(x){
-    let old = document.querySelector("div.selected.class");
+    let old = document.getElementById("class-bar").querySelector(".selected");
     x.classList.toggle("selected");
     if (old !== null){
         old.classList.remove("selected");
     }
 
-    let y = document.querySelector("div.selected.class");
+    let y = document.getElementById("class-bar").querySelector(".selected");
     if (y !== null){
-        role = "=" + y.dataset.role;
+        god_class = "=" + y.dataset.class;
     } else{
-        role = "";
+        god_class = "";
     }
-
-    let filterto = [...document.querySelectorAll('[data-build-role'+ role +']')];
-    let allbuilds = document.getElementById('build-picker');
-    for (child of allbuilds.children){
-        child.classList.remove('hidden-build');
-        if (!filterto.includes(child) && filterto.length > 0){
-            child.classList.add('hidden-build');
-        } 
-    }
+    filter_both();
 }
 
-Array.from(document.getElementsByClassName("class"))
+Array.from(document.getElementById("class-bar").children)
     .forEach((item, index) => {
         item.onclick = () => {
             filter_class(item)
@@ -72,17 +64,46 @@ Array.from(document.getElementsByClassName("class"))
     });
 
 
+/// Filter Roles
+let god_role = "";
 function filter_role(x){
+    let old = document.querySelector(".selected.role");
     x.classList.toggle("selected");
+    if (old !== null){
+        old.classList.remove("selected");
+    }
+
+    let y = document.querySelector(".selected.role");
+    if (y !== null){
+        god_role = "=" + y.dataset.role;
+    } else{
+        god_role = "";
+    }
+    filter_both()
 }
 
-Array.from(document.getElementById("role-picker").querySelector("svg").children)
+Array.from(document.getElementById("role-bar").querySelector("svg").children)
     .forEach((item, index) => {
         item.onclick = () => {
             filter_role(item)
         }
     });
 
+function filter_both(){
+    console.log(god_role)
+    console.log(god_class)
+    let filterclasses = [...document.querySelectorAll('[data-build-class'+ god_class +']')];
+    let filterroles = [...document.querySelectorAll('[data-build-role'+ god_role +']')];
+    let intersection = filterclasses.filter(i => filterroles.includes(i));
+
+    let allbuilds = document.getElementById('build-picker');
+    for (child of allbuilds.children){
+        child.classList.remove('hidden-build');
+        if (!intersection.includes(child) && intersection.length > 0){
+            child.classList.add('hidden-build');
+        } 
+    }
+}
 
 // Dark modes
 const darkButton = document.getElementById('dark_mode');
