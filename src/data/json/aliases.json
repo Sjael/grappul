@@ -1,0 +1,22 @@
+{
+    "noxious fumes": "fumes",
+    "flame wave" : "fwave",
+    "path of flames" : "fdash",
+    "rain fire" : "meteor",
+    "atlas of the yellow river" : "river",
+    "release the kraken": "kraken",
+
+    "thunder strike" : "axe",
+    "storm call" : "stormcall",
+    "rain dance" : "raindance",
+
+    "dispel magic": "dispel",
+    "circle of protection" : "bunker",
+
+    "death scythe": "scythe",
+
+    "tearing the veil" : "rift",
+    "banshees wail" : "wail",
+    "flickering visions" : "clio_blind",
+    "lurching claw" : "claw"
+}

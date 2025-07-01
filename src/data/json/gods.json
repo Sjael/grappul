@@ -1,0 +1,44 @@
+{
+    "agni":{
+        "class" : "mage",
+        "roles" : ["mid"]
+    },
+
+    "chaac":{
+        "class" : "warrior",
+        "roles" : ["mid"]
+    },
+
+    "cliodhna":{
+        "class" : "assassin",
+        "roles" : ["mid"]
+    },
+
+    "eset":{
+        "class" : "mage",
+        "roles" : ["support"]
+    },
+
+    "he_bo":{
+        "class" : "mage",
+        "roles" : ["jungle"]
+    },
+
+    "poseidon":{
+        "class" : "mage",
+        "roles" : ["mid"]
+    },
+
+    "mercury":{
+        "class" : "assassin",
+        "roles" : ["jungle"]
+    },
+
+    "thanatos":{
+        "class" : "warrior",
+        "roles" : ["jungle"]
+    }
+
+
+
+}

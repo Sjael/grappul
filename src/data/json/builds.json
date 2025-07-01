@@ -1,0 +1,187 @@
+{
+    
+    "agni" : [{
+        "role":"mid",
+        "timeline" : [
+            ["s_sands", "magic-focus"],
+            ["spearmagus"],
+            ["spearofdeso"],
+            ["myrdin"],
+            ["tahuti"],
+            ["s_pendulum"],
+            ["tahuti_calamitous"],
+            ["obshard"]
+        ],
+        "relics" : ["beads", "aegis"],
+        "build" : [
+            "s_pendulum",
+            "spearmagus",
+            "spearofdeso",
+            "myrdin",
+            "tahuti_calamitous",
+            "obshard"
+        ]
+    }],
+
+    "chaac" : [{
+        "role":"mid",
+        "timeline" : [
+            ["s_warriors", "mace"],
+            ["jotunns"],
+            ["trans"],
+            ["souleater"],
+            ["jotunnsvigor"],
+            ["heartseeker"],
+            ["titans"],
+            ["crusher"]
+        ],
+        "relics" : ["blink", "beads"],
+        "build" : [
+            "crusher",
+            "jotunnsvigor",
+            "trans",
+            "souleater2",
+            "heartseeker",
+            "titans"
+        ],
+        "tags":["fav"]
+    }],
+
+    "cliodhna" : [{
+        "role":"mid",
+        "timeline" : [
+            ["s_bluestone", "spiked"],
+            ["souleater"],
+            ["crusher"],
+            ["jotunns"],
+            ["jotunnsvigor"],
+            ["arondight"],
+            ["s_bluestonebrooch"],
+            ["titans"]
+        ],
+        "relics" : ["blink", "beads"],
+        "build" : [
+            "s_bluestonebrooch",
+            "souleater2",
+            "crusher",
+            "jotunnsvigor",
+            "arondight",
+            "titans"
+        ]
+    }],
+
+    "eset" : [{
+        "role":"support",
+        "timeline" : [
+            ["s_protectors", "druidstone"],
+            ["stoneofbinding"],
+            ["thebes"],
+            ["pridwen"],
+            ["spiritrobe"],
+            ["s_lonos"],
+            ["soulreaver"]
+        ],
+        "relics" : ["shell", "ankh"],
+        "build" : [
+            "s_lonos",
+            "stoneofbinding",
+            "thebes2",
+            "pridwen",
+            "spiritrobe",
+            "soulreaver"
+        ]
+    }],
+
+    "he_bo" : [{
+        "role":"jungle",
+        "timeline" : [
+            ["s_bumbas", "magic-focus"],
+            ["spearmagus"],
+            ["tahuti"],
+            ["tahuti_perfected"],
+            ["spearofdeso"],
+            ["obshard"],
+            ["s_bumbasspear"],
+            ["soulreaver"]
+        ],
+        "relics" : ["blink", "beads"],
+        "build" : [
+            "s_bumbasspear",
+            "spearmagus",
+            "tahuti_perfected",
+            "spearofdeso",
+            "obshard",
+            "soulreaver"
+        ],
+        "tags":["fav"]
+    }],
+    
+    "poseidon" : [{
+        "role":"mid",
+        "timeline" : [
+            ["s_sands", "spellbook"],
+            ["bookofthoth"],
+            ["spearmagus"],
+            ["myrdin"],
+            ["spearofdeso"],
+            ["s_pendulum"],
+            ["obshard"],
+            ["powerpot"]
+        ],
+        "relics" : ["beads", "aegis"],
+        "build" : [
+            "s_pendulum",
+            "bookofthoth2",
+            "spearmagus",
+            "myrdin",
+            "spearofdeso",
+            "obshard"
+        ]
+    }],
+
+    "mercury" : [{
+        "role":"jungle",
+        "timeline" : [
+            ["s_eye", "hiddendag"],
+            ["rage"],
+            ["winddemon"],
+            ["deathbringer"],
+            ["asi"],
+            ["serrated"],
+            ["dom"],
+            ["db_envenom"]
+        ],
+        "relics" : ["blink", "beads"],
+        "build" : [
+            "dom",
+            "rage2",
+            "winddemon",
+            "db_envenom",
+            "asi",
+            "serrated"
+        ]
+    }],
+
+    "thanatos" : [{
+        "role":"jungle",
+        "timeline" : [
+            ["s_manikin", "mace"],
+            ["jotunns"],
+            ["hydras"],
+            ["arondight"],
+            ["titans"],
+            ["s_hidden"],
+            ["dom"]
+        ],
+        "relics" : ["blink", "beads"],
+        "build" : [
+            "s_hidden",
+            "jotunns",
+            "hydras",
+            "arondight",
+            "titans",
+            "heartseeker"
+        ]
+    }]
+
+}
