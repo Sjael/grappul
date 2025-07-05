@@ -1,0 +1,5122 @@
+{
+  "aegis amulet": {
+    "name": "Aegis Amulet",
+    "cost": 0,
+    "total_cost": 0,
+    "stats": [],
+    "passive": "",
+    "active": "Using this item makes you invulnerable to damage and healing for 1.5s, and prevents you from taking any actions. You may still move. Cooldown - 170s.Kill or assist minions to upgrade this Relic for free.",
+    "type": [
+      "Relic"
+    ],
+    "image": "aegis_amulet.png"
+  },
+  "blink rune": {
+    "name": "Blink Rune",
+    "cost": 0,
+    "total_cost": 0,
+    "stats": [],
+    "passive": "",
+    "active": "Using this item will allow you to teleport up to 45 units away instantly. This item can not be used if you have taken or dealt damage in the last 3s. Cooldown - 140s.Kill or assist minions to upgrade this Relic for free.",
+    "type": [
+      "Relic"
+    ],
+    "image": "blink_rune.png"
+  },
+  "bracer of radiance": {
+    "name": "Bracer of Radiance",
+    "cost": 0,
+    "total_cost": 0,
+    "stats": [],
+    "passive": "",
+    "active": "Place a radiant glow at a target location for 90s. Allies who move through this glow gain 10% increased Power if above half health or 10% Movement Speed if below Half Health for 8s. This fragment acts as a ward. If destroyed the cooldown of the relic is reduced by 20s. Cooldown - 120s.Kill or assist minions to upgrade this Relic for free.",
+    "type": [
+      "Relic"
+    ],
+    "image": "bracer_of_radiance.png"
+  },
+  "cloak of meditation": {
+    "name": "Cloak of Meditation",
+    "cost": 0,
+    "total_cost": 0,
+    "stats": [],
+    "passive": "",
+    "active": "Using this item causes you to enter a meditative state where nearby allied gods within 35 units restore 10 + 2.5% of their missing health and 10 + 3% of missing mana each tick. Heals occur once every second for 4s. Cooldown - 150s.Kill or assist minions to upgrade this Relic for free.",
+    "type": [
+      "Relic"
+    ],
+    "image": "cloak_of_meditation.png"
+  },
+  "divine barrier": {
+    "name": "Divine Barrier",
+    "cost": 0,
+    "total_cost": 0,
+    "stats": [],
+    "passive": "",
+    "active": "Deploy a 40 unit wide wall of divine light that reduces the damage of all enemy Basic Attacks that pass through it by 30%. Additionally, all allies that pass through the barrier have their Movement Speed increased by 5% for 3s while enemies that pass through the barrier are Slowed by 30% for 3s. The barrier lasts for 30s. Cooldown - 100s.Kill or assist minions to upgrade this Relic for free.",
+    "type": [
+      "Relic"
+    ],
+    "image": "divine_barrier.png"
+  },
+  "heavenly wings": {
+    "name": "Heavenly Wings",
+    "cost": 0,
+    "total_cost": 0,
+    "stats": [],
+    "passive": "",
+    "active": "Using this item grants allied gods within 55 units 20% increased Movement Speed, 10% increased Attack Speed, and Slow immunity for 5s. Cooldown - 120sKill or assist minions to upgrade this Relic for free.",
+    "type": [
+      "Relic"
+    ],
+    "image": "heavenly_wings.png"
+  },
+  "horrific emblem": {
+    "name": "Horrific Emblem",
+    "cost": 0,
+    "total_cost": 0,
+    "stats": [],
+    "passive": "",
+    "active": "Using this item Slows the Movement Speed of all enemy gods within 35 units by 25% and decreases their Damage Dealt by 10% for 4s. Additionally, all Healing received by enemy gods is reduced by 40% and their shield effectiveness is decreased by 50%. Cooldown - 140s.Kill or assist minions to upgrade this Relic for free.",
+    "type": [
+      "Relic"
+    ],
+    "image": "horrific_emblem.png"
+  },
+  "magic shell": {
+    "name": "Magic Shell",
+    "cost": 0,
+    "total_cost": 0,
+    "stats": [],
+    "passive": "",
+    "active": "Using this item applies a shield to yourself and allies within 35 units for 100 Health + 12 Health per God Level for 3 seconds. Additionally, all allies take 20% reduced damage from Basic Attacks while the shield is active. Cooldown - 150s.Kill or assist minions to upgrade this Relic for free.",
+    "type": [
+      "Relic"
+    ],
+    "image": "magic_shell.png"
+  },
+  "purification beads": {
+    "name": "Purification Beads",
+    "cost": 0,
+    "total_cost": 0,
+    "stats": [],
+    "passive": "",
+    "active": "Using this item removes Crowd Control Effects and makes you immune to new ones for 2s. Cooldown - 170s.Kill or assist minions to upgrade this Relic for free.",
+    "type": [
+      "Relic"
+    ],
+    "image": "purification_beads.png"
+  },
+  "shield of thorns": {
+    "name": "Shield of Thorns",
+    "cost": 0,
+    "total_cost": 0,
+    "stats": [],
+    "passive": "",
+    "active": "Using this item grants you 15% Damage Mitigation as you store all damage taken over the next 3s. You then explode in a 30 unit radius, dealing 85 + 50% of the damage taken as Magical Damage, up to a maximum of 25% of an enemy\u2019s Max Health. While this is active, enemies can only lifesteal from you for 75% of their total lifesteal. Cooldown - 140s.Kill or assist minions to upgrade this Relic for free.",
+    "type": [
+      "Relic"
+    ],
+    "image": "shield_of_thorns.png"
+  },
+  "sundering spear": {
+    "name": "Sundering Spear",
+    "cost": 0,
+    "total_cost": 0,
+    "stats": [],
+    "passive": "",
+    "active": "Fire a bolt that travels 70 units, stopping on first god hit dealing 5% of their Current Health as True Damage and reducing any active shields by 75%. Targets hit take 5% increased damage for 5s. This relic has 2 charges. Cooldown - 130s.Kill or assist minions to upgrade this Relic for free.",
+    "type": [
+      "Relic"
+    ],
+    "image": "sundering_spear.png"
+  },
+  "teleport fragment": {
+    "name": "Teleport Fragment",
+    "cost": 0,
+    "total_cost": 0,
+    "stats": [],
+    "passive": "",
+    "active": "Using this item allows you to teleport to any allied structure while Rooted in place. This effect is not interrupted by damage but is interrupted by hard Crowd Control. Cooldown - 220s.Kill or assist minions to upgrade this Relic for free.",
+    "type": [
+      "Relic"
+    ],
+    "image": "teleport_fragment.png"
+  },
+  "protector's mask": {
+    "name": "Protector's Mask",
+    "cost": 550,
+    "total_cost": 0,
+    "stats": [
+      "125 Health",
+      "100 Mana"
+    ],
+    "passive": "PASSIVE -Decrease damage dealt by 6% + 0.25%per your god's level.Decrease Damage Taken by 6% + 0.25%per your god's level.PASSIVE - Getting the assist for an enemy minion or jungle monster dying will provide 8 bonus gold and restore 12 health and 15 mana. If you are not within 30 units of an allied god for 20 seconds this passive is disabled until you are near an allied god again.Can be upgraded at level 15.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "protectors_mask.png"
+  },
+  "sentinel's gift": {
+    "name": "Sentinel's Gift",
+    "cost": 550,
+    "total_cost": 0,
+    "stats": [
+      "10 Physical Protection",
+      "10 Magical Protection",
+      "100 Health",
+      "7 MP5"
+    ],
+    "passive": "PASSIVE - Getting the assist for an enemy minion or jungle monster dying will provide 8 Bonus gold and restore 12 Health and 8 Mana. If you are not within 30 units of an allied god for 20 seconds this passive is disabled until you are near an allied god again.Can be upgraded at level 15.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "sentinels_gift.png"
+  },
+  "benevolence": {
+    "name": "Benevolence",
+    "cost": 600,
+    "total_cost": 0,
+    "stats": [
+      "100 Health",
+      "10 MP5",
+      "10 HP5"
+    ],
+    "passive": "PASSIVE - While not near an ally god you gain 1 stack of Benevolence every second, up to a maximum of 50. Assists provide 4 stacks. While within 70 units of a hurt ally god you use up to 5 stacks a second to heal them and yourself for 1% of your Maximum Health. Each stack consumed provides you with 1 gold. If you overcap stacks they will still provide gold as long as you are near an ally god.Can be upgraded at level 15.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "benevolence.png"
+  },
+  "bumba's dagger": {
+    "name": "Bumba's Dagger",
+    "cost": 600,
+    "total_cost": 0,
+    "stats": [
+      "13 Physical Power",
+      "25 Magical Power",
+      "50 Health",
+      "50 Mana"
+    ],
+    "passive": "PASSIVE - Your Basic Attacks deal +25 True Damage and your Abilities deal +35% Damage versus Jungle Monsters. When a Jungle Monster is killed you are restored for 10% of the Monster's Health and 25 Mana.Can be upgraded at level 20.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "bumbas_dagger.png"
+  },
+  "tainted steel": {
+    "name": "Tainted Steel",
+    "cost": 600,
+    "total_cost": 0,
+    "stats": [
+      "15 Physical Power",
+      "25 Magical Power",
+      "15 Physical Protection",
+      "15 Magical Protection"
+    ],
+    "passive": "PASSIVE - Enemy Gods that you hit have their healing taken reduced by 20% for 5s. You are healed for 120% of the healing reduced. Can be upgraded at level 20.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Offensive",
+      "Defensive"
+    ],
+    "image": "tainted_steel.png"
+  },
+  "war flag": {
+    "name": "War Flag",
+    "cost": 600,
+    "total_cost": 0,
+    "stats": [
+      "10 Physical Protection",
+      "10 Magical Protection",
+      "100 Health",
+      "10 MP5"
+    ],
+    "passive": "PASSIVE - Getting the assist for an enemy minion or jungle monster dying will provide 8 Bonus gold and restore 8 Health and 5 Mana. You and nearby allied gods also receive a stack that gives 1% Movement Speed and 2% Attack Speed for 10s to nearby allies up to 10 stacks.Can be upgraded at level 15.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "war_flag.png"
+  },
+  "bluestone pendant": {
+    "name": "Bluestone Pendant",
+    "cost": 650,
+    "total_cost": 0,
+    "stats": [
+      "15 Physical Power",
+      "15 HP5",
+      "10 MP5"
+    ],
+    "passive": "PASSIVE - Enemies hit by your damaging Abilities take an additional 40 Physical Damage over 2s. Subsequent hits on the same target do half the bonus damage for the next 3s.Can be upgraded at level 20.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "bluestone_pendant.png"
+  },
+  "death's toll": {
+    "name": "Death's Toll",
+    "cost": 650,
+    "total_cost": 0,
+    "stats": [
+      "18 Physical Power",
+      "35 Magical Power",
+      "75 Health"
+    ],
+    "passive": "PASSIVE - Hitting an enemy with a Basic Attack restores 2 Health (+0.3% of your Maximum Health) and 1 Mana (+1% of your Maximum Mana). Basic Attacks that deal damage in an AoE restore less health (75% for Melee Attacks, 50% for Ranged Attacks) for each enemy hit after the first.Can be upgraded at level 20.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Offensive",
+      "Defensive"
+    ],
+    "image": "deaths_toll.png"
+  },
+  "eye of the jungle": {
+    "name": "Eye of the Jungle",
+    "cost": 650,
+    "total_cost": 0,
+    "stats": [
+      "15 Physical Power",
+      "30 Magical Power",
+      "7 Physical Protection",
+      "10 HP5"
+    ],
+    "passive": "PASSIVE - You deal 30% increased damage to Jungle Monsters. Upon defeating a Large Jungle Monster you place a ward at its location that lasts for 30 seconds. While in the jungle you gain 3% Movement Speed, +20 HP5 and +15 MP5Can be upgraded at level 20.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Offensive",
+      "Defensive"
+    ],
+    "image": "eye_of_the_jungle.png"
+  },
+  "fighter's mask": {
+    "name": "Fighter's Mask",
+    "cost": 650,
+    "total_cost": 0,
+    "stats": [
+      "15 Physical Power",
+      "25 Magical Power",
+      "10 HP5",
+      "10 MP5"
+    ],
+    "passive": "PASSIVE -Increase Damage Dealt by 5% + 0.25%per your god\u2019s level.Increase Damage Taken by 6% + 0.1%per your god\u2019s level.PASSIVE - This item grants 2 MP5 per 10% of your missing Mana. Your abilities deal +10 Bonus Ability True Damage to minions.Can be upgraded at level 20.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "fighters_mask.png"
+  },
+  "gilded arrow": {
+    "name": "Gilded Arrow",
+    "cost": 650,
+    "total_cost": 0,
+    "stats": [
+      "20 Basic Attack Damage",
+      "50 Health",
+      "7 MP5"
+    ],
+    "passive": "PASSIVE - Every 8s the highest health enemy minion or jungle monster within 80 units of you is marked. If you secure the killing blow on that target you gain 4 bonus gold and 25% attack speed for 8s, and restore 30 Mana.Can be upgraded at level 20.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "gilded_arrow.png"
+  },
+  "leather cowl": {
+    "name": "Leather Cowl",
+    "cost": 650,
+    "total_cost": 0,
+    "stats": [
+      "15 Physical Power",
+      "5 MP5",
+      "6% Physical Lifesteal",
+      "10% Attack Speed"
+    ],
+    "passive": "PASSIVE - While you are within 55 units of an allied god you gain 10% Attack Speed. If you are alone you instead gain 5% Movement Speed.Can be upgraded at level 20.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Offensive",
+      "Utility"
+    ],
+    "image": "leather_cowl.png"
+  },
+  "manikin scepter": {
+    "name": "Manikin Scepter",
+    "cost": 650,
+    "total_cost": 0,
+    "stats": [
+      "10 Basic Attack Damage",
+      "7% Attack Speed"
+    ],
+    "passive": "PASSIVE - Enemies hit by your Basic Attacks are burned, taking 16 Physical Damage (+7% of your Physical and Magical Power) over 2s and have their Attack Speed reduced by 4.5%. Gods take 50% damage. Jungle Monsters take 4x the amount of damage and restore 2.5% Health and 5% Mana when they die.Can be upgraded at level 20.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Offensive"
+    ],
+    "image": "manikin_scepter.png"
+  },
+  "vampiric shroud": {
+    "name": "Vampiric Shroud",
+    "cost": 650,
+    "total_cost": 0,
+    "stats": [
+      "30 Magical Power",
+      "10 MP5",
+      "6% Magical Lifesteal"
+    ],
+    "passive": "PASSIVE - Damaging any enemy with an ability restores 2 health and 6 mana. Can only trigger once per target per ability.Can be upgraded at level 20.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Offensive",
+      "Defensive"
+    ],
+    "image": "vampiric_shroud.png"
+  },
+  "warding sigil": {
+    "name": "Warding Sigil",
+    "cost": 650,
+    "total_cost": 0,
+    "stats": [
+      "15 Physical Power",
+      "20 Magical Power",
+      "15 Physical Protection",
+      "15 Magical Protection"
+    ],
+    "passive": "PASSIVE - When you are hit by an ability you gain a stack of Dampening, gaining 5 Protections for 5s and healing for 1% of your Max Health. This occurs only once per ability cast. This can stack twice.Can be upgraded at level 20.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Defensive"
+    ],
+    "image": "warding_sigil.png"
+  },
+  "warrior's axe": {
+    "name": "Warrior's Axe",
+    "cost": 650,
+    "total_cost": 0,
+    "stats": [
+      "15 Physical Power",
+      "15 Magical Power",
+      "10 Physical Protection",
+      "10 Magical Protection"
+    ],
+    "passive": "PASSIVE - Damaging an enemy god deals 25 (+1.5 per level) damage and restores 25 (+1.5 per level) Health and Mana. This effect can only occur once every 10s.Can be upgraded at level 20.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Defensive"
+    ],
+    "image": "warriors_axe.png"
+  },
+  "conduit gem": {
+    "name": "Conduit Gem",
+    "cost": 700,
+    "total_cost": 0,
+    "stats": [
+      "25 Magical Power",
+      "100 Mana",
+      "10 MP5"
+    ],
+    "passive": "PASSIVE - Every 0.5 seconds you gain a stack of Arcane Energy, causing your next damaging ability to deal an additional 2 True Damage and remove all stacks. Also deals an additional 1 true damage per stack to minions.Can be upgraded at level 20.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Offensive",
+      "Utility"
+    ],
+    "image": "conduit_gem.png"
+  },
+  "sands of time": {
+    "name": "Sands of Time",
+    "cost": 700,
+    "total_cost": 0,
+    "stats": [
+      "25 Magical Power",
+      "10 MP5",
+      "10% Cooldown Reduction"
+    ],
+    "passive": "PASSIVE - This item grants 2 MP5 per 10% of your missing Mana. Your damaging abilities deal an extra 15 true damage to minions.Can be upgraded at level 20.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Offensive",
+      "Utility"
+    ],
+    "image": "sands_of_time.png"
+  },
+  "magic acorn": {
+    "name": "Magic Acorn",
+    "cost": 0,
+    "total_cost": 0,
+    "stats": [
+      "2% Movement Speed"
+    ],
+    "passive": "This item can be upgraded from anywhere. Ratatoskr can only have 1 Acorn item.",
+    "active": "",
+    "type": [
+      "Utility"
+    ],
+    "image": "magic_acorn.png"
+  },
+  "mystical earrings": {
+    "name": "Mystical Earrings",
+    "cost": 400,
+    "total_cost": 0,
+    "stats": [
+      "15 MP5"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Utility"
+    ],
+    "image": "mystical_earrings.png"
+  },
+  "ancient blade": {
+    "name": "Ancient Blade",
+    "cost": 550,
+    "total_cost": 0,
+    "stats": [
+      "50 Health",
+      "5% Movement Speed"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "ancient_blade.png"
+  },
+  "lost artifact": {
+    "name": "Lost Artifact",
+    "cost": 550,
+    "total_cost": 0,
+    "stats": [
+      "20 Magical Power",
+      "5 MP5"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "lost_artifact.png"
+  },
+  "short bow": {
+    "name": "Short Bow",
+    "cost": 550,
+    "total_cost": 0,
+    "stats": [
+      "15% Attack Speed"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "short_bow.png"
+  },
+  "breastplate": {
+    "name": "Breastplate",
+    "cost": 600,
+    "total_cost": 0,
+    "stats": [
+      "20 Physical Protection"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Defensive"
+    ],
+    "image": "breastplate.png"
+  },
+  "cloak": {
+    "name": "Cloak",
+    "cost": 600,
+    "total_cost": 0,
+    "stats": [
+      "10 Physical Protection",
+      "10 Magical Protection"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Defensive"
+    ],
+    "image": "cloak.png"
+  },
+  "emerald ring": {
+    "name": "Emerald Ring",
+    "cost": 600,
+    "total_cost": 0,
+    "stats": [
+      "20 Magical Power",
+      "5% Attack Speed"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "emerald_ring.png"
+  },
+  "glowing emerald": {
+    "name": "Glowing Emerald",
+    "cost": 600,
+    "total_cost": 0,
+    "stats": [
+      "100 Health",
+      "10 HP5"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Defensive"
+    ],
+    "image": "glowing_emerald.png"
+  },
+  "katana": {
+    "name": "Katana",
+    "cost": 600,
+    "total_cost": 0,
+    "stats": [
+      "7 Physical Power",
+      "3% Movement Speed"
+    ],
+    "passive": "This item and all upgrades are only available to Assassins and Warriors.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "katana.png"
+  },
+  "light blade": {
+    "name": "Light Blade",
+    "cost": 600,
+    "total_cost": 0,
+    "stats": [
+      "5 Physical Power",
+      "10% Attack Speed"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "light_blade.png"
+  },
+  "morningstar": {
+    "name": "Morningstar",
+    "cost": 600,
+    "total_cost": 0,
+    "stats": [
+      "7 Physical Power",
+      "50 Mana"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "morningstar.png"
+  },
+  "rebound buckler": {
+    "name": "Rebound Buckler",
+    "cost": 600,
+    "total_cost": 0,
+    "stats": [
+      "100 Health",
+      "10 HP5"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Defensive"
+    ],
+    "image": "rebound_buckler.png"
+  },
+  "spiked gauntlet": {
+    "name": "Spiked Gauntlet",
+    "cost": 600,
+    "total_cost": 0,
+    "stats": [
+      "7 Physical Power",
+      "3% Physical Lifesteal"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "spiked_gauntlet.png"
+  },
+  "tiny trinket": {
+    "name": "Tiny Trinket",
+    "cost": 600,
+    "total_cost": 0,
+    "stats": [
+      "25 Magical Power",
+      "6% Magical Lifesteal"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "tiny_trinket.png"
+  },
+  "blessed scepter": {
+    "name": "Blessed Scepter",
+    "cost": 650,
+    "total_cost": 0,
+    "stats": [
+      "10 Physical Power",
+      "50 Health",
+      "5 MP5"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "blessed_scepter.png"
+  },
+  "cudgel": {
+    "name": "Cudgel",
+    "cost": 650,
+    "total_cost": 0,
+    "stats": [
+      "10 Physical Power",
+      "50 Health"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive"
+    ],
+    "image": "cudgel.png"
+  },
+  "druid stone": {
+    "name": "Druid Stone",
+    "cost": 650,
+    "total_cost": 0,
+    "stats": [
+      "15 Physical Protection",
+      "15 Magical Protection",
+      "50 Health"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive"
+    ],
+    "image": "druid_stone.png"
+  },
+  "enchanted kusari": {
+    "name": "Enchanted Kusari",
+    "cost": 650,
+    "total_cost": 0,
+    "stats": [
+      "20 Magical Protection",
+      "5 MP5"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "enchanted_kusari.png"
+  },
+  "iron mail": {
+    "name": "Iron Mail",
+    "cost": 650,
+    "total_cost": 0,
+    "stats": [
+      "75 Health",
+      "10 Physical Protection"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Defensive"
+    ],
+    "image": "iron_mail.png"
+  },
+  "mace": {
+    "name": "Mace",
+    "cost": 650,
+    "total_cost": 0,
+    "stats": [
+      "10 Physical Power"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "mace.png"
+  },
+  "magic focus": {
+    "name": "Magic Focus",
+    "cost": 650,
+    "total_cost": 0,
+    "stats": [
+      "20 Magical Power"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "magic_focus.png"
+  },
+  "restoring wand": {
+    "name": "Restoring Wand",
+    "cost": 650,
+    "total_cost": 0,
+    "stats": [
+      "15 Magical Power",
+      "50 Health",
+      "50 Mana"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "restoring_wand.png"
+  },
+  "round shield": {
+    "name": "Round Shield",
+    "cost": 650,
+    "total_cost": 0,
+    "stats": [
+      "10 Physical Protection",
+      "10 HP5"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Defensive"
+    ],
+    "image": "round_shield.png"
+  },
+  "spellbook": {
+    "name": "Spellbook",
+    "cost": 650,
+    "total_cost": 0,
+    "stats": [
+      "20 Magical Power",
+      "75 Mana"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "spellbook.png"
+  },
+  "talisman": {
+    "name": "Talisman",
+    "cost": 650,
+    "total_cost": 0,
+    "stats": [
+      "75 Health",
+      "15 Magical Protection"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Defensive"
+    ],
+    "image": "talisman.png"
+  },
+  "uncommon staff": {
+    "name": "Uncommon Staff",
+    "cost": 650,
+    "total_cost": 0,
+    "stats": [
+      "15 Magical Power",
+      "75 Health"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive"
+    ],
+    "image": "uncommon_staff.png"
+  },
+  "hidden dagger": {
+    "name": "Hidden Dagger",
+    "cost": 700,
+    "total_cost": 0,
+    "stats": [
+      "15 Physical Power"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "hidden_dagger.png"
+  },
+  "gem of fate": {
+    "name": "Gem of Fate",
+    "cost": 750,
+    "total_cost": 0,
+    "stats": [
+      "10% Cooldown Reduction"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Utility"
+    ],
+    "image": "gem_of_fate.png"
+  },
+  "greater aegis amulet": {
+    "name": "Greater Aegis Amulet",
+    "cost": 300,
+    "total_cost": 0,
+    "stats": [],
+    "passive": "",
+    "active": "Using this item makes you invulnerable to damage and healing for 1.5s, and prevents you from taking any actions. You may still move.Cooldown - 140s.Deal instances of damage or Crowd Control to enemy Gods to upgrade this Relic for free. You may only gain one stack per second.",
+    "type": [
+      "Relic"
+    ],
+    "image": "greater_aegis_amulet.png"
+  },
+  "greater blink rune": {
+    "name": "Greater Blink Rune",
+    "cost": 300,
+    "total_cost": 0,
+    "stats": [],
+    "passive": "",
+    "active": "Using this item will allow you to teleport up to 45 units away instantly. This item can not be used if you have taken or dealt damage in the last 3s.Cooldown - 120s.Deal instances of damage or Crowd Control to enemy Gods to upgrade this Relic for free. You may only gain one stack per second.",
+    "type": [
+      "Relic"
+    ],
+    "image": "greater_blink_rune.png"
+  },
+  "greater bracer of radiance": {
+    "name": "Greater Bracer of Radiance",
+    "cost": 300,
+    "total_cost": 0,
+    "stats": [],
+    "passive": "",
+    "active": "Place a radiant glow at a target location for 90s. Allies who move through this glow gain 10% increased Power if above half health or 10% Movement Speed if below Half Health for 8s. This fragment acts as a ward. If destroyed the cooldown of the relic is reduced by 20s.Cooldown - 100s.Deal instances of damage or Crowd Control to enemy Gods to upgrade this Relic for free. You may only gain one stack per second.",
+    "type": [
+      "Relic"
+    ],
+    "image": "greater_bracer_of_radiance.png"
+  },
+  "greater cloak of meditation": {
+    "name": "Greater Cloak of Meditation",
+    "cost": 300,
+    "total_cost": 0,
+    "stats": [],
+    "passive": "",
+    "active": "Using this item causes you to enter a meditative state where nearby allied gods within 35 units restore 10 + 2.5% of their missing health and 10 + 3% of missing mana each tick. Heals occur once every second for 4s.Cooldown - 130s.Deal instances of damage or Crowd Control to enemy Gods to upgrade this Relic for free. You may only gain one stack per second.",
+    "type": [
+      "Relic"
+    ],
+    "image": "greater_cloak_of_meditation.png"
+  },
+  "greater divine barrier": {
+    "name": "Greater Divine Barrier",
+    "cost": 300,
+    "total_cost": 0,
+    "stats": [],
+    "passive": "",
+    "active": "Deploy a 40 unit wide wall of divine light that reduces the damage of all enemy Basic Attacks that pass through it by 30%. Additionally, all allies that pass through the barrier have their Movement Speed increased by 5% for 3s while enemies that pass through the barrier are Slowed by 30% for 3s. The barrier lasts for 30s.Cooldown - 80s.Deal instances of damage or Crowd Control to enemy Gods to upgrade this Relic for free. You may only gain one stack per second.",
+    "type": [
+      "Relic"
+    ],
+    "image": "greater_divine_barrier.png"
+  },
+  "greater heavenly wings": {
+    "name": "Greater Heavenly Wings",
+    "cost": 300,
+    "total_cost": 0,
+    "stats": [],
+    "passive": "",
+    "active": "Using this item grants allied gods within 55 units 20% increased Movement Speed, 10% increased Attack Speed, and Slow immunity for 5s.Cooldown - 100sDeal instances of damage or Crowd Control to enemy Gods to upgrade this Relic for free. You may only gain one stack per second.",
+    "type": [
+      "Relic"
+    ],
+    "image": "greater_heavenly_wings.png"
+  },
+  "greater horrific emblem": {
+    "name": "Greater Horrific Emblem",
+    "cost": 300,
+    "total_cost": 0,
+    "stats": [],
+    "passive": "",
+    "active": "Using this item Slows the Movement Speed of all enemy gods within 35 units by 25% and decreases their Damage Dealt by 10% for 4s. Additionally, all Healing received by enemy gods is reduced by 40% and their shield effectiveness is decreased by 50%.Cooldown - 120s.Deal instances of damage or Crowd Control to enemy Gods to upgrade this Relic for free. You may only gain one stack per second.",
+    "type": [
+      "Relic"
+    ],
+    "image": "greater_horrific_emblem.png"
+  },
+  "greater magic shell": {
+    "name": "Greater Magic Shell",
+    "cost": 300,
+    "total_cost": 0,
+    "stats": [],
+    "passive": "",
+    "active": "Using this item applies a shield to yourself and allies within 35 units for 100 Health + 12 Health per God Level for 3 seconds. Additionally, all allies take 20% reduced damage from Basic Attacks while the shield is active.Cooldown - 130s.Deal instances of damage or Crowd Control to enemy Gods to upgrade this Relic for free. You may only gain one stack per second.",
+    "type": [
+      "Relic"
+    ],
+    "image": "greater_magic_shell.png"
+  },
+  "greater purification beads": {
+    "name": "Greater Purification Beads",
+    "cost": 300,
+    "total_cost": 0,
+    "stats": [],
+    "passive": "",
+    "active": "Using this item removes Crowd Control Effects and makes you immune to new ones for 2s.Cooldown - 140s.Deal instances of damage or Crowd Control to enemy Gods to upgrade this Relic for free. You may only gain one stack per second.",
+    "type": [
+      "Relic"
+    ],
+    "image": "greater_purification_beads.png"
+  },
+  "greater shield of thorns": {
+    "name": "Greater Shield of Thorns",
+    "cost": 300,
+    "total_cost": 0,
+    "stats": [],
+    "passive": "",
+    "active": "Using this item grants you 15% Damage Mitigation as you store all damage taken over the next 3s. You then explode in a 30 unit radius, dealing 85 + 50% of the damage taken as Magical Damage, up to a maximum of 25% of an enemy\u2019s Max Health. While this is active, enemies can only lifesteal from you for 75% of their total lifesteal.Cooldown - 120s.Deal instances of damage or Crowd Control to enemy Gods to upgrade this Relic for free. You may only gain one stack per second.",
+    "type": [
+      "Relic"
+    ],
+    "image": "greater_shield_of_thorns.png"
+  },
+  "greater sundering spear": {
+    "name": "Greater Sundering Spear",
+    "cost": 300,
+    "total_cost": 0,
+    "stats": [],
+    "passive": "",
+    "active": "Fire a bolt that travels 70 units, stopping on first god hit dealing 5% of their Current Health as True Damage and reducing any active shields by 75%. Targets hit take 5% increased damage for 5s. This relic has 2 charges.Cooldown - 110s.Deal instances of damage or Crowd Control to enemy Gods to upgrade this Relic for free. You may only gain one stack per second.",
+    "type": [
+      "Relic"
+    ],
+    "image": "greater_sundering_spear.png"
+  },
+  "greater teleport fragment": {
+    "name": "Greater Teleport Fragment",
+    "cost": 300,
+    "total_cost": 0,
+    "stats": [],
+    "passive": "",
+    "active": "Using this item allows you to teleport to any allied structure while Rooted in place. This effect is not interrupted by damage but is interrupted by hard Crowd Control.Cooldown - 180s.Deal instances of damage or Crowd Control to enemy Gods to upgrade this Relic for free. You may only gain one stack per second.",
+    "type": [
+      "Relic"
+    ],
+    "image": "greater_teleport_fragment.png"
+  },
+  "sentinel's boon": {
+    "name": "Sentinel's Boon",
+    "cost": 1250,
+    "total_cost": 1800,
+    "stats": [
+      "40 Physical Protection",
+      "40 Magical Protection",
+      "250 Health",
+      "20 MP5"
+    ],
+    "passive": "PASSIVE - Getting the assist when an enemy dies restores 4% of your Health and 4% of your Mana. If you have the lowest gold on your team, the assists also provides 20 Bonus Gold.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "sentinels_boon.png"
+  },
+  "sentinel's embrace": {
+    "name": "Sentinel's Embrace",
+    "cost": 1250,
+    "total_cost": 1800,
+    "stats": [
+      "25 Physical Protection",
+      "25 Magical Protection",
+      "150 Health",
+      "20 MP5"
+    ],
+    "passive": "AURA - You gain 8 GP5 if you have the lowest gold on your team. Evenly split 80 Physical and Magical Protection among all allied gods within 70 units and yourself. If you are alone you only gain 30 Physical and Magical Protections.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "sentinels_embrace.png"
+  },
+  "compassion": {
+    "name": "Compassion",
+    "cost": 1250,
+    "total_cost": 1850,
+    "stats": [
+      "50 Magical Protection",
+      "250 Health",
+      "45 HP5",
+      "15 MP5"
+    ],
+    "passive": "AURA - You gain 8 GP5 if you have the lowest gold on your team. Damage taken by allied gods within 70 units of you is reduced by 12%, up to a maximum of 100 damage. The reduced damage is redirected to you as Magical Damage. If you would die from this damage it does not get reduced or redirected.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "compassion.png"
+  },
+  "heroism": {
+    "name": "Heroism",
+    "cost": 1250,
+    "total_cost": 1850,
+    "stats": [
+      "350 Health",
+      "20 HP5",
+      "20 MP5"
+    ],
+    "passive": "PASSIVE - You gain 8 GP5 if you have the lowest gold on your team. When an ally god within 55 units of you is hit by a hard crowd control effect, give them a shield equal to 15% of your Maximum Health. This effect can only occur once every 15s.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "heroism.png"
+  },
+  "spartan flag": {
+    "name": "Spartan Flag",
+    "cost": 1250,
+    "total_cost": 1850,
+    "stats": [
+      "35 Physical Protection",
+      "35 Magical Protection",
+      "250 Health",
+      "15 MP5"
+    ],
+    "passive": "PASSIVE - You gain 8 GP5 if you have the lowest gold on your team. When you damage an enemy god you call down a Spartan Flag at your location, providing 10% increased Power and 15% Attack Speed to allies standing in the radius. Lasts for 10s, can only occur once every 10s.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "spartan_flag.png"
+  },
+  "war banner": {
+    "name": "War Banner",
+    "cost": 1250,
+    "total_cost": 1850,
+    "stats": [
+      "35 Physical Protection",
+      "35 Magical Protection",
+      "250 Health",
+      "15 MP5"
+    ],
+    "passive": "PASSIVE - You gain 8 GP5 if you have the lowest gold on your team. Getting an assist for an enemy dying provides a stack that provides 2% Movement Speed and 4% Attack Speed for 10s to nearby allies up to 10 stacks. When you've gained 4 or more stacks from assists, once per ability, each time you damage an enemy god you restore 1% Health and 1.25% Mana to nearby allies within 55 units and refresh the duration of these stacks.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "war_banner.png"
+  },
+  "lono's mask": {
+    "name": "Lono's Mask",
+    "cost": 1350,
+    "total_cost": 1900,
+    "stats": [
+      "250 Health",
+      "200 Mana",
+      "10% Crowd Control Reduction"
+    ],
+    "passive": "Gain 6 GP5 if you have the lowest gold on your team. Gain 5 stacks ofCowardice. Each stack reduces your damage dealt and healing output by 10%. For each 45 protections from items, remove a stack ofCowardice. When you remove a stack ofCowardicegain a stack ofBravery. For each stack ofBravery, gain +2% Damage Mitigation and provide 4 Physical and Magical Protections to all allied gods within 55 units.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "lonos_mask.png"
+  },
+  "bumba's hammer": {
+    "name": "Bumba's Hammer",
+    "cost": 1500,
+    "total_cost": 2100,
+    "stats": [
+      "45 Physical Power",
+      "60 Magical Power",
+      "100 Health",
+      "10% Cooldown Reduction"
+    ],
+    "passive": "PASSIVE - After casting an ability your next Basic Attack deals an additional 70 True Damage. After hitting a Basic Attack empowered by Bumba\u2019s Hammer, your active cooldowns are reduced by 0.5s and you are healed for 80 Health.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "bumbas_hammer.png"
+  },
+  "bumba's spear": {
+    "name": "Bumba's Spear",
+    "cost": 1500,
+    "total_cost": 2100,
+    "stats": [
+      "50 Physical Power",
+      "75 Magical Power",
+      "10% Penetration",
+      "10% Cooldown Reduction"
+    ],
+    "passive": "PASSIVE - Your Basic Attacks deal +50 True Damage and your Abilities deal +35% damage against Jungle Camps, and Jungle Bosses. When any of these die you gain a 10% power buff for 30s and are healed for 8% of their Health, 10% of your Mana.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "bumbas_spear.png"
+  },
+  "axe of animosity": {
+    "name": "Axe of Animosity",
+    "cost": 1500,
+    "total_cost": 2150,
+    "stats": [
+      "30 Physical Protection",
+      "30 Magical Protection",
+      "300 Health",
+      "30% Crowd Control Reduction"
+    ],
+    "passive": "PASSIVE - Your Basic Attacks deal bonus damage equal to 2.5% of your Maximum Health as Magical Damage to enemies and structures.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "axe_of_animosity.png"
+  },
+  "blood-soaked shroud": {
+    "name": "Blood-soaked Shroud",
+    "cost": 1500,
+    "total_cost": 2150,
+    "stats": [
+      "70 Magical Power",
+      "300 Health",
+      "15 MP5",
+      "18% Magical Lifesteal"
+    ],
+    "passive": "PASSIVE - Damaging any enemy with an ability restores 1.2% Health and Mana. Can only trigger once per target per ability.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Offensive",
+      "Defensive"
+    ],
+    "image": "blood-soaked_shroud.png"
+  },
+  "bluestone brooch": {
+    "name": "Bluestone Brooch",
+    "cost": 1500,
+    "total_cost": 2150,
+    "stats": [
+      "30 Physical Power",
+      "150 Health",
+      "30 HP5",
+      "30 MP5"
+    ],
+    "passive": "PASSIVE - Enemies hit by your damaging abilities take an additional 160 Physical Damage over 2s. Enemy gods take an additional 10% of their Current Health as Physical Damage over 2s. Subsequent hits on the same target do half the bonus damage for the next 3s.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "bluestone_brooch.png"
+  },
+  "corrupted bluestone": {
+    "name": "Corrupted Bluestone",
+    "cost": 1500,
+    "total_cost": 2150,
+    "stats": [
+      "35 Physical Power",
+      "100 Health",
+      "20 HP5",
+      "20 MP5"
+    ],
+    "passive": "PASSIVE - Enemies hit by your damaging Abilities are corrupted, taking 300 Physical Damage over 6s and reducing their Attack Speed by 10%. Subsequent hits on the same target do half the bonus damage for the next 3s. Each time you apply corruption you gain 10% Attack Speed and 5% increased Protections for 6s, up to a maximum of 5 stacks.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "corrupted_bluestone.png"
+  },
+  "death's embrace": {
+    "name": "Death's Embrace",
+    "cost": 1500,
+    "total_cost": 2150,
+    "stats": [
+      "45 Physical Power",
+      "80 Magical Power",
+      "150 Health"
+    ],
+    "passive": "PASSIVE - Hitting an enemy with a Basic Attack restores 1.4% of your Health, 2% of your Mana and reduces your active non-Ultimate Cooldowns by 0.33s. Basic Attacks that deal damage in an AoE restore less health (75% for Melee Attacks, 50% for Ranged Attacks) for each enemy hit after the first and only count once for the Cooldown reduction effect.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Offensive",
+      "Defensive"
+    ],
+    "image": "deaths_embrace.png"
+  },
+  "death's temper": {
+    "name": "Death's Temper",
+    "cost": 1500,
+    "total_cost": 2150,
+    "stats": [
+      "35 Physical Power",
+      "50 Magical Power",
+      "150 Health",
+      "30% Attack Speed"
+    ],
+    "passive": "PASSIVE - When an enemy dies within 80 units of you gain 1 stack of Temper that provides 7% increased Basic Attack Damage for 10s. This can stack up to 10 times. If an enemy god dies near you immediately gain 5 stacks.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Offensive",
+      "Defensive"
+    ],
+    "image": "deaths_temper.png"
+  },
+  "diamond arrow": {
+    "name": "Diamond Arrow",
+    "cost": 1500,
+    "total_cost": 2150,
+    "stats": [
+      "70 Basic Attack Damage",
+      "100 Health",
+      "10% Penetration"
+    ],
+    "passive": "PASSIVE - When you kill an enemy you gain 7 gold and 25% Attack Speed for 8s. This can stack up to 3 times. If you kill an enemy god you gain 3 stacks and 21 gold immediately.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Offensive",
+      "Defensive"
+    ],
+    "image": "diamond_arrow.png"
+  },
+  "hunter's cowl": {
+    "name": "Hunter's Cowl",
+    "cost": 1500,
+    "total_cost": 2150,
+    "stats": [
+      "50 Physical Power",
+      "15 MP5",
+      "15% Physical Lifesteal",
+      "20% Attack Speed"
+    ],
+    "passive": "AURA - While you are within 55 units of an allied god you gain 20% Attack Speed Aura. If you are alone you instead gain 10% Movement Speed.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Offensive",
+      "Utility"
+    ],
+    "image": "hunters_cowl.png"
+  },
+  "infused sigil": {
+    "name": "Infused Sigil",
+    "cost": 1500,
+    "total_cost": 2150,
+    "stats": [
+      "35 Physical Power",
+      "45 Magical Power",
+      "40 Physical Protection",
+      "40 Magical Protection"
+    ],
+    "passive": "PASSIVE - When you are hit by an ability the Infused Sigil gains a stack. This can occur only once per ability cast. At 4 stacks it explodes after 0.5s, dealing 600 Physical Damage to enemies within 30 units of you.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Defensive"
+    ],
+    "image": "infused_sigil.png"
+  },
+  "leader's cowl": {
+    "name": "Leader's Cowl",
+    "cost": 1500,
+    "total_cost": 2150,
+    "stats": [
+      "50 Physical Power",
+      "250 Health",
+      "20% Attack Speed",
+      "15% Physical Lifesteal"
+    ],
+    "passive": "AURA - You provide 5% increased Power to all nearby allied gods. This aura gains a bonus stack for each ally god within 55 units causing it to provide an additional 3% increased Power. For each enemy god within 55 units a stack is removed.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "leaders_cowl.png"
+  },
+  "manikin hidden blade": {
+    "name": "Manikin Hidden Blade",
+    "cost": 1500,
+    "total_cost": 2150,
+    "stats": [
+      "95 Magical Power",
+      "70 Physical Power",
+      "15% Attack Speed"
+    ],
+    "passive": "PASSIVE - If you have not taken or dealt damage in the last 5s and hit an enemy god, Jungle Monster, or Jungle Boss, they immediately take 20% of their Current Health as Physical Damage and are slowed by 25% for 3s.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Offensive",
+      "Defensive"
+    ],
+    "image": "manikin_hidden_blade.png"
+  },
+  "manikin mace": {
+    "name": "Manikin Mace",
+    "cost": 1500,
+    "total_cost": 2150,
+    "stats": [
+      "50 Basic Attack Damage",
+      "25 Physical Protection",
+      "100 Health",
+      "20% Attack Speed"
+    ],
+    "passive": "PASSIVE - Enemies hit by your Basic Attacks are burned, taking 60 physical damage over 2s and have their Attack Speed slowed by 10%. Jungle Monsters and Bosses take 4x damage and restore 2.5% Health and 5% Mana when they die. This effect can stack up to 4 times.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Offensive",
+      "Defensive"
+    ],
+    "image": "manikin_mace.png"
+  },
+  "ornate arrow": {
+    "name": "Ornate Arrow",
+    "cost": 1500,
+    "total_cost": 2150,
+    "stats": [
+      "60 Basic Attack Damage",
+      "100 Health",
+      "10% Attack Speed",
+      "15% Physical Critical Strike Chance"
+    ],
+    "passive": "PASSIVE - All sources of gold gain are increased by 5%. For every 100 gold you have gain 1.25% Attack Speed and 1% Physical Critical Strike Chance, up to a maximum of 20 stacks.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Offensive",
+      "Defensive"
+    ],
+    "image": "ornate_arrow.png"
+  },
+  "protector of the jungle": {
+    "name": "Protector of the Jungle",
+    "cost": 1500,
+    "total_cost": 2150,
+    "stats": [
+      "50 Physical Power",
+      "70 Magical Power",
+      "25 Physical Protection",
+      "25 Magical Protection"
+    ],
+    "passive": "PASSIVE - While in the jungle you gain 15% Power and 7% Protections.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Offensive",
+      "Defensive"
+    ],
+    "image": "protector_of_the_jungle.png"
+  },
+  "rangda's mask": {
+    "name": "Rangda's Mask",
+    "cost": 1500,
+    "total_cost": 2150,
+    "stats": [
+      "50 Physical Power",
+      "70 Magical Power",
+      "20 HP5",
+      "10% Cooldown Reduction"
+    ],
+    "passive": "Gain 5 stacks ofWeakness. Each stack increases your damage taken by 10%. For each 40 Physical Power or 60 Magical Power from items, remove a stack ofWeakness. When you remove a stack ofWeaknessgain a stack ofStrength. For each stack ofStrengthgain +3% damage dealt and 2% movement speed.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "rangdas_mask.png"
+  },
+  "sacrificial shroud": {
+    "name": "Sacrificial Shroud",
+    "cost": 1500,
+    "total_cost": 2150,
+    "stats": [
+      "95 Magical Power",
+      "40 Physical Protection",
+      "15 MP5",
+      "18% Magical Lifesteal"
+    ],
+    "passive": "PASSIVE - Your abilities deal 15% more damage, but cost 3% of your Maximum Health. If the cost would kill you, you instead don't pay the cost.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Offensive",
+      "Defensive"
+    ],
+    "image": "sacrificial_shroud.png"
+  },
+  "seer of the jungle": {
+    "name": "Seer of the Jungle",
+    "cost": 1500,
+    "total_cost": 2150,
+    "stats": [
+      "50 Physical Power",
+      "70 Magical Power",
+      "35 Physical Protection",
+      "25% Attack Speed"
+    ],
+    "passive": "PASSIVE - You deal 35% increased damage to Jungle Monsters and Jungle Bosses. Upon defeating a Large Jungle Monster or Jungle Boss, you gain the ability to see wards for 30s.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Offensive",
+      "Defensive"
+    ],
+    "image": "seer_of_the_jungle.png"
+  },
+  "sigil of the old guard": {
+    "name": "Sigil of the Old Guard",
+    "cost": 1500,
+    "total_cost": 2150,
+    "stats": [
+      "25 Physical Power",
+      "35 Magical Power",
+      "45 Physical Protection",
+      "65 Magical Protection"
+    ],
+    "passive": "PASSIVE - You gain 3% Damage Mitigation. Whenever you are hit by an ability you gain a stack of Rebuke, providing an additional 3% Damage Mitigation for 8s and healing for 2% of your Max Health. This occurs only once per ability cast. This can stack up to three times.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Defensive"
+    ],
+    "image": "sigil_of_the_old_guard.png"
+  },
+  "sundering axe": {
+    "name": "Sundering Axe",
+    "cost": 1500,
+    "total_cost": 2150,
+    "stats": [
+      "30 Physical Power",
+      "45 Magical Power",
+      "25 Physical Protection",
+      "25 Magical Protection"
+    ],
+    "passive": "PASSIVE - Damaging an enemy god steals 3% (+2% of your Protection from items) of their Current Health away from your target and restores it to you. This effect can only occur once every 10s.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Defensive"
+    ],
+    "image": "sundering_axe.png"
+  },
+  "archmage's gem": {
+    "name": "Archmage's Gem",
+    "cost": 1500,
+    "total_cost": 2200,
+    "stats": [
+      "120 Magical Power",
+      "200 Mana",
+      "25 MP5"
+    ],
+    "passive": "PASSIVE - Every 0.5s you gain a stack of Demise, causing your next damaging ability that hits an enemy god deals an additional 1.5% of your Magical Power in damage and remove all stacks. This effect stacks up to 20 times.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Offensive",
+      "Utility"
+    ],
+    "image": "archmages_gem.png"
+  },
+  "gem of focus": {
+    "name": "Gem of Focus",
+    "cost": 1500,
+    "total_cost": 2200,
+    "stats": [
+      "70 Magical Power",
+      "100 Health",
+      "15 MP5"
+    ],
+    "passive": "PASSIVE - Every time you cast an ability that costs mana you gain a stack of Focus for 10s, providing 5% Movement Speed and 5% Damage Increase, stacking up to 3 times.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "gem_of_focus.png"
+  },
+  "pendulum of ages": {
+    "name": "Pendulum of Ages",
+    "cost": 1500,
+    "total_cost": 2200,
+    "stats": [
+      "60 Magical Power",
+      "20 MP5",
+      "20% Cooldown Reduction"
+    ],
+    "passive": "PASSIVE - This item grants 4 MP5 per 10% of your missing Mana. This item grants 7 Magical power per 10% of your available Mana.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Offensive",
+      "Utility"
+    ],
+    "image": "pendulum_of_ages.png"
+  },
+  "tainted amulet": {
+    "name": "Tainted Amulet",
+    "cost": 1600,
+    "total_cost": 2200,
+    "stats": [
+      "20 Physical Power",
+      "35 Magical Power",
+      "25 Physical Protection",
+      "75 Magical Protection"
+    ],
+    "passive": "PASSIVE - Enemy Gods that you hit have their healing taken reduced by 30% for 5s. You are healed for 120% of the healing reduced.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Offensive",
+      "Defensive"
+    ],
+    "image": "tainted_amulet.png"
+  },
+  "tainted breastplate": {
+    "name": "Tainted Breastplate",
+    "cost": 1600,
+    "total_cost": 2200,
+    "stats": [
+      "35 Physical Power",
+      "55 Magical Power",
+      "70 Physical Protection",
+      "25 Magical Protection"
+    ],
+    "passive": "PASSIVE - Enemy gods that you hit have their healing taken reduced by 50% for 5s.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Offensive",
+      "Defensive"
+    ],
+    "image": "tainted_breastplate.png"
+  },
+  "the alternate timeline": {
+    "name": "The Alternate Timeline",
+    "cost": 1500,
+    "total_cost": 2200,
+    "stats": [
+      "50 Magical Power",
+      "35 Physical Protection",
+      "35 Magical Protections",
+      "10% Cooldown Reduction"
+    ],
+    "passive": "PASSIVE - When you would die you instead find a timeline you are still alive, becoming CC Immune, Damage Immune, and unable to act. After 1.75s you are restored to 40% Health and Mana and can act again. This can only occur once every 6 minutes.",
+    "active": "",
+    "type": [
+      "Starter",
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "the_alternate_timeline.png"
+  },
+  "nettle acorn": {
+    "name": "Nettle Acorn",
+    "cost": 700,
+    "total_cost": 0,
+    "stats": [
+      "20 Physical Power",
+      "4% Movement Speed"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "nettle_acorn.png"
+  },
+  "charged bow": {
+    "name": "Charged Bow",
+    "cost": 450,
+    "total_cost": 1000,
+    "stats": [
+      "20% Attack Speed"
+    ],
+    "passive": "PASSIVE - Every fourth Basic Attack triggers a chain lightning, damaging the target and up to 4 nearby enemies for 5 damage +25% of your total Basic Attack Power.",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "charged_bow.png"
+  },
+  "bound gauntlet": {
+    "name": "Bound Gauntlet",
+    "cost": 650,
+    "total_cost": 1250,
+    "stats": [
+      "20 Physical Power",
+      "9% Physical Lifesteal"
+    ],
+    "passive": "PASSIVE \u2013 Your abilities heal for 4% of the damage dealt",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "bound_gauntlet.png"
+  },
+  "silver breastplate": {
+    "name": "Silver Breastplate",
+    "cost": 600,
+    "total_cost": 1200,
+    "stats": [
+      "25 Physical Protection",
+      "200 Mana",
+      "10 MP5",
+      "10% Cooldown Reduction"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "silver_breastplate.png"
+  },
+  "adventurer's blade": {
+    "name": "Adventurer's Blade",
+    "cost": 600,
+    "total_cost": 1150,
+    "stats": [
+      "100 Health",
+      "7% Movement Speed"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "adventurers_blade.png"
+  },
+  "cleric's cloak": {
+    "name": "Cleric's Cloak",
+    "cost": 550,
+    "total_cost": 1150,
+    "stats": [
+      "15 Physical Protection",
+      "15 Magical Protection",
+      "5% Cooldown Reduction"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "clerics_cloak.png"
+  },
+  "enchanted trinket": {
+    "name": "Enchanted Trinket",
+    "cost": 550,
+    "total_cost": 1150,
+    "stats": [
+      "30 Magical Power",
+      "100 Health",
+      "9% Magical Lifesteal"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive"
+    ],
+    "image": "enchanted_trinket.png"
+  },
+  "fatalis": {
+    "name": "Fatalis",
+    "cost": 850,
+    "total_cost": 1400,
+    "stats": [
+      "75 Health",
+      "5 Penetration",
+      "10% Attack Speed",
+      "5% Movement Speed"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "fatalis.png"
+  },
+  "tower shield": {
+    "name": "Tower Shield",
+    "cost": 550,
+    "total_cost": 1200,
+    "stats": [
+      "25 Physical Protection",
+      "10 HP5"
+    ],
+    "passive": "PASSIVE \u2013 Each second you are in god combat, gain 1% Attack Speed for 5s. Max 10 stacks.",
+    "active": "",
+    "type": [
+      "Defensive"
+    ],
+    "image": "tower_shield.png"
+  },
+  "warded shield": {
+    "name": "Warded Shield",
+    "cost": 600,
+    "total_cost": 1200,
+    "stats": [
+      "35 Magical Protection",
+      "150 Health",
+      "15 HP5"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Defensive"
+    ],
+    "image": "warded_shield.png"
+  },
+  "charged morningstar": {
+    "name": "Charged Morningstar",
+    "cost": 600,
+    "total_cost": 1200,
+    "stats": [
+      "20 Physical Power",
+      "150 Mana",
+      "7 MP5"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "charged_morningstar.png"
+  },
+  "hydra's star": {
+    "name": "Hydra's Star",
+    "cost": 600,
+    "total_cost": 1200,
+    "stats": [
+      "20 Physical Power",
+      "5% Cooldown Reduction",
+      "100 Mana"
+    ],
+    "passive": "PASSIVE - For 8 seconds after using an ability, your next basic attack will deal an additional 10% damage. The effect can only occur every 3 seconds.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "hydras_star.png"
+  },
+  "rose spike earrings": {
+    "name": "Rose Spike Earrings",
+    "cost": 800,
+    "total_cost": 1200,
+    "stats": [
+      "25 Magical Protection",
+      "250 Health",
+      "15 MP5"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "rose_spike_earrings.png"
+  },
+  "emerald mail": {
+    "name": "Emerald Mail",
+    "cost": 750,
+    "total_cost": 1350,
+    "stats": [
+      "200 Health",
+      "10 HP5"
+    ],
+    "passive": "PASSIVE \u2013 Getting an assist on an enemy god or minion kill grants 2 Protections for 5s, max 5 stacks",
+    "active": "",
+    "type": [
+      "Defensive"
+    ],
+    "image": "emerald_mail.png"
+  },
+  "emerald talisman": {
+    "name": "Emerald Talisman",
+    "cost": 650,
+    "total_cost": 1250,
+    "stats": [
+      "200 Health",
+      "15 HP5",
+      "10 MP5"
+    ],
+    "passive": "PASSIVE - Regenerates 0.2% of your max. Health every second.",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "emerald_talisman.png"
+  },
+  "fortress shield": {
+    "name": "Fortress Shield",
+    "cost": 650,
+    "total_cost": 1250,
+    "stats": [
+      "150 Health",
+      "50 Physical Protection",
+      "15 HP5"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Defensive"
+    ],
+    "image": "fortress_shield.png"
+  },
+  "hunter's bow": {
+    "name": "Hunter's Bow",
+    "cost": 700,
+    "total_cost": 1250,
+    "stats": [
+      "20% Attack Speed",
+      "10 Physical Power",
+      "5 Physical Penetration"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "hunters_bow.png"
+  },
+  "silver talisman": {
+    "name": "Silver Talisman",
+    "cost": 600,
+    "total_cost": 1250,
+    "stats": [
+      "125 Health",
+      "45 Magical Protection"
+    ],
+    "passive": "AURA \u2013 Enemy gods within 55 units have their Healing reduced by 15%. This effect does not stack with similar auras.",
+    "active": "",
+    "type": [
+      "Defensive"
+    ],
+    "image": "silver_talisman.png"
+  },
+  "spellbound kusari": {
+    "name": "Spellbound Kusari",
+    "cost": 600,
+    "total_cost": 1250,
+    "stats": [
+      "40 Magical Protection",
+      "20 MP5"
+    ],
+    "passive": "PASSIVE \u2013 When you are hit by an ability that deals Magical damage, gain 5% Magical Damage Mitigation for 5s. ICD 12s.",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "spellbound_kusari.png"
+  },
+  "steel crest": {
+    "name": "Steel Crest",
+    "cost": 600,
+    "total_cost": 1250,
+    "stats": [
+      "20 Physical Protection",
+      "150 Health"
+    ],
+    "passive": "Passive - Each time you are hit by a Basic Attack, gain a stack. You may only gain one stack per second. At 4 stacks, remove all stacks and gain a 75 Health Shield that lasts for 5s or until destroyed.",
+    "active": "",
+    "type": [
+      "Defensive"
+    ],
+    "image": "steel_crest.png"
+  },
+  "thousand fold blade": {
+    "name": "Thousand Fold Blade",
+    "cost": 650,
+    "total_cost": 1250,
+    "stats": [
+      "20 Physical Power",
+      "5% Movement SpeedPASSIVE \u2013 Gain 5% Movement Speed for 10s on killing or assisting an enemy god. Stacks up to 3 times."
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "thousand_fold_blade.png"
+  },
+  "daimyo's kusari": {
+    "name": "Daimyo's Kusari",
+    "cost": 650,
+    "total_cost": 1300,
+    "stats": [
+      "30 Magical Protection",
+      "15 MP5"
+    ],
+    "passive": "PASSIVE \u2013 For each enemy god within 55 units of you, reduce all enemy god\u2019s Magical Protections by 4. For each ally within 55 units of you, increase all allied gods\u2019 Attack Speed by 5%.",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "daimyos_kusari.png"
+  },
+  "enchanted ring": {
+    "name": "Enchanted Ring",
+    "cost": 800,
+    "total_cost": 1400,
+    "stats": [
+      "35 Magical Power",
+      "15% Attack Speed"
+    ],
+    "passive": "PASSIVE \u2013 Your next Basic Attack deals an additional 5 + 3 per level Magical Damage. This effect can only occur once every 8s, reduced by 2s for each successful Basic Attack on an enemy god.",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "enchanted_ring.png"
+  },
+  "gleaming ear cuffs": {
+    "name": "Gleaming Ear Cuffs",
+    "cost": 900,
+    "total_cost": 1300,
+    "stats": [
+      "20 Physical Power",
+      "30 Magical Power",
+      "15% Attack Speed",
+      "15 MP5"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "gleaming_ear_cuffs.png"
+  },
+  "sorcerer's staff": {
+    "name": "Sorcerer's Staff",
+    "cost": 650,
+    "total_cost": 1300,
+    "stats": [
+      "45 Magical Power",
+      "100 Health",
+      "100 Mana"
+    ],
+    "passive": "PASSIVE \u2013 On leveling up, heal 15% of your Maximum Health and Mana over 3s.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "sorcerers_staff.png"
+  },
+  "splendid scepter": {
+    "name": "Splendid Scepter",
+    "cost": 650,
+    "total_cost": 1300,
+    "stats": [
+      "20 Physical Power",
+      "100 Health",
+      "10 MP5"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "splendid_scepter.png"
+  },
+  "book of souls": {
+    "name": "Book of Souls",
+    "cost": 700,
+    "total_cost": 1350,
+    "stats": [
+      "55 Magical Power",
+      "150 Mana"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "book_of_souls.png"
+  },
+  "enchanted spear": {
+    "name": "Enchanted Spear",
+    "cost": 700,
+    "total_cost": 1350,
+    "stats": [
+      "45 Magical Power",
+      "5 Magical Penetration"
+    ],
+    "passive": "PASSIVE \u2013 On damaging an enemy god, once per god per ability, gain 2 Magical Pen for 10s, stacks up to 3 times.",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "enchanted_spear.png"
+  },
+  "fortified scepter": {
+    "name": "Fortified Scepter",
+    "cost": 700,
+    "total_cost": 1350,
+    "stats": [
+      "50 Magical Power",
+      "150 Health",
+      "5% Crowd Control Reduction"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive"
+    ],
+    "image": "fortified_scepter.png"
+  },
+  "heavy hammer": {
+    "name": "Heavy Hammer",
+    "cost": 750,
+    "total_cost": 1400,
+    "stats": [
+      "20 Physical Power",
+      "150 Health"
+    ],
+    "passive": "Each time you Basic Attack an enemy god, gain a stack. When you have 4 stacks, your next Basic Attack damage Slows the enemy god hit by 15% for 2s. Additional Slows applied from this item refresh the duration.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive"
+    ],
+    "image": "heavy_hammer.png"
+  },
+  "ritual blade": {
+    "name": "Ritual Blade",
+    "cost": 800,
+    "total_cost": 1350,
+    "stats": [
+      "150 Health",
+      "5% Movement Speed",
+      "10% Cooldown Reduction"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "ritual_blade.png"
+  },
+  "rod of healing": {
+    "name": "Rod of Healing",
+    "cost": 700,
+    "total_cost": 1350,
+    "stats": [
+      "55 Magical Power",
+      "75 Health",
+      "75 Mana"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "rod_of_healing.png"
+  },
+  "short sword": {
+    "name": "Short Sword",
+    "cost": 650,
+    "total_cost": 1350,
+    "stats": [
+      "25 Physical Power"
+    ],
+    "passive": "PASSIVE \u2013 When critically striking an enemy, gain a stack of 5 Physical Power, max 3 stacks, for 5s",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "short_sword.png"
+  },
+  "balanced blade": {
+    "name": "Balanced Blade",
+    "cost": 800,
+    "total_cost": 1400,
+    "stats": [
+      "15 Physical Power",
+      "15% Attack Speed"
+    ],
+    "passive": "On damaging an enemy god with a Basic Attack, gain 2 Physical Pen for 5s, stacks up to 3 times.",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "balanced_blade.png"
+  },
+  "cursed gauntlet": {
+    "name": "Cursed Gauntlet",
+    "cost": 800,
+    "total_cost": 1400,
+    "stats": [
+      "25 Physical Power",
+      "6% Physical Lifesteal"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "cursed_gauntlet.png"
+  },
+  "enchanted stone": {
+    "name": "Enchanted Stone",
+    "cost": 750,
+    "total_cost": 1400,
+    "stats": [
+      "25 Physical Protection",
+      "25 Magical Protection",
+      "100 Health"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Defensive"
+    ],
+    "image": "enchanted_stone.png"
+  },
+  "jeweled studs": {
+    "name": "Jeweled Studs",
+    "cost": 1000,
+    "total_cost": 1400,
+    "stats": [
+      "20 Physical Power",
+      "30 Magical Power",
+      "10% Cooldown Reduction",
+      "20 MP5"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "jeweled_studs.png"
+  },
+  "restored artifact": {
+    "name": "Restored Artifact",
+    "cost": 850,
+    "total_cost": 1400,
+    "stats": [
+      "60 Magical Power",
+      "15 MP5"
+    ],
+    "passive": "PASSIVE \u2013 On damaging an enemy god, once per god per ability, restore 1% of your Maximum Mana.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "restored_artifact.png"
+  },
+  "sage's stone": {
+    "name": "Sage's Stone",
+    "cost": 750,
+    "total_cost": 1400,
+    "stats": [
+      "25 Physical Protection",
+      "25 Magical Protection",
+      "100 Health"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Defensive"
+    ],
+    "image": "sages_stone.png"
+  },
+  "spiked shield": {
+    "name": "Spiked Shield",
+    "cost": 750,
+    "total_cost": 1400,
+    "stats": [
+      "30 Physical Protection",
+      "100 Health",
+      "15 HP5"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Defensive"
+    ],
+    "image": "spiked_shield.png"
+  },
+  "steel mail": {
+    "name": "Steel Mail",
+    "cost": 750,
+    "total_cost": 1400,
+    "stats": [
+      "200 Health",
+      "20 Physical Protection"
+    ],
+    "passive": "PASSIVE \u2013 Deal 15 Magical damage per second to all enemies within 25 units of you.",
+    "active": "",
+    "type": [
+      "Defensive"
+    ],
+    "image": "steel_mail.png"
+  },
+  "talon trinket": {
+    "name": "Talon Trinket",
+    "cost": 800,
+    "total_cost": 1400,
+    "stats": [
+      "45 Magical Power",
+      "100 Mana",
+      "5% Magical Lifesteal"
+    ],
+    "passive": "PASSIVE \u2013 Each second you are in god combat, gain 1 Magical Power and 1% Lifesteal for 5s. Max 20 stacks.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "talon_trinket.png"
+  },
+  "heavy mace": {
+    "name": "Heavy Mace",
+    "cost": 800,
+    "total_cost": 1450,
+    "stats": [
+      "30 Physical Power"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "heavy_mace.png"
+  },
+  "apprentice staff": {
+    "name": "Apprentice Staff",
+    "cost": 750,
+    "total_cost": 1500,
+    "stats": [
+      "50 Magical Power",
+      "10% Cooldown Reduction"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "apprentice_staff.png"
+  },
+  "cloak of concentration": {
+    "name": "Cloak of Concentration",
+    "cost": 900,
+    "total_cost": 1500,
+    "stats": [
+      "30 Physical Protection",
+      "30 Magical Protection",
+      "7% Cooldown Reduction"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "cloak_of_concentration.png"
+  },
+  "cursed orb": {
+    "name": "Cursed Orb",
+    "cost": 950,
+    "total_cost": 1500,
+    "stats": [
+      "55 Magical Power",
+      "15 MP5",
+      "5 Magical Penetration",
+      "2% Movement Speed"
+    ],
+    "passive": "PASSIVE - Killing or assisting an enemy minion provides you with 1 stack, granting 1% Movement Speed and 4 Magical Power per stack. Stacks last for 10s and stack up to 4 times. Enemy gods provide 4 stacks.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "cursed_orb.png"
+  },
+  "honed edge": {
+    "name": "Honed Edge",
+    "cost": 750,
+    "total_cost": 1500,
+    "stats": [
+      "30 Physical Power",
+      "10% Cooldown Reduction"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "honed_edge.png"
+  },
+  "knight's shield": {
+    "name": "Knight's Shield",
+    "cost": 750,
+    "total_cost": 1500,
+    "stats": [
+      "25 Physical Protection",
+      "25 Magical Protection",
+      "10% Cooldown Reduction"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "knights_shield.png"
+  },
+  "spell focus": {
+    "name": "Spell Focus",
+    "cost": 850,
+    "total_cost": 1500,
+    "stats": [
+      "55 Magical Power",
+      "5% Magical Penetration"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "spell_focus.png"
+  },
+  "swift edge": {
+    "name": "Swift Edge",
+    "cost": 900,
+    "total_cost": 1500,
+    "stats": [
+      "20 Physical Power",
+      "3% Movement Speed"
+    ],
+    "passive": "PASSIVE \u2013 Damaging an enemy god with an ability grants 3% Movement Speed toward them for 3s. Stacks up to 3 times.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "swift_edge.png"
+  },
+  "warrior's bane": {
+    "name": "Warrior's Bane",
+    "cost": 850,
+    "total_cost": 1500,
+    "stats": [
+      "25 Physical Power",
+      "5% Physical Penetration"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "warriors_bane.png"
+  },
+  "aegis of acceleration": {
+    "name": "Aegis of Acceleration",
+    "cost": 500,
+    "total_cost": 800,
+    "stats": [],
+    "passive": "",
+    "active": "Using this item makes you invulnerable to damage and healing for 1.5s, and prevents you from taking any actions. You may still move.Each instance of damage prevented in this time provides you 7% Movement Speed for 4s, stacking up to 3 times.Cooldown - 140s.",
+    "type": [
+      "Relic"
+    ],
+    "image": "aegis_of_acceleration.png"
+  },
+  "blessed barrier": {
+    "name": "Blessed Barrier",
+    "cost": 500,
+    "total_cost": 800,
+    "stats": [],
+    "passive": "",
+    "active": "Deploy a 40 unit wide wall of divine light that reduces the damage of all enemy Basic Attacks that pass through it by 30%and increases the damage of all allied Basic Attacks by 20%.Additionally, all allies that pass through the barrier have their Movement Speed increased by 5% for 3s while enemies that pass through the barrier are Slowed by 30% for 3s. The barrier lasts for 30s. Cooldown - 80s.",
+    "type": [
+      "Relic"
+    ],
+    "image": "blessed_barrier.png"
+  },
+  "bracer of brilliance": {
+    "name": "Bracer of Brilliance",
+    "cost": 500,
+    "total_cost": 800,
+    "stats": [],
+    "passive": "",
+    "active": "Place a radiant glow at a target location for 90s. Allies who move through this field gain 10% increased Power and15%Movement Speed for 8s. This fragment acts as a Sentry Ward. If destroyed the cooldown of the relic is reduced by 20s. Cooldown - 100s.",
+    "type": [
+      "Relic"
+    ],
+    "image": "bracer_of_brilliance.png"
+  },
+  "cloak of the ascetic": {
+    "name": "Cloak of the Ascetic",
+    "cost": 500,
+    "total_cost": 800,
+    "stats": [],
+    "passive": "",
+    "active": "Using this item causes you to Enter a meditative state where nearby allied gods within 35 units restore25 + 3.5%of their missing health and30 + 4%of missing mana each pulse.Additionally each pulse reduces cooldowns for all abilities by 1.5s.Pulses occur once every second for 4s. Cooldown - 130s.",
+    "type": [
+      "Relic"
+    ],
+    "image": "cloak_of_the_ascetic.png"
+  },
+  "emblem of increasing peril": {
+    "name": "Emblem of Increasing Peril",
+    "cost": 500,
+    "total_cost": 800,
+    "stats": [],
+    "passive": "",
+    "active": "Using this item Slows the Movement Speed of all enemy gods within 35 units by 25% and decreases their Damage Dealt by 10% for 4s. Additionally, all Healing received by enemy gods is reduced by 40% and their shield effectiveness is decreased by 50%.If an enemy deals 10% of an Allied God's Maximum Health within the duration, the Movement Speed and Damage Dealt decreases are increased by 5% each, stacking up to 3 times.Cooldown - 120s.",
+    "type": [
+      "Relic"
+    ],
+    "image": "emblem_of_increasing_peril.png"
+  },
+  "entangling wings": {
+    "name": "Entangling Wings",
+    "cost": 500,
+    "total_cost": 800,
+    "stats": [],
+    "passive": "",
+    "active": "Using this item grants allies within 55 units25%increased Movement Speed,25%increased Attack Speed, and Slow immunity for 5s.On use, this Relic also Roots enemies in the area for 1s.Cooldown - 100s",
+    "type": [
+      "Relic"
+    ],
+    "image": "entangling_wings.png"
+  },
+  "persistent teleport": {
+    "name": "Persistent Teleport",
+    "cost": 500,
+    "total_cost": 800,
+    "stats": [],
+    "passive": "",
+    "active": "Using this item allows you to teleport to any allied structureor wardwhile Rooted in place. This effect is not interrupted by damage but is interrupted by hard Crowd Control.Kills and assists on enemy gods reduces the cooldown by 10s. After teleporting you gain Slow immunity, 20% Movement Speed, and 40 Protections for 5s. Cooldown - 110s.",
+    "type": [
+      "Relic"
+    ],
+    "image": "persistent_teleport.png"
+  },
+  "phantom shell": {
+    "name": "Phantom Shell",
+    "cost": 500,
+    "total_cost": 800,
+    "stats": [],
+    "passive": "",
+    "active": "Using this item applies a shield to yourself and allies within 35 units for150 Health + 15 Health per God Level for 4 seconds. Additionally, all allies take40%reduced damage from Basic Attacks while the shield is active.Using this item also allows you and allied gods to pass through players and player made objects.Cooldown - 130s.",
+    "type": [
+      "Relic"
+    ],
+    "image": "phantom_shell.png"
+  },
+  "scorching blink rune": {
+    "name": "Scorching Blink Rune",
+    "cost": 500,
+    "total_cost": 800,
+    "stats": [],
+    "passive": "",
+    "active": "Using this item will allow you to teleport up to 45 units away instantly,leaving behind a trail of wildfire that burns Enemies that pass through it for 20 (+ 4 per level) True Damage every 0.5s for the next 4s. Additionally, enemies hit have their Movement and Attack Speed Slowed by 15%. These effects persist for 1.5s after leaving the flames.This item can not be used if you have taken or dealt damage in the last 3s. Cooldown - 120s.",
+    "type": [
+      "Relic"
+    ],
+    "image": "scorching_blink_rune.png"
+  },
+  "sundering blast": {
+    "name": "Sundering Blast",
+    "cost": 500,
+    "total_cost": 800,
+    "stats": [],
+    "passive": "",
+    "active": "Fire a bolt that travels 70 units, stopping on the first Enemy God hit andsplashing in a 20 unit radius, dealing7.5%of their Current Health as True Damage and reducing any active shields by 75%. Targets hit take7.5%increased damage for 5s. This relic has 2 charges. Cooldown - 110s.",
+    "type": [
+      "Relic"
+    ],
+    "image": "sundering_blast.png"
+  },
+  "temporal beads": {
+    "name": "Temporal Beads",
+    "cost": 500,
+    "total_cost": 800,
+    "stats": [],
+    "passive": "",
+    "active": "Using this item removes Crowd Control Effects and makes you immune to new ones for 2s.Additionally, your active cooldowns are reduced by 3s on use.Cooldown - 140s.",
+    "type": [
+      "Relic"
+    ],
+    "image": "temporal_beads.png"
+  },
+  "thorns of judgement": {
+    "name": "Thorns of Judgement",
+    "cost": 500,
+    "total_cost": 800,
+    "stats": [],
+    "passive": "",
+    "active": "Using this item grants you 15% Damage Mitigation as you store all damage taken over the next 3s. You then explode in a 30 unit radius, dealing 85 + 50% of the damage taken as Magical Damage, up to a maximum of 25% of an enemy\u2019s Max Health. While this is active, enemies can only lifesteal from you for50%of their total lifesteal.Each basic attack from enemy gods reduces the cooldown of this item by 0.5s.Cooldown - 120s.",
+    "type": [
+      "Relic"
+    ],
+    "image": "thorns_of_judgement.png"
+  },
+  "cannoneer's cuirass": {
+    "name": "Cannoneer's Cuirass",
+    "cost": 500,
+    "total_cost": 1850,
+    "stats": [
+      "30 Physical Protection",
+      "30 Magical Protection",
+      "250 Health",
+      "20 HP5"
+    ],
+    "passive": "PASSIVE - Your next successful basic attack on an enemy lane minion causes it to explode, instantly killing it, dealing 50 (+10 Per Level) magical damage to enemies in a small area and providing 20 bonus gold to your nearest ally within 80 ft. This can only happen once every 7s.",
+    "active": "",
+    "type": [
+      "Defensive"
+    ],
+    "image": "cannoneers_cuirass.png"
+  },
+  "relic dagger": {
+    "name": "Relic Dagger",
+    "cost": 500,
+    "total_cost": 1850,
+    "stats": [
+      "300 Health",
+      "10% Cooldown Reduction",
+      "10% Crowd Control Reduction",
+      "7% Movement Speed"
+    ],
+    "passive": "PASSIVE - Your relics receive 50s Cooldown Reduction",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "relic_dagger.png"
+  },
+  "winged blade": {
+    "name": "Winged Blade",
+    "cost": 700,
+    "total_cost": 1850,
+    "stats": [
+      "25 Magical Protection",
+      "200 Health",
+      "20% Crowd Control Reduction",
+      "7% Movement Speed"
+    ],
+    "passive": "PASSIVE - When hit by a Slow, you and nearby allies within 30 units become immune to Slows and gain 20% increased Movement Speed for 4s. This effect can only occur once every 30 seconds.",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "winged_blade.png"
+  },
+  "lotus sickle": {
+    "name": "Lotus Sickle",
+    "cost": 650,
+    "total_cost": 2000,
+    "stats": [
+      "25 Physical Protection",
+      "250 Health",
+      "10% Cooldown Reduction",
+      "7% Movement Speed"
+    ],
+    "passive": "PASSIVE - Any god affected by your ability heals gains 10 increased Physical and Magical Protection for 5 seconds.",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "lotus_sickle.png"
+  },
+  "sovereignty": {
+    "name": "Sovereignty",
+    "cost": 750,
+    "total_cost": 2000,
+    "stats": [
+      "200 Health",
+      "40 Physical Protection"
+    ],
+    "passive": "AURA - Allied gods within 70 units have their Physical Protections increased by 15 and their HP5 increased by 25.",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "sovereignty.png"
+  },
+  "bristlebush acorn": {
+    "name": "Bristlebush Acorn",
+    "cost": 1350,
+    "total_cost": 2050,
+    "stats": [
+      "45 Physical Power",
+      "6% Movement Speed",
+      "25% Critical Strike Chance"
+    ],
+    "passive": "PASSIVE: Dart deals 40% increased damage and can Critically Strike. When Dart damages an enemy Ratatoskr gains 22.5% Physical Lifesteal and 25% Basic Attack damage for 6s.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "bristlebush_acorn.png"
+  },
+  "evergreen acorn": {
+    "name": "Evergreen Acorn",
+    "cost": 1350,
+    "total_cost": 2050,
+    "stats": [
+      "40 Physical Power",
+      "6% Movement Speed",
+      "18% Maximum Health"
+    ],
+    "passive": "PASSIVE: When Ratatoskr deals damage to an enemy god with an ability he restores 6% of his Maximum Health and Mana.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "evergreen_acorn.png"
+  },
+  "heartward amulet": {
+    "name": "Heartward Amulet",
+    "cost": 800,
+    "total_cost": 2050,
+    "stats": [
+      "45 Magical Protection",
+      "250 Health",
+      "200 Mana"
+    ],
+    "passive": "AURA - Allied gods within 70 units have their Magical Protections increased by 15 and their MP5 increased by 30.",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "heartward_amulet.png"
+  },
+  "thickbark acorn": {
+    "name": "Thickbark Acorn",
+    "cost": 1350,
+    "total_cost": 2050,
+    "stats": [
+      "40 Physical Power",
+      "6% Movement Speed",
+      "12% Protections"
+    ],
+    "passive": "PASSIVE: When Ratatoskr deals damage with an ability he restores 3% of his Maximum Health. Flurry now provides protections equal to the protections shred from enemy gods. Flurry gains an additional charge.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "thickbark_acorn.png"
+  },
+  "thistlethorn acorn": {
+    "name": "Thistlethorn Acorn",
+    "cost": 1350,
+    "total_cost": 2050,
+    "stats": [
+      "55 Physical Power",
+      "6% Movement Speed"
+    ],
+    "passive": "PASSIVE: Enemies hit by Acorn Blast are debuffed, taking 5% additional damage from Ratatoskr's abilities, stacking up to 3 times. Acorn Blast now fires 5 Acorns.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "thistlethorn_acorn.png"
+  },
+  "mail of renewal": {
+    "name": "Mail of Renewal",
+    "cost": 850,
+    "total_cost": 2100,
+    "stats": [
+      "300 Health",
+      "20 HP5",
+      "20 Physical Protection",
+      "20 Magical Protection"
+    ],
+    "passive": "PASSIVE - When you are hit by an enemy god you gain a stack, up to once a second, increasing your protections by 5. Max of 4 stacks, lasts for 5s each. At max stacks, upon being hit you are immediately healed for 10% of your maximum health. Allies within 35 units heal for 10% of their maximum health over 5s. This effect can only occur once every 30 seconds.",
+    "active": "",
+    "type": [
+      "Defensive"
+    ],
+    "image": "mail_of_renewal.png"
+  },
+  "odysseus' bow": {
+    "name": "Odysseus' Bow",
+    "cost": 1100,
+    "total_cost": 2100,
+    "stats": [
+      "35% Attack Speed"
+    ],
+    "passive": "PASSIVE - Every fourth Basic Attack triggers a chain lightning, damaging the target and up to 4 nearby enemies for 15 damage +60% of your total Basic Attack Power.",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "odysseus_bow.png"
+  },
+  "oni hunter's garb": {
+    "name": "Oni Hunter's Garb",
+    "cost": 850,
+    "total_cost": 2100,
+    "stats": [
+      "150 Health",
+      "50 Magical Protection",
+      "30 MP5",
+      "20% Crowd Control Reduction"
+    ],
+    "passive": "PASSIVE - For each enemy God within 55 units of you, you gain a stack of 4% Damage Mitigation. This caps at 3 stacks.",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "oni_hunters_garb.png"
+  },
+  "stone of gaia": {
+    "name": "Stone of Gaia",
+    "cost": 850,
+    "total_cost": 2100,
+    "stats": [
+      "350 Health",
+      "25 HP5",
+      "15 MP5"
+    ],
+    "passive": "PASSIVE - If you are hit by a Knockup, Knockback, Pull, or Grab you gain 7% of your max Health over the next 5 seconds. You gain 15 Physical Power and 25 Magical Power while this effect is not on cooldown. This effect does not trigger on Vortexes. Can only occur once every 15s.PASSIVE - Regenerates 0.4% of your max health every second.",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "stone_of_gaia.png"
+  },
+  "stormseeker": {
+    "name": "Stormseeker",
+    "cost": 850,
+    "total_cost": 2100,
+    "stats": [
+      "30 Physical Power",
+      "20% Attack Speed",
+      "10 Physical Penetration"
+    ],
+    "passive": "PASSIVE - When you hit an enemy god with a Basic Attack, gain a permanent stacking Attack Speed buff. Each stack grants 0.25% Attack Speed for a max of 999 stacks.",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "stormseeker.png"
+  },
+  "absolution": {
+    "name": "Absolution",
+    "cost": 900,
+    "total_cost": 2150,
+    "stats": [
+      "60 Magical Protection",
+      "300 Health",
+      "20% Crowd Control Reduction"
+    ],
+    "passive": "PASSIVE - When your Ultimate ability has finished casting, you pulse out a cleansing aura within 50 units, providing all allies with CC-immunity for 1.5s and restoring 10% of their max. Mana. This effect can only occur once every 40s.",
+    "active": "",
+    "type": [
+      "Defensive"
+    ],
+    "image": "absolution.png"
+  },
+  "ancile": {
+    "name": "Ancile",
+    "cost": 950,
+    "total_cost": 2150,
+    "stats": [
+      "45 Magical Protection",
+      "250 Health",
+      "20 HP5"
+    ],
+    "passive": "PASSIVE - Whenever you take Magical Damage from an enemy ability you unleash a shockwave that Silences all enemies within a range of 30 units for 1s. This effect cannot trigger more than once every 30s. While this effect is on cooldown, gain 20 Physical Power and 35 Magical Power.",
+    "active": "",
+    "type": [
+      "Defensive"
+    ],
+    "image": "ancile.png"
+  },
+  "ichaival": {
+    "name": "Ichaival",
+    "cost": 900,
+    "total_cost": 2150,
+    "stats": [
+      "20 Physical Power",
+      "25% Attack Speed",
+      "10 Physical Penetration"
+    ],
+    "passive": "PASSIVE - Every successful Basic Attack increases your Physical Power by 5, reduces your target\u2019s Physical Power from items by 5, and reduces your target\u2019s Magical Power from items by 10 for 6s. (Max. 4 Stacks)",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "ichaival.png"
+  },
+  "magi's cloak": {
+    "name": "Magi's Cloak",
+    "cost": 1000,
+    "total_cost": 2150,
+    "stats": [
+      "25 Physical Protection",
+      "25 Magical Protection",
+      "10% Cooldown Reduction"
+    ],
+    "passive": "PASSIVE - Protects you from a single hard Crowd Control effect once every 70 seconds. When this occurs, you gain 1s of Crowd Control immunity.",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "magis_cloak.png"
+  },
+  "phalanx": {
+    "name": "Phalanx",
+    "cost": 950,
+    "total_cost": 2150,
+    "stats": [
+      "40 Physical Protection",
+      "200 Health",
+      "20 HP5",
+      "10% Crowd Control Reduction"
+    ],
+    "passive": "PASSIVE - When you are Basic Attacked by an enemy god, you and friendly lane minions within 40 units gain a stack, up to a max of 3. Stacks provide 10% Attack Speed and 7 of each Protection and last for 10s. Minions gain double the effects from each stack. Stacks cannot be gained more than one per second.",
+    "active": "",
+    "type": [
+      "Defensive"
+    ],
+    "image": "phalanx.png"
+  },
+  "talisman of energy": {
+    "name": "Talisman of Energy",
+    "cost": 900,
+    "total_cost": 2150,
+    "stats": [
+      "50 Magical Protection",
+      "250 Health"
+    ],
+    "passive": "PASSIVE - Getting a kill or assist on enemies causes you and allies within 70 units to gain stacks of energy. Energy stacks provide 3% Movement Speed, 3% Attack Speed, and 15MP5 per stack. Lasts 10s and stacks up to 4 times. Killing or Assisting an enemy God provides maximum stacks.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "talisman_of_energy.png"
+  },
+  "blackthorn hammer": {
+    "name": "Blackthorn Hammer",
+    "cost": 1100,
+    "total_cost": 2200,
+    "stats": [
+      "35 Physical Power",
+      "300 Health",
+      "200 Mana"
+    ],
+    "passive": "PASSIVE - While over 25% Mana, you gain +10% Cooldown Reduction. While under 25% Mana, you gain +50 MP5.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "blackthorn_hammer.png"
+  },
+  "equinox": {
+    "name": "Equinox",
+    "cost": 950,
+    "total_cost": 2200,
+    "stats": [
+      "25 Physical Power",
+      "20% Attack Speed",
+      "7% Movement Speed"
+    ],
+    "passive": "PASSIVE - When you hit an enemy with a Basic Attack from the front, you heal for 1 + 1 Health per level, which is increased by 50% if the target is a god. When you hit an enemy with a Basic Attack from the back, you deal an additional 15 + 3 Physical damage per level.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "equinox.png"
+  },
+  "erosion": {
+    "name": "Erosion",
+    "cost": 800,
+    "total_cost": 2200,
+    "stats": [
+      "25 Physical Protection",
+      "25 Magical Protection",
+      "300 Health"
+    ],
+    "passive": "PASSIVE - Every time an enemy within 40 units gains a shield, you gain 15% Movement Speed for 4s. This effect can only occur once every 4s.AURA - Any Shields applied on enemy gods within 55 units will be reduced by 30%.",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "erosion.png"
+  },
+  "genji's guard": {
+    "name": "Genji's Guard",
+    "cost": 950,
+    "total_cost": 2200,
+    "stats": [
+      "100 Health",
+      "60 Magical Protection",
+      "40 MP5",
+      "10% Cooldown Reduction"
+    ],
+    "passive": "PASSIVE - When you take Magical Damage from Abilities your cooldowns are reduced by 3s. This can only occur once every 30s.",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "genjis_guard.png"
+  },
+  "griffonwing earrings": {
+    "name": "Griffonwing Earrings",
+    "cost": 900,
+    "total_cost": 2200,
+    "stats": [
+      "40 Physical Power",
+      "60 Magical Power",
+      "30% Attack Speed",
+      "15 MP5"
+    ],
+    "passive": "PASSIVE - Your Basic Attack projectile speed is increased by 40%. This item is only available to Hunters and Mages.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "griffonwing_earrings.png"
+  },
+  "shadowdrinker": {
+    "name": "Shadowdrinker",
+    "cost": 950,
+    "total_cost": 2200,
+    "stats": [
+      "35 Physical Power",
+      "10 Physical Penetration",
+      "10% Movement Speed"
+    ],
+    "passive": "PASSIVE - Killing an enemy god drains their shadow, causing you to enter stealth and gain 30% Movement Speed for 5s. Taking damage, firing an Ability, or firing a Basic Attack breaks the stealth.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "shadowdrinker.png"
+  },
+  "shogun's kusari": {
+    "name": "Shogun's Kusari",
+    "cost": 900,
+    "total_cost": 2200,
+    "stats": [
+      "45 Magical Protection",
+      "150 Health",
+      "20 MP5",
+      "10% Attack Speed"
+    ],
+    "passive": "AURA - Allied gods within 70 units have their Attack Speed increased by 30%.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "shoguns_kusari.png"
+  },
+  "stone cutting sword": {
+    "name": "Stone Cutting Sword",
+    "cost": 1050,
+    "total_cost": 2300,
+    "stats": [
+      "35 Physical Power",
+      "7% Movement Speed"
+    ],
+    "passive": "PASSIVE - Melee Basic Attacks decreases enemy Physical Protections by 7, and increase your Physical Protection by 7 for 3s (max. 3 Stacks).",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "stone_cutting_sword.png"
+  },
+  "the executioner": {
+    "name": "The Executioner",
+    "cost": 800,
+    "total_cost": 2200,
+    "stats": [
+      "30 Physical Power",
+      "20% Attack Speed"
+    ],
+    "passive": "PASSIVE - Basic Attacks against an enemy reduce your target's Physical Protection by 7% for 3 seconds (max. 4 Stacks).",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "the_executioner.png"
+  },
+  "void doumaru": {
+    "name": "Void Doumaru",
+    "cost": 900,
+    "total_cost": 2200,
+    "stats": [
+      "60 Magical Protection",
+      "150 Health",
+      "35 MP5",
+      "20% Crowd Control Reduction"
+    ],
+    "passive": "AURA - Enemy gods within 55 units have their Magical Protection reduced by 10%.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "void_doumaru.png"
+  },
+  "berserker's shield": {
+    "name": "Berserker's Shield",
+    "cost": 1050,
+    "total_cost": 2250,
+    "stats": [
+      "50 Physical Protection",
+      "150 Health",
+      "25% Attack Speed",
+      "20 HP5"
+    ],
+    "passive": "PASSIVE - While below 60% Health you become Berserk for 5s. While Berserk, you gain 5% Damage Mitigation and 20% Attack Speed. This effect can only occur once every 15 seconds.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive"
+    ],
+    "image": "berserkers_shield.png"
+  },
+  "breastplate of regrowth": {
+    "name": "Breastplate of Regrowth",
+    "cost": 1050,
+    "total_cost": 2250,
+    "stats": [
+      "50 Physical Protection",
+      "300 Mana",
+      "15 MP5",
+      "10% Cooldown Reduction"
+    ],
+    "passive": "PASSIVE - After healing yourself from an ability, you gain 20% Movement Speed, 20 Physical Power, and 30 Magical Power for 5 seconds. This effect can only occur once every 10 seconds.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "breastplate_of_regrowth.png"
+  },
+  "breastplate of valor": {
+    "name": "Breastplate of Valor",
+    "cost": 1050,
+    "total_cost": 2250,
+    "stats": [
+      "50 Physical Protection",
+      "300 Mana",
+      "15 MP5",
+      "20% Cooldown Reduction"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "breastplate_of_valor.png"
+  },
+  "contagion": {
+    "name": "Contagion",
+    "cost": 1200,
+    "total_cost": 2250,
+    "stats": [
+      "50 Physical Protection",
+      "200 Health",
+      "25 HP5"
+    ],
+    "passive": "AURA - Enemy gods within 55 units have their healing reduced by 25%. This does not stack with similar Auras.PASSIVE - When you are hit by a Hard Crowd Control, the enemy receives an aura that deals 25 Magical Damage per second to them and other enemies within a 25 unit radius for 5s. This aura is refreshed if an enemy applies additional Hard Crowd Control to you within 5s.",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "contagion.png"
+  },
+  "emperor's armor": {
+    "name": "Emperor's Armor",
+    "cost": 1000,
+    "total_cost": 2250,
+    "stats": [
+      "50 Physical Protection",
+      "250 Health"
+    ],
+    "passive": "AURA - Damageable enemy structures within 55 units have their Attack Speed reduced by 30%.Damageable allied structures within 55 units have their Attack Speed increased by 30%.",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "emperors_armor.png"
+  },
+  "frostbound hammer": {
+    "name": "Frostbound Hammer",
+    "cost": 850,
+    "total_cost": 2250,
+    "stats": [
+      "35 Physical Power",
+      "200 Health",
+      "25 HP5",
+      "15 MP5"
+    ],
+    "passive": "PASSIVE - Your next basic attack on an enemy god creates a 30 unit shockwave of frost around them, slowing the Movement Speed and Attack Speed of enemy gods in the area by 25% for 3s. This effect can only occur once every 3 seconds. This item and all upgrades are only available to Assassins and Warriors.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "frostbound_hammer.png"
+  },
+  "pythagorem's piece": {
+    "name": "Pythagorem's Piece",
+    "cost": 1100,
+    "total_cost": 2250,
+    "stats": [
+      "40 Magical Power",
+      "200 Health",
+      "9% Magical Lifesteal"
+    ],
+    "passive": "AURA - Allied gods within 70 units have their Magical Lifesteal increased by 12% and their Magical Power increased by 15 or their Physical Lifesteal increased by 9% and their Physical Power increased by 15.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "pythagorems_piece.png"
+  },
+  "soul eater": {
+    "name": "Soul Eater",
+    "cost": 1000,
+    "total_cost": 2250,
+    "stats": [
+      "30 Physical Power",
+      "9% Physical Lifesteal",
+      "10% Cooldown Reduction"
+    ],
+    "passive": "PASSIVE - Your abilities heal you for 4% of damage dealt. Each time anything dies within 80 units you gain a stack. Gods, Large Jungle monsters and Bosses provide 5 stacks. At 100 Stacks Soul Eater Evolves, gaining 15 Physical Power, 10 Penetration, 6% Physical Lifesteal, and 11% Physical Ability Lifesteal.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "soul_eater.png"
+  },
+  "archdruid's fury": {
+    "name": "Archdruid's Fury",
+    "cost": 900,
+    "total_cost": 2300,
+    "stats": [
+      "35 Physical Protection",
+      "35 Magical Protection",
+      "250 Health",
+      "15 MP5"
+    ],
+    "passive": "PASSIVE - Gain a stack (up to a max of 6) each time you take damage from enemy gods equal to 5% of your maximum Health. Your next basic attack on an enemy god consumes all stacks and deals 25 (+ 2 Per Level) Magical Damage per stack. This effect can only occur once every 10 seconds.",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "archdruids_fury.png"
+  },
+  "demonic grip": {
+    "name": "Demonic Grip",
+    "cost": 1000,
+    "total_cost": 2300,
+    "stats": [
+      "75 Magical Power",
+      "30% Attack Speed"
+    ],
+    "passive": "PASSIVE - Your Basic Attacks reduce your target's Magical Protection by 10% for 3s (max 3 Stacks).",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "demonic_grip.png"
+  },
+  "devourer's gauntlet": {
+    "name": "Devourer's Gauntlet",
+    "cost": 900,
+    "total_cost": 2300,
+    "stats": [
+      "30 Physical Power",
+      "15% Physical Lifesteal"
+    ],
+    "passive": "PASSIVE - You permanently gain 0.4 Physical Power, 0.2 Physical Penetration, and 0.15% Physical Lifesteal per Stack, and receive 1 Stack per 600 Damage Dealt to minions or 300 Damage Dealt to gods. At 50 stacks this item Evolves, gaining 5 Physical Penetration.",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "devourers_gauntlet.png"
+  },
+  "fae-blessed hoops": {
+    "name": "Fae-Blessed Hoops",
+    "cost": 1100,
+    "total_cost": 2300,
+    "stats": [
+      "40 Magical Protection",
+      "250 Health",
+      "40 MP5",
+      "10% Cooldown Reduction"
+    ],
+    "passive": "PASSIVE - Each time an allied god dies within 70 units of you or you heal an allied god with an ability, a flower drops from your ally that can be picked up by you or an allied god. After healing with an ability, you cannot drop more flowers this way for 10s. Picking up the flower gives that god a shield equal to 5% of their Max HP that lasts for 8s. Flowers last 7s on ground. Picking up a new flower refreshes shield.",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "fae-blessed_hoops.png"
+  },
+  "gladiator's shield": {
+    "name": "Gladiator's Shield",
+    "cost": 900,
+    "total_cost": 2300,
+    "stats": [
+      "40 Physical Protection",
+      "200 Health",
+      "25 HP5",
+      "10% Cooldown Reduction"
+    ],
+    "passive": "PASSIVE - When damaging an enemy god with an ability you deal an additional 15 + 25% of your Protections from items and abilities as Physical Damage. Can only trigger once per enemy per ability. Subsequent hits on the same target do half the bonus damage for the next 3s.",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "gladiators_shield.png"
+  },
+  "hydra's lament": {
+    "name": "Hydra's Lament",
+    "cost": 1100,
+    "total_cost": 2300,
+    "stats": [
+      "40 Physical Power",
+      "10% Physical Penetration",
+      "10% Cooldown Reduction",
+      "200 Mana"
+    ],
+    "passive": "PASSIVE - For 8s after using an ability, your next Basic Attack will deal an additional 25% damage. Abilities that function like basic attacks do not benefit from this.PASSIVE - This item grants 2.5 MP5 per 10% of your missing Mana.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "hydras_lament.png"
+  },
+  "last gasp": {
+    "name": "Last Gasp",
+    "cost": 950,
+    "total_cost": 2300,
+    "stats": [
+      "70 Magical Power",
+      "150 Health",
+      "200 Mana",
+      "15 Magical Penetration"
+    ],
+    "passive": "PASSIVE - After healing an allied god with an ability you gain 10 Magical Power per 10% of their missing Health for 8s. This effect can only occur once every 8s.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "last_gasp.png"
+  },
+  "manticore's spikes": {
+    "name": "Manticore's Spikes",
+    "cost": 1100,
+    "total_cost": 2300,
+    "stats": [
+      "30 Physical Protection",
+      "30 Magical Protection",
+      "300 Health",
+      "20 MP5"
+    ],
+    "passive": "PASSIVE - When you hit an enemy god with Hard Crowd Control, they drop Spikes on the ground that lasts for 7s. When you or an allied god pick up a Spike, they gain a buff that causes their next ability to deal bonus Magic damage equal to 3% of their own Max HP. This effect lasts 15s and is doubled if you are the one who picks up the Spike.",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "manticores_spikes.png"
+  },
+  "midgardian mail": {
+    "name": "Midgardian Mail",
+    "cost": 1050,
+    "total_cost": 2300,
+    "stats": [
+      "250 Health",
+      "40 Physical Protection"
+    ],
+    "passive": "PASSIVE - Enemies that successfully land a basic attack on you have their Movement Speed and Attack Speed reduced by 8% for 3 seconds. This effect can stack up to 4 times and can stack with other item slow effects.",
+    "active": "",
+    "type": [
+      "Defensive"
+    ],
+    "image": "midgardian_mail.png"
+  },
+  "pestilence": {
+    "name": "Pestilence",
+    "cost": 1050,
+    "total_cost": 2300,
+    "stats": [
+      "70 Magical Protection",
+      "200 Health",
+      "15 HP5"
+    ],
+    "passive": "AURA - Enemy gods within 55 units have their healing reduced by 25%. This does not stack with similar Auras.PASSIVE - Enemies that successfully damage you have their Healing reduced by an additional 5% for 3s. This can stack up to 6 times.",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "pestilence.png"
+  },
+  "polynomicon": {
+    "name": "Polynomicon",
+    "cost": 950,
+    "total_cost": 2300,
+    "stats": [
+      "65 Magical Power",
+      "300 Mana",
+      "12% Magical Lifesteal"
+    ],
+    "passive": "PASSIVE - Using an ability gives your next Basic Attack within the next 8 seconds +75% of your Magical Power as additional Magical Damage. The effect can only apply once every 2 seconds.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "polynomicon.png"
+  },
+  "spear of desolation": {
+    "name": "Spear of Desolation",
+    "cost": 950,
+    "total_cost": 2300,
+    "stats": [
+      "80 Magical Power",
+      "15 Magical Penetration",
+      "10% Cooldown Reduction"
+    ],
+    "passive": "PASSIVE - If you receive a kill or assist on an Enemy God all of your non-ultimate cooldowns are reduced by 2 seconds and your ultimate cooldown is reduced by 10 seconds.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "spear_of_desolation.png"
+  },
+  "spear of the magus": {
+    "name": "Spear of the Magus",
+    "cost": 800,
+    "total_cost": 2300,
+    "stats": [
+      "95 Magical Power",
+      "12% Magical Lifesteal",
+      "10% Magical Penetration"
+    ],
+    "passive": "PASSIVE - Whenever you damage an enemy god with an ability you mark them to take 5% increased damage from all sources. This effect lasts for 8s and can only occur once every 8s.",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "spear_of_the_magus.png"
+  },
+  "spectral armor": {
+    "name": "Spectral Armor",
+    "cost": 1250,
+    "total_cost": 2300,
+    "stats": [
+      "50 Physical Protection",
+      "250 Health",
+      "20 HP5"
+    ],
+    "passive": "AURA - Allied gods within 55 units take 40% reduced bonus damage from Physical Critical Strikes.PASSIVE - When you get hit by a Critical Strike, you gain 10 Physical Power and 15 Magical Power, stacking up to 3 times and lasting 6s.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "spectral_armor.png"
+  },
+  "stone of binding": {
+    "name": "Stone of Binding",
+    "cost": 900,
+    "total_cost": 2300,
+    "stats": [
+      "35 Magical Protection",
+      "35 Physical Protection",
+      "200 Health"
+    ],
+    "passive": "PASSIVE - Successfully hitting an enemy god with a Crowd Control ability will place a debuff on them, reducing their Physical and Magical Protections by 0.8 * your level for 5s.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive"
+    ],
+    "image": "stone_of_binding.png"
+  },
+  "abyssal stone": {
+    "name": "Abyssal Stone",
+    "cost": 950,
+    "total_cost": 2350,
+    "stats": [
+      "35 Physical Protection",
+      "40 Magical Protection",
+      "250 Health"
+    ],
+    "passive": "PASSIVE - Successful ability damage to an enemy god applies a debuff that afflicts them with 20% Negative CDR for 5s.",
+    "active": "",
+    "type": [
+      "Defensive"
+    ],
+    "image": "abyssal_stone.png"
+  },
+  "bladed boomerang": {
+    "name": "Bladed Boomerang",
+    "cost": 1050,
+    "total_cost": 2350,
+    "stats": [
+      "30 Physical Power",
+      "20% Attack Speed",
+      "20% Critical Strike Chance"
+    ],
+    "passive": "PASSIVE - Your next basic attack on an enemy god creates a deployable that, when picked up, provides you with 2% Movement Speed and 10% Critical Strike Chance for 10s. This effect stacks up to 3 times and can only occur once every 2 seconds.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "bladed_boomerang.png"
+  },
+  "dawnbringer": {
+    "name": "Dawnbringer",
+    "cost": 1150,
+    "total_cost": 2350,
+    "stats": [
+      "40 Physical Power",
+      "150 Health",
+      "15 HP5",
+      "20% Crowd Control Reduction"
+    ],
+    "passive": "PASSIVE - When your Ultimate has finished casting, your Protections and Movement Speed are increased by 10% for 8s. These buffs are further increased for each enemy god within 55 units of you, stacking twice. This effect can only occur once every 30s.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "dawnbringer.png"
+  },
+  "gauntlet of thebes": {
+    "name": "Gauntlet of Thebes",
+    "cost": 1000,
+    "total_cost": 2350,
+    "stats": [
+      "250 Health",
+      "15 HP5"
+    ],
+    "passive": "PASSIVE - Assists on a minion give 1 Stack and God kills and assists give 5 Stacks. Stacks provide 1 Physical and Magical Protection. At 45 Stacks this item evolves, providing an Aura of 10 Physical Protection and 10 Magical Protection.",
+    "active": "",
+    "type": [
+      "Defensive"
+    ],
+    "image": "gauntlet_of_thebes.png"
+  },
+  "prophetic cloak": {
+    "name": "Prophetic Cloak",
+    "cost": 1200,
+    "total_cost": 2350,
+    "stats": [
+      "25 Physical Protection",
+      "25 Magical Protection",
+      "100 Health",
+      "10% Cooldown Reduction"
+    ],
+    "passive": "PASSIVE - Once every 8s, when you damage an enemy god with an attack, you gain a stack of 1 Protections in an Aura that corresponds with the damage type of the target. Once you have reached 15 stacks of both Protections, this item Evolves, giving you additional Protections and mitigation based on your total Protections.",
+    "active": "",
+    "type": [
+      "Defensive"
+    ],
+    "image": "prophetic_cloak.png"
+  },
+  "runeforged hammer": {
+    "name": "Runeforged Hammer",
+    "cost": 1150,
+    "total_cost": 2350,
+    "stats": [
+      "40 Physical Power",
+      "150 Health",
+      "15 HP5",
+      "20 MP5"
+    ],
+    "passive": "PASSIVE - Your next successful Hard CC on an enemy god creates a runic symbol on the ground that lasts for 5s. Enemies in the symbol take 15% more damage. This can only occur once every 15 seconds.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "runeforged_hammer.png"
+  },
+  "shield of the phoenix": {
+    "name": "Shield of the Phoenix",
+    "cost": 1100,
+    "total_cost": 2350,
+    "stats": [
+      "200 Health",
+      "30 Physical Protection",
+      "20 HP5",
+      "10% Cooldown Reduction"
+    ],
+    "passive": "PASSIVE - Anytime you hit an Enemy god with an ability you are healed for 2% of your maximum Health and Mana. This can only trigger once per god per ability.",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "shield_of_the_phoenix.png"
+  },
+  "soul gem": {
+    "name": "Soul Gem",
+    "cost": 1200,
+    "total_cost": 2350,
+    "stats": [
+      "80 Magical Power",
+      "100 Health",
+      "12% Magical Lifesteal",
+      "10% Cooldown Reduction"
+    ],
+    "passive": "PASSIVE - On successful hit of an Ability you gain 1 stack. At 3 Stacks your next Ability that damages an enemy God will deal bonus damage equal to 25% of your Magical power to each God hit, and will heal yourself and allies within 20 units for 30 (+5 Per Level) and will consume the 3 stacks.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "soul_gem.png"
+  },
+  "asi": {
+    "name": "Asi",
+    "cost": 1000,
+    "total_cost": 2400,
+    "stats": [
+      "35 Physical Power",
+      "18% Physical Lifesteal",
+      "20% Attack Speed",
+      "10 Physical Penetration"
+    ],
+    "passive": "PASSIVE - While below 60% Health, you gain an additional 22.5% Physical Lifesteal for 5 seconds. Can only occur once every 15 seconds.",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "asi.png"
+  },
+  "bancroft's talon": {
+    "name": "Bancroft's Talon",
+    "cost": 1000,
+    "total_cost": 2400,
+    "stats": [
+      "80 Magical Power",
+      "200 Mana",
+      "15% Magical Lifesteal"
+    ],
+    "passive": "PASSIVE - You gain additional Magical Power and Lifesteal scaled from missing Health. This caps at 70 power and 15% Lifesteal at 40% Health.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "bancrofts_talon.png"
+  },
+  "brawler's beat stick": {
+    "name": "Brawler's Beat Stick",
+    "cost": 950,
+    "total_cost": 2400,
+    "stats": [
+      "45 Physical Power",
+      "15 Physical Penetration"
+    ],
+    "passive": "PASSIVE - Enemies hit by your Abilities have 40% reduced healing for 5 seconds. Getting a kill or assist on an enemy god creates a field that lasts 10s, providing allies within it 20 Power + 2 Per level. This effect can only occur once every 10 seconds.",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "brawlers_beat_stick.png"
+  },
+  "caduceus club": {
+    "name": "Caduceus Club",
+    "cost": 1100,
+    "total_cost": 2400,
+    "stats": [
+      "20 Physical Power",
+      "200 Health",
+      "20 MP5",
+      "10% Cooldown Reduction"
+    ],
+    "passive": "PASSIVE - Healing Dealt is increased by 30%.AURA - Allied gods within 70 units have 10% increased Crowd Control Reduction and 3% Movement Speed.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "caduceus_club.png"
+  },
+  "charon's coin": {
+    "name": "Charon's Coin",
+    "cost": 1000,
+    "total_cost": 2400,
+    "stats": [
+      "75 Magical Power",
+      "20% Magical Penetration",
+      "7 HP5",
+      "20 MP5"
+    ],
+    "passive": "PASSIVE - On god kill or assist a coin is flipped. If heads, you gain a stack of 7 HP5. If tails, you gain a stack of 2% Movement Speed. Each effect can stack up to 4 times and at 8 stacks this item evolves. You also gain 15 gold every time the coin is flipped.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "charons_coin.png"
+  },
+  "crimson claws": {
+    "name": "Crimson Claws",
+    "cost": 1000,
+    "total_cost": 2400,
+    "stats": [
+      "50 Physical Power",
+      "20% Attack Speed",
+      "25% Physical Lifesteal"
+    ],
+    "passive": "PASSIVE - Lifestealing from enemies while at full Health grants you the value healed as a Shield, which may not exceed 15% of your Maximum Health.",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "crimson_claws.png"
+  },
+  "demon blade": {
+    "name": "Demon Blade",
+    "cost": 1100,
+    "total_cost": 2400,
+    "stats": [
+      "30 Physical Power",
+      "15% Attack Speed",
+      "20% Critical Strike Chance"
+    ],
+    "passive": "PASSIVE - Your Critical Hits provide you with 10% Physical Penetration for 4s.",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "demon_blade.png"
+  },
+  "mystical mail": {
+    "name": "Mystical Mail",
+    "cost": 1000,
+    "total_cost": 2400,
+    "stats": [
+      "200 Health",
+      "40 Physical Protection",
+      "20% Crowd Control Reduction"
+    ],
+    "passive": "AURA - ALL enemies within 25 units are dealt 20 (+1.5 Per Level) Magical Damage per second.",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "mystical_mail.png"
+  },
+  "pridwen": {
+    "name": "Pridwen",
+    "cost": 900,
+    "total_cost": 2400,
+    "stats": [
+      "25 Physical Protection",
+      "25 Magical Protection",
+      "20% Cooldown Reduction"
+    ],
+    "passive": "PASSIVE - When your Ultimate ability has finished casting, you gain a Shield equal to 90% of your Protections from items and abilities for 5s. When destroyed, by timing out or being depleted, it explodes in a 30 unit radius and deals Magical damage equal to 75% of your Protections from items and abilities and slows targets by 25% for 3s. This can only occur once every 45 seconds.",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "pridwen.png"
+  },
+  "ring of hecate": {
+    "name": "Ring of Hecate",
+    "cost": 1100,
+    "total_cost": 2400,
+    "stats": [
+      "65 Magical Power",
+      "25% Attack Speed",
+      "15 Magical Penetration"
+    ],
+    "passive": "PASSIVE - Each successful Basic Attack applies a hex to enemies and empowers you, increasing your Magical Power by 5% and reducing the Physical and Magical Power of your opponent by 5% for 8s. (Max. 3 Stacks).",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "ring_of_hecate.png"
+  },
+  "sekhmet's scepter": {
+    "name": "Sekhmet's Scepter",
+    "cost": 1100,
+    "total_cost": 2400,
+    "stats": [
+      "35 Physical Power",
+      "150 Health",
+      "15 MP5",
+      "10% Cooldown Reduction"
+    ],
+    "passive": "PASSIVE - After healing yourself or an allied god with an ability, for the next 6s each time you damage an enemy god your non-ultimate abilities' cooldowns are reduced by 1s. This reduction can only occur once per second and the effect may only occur once every 10s",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "sekhmets_scepter.png"
+  },
+  "spirit robe": {
+    "name": "Spirit Robe",
+    "cost": 900,
+    "total_cost": 2400,
+    "stats": [
+      "35 Physical Protection",
+      "35 Magical Protection",
+      "10% Cooldown Reduction",
+      "20% Crowd Control Reduction"
+    ],
+    "passive": "PASSIVE - You gain an additional 15% Damage Mitigation for 3s whenever you are hit with a hard Crowd Control Effect or Root. This can only occur once every 15 seconds.",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "spirit_robe.png"
+  },
+  "void shield": {
+    "name": "Void Shield",
+    "cost": 1000,
+    "total_cost": 2400,
+    "stats": [
+      "55 Physical Protection",
+      "150 Health",
+      "25 HP5"
+    ],
+    "passive": "AURA - Enemy gods within 55 units have their Physical Protection reduced by 10%.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "void_shield.png"
+  },
+  "divine ruin": {
+    "name": "Divine Ruin",
+    "cost": 1100,
+    "total_cost": 2450,
+    "stats": [
+      "75 Magical Power",
+      "15 Magical Penetration"
+    ],
+    "passive": "PASSIVE - Enemies hit by your abilities have 40% reduced healing for 5 seconds. Your next successful damaging ability on an enemy triggers a chain lightning, damaging the target and up to 4 nearby enemies for 40 damage + 10% of your Magical Power. This can only occur once every 20 seconds.",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "divine_ruin.png"
+  },
+  "gem of isolation": {
+    "name": "Gem of Isolation",
+    "cost": 1100,
+    "total_cost": 2450,
+    "stats": [
+      "70 Magical Power",
+      "200 Health",
+      "10% Crowd Control Reduction"
+    ],
+    "passive": "PASSIVE - Enemies hit by your damaging abilities will move 30% Slower and will have Shields applied on them reduced by 50% for 2.5 seconds. This can only occur once every 2.5 seconds.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive"
+    ],
+    "image": "gem_of_isolation.png"
+  },
+  "rejuvenating heart": {
+    "name": "Rejuvenating Heart",
+    "cost": 1100,
+    "total_cost": 2450,
+    "stats": [
+      "65 Magical Power",
+      "200 Health",
+      "300 Mana",
+      "15% Lifesteal"
+    ],
+    "passive": "PASSIVE - Lifestealing off of enemy gods heals yourself and nearby allies within 55 units of you by 75% of that healing.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "rejuvenating_heart.png"
+  },
+  "vital amplifier": {
+    "name": "Vital Amplifier",
+    "cost": 1150,
+    "total_cost": 2450,
+    "stats": [
+      "30 Physical Power",
+      "150 Health",
+      "15 MP5",
+      "20% Attack Speed"
+    ],
+    "passive": "PASSIVE - After healing yourself or an allied god with an ability you gain 10% Attack Speed and 5% Basic Attack Damage for 6s, stacking 3 times.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "vital_amplifier.png"
+  },
+  "arondight": {
+    "name": "Arondight",
+    "cost": 1000,
+    "total_cost": 2500,
+    "stats": [
+      "50 Physical Power",
+      "10% Cooldown Reduction",
+      "7% Movement Speed"
+    ],
+    "passive": "PASSIVE - When your Ultimate ability has finished casting, reveal all enemy gods within 120 units for 10s. While moving towards revealed enemies gain 20% Movement Speed. When first striking a revealed target they take an additional 30 + 50% of your Physical Power. This can only occur once every 45 seconds. This item is only available to Assassins, Warriors, and Hunters.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "arondight.png"
+  },
+  "bloodforge": {
+    "name": "Bloodforge",
+    "cost": 1100,
+    "total_cost": 2500,
+    "stats": [
+      "50 Physical Power",
+      "15% Physical Lifesteal",
+      "7% Movement Speed"
+    ],
+    "passive": "PASSIVE - Killing an enemy god forges a shield from their blood with Health equal to 200 + 10 per Player Level for 20s. While the Blood Shield is active you gain +10% Movement Speed.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "bloodforge.png"
+  },
+  "book of thoth": {
+    "name": "Book of Thoth",
+    "cost": 1300,
+    "total_cost": 2500,
+    "stats": [
+      "60 Magical Power",
+      "200 Mana",
+      "20 MP5"
+    ],
+    "passive": "PASSIVE - You permanently gain 12 Mana per Stack, and receive 1 Stack per 900 Damage Dealt to minions or 450 Damage Dealt to gods. You gain Magical Power equal to 4% of your Mana from items. At 50 stacks this item Evolves, gaining 10 Magical Penetration and increasing the Magical Power gained from Mana to 7%.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "book_of_thoth.png"
+  },
+  "curseweaver": {
+    "name": "Curseweaver",
+    "cost": 1200,
+    "total_cost": 2500,
+    "stats": [
+      "60 Magical Power",
+      "250 Health",
+      "250 Mana"
+    ],
+    "passive": "PASSIVE - Hitting an enemy god with a Basic Attack or Ability marks them for 4s. When the marked enemy god casts an ability, they take 5% of your Maximum Health + 7.5% of your Maximum Mana as Magical damage. You heal for 100% of the damage dealt. You may only apply a mark once every 20s. Each time an enemy casts an ability within 55 units of you, reduce the cooldown of this item by 1s.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "curseweaver.png"
+  },
+  "dominance": {
+    "name": "Dominance",
+    "cost": 1300,
+    "total_cost": 2500,
+    "stats": [
+      "40 Physical Power",
+      "200 Mana",
+      "20 MP5",
+      "15% Attack Speed"
+    ],
+    "passive": "PASSIVE - Your Basic Attacks benefit from an additional 20% Physical Penetration.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "dominance.png"
+  },
+  "obsidian shard": {
+    "name": "Obsidian Shard",
+    "cost": 1000,
+    "total_cost": 2500,
+    "stats": [
+      "80 Magical Power",
+      "20% Magical Penetration"
+    ],
+    "passive": "PASSIVE - Your first ability cast gains 20% Magical Penetration. This can only occur once every 10 seconds.",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "obsidian_shard.png"
+  },
+  "rage": {
+    "name": "Rage",
+    "cost": 1150,
+    "total_cost": 2500,
+    "stats": [
+      "30 Physical Power",
+      "35% Critical Strike Chance"
+    ],
+    "passive": "PASSIVE - Killing or getting an assist on an enemy god gives you 1 stack. Each stack provides 2% Critical Strike Chance and 5 Physical Power. Stacks are permanent and stack up to 5 times.",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "rage.png"
+  },
+  "serrated edge": {
+    "name": "Serrated Edge",
+    "cost": 1000,
+    "total_cost": 2500,
+    "stats": [
+      "25 Physical Power",
+      "15% Physical Lifesteal",
+      "20% Physical Penetration",
+      "7% Movement Speed"
+    ],
+    "passive": "PASSIVE - For every non-ultimate ability on cooldown you gain a stack of Cruelty. Each stack provides 7 Physical Power and 3% Physical Lifesteal.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "serrated_edge.png"
+  },
+  "shifter's shield": {
+    "name": "Shifter's Shield",
+    "cost": 1250,
+    "total_cost": 2500,
+    "stats": [
+      "30 Physical Protection",
+      "30 Magical Protection",
+      "250 Health",
+      "20 HP5"
+    ],
+    "passive": "PASSIVE - While over 75% Health, you gain 20 Physical Power and 30 Magical Power. While under 75% Health, you gain 20 Protections.",
+    "active": "",
+    "type": [
+      "Defensive"
+    ],
+    "image": "shifters_shield.png"
+  },
+  "the crusher": {
+    "name": "The Crusher",
+    "cost": 1000,
+    "total_cost": 2500,
+    "stats": [
+      "35 Physical Power",
+      "25% Attack Speed",
+      "10% Physical Penetration"
+    ],
+    "passive": "PASSIVE - Enemies hit by your damaging Abilities take bonus damage equal to an additional 35% of your Physical Power over 1s. Subsequent hits on the same target do half the bonus damage for the next 3s.",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "the_crusher.png"
+  },
+  "titan's bane": {
+    "name": "Titan's Bane",
+    "cost": 1000,
+    "total_cost": 2500,
+    "stats": [
+      "40 Physical Power",
+      "20% Physical Penetration"
+    ],
+    "passive": "PASSIVE - Your first ability cast gains 20% Physical Penetration. This can only occur once every 5 seconds.",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "titans_bane.png"
+  },
+  "transcendence": {
+    "name": "Transcendence",
+    "cost": 1300,
+    "total_cost": 2500,
+    "stats": [
+      "25 Physical Power",
+      "300 Mana",
+      "10 MP5"
+    ],
+    "passive": "PASSIVE - You permanently gain 15 Mana per Stack, and receive 1 Stack per 800 Damage Dealt to minions or 350 Damage Dealt to gods. You gain Physical Power equal to 2% of your Maximum Mana. At 50 stacks this item Evolves, gaining 10 Physical Penetration.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "transcendence.png"
+  },
+  "warlock's staff": {
+    "name": "Warlock's Staff",
+    "cost": 1200,
+    "total_cost": 2500,
+    "stats": [
+      "55 Magical Power",
+      "200 Health",
+      "200 Mana"
+    ],
+    "passive": "PASSIVE - You permanently gain +3 Health and +0.25 Magical Power per Stack, and receive 1 Stack per 550 Damage Dealt to or taken from minions or 275 Damage Dealt to or taken by gods. At 100 stacks this item Evolves, gaining 10% Magical Penetration.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "warlocks_staff.png"
+  },
+  "duality": {
+    "name": "Duality",
+    "cost": 1000,
+    "total_cost": 2550,
+    "stats": [
+      "55 Physical Power",
+      "15% Attack Speed"
+    ],
+    "passive": "PASSIVE - Once every 3s, your next Basic Attack will deal an additional 30% of your Basic Attack Power as Physical Ability damage. This damage can trigger ability item effects.",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "duality.png"
+  },
+  "silverbranch bow": {
+    "name": "Silverbranch Bow",
+    "cost": 1300,
+    "total_cost": 2550,
+    "stats": [
+      "25 Physical Power",
+      "30% Attack Speed",
+      "10% Physical Penetration"
+    ],
+    "passive": "PASSIVE - For each 0.02 Attack Speed you go over 2.5 Attack Speed, you gain 3 Physical Power. You can not gain more than 120 Physical Power in this way.",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "silverbranch_bow.png"
+  },
+  "staff of myrddin": {
+    "name": "Staff of Myrddin",
+    "cost": 1050,
+    "total_cost": 2550,
+    "stats": [
+      "75 Magical Power",
+      "10% Magical Penetration",
+      "10% Cooldown Reduction"
+    ],
+    "passive": "PASSIVE - When your ultimate ability has finished casting you gain Myrddin's Rage which provides 15% Increased Damage Dealt decaying over 8s. At the end of the 8s you lose Myrddin's Rage. This can only occur once every 45s.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "staff_of_myrddin.png"
+  },
+  "tablet of destinies": {
+    "name": "Tablet of Destinies",
+    "cost": 1350,
+    "total_cost": 2550,
+    "stats": [
+      "65 Magical Power",
+      "100 Health",
+      "300 Mana"
+    ],
+    "passive": "PASSIVE - Your next successful damaging ability on an enemy god grants a stack of Wisdom. For each stack of Wisdom you have, your abilities deal 0.1% of your Max Mana as True Damage to enemy gods. You may only gain one stack and deal damage every 2s, and can only gain stacks once per god per ability hit. Max 60 stacks.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "tablet_of_destinies.png"
+  },
+  "chronos' pendant": {
+    "name": "Chronos' Pendant",
+    "cost": 1200,
+    "total_cost": 2600,
+    "stats": [
+      "70 Magical Power",
+      "20 MP5",
+      "20% Cooldown Reduction"
+    ],
+    "passive": "PASSIVE - Every 10s the Pendant activates, subtracting 1s from all of your abilities currently on Cooldown. The initial countdown will not start until you leave the fountain.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "chronos_pendant.png"
+  },
+  "cyclopean ring": {
+    "name": "Cyclopean Ring",
+    "cost": 1200,
+    "total_cost": 2600,
+    "stats": [
+      "60 Magical Power",
+      "25% Attack Speed",
+      "10% Cooldown Reduction"
+    ],
+    "passive": "PASSIVE - Your next basic attack against an enemy god deals bonus Magical Damage equal to 9% of the target's maximum Health. This effect can only occur once every 8s, reduced by 2s for each successful Basic Attack on an enemy god.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "cyclopean_ring.png"
+  },
+  "ethereal staff": {
+    "name": "Ethereal Staff",
+    "cost": 1250,
+    "total_cost": 2600,
+    "stats": [
+      "70 Magical Power",
+      "150 Health",
+      "20% Crowd Control Reduction"
+    ],
+    "passive": "PASSIVE - Whenever you damage an enemy god with an ability you steal 8% maximum mana as well as 6% maximum health from the target. The Stats remain stolen for 60s and targets affected can have multiple Buffs and Debuffs at once. This can only occur once every 15 seconds.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive"
+    ],
+    "image": "ethereal_staff.png"
+  },
+  "hastened fatalis": {
+    "name": "Hastened Fatalis",
+    "cost": 1200,
+    "total_cost": 2600,
+    "stats": [
+      "100 Health",
+      "10 Penetration",
+      "20% Attack Speed",
+      "7% Movement Speed"
+    ],
+    "passive": "Hitting an enemy with a Basic Attack grants Haste for 1s, causing you to be immune from Basic Attack Movement Penalty.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "hastened_fatalis.png"
+  },
+  "mantle of discord": {
+    "name": "Mantle of Discord",
+    "cost": 1100,
+    "total_cost": 2600,
+    "stats": [
+      "45 Physical Protection",
+      "45 Magical Protection",
+      "10% Cooldown Reduction"
+    ],
+    "passive": "PASSIVE - If you take damage below 40% health you unleash a shockwave that stuns all enemies within a range of 20 units for 1s and become immune to Crowd Control for 1s. This effect cannot trigger more than once every 110s.",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "mantle_of_discord.png"
+  },
+  "qin's sais": {
+    "name": "Qin's Sais",
+    "cost": 1050,
+    "total_cost": 2600,
+    "stats": [
+      "30 Physical Power",
+      "25% Attack Speed"
+    ],
+    "passive": "PASSIVE - On Basic Attack hits, deal Physical Damage equal to 1.5% of the target's maximum Health. If the target has over 2000 Health, the bonus damage scales up. This effect reaches a maximum of 6% of the targets Maximum Health at 2750 Health.",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "qins_sais.png"
+  },
+  "rod of asclepius": {
+    "name": "Rod of Asclepius",
+    "cost": 1250,
+    "total_cost": 2600,
+    "stats": [
+      "60 Magical Power",
+      "200 Health",
+      "250 Mana"
+    ],
+    "passive": "PASSIVE - Healing Dealt is increased by 30%.AURA - Allied gods within 30 units have 10% increased Cooldown Reduction.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "rod_of_asclepius.png"
+  },
+  "sphinx's baubles": {
+    "name": "Sphinx's Baubles",
+    "cost": 1200,
+    "total_cost": 2600,
+    "stats": [
+      "40 Physical Power",
+      "60 Magical Power",
+      "20 MP5",
+      "10% Cooldown Reduction"
+    ],
+    "passive": "PASSIVE - Your Cooldown Reduction cap is increased from 40% to 50%.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "sphinxs_baubles.png"
+  },
+  "fail-not": {
+    "name": "Fail-not",
+    "cost": 1150,
+    "total_cost": 2650,
+    "stats": [
+      "30 Physical Power",
+      "15% Critical Strike Chance",
+      "20% Cooldown Reduction",
+      "10% Physical Penetration"
+    ],
+    "passive": "PASSIVE - When your Ultimate ability has finished casting, your next ability or basic attack within 8s that damages an enemy god marks them, increasing the chance you and your allies can land a Critical Strike by 20% for 10 seconds. This can only occur once every 45 seconds. This item is only available to Hunters.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "fail-not.png"
+  },
+  "soul reaver": {
+    "name": "Soul Reaver",
+    "cost": 1300,
+    "total_cost": 2650,
+    "stats": [
+      "65 Magical Power",
+      "300 Mana"
+    ],
+    "passive": "PASSIVE - Your abilities deal an additional 1% of the target's maximum Health as Magical Damage. If the target has over 2000 Health, your ability bonus damage scales up. This effect reaches a maximum of 9% Maximum Health damage at 2750 Health. Subsequent hits on the same target do half the bonus damage for the next 3s.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "soul_reaver.png"
+  },
+  "typhon's fang": {
+    "name": "Typhon's Fang",
+    "cost": 1250,
+    "total_cost": 2650,
+    "stats": [
+      "55 Magical Power",
+      "200 Mana",
+      "15% Magical Lifesteal",
+      "20% Magical Penetration"
+    ],
+    "passive": "PASSIVE - Your Healing obtained from Magical Lifesteal is increased by 15%. Your Magical power is increased by 1.75x the amount of Magical Lifesteal you have.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "typhons_fang.png"
+  },
+  "doom orb": {
+    "name": "Doom Orb",
+    "cost": 1200,
+    "total_cost": 2700,
+    "stats": [
+      "95 Magical Power",
+      "25 MP5",
+      "10 Magical Penetration",
+      "6% Movement Speed"
+    ],
+    "passive": "PASSIVE - Killing or assisting an enemy minion provides you with 1 stack, granting 1% Movement Speed and 4 Magical Power per stack. Stacks last for 15s and stack up to 5 times. Enemy gods provide 5 stacks.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "doom_orb.png"
+  },
+  "heartseeker": {
+    "name": "Heartseeker",
+    "cost": 1200,
+    "total_cost": 2750,
+    "stats": [
+      "45 Physical Power",
+      "200 Mana",
+      "20 MP5",
+      "10% Physical Penetration"
+    ],
+    "passive": "PASSIVE - Your abilities deal an additional 2% of the targets maximum Health as Physical Damage. If you have over 150 Physical Power, your ability bonus damage scales up. This effect reaches a maximum of 6% Maximum Health damage at 250 Physical Power. Subsequent hits on the same target do 75% of the bonus damage for the next 3s.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "heartseeker.png"
+  },
+  "rod of tahuti": {
+    "name": "Rod of Tahuti",
+    "cost": 1450,
+    "total_cost": 2850,
+    "stats": [
+      "125 Magical Power",
+      "30 MP5",
+      "10% Magical Penetration"
+    ],
+    "passive": "PASSIVE - Basic Attacks and Abilities gain 15% additional Magical Power against targets below 60% Health.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "rod_of_tahuti.png"
+  },
+  "deathbringer": {
+    "name": "Deathbringer",
+    "cost": 1550,
+    "total_cost": 2900,
+    "stats": [
+      "30 Physical Power",
+      "30% Critical Strike Chance"
+    ],
+    "passive": "PASSIVE - Critical Strike bonus damage dealt is increased by 25%.",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "deathbringer.png"
+  },
+  "bewitched dagger": {
+    "name": "Bewitched Dagger",
+    "cost": 600,
+    "total_cost": 2450,
+    "stats": [
+      "300 Health",
+      "10% Cooldown Reduction",
+      "10% Crowd Control Reduction",
+      "7% Movement Speed"
+    ],
+    "passive": "PASSIVE - Your relics receive 50s Cooldown Reduction.GLYPH - All enemy gods have 25% reduced Attack Speed in a 55 unit radius around you.",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "bewitched_dagger.png"
+  },
+  "eldritch dagger": {
+    "name": "Eldritch Dagger",
+    "cost": 600,
+    "total_cost": 2450,
+    "stats": [
+      "300 Health",
+      "10% Cooldown Reduction",
+      "10% Crowd Control Reduction",
+      "7% Movement Speed"
+    ],
+    "passive": "PASSIVE - Your relics receive 50s Cooldown Reduction.GLYPH - When you activate a relic, your Protections are increased by 15% and you gain the ability to see wards for 20s.",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "eldritch_dagger.png"
+  },
+  "amulet of silence": {
+    "name": "Amulet of Silence",
+    "cost": 600,
+    "total_cost": 2650,
+    "stats": [
+      "45 Magical Protection",
+      "250 Health",
+      "200 Mana"
+    ],
+    "passive": "AURA - Allied gods within 70 units have their Magical Protections increased by 15 and their MP5 increased by 30.GLYPH - Gain a stack each time an enemy within 40 units casts an ability. At 3 stacks, your next basic attack against an enemy god will silence them for 1.5s. This effect can only occur every 8s.",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "amulet_of_silence.png"
+  },
+  "amulet of the stronghold": {
+    "name": "Amulet of the Stronghold",
+    "cost": 600,
+    "total_cost": 2650,
+    "stats": [
+      "45 Magical Protection",
+      "250 Health",
+      "200 Mana"
+    ],
+    "passive": "AURA - Allied gods within 70 units have their Magical Protections increased by 15 and their MP5 increased by 30.GLYPH - You gain Magical Protections equal to 15% of your Physical Protections.",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "amulet_of_the_stronghold.png"
+  },
+  "magi's revenge": {
+    "name": "Magi's Revenge",
+    "cost": 600,
+    "total_cost": 2750,
+    "stats": [
+      "25 Physical Protection",
+      "25 Magical Protection",
+      "10% Cooldown Reduction"
+    ],
+    "passive": "PASSIVE - Protects you from a single hard Crowd Control effect once every 70 seconds. When this occurs, you gain 1s of Crowd Control immunity.GLYPH - If an enemy God consumes your passive, they become Marked for Revenge for 5s, causing them to receive 10% more damage and granting allied Gods within 40 units 20% increased Movement Speed towards them.",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "magis_revenge.png"
+  },
+  "magi's shelter": {
+    "name": "Magi's Shelter",
+    "cost": 600,
+    "total_cost": 2750,
+    "stats": [
+      "25 Physical Protection",
+      "25 Magical Protection",
+      "10% Cooldown Reduction"
+    ],
+    "passive": "PASSIVE - Protects you from a single hard Crowd Control effect once every 70 seconds. When this occurs, you gain 1s of Crowd Control immunity.GLYPH - Whenever your passive is consumed, the nearest allied god within 40 units gains protection from a single hard Crowd Control effect for 8s. If this passive is consumed before time runs out, they gain 1s of Crowd Control immunity.",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "magis_shelter.png"
+  },
+  "envenomed executioner": {
+    "name": "Envenomed Executioner",
+    "cost": 600,
+    "total_cost": 2800,
+    "stats": [
+      "30 Physical Power",
+      "20% Attack Speed"
+    ],
+    "passive": "PASSIVE - Basic Attacks against an enemy reduce your target's Physical Protection by 7% for 3s (max. 4 Stacks).GLYPH - Successfully hitting an Enemy God will afflict them with poison for 3s. (max. 4 stacks). This poison reduces their healing by 10% and Shields applied on them are reduced by 12.5%.",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "envenomed_executioner.png"
+  },
+  "the ferocious executioner": {
+    "name": "The Ferocious Executioner",
+    "cost": 600,
+    "total_cost": 2800,
+    "stats": [
+      "30 Physical Power",
+      "20% Attack Speed"
+    ],
+    "passive": "PASSIVE - Basic Attacks against an enemy reduce your target's Physical Protection by 7% for 3 seconds (max. 4 Stacks).GLYPH - Your next basic attack marks an enemy god for 8s. If you hit the marked enemy or the marked enemy hits you with a basic attack or ability, gain 1 stack. Each stack provides 2% increased damage towards the marked enemy, stacking up to 10 times. This effect can only occur every 30s.",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "the_ferocious_executioner.png"
+  },
+  "breastplate of determination": {
+    "name": "Breastplate of Determination",
+    "cost": 600,
+    "total_cost": 2850,
+    "stats": [
+      "50 Physical Protection",
+      "300 Mana",
+      "15 MP5",
+      "20% Cooldown Reduction"
+    ],
+    "passive": "GLYPH - Each time you are hit by an ability, gain a stack of 5 Protections that corresponds to the damage type you were hit with, up to a max of 4 of each type. Once you reach max stacks of both kinds, gain a burst of 20% Movement Speed and double your Protections gained by this effect for 8s, after which all stacks are removed.",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "breastplate_of_determination.png"
+  },
+  "breastplate of vigilance": {
+    "name": "Breastplate of Vigilance",
+    "cost": 600,
+    "total_cost": 2850,
+    "stats": [
+      "50 Physical Protection",
+      "300 Mana",
+      "15 MP5",
+      "20% Cooldown Reduction"
+    ],
+    "passive": "GLYPH - When your ultimate ability has finished casting you provide an aura in a 70 unit range around you reducing basic attack damage from enemies by 25% for 5s. This effect may only occur once every 45s.",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "breastplate_of_vigilance.png"
+  },
+  "jotunn's cunning": {
+    "name": "Jotunn's Cunning",
+    "cost": 600,
+    "total_cost": 2900,
+    "stats": [
+      "40 Physical Power",
+      "150 Mana",
+      "10 Physical Penetration",
+      "20% Cooldown Reduction"
+    ],
+    "passive": "GLYPH - Every time you damage an enemy god with an ability you gain a stack of Wit. When you have a stack, your next non-ultimate ability that damages an enemy god gets 20% of its cooldown instantly refunded. After triggering this effect, all stacks are removed and you cannot gain stacks for 5s.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "jotunns_cunning.png"
+  },
+  "jotunn's vigor": {
+    "name": "Jotunn's Vigor",
+    "cost": 600,
+    "total_cost": 2900,
+    "stats": [
+      "40 Physical Power",
+      "150 Mana",
+      "10 Physical Penetration",
+      "20% Cooldown Reduction"
+    ],
+    "passive": "GLYPH - If you drop beneath 60% health, gain 15% Movement Speed and 30% Physical Ability Lifesteal for 8s. This effect may only occur once every 15s.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "jotunns_vigor.png"
+  },
+  "flameforged hammer": {
+    "name": "Flameforged Hammer",
+    "cost": 600,
+    "total_cost": 2950,
+    "stats": [
+      "40 Physical Power",
+      "150 Health",
+      "15 HP5",
+      "20 MP5"
+    ],
+    "passive": "PASSIVE - Your next successful Hard CC on an enemy god creates a runic symbol on the ground that lasts for 5s. Enemies in the symbol take 15% more damage. This can only occur once every 15 seconds.GLYPH - Additionally, enemy gods within the rune are burned, dealing 10 + 8% of your Protections from items and abilities as Magical Damage every 1s while inside the rune and for 2s after leaving it.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "flameforged_hammer.png"
+  },
+  "runebreaking hammer": {
+    "name": "Runebreaking Hammer",
+    "cost": 600,
+    "total_cost": 2950,
+    "stats": [
+      "40 Physical Power",
+      "150 Health",
+      "15 HP5",
+      "20 MP5"
+    ],
+    "passive": "GLYPH - Your next successful Hard CC on an enemy god creates a 30 unit shockwave around them. Enemies hit by the shockwave deal 15% less damage and take 15% more damage for 3s. This can only occur once every 15s.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "runebreaking_hammer.png"
+  },
+  "bancroft's claw": {
+    "name": "Bancroft's Claw",
+    "cost": 600,
+    "total_cost": 3000,
+    "stats": [
+      "80 Magical Power",
+      "200 Mana",
+      "15% Magical Lifesteal"
+    ],
+    "passive": "PASSIVE - You gain additional Magical Power and Lifesteal scaled from missing Health. This caps at 70 power and 15% Lifesteal at 40% Health.GLYPH - Every 10s gain a stack of Hunger(max 3). Abilities cast within 30 units of enemy gods consume a stack, dealing bonus damage equal to 1% of their max HP for each 75 Magical Power you have. Each god damaged by Hunger provides you with a shield of 1% of your Max HP for each 75 Magical Power you have. This cannot exceed 35% of your Max HP.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "bancrofts_claw.png"
+  },
+  "glorious pridwen": {
+    "name": "Glorious Pridwen",
+    "cost": 600,
+    "total_cost": 3000,
+    "stats": [
+      "25 Physical Protection",
+      "25 Magical Protection",
+      "20% Cooldown Reduction"
+    ],
+    "passive": "GLYPH - When your Ultimate ability has finished casting, you create an explosion, dealing 65% of your Protections from items and abilities as Magical Damage and slowing targets by 25% for 3s in a 30 unit radius. Then you gain a Shield equal to 90% of your Protections from items and abilities for 5s. When destroyed, by timing out or being depleted, you explode again. This can only occur once every 45 seconds.",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "glorious_pridwen.png"
+  },
+  "nimble bancroft's talon": {
+    "name": "Nimble Bancroft's Talon",
+    "cost": 600,
+    "total_cost": 3000,
+    "stats": [
+      "80 Magical Power",
+      "200 Mana",
+      "15% Magical Lifesteal"
+    ],
+    "passive": "PASSIVE - You gain additional Magical Power and Lifesteal scaled from missing Health. This caps at 70 power and 15% Lifesteal at 40% Health.GLYPH - For every 30 Magical Power you have, you gain 2 Basic Attack Damage and 2% Attack Speed.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "nimble_bancrofts_talon.png"
+  },
+  "reverent pridwen": {
+    "name": "Reverent Pridwen",
+    "cost": 600,
+    "total_cost": 3000,
+    "stats": [
+      "25 Physical Protection",
+      "25 Magical Protection",
+      "20% Cooldown Reduction"
+    ],
+    "passive": "GLYPH - When your Ultimate ability has finished casting, you gain a Shield equal to 225% of your Protections from items and abilities for 5s. When destroyed, by timing out or being depleted, it explodes in a 30 unit radius and deals Magical damage equal to 75% of your Protections from items and abilities and slows targets by 25% for 3s. This can only occur once every 45 seconds.",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "reverent_pridwen.png"
+  },
+  "calamitous rod of tahuti": {
+    "name": "Calamitous Rod of Tahuti",
+    "cost": 600,
+    "total_cost": 3450,
+    "stats": [
+      "125 Magical Power",
+      "30 MP5",
+      "10% Magical Penetration"
+    ],
+    "passive": "PASSIVE - Basic Attacks and Abilities gain 15% additional Magical Power against targets below 60% Health.GLYPH - Successfully hitting an enemy god with an ability calls down a meteor that lands after 1s, dealing 100 (+35% of your Magical Power) damage in a 15 unit radius. This effect can only occur once every 15s.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "calamitous_rod_of_tahuti.png"
+  },
+  "perfected rod of tahuti": {
+    "name": "Perfected Rod of Tahuti",
+    "cost": 600,
+    "total_cost": 3450,
+    "stats": [
+      "125 Magical Power",
+      "30 MP5",
+      "10% Magical Penetration"
+    ],
+    "passive": "PASSIVE - Basic Attacks and Abilities gain 15% additional Magical Power against targets below 60% Health.GLYPH - Successfully damaging an enemy god with an ability applies a mark for 6s. Damaging them a second time with an ability consumes the mark and provides you 10% movement speed for 3s and reduces your ability cooldowns by 1.5s. Only one mark can be active at a time and cannot be applied for 6s after consuming a mark.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "perfected_rod_of_tahuti.png"
+  },
+  "devoted deathbringer": {
+    "name": "Devoted Deathbringer",
+    "cost": 600,
+    "total_cost": 3500,
+    "stats": [
+      "30 Physical Power",
+      "30% Critical Strike Chance"
+    ],
+    "passive": "PASSIVE - Critical Strike bonus damage dealt is increased by 25%.GLYPH - Your Critical Strike Chance is multiplied by 1.2. For each 5% Critical Strike Chance you go over 100% Critical Strike Chance, you gain 5 Physical Power.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "devoted_deathbringer.png"
+  },
+  "malicious deathbringer": {
+    "name": "Malicious Deathbringer",
+    "cost": 600,
+    "total_cost": 3500,
+    "stats": [
+      "30 Physical Power",
+      "30% Critical Strike Chance"
+    ],
+    "passive": "PASSIVE - Critical Strike bonus damage dealt is increased by 75%.GLYPH - Successfully hitting an Enemy God with a Critical Strike will subtract 1s from all of your abilities currently on cooldown.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "malicious_deathbringer.png"
+  },
+  "evolved book of thoth": {
+    "name": "Evolved Book of Thoth",
+    "cost": 0,
+    "total_cost": 0,
+    "stats": [
+      "60 Magical Power",
+      "10 Magical Penetration",
+      "800 Mana",
+      "20 MP5"
+    ],
+    "passive": "PASSIVE - You gain Magical Power equal to 7% of your Mana from items.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "evolved_book_of_thoth.png"
+  },
+  "evolved charon's coin": {
+    "name": "Evolved Charon's Coin",
+    "cost": 0,
+    "total_cost": 0,
+    "stats": [
+      "75 Magical Power",
+      "35 HP5 & MP5",
+      "20% Magical Penetration",
+      "8% Movement Speed"
+    ],
+    "passive": "PASSIVE - On god kill or assist a coin is flipped. If heads, you gain 150 Health over 6 seconds. If tails, you gain 5% Movement Speed for 6 seconds. You also gain 15 gold every time the coin is flipped.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "evolved_charons_coin.png"
+  },
+  "evolved devourer's gauntlet": {
+    "name": "Evolved Devourer's Gauntlet",
+    "cost": 0,
+    "total_cost": 0,
+    "stats": [
+      "50 Physical Power",
+      "22.5% Physical Lifesteal",
+      "15 Physical Penetration"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "evolved_devourers_gauntlet.png"
+  },
+  "evolved gauntlet of thebes": {
+    "name": "Evolved Gauntlet of Thebes",
+    "cost": 0,
+    "total_cost": 0,
+    "stats": [
+      "250 Health",
+      "45 Physical Protection",
+      "45 Magical Protection",
+      "15 HP5"
+    ],
+    "passive": "AURA - Allies within 70 units receive 10 Physical Protection and 10 Magical Protection.",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "evolved_gauntlet_of_thebes.png"
+  },
+  "evolved prophetic cloak": {
+    "name": "Evolved Prophetic Cloak",
+    "cost": 0,
+    "total_cost": 0,
+    "stats": [
+      "40 Physical Protection",
+      "40 Magical Protection",
+      "100 Health",
+      "10% Cooldown Reduction"
+    ],
+    "passive": "AURA - Allies within 70 units gain 20 Physical and Magical Protections. PASSIVE - If you have over 300 total Protections, you gain 6% Damage Mitigation. If you have over 500 total Protections, you gain an additional 6% Damage Mitigation.",
+    "active": "",
+    "type": [
+      "Defensive",
+      "Utility"
+    ],
+    "image": "evolved_prophetic_cloak.png"
+  },
+  "evolved rage": {
+    "name": "Evolved Rage",
+    "cost": 0,
+    "total_cost": 0,
+    "stats": [
+      "55 Physical Power",
+      "45% Critical Strike Chance"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Offensive"
+    ],
+    "image": "evolved_rage.png"
+  },
+  "evolved soul eater": {
+    "name": "Evolved Soul Eater",
+    "cost": 0,
+    "total_cost": 0,
+    "stats": [
+      "45 Physical Power",
+      "15% Physical Lifesteal",
+      "10 Physical Penetration",
+      "10% Cooldown Reduction"
+    ],
+    "passive": "PASSIVE - Your abilities heal you for 15% of the damage dealt to targets.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "evolved_soul_eater.png"
+  },
+  "evolved transcendence": {
+    "name": "Evolved Transcendence",
+    "cost": 0,
+    "total_cost": 0,
+    "stats": [
+      "25 Physical Power",
+      "1050 Mana",
+      "10 MP5",
+      "10 Physical Penetration"
+    ],
+    "passive": "PASSIVE - You gain Physical Power equal to 2% of your Maximum Mana.",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Utility"
+    ],
+    "image": "evolved_transcendence.png"
+  },
+  "evolved warlock's staff": {
+    "name": "Evolved Warlock's Staff",
+    "cost": 0,
+    "total_cost": 0,
+    "stats": [
+      "80 Magical Power",
+      "500 Health",
+      "200 Mana",
+      "10% Magical Penetration"
+    ],
+    "passive": "",
+    "active": "",
+    "type": [
+      "Offensive",
+      "Defensive",
+      "Utility"
+    ],
+    "image": "evolved_warlocks_staff.png"
+  }
+}

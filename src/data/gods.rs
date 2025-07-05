@@ -1,4 +1,4 @@
-use std::collections::HashMap;
+use std::collections::BTreeMap;
 use serde::{Deserialize, Serialize};
 use once_cell::sync::Lazy;
 use serde_json::Value;
@@ -37,7 +37,7 @@ trait GodInserter {
     fn add(&mut self, god: God) -> &mut Self;
 }
 
-impl GodInserter for HashMap<String, God> {
+impl GodInserter for BTreeMap<String, God> {
     fn add(&mut self, god: God) -> &mut Self {
         self.insert(god.name.clone(), god);
         self
@@ -61,8 +61,8 @@ pub static SKILLS_JSON: Lazy<Value> = Lazy::new(|| {
 });
 
 // Processed data with combined information
-pub static GODS: Lazy<HashMap<String, God>> = Lazy::new(|| {
-    let mut gods = HashMap::new();
+pub static GODS: Lazy<BTreeMap<String, God>> = Lazy::new(|| {
+    let mut gods = BTreeMap::new();
 
     gods
         .add(God::new(
@@ -73,7 +73,7 @@ pub static GODS: Lazy<HashMap<String, God>> = Lazy::new(|| {
             "Flame Wave",
             "Path of Flames",
             "Rain Fire",
-        ]).with_roles(vec!["Mage"]))
+        ]).with_roles(vec!["Mid"]))
         .add(God::new(
             "chaac",
             "Warrior",
@@ -82,7 +82,7 @@ pub static GODS: Lazy<HashMap<String, God>> = Lazy::new(|| {
             "Torrent",
             "Rain Dance",
             "Storm Call",
-        ]).with_roles(vec!["Warrior"]))
+        ]).with_roles(vec!["Mid, Solo"]))
         .add(God::new(
             "cliodhna",
             "Assassin",
@@ -91,7 +91,7 @@ pub static GODS: Lazy<HashMap<String, God>> = Lazy::new(|| {
             "Flickering Visions",
             "Lurching Claw",
             "Tearing the Veil",
-        ]).with_roles(vec!["Assassin"]))
+        ]).with_roles(vec!["Mid, Jungle, Solo"]))
         .add(God::new(
             "eset",
             "Mage",
@@ -100,7 +100,16 @@ pub static GODS: Lazy<HashMap<String, God>> = Lazy::new(|| {
             "Spirit Ball",
             "Dispel Magic",
             "Circle of Protection",
-        ]).with_roles(vec!["Mage"]))
+        ]).with_roles(vec!["Mid, Support"]))
+        .add(God::new(
+            "freya",
+            "Mage",
+        ).with_abilities(vec![
+            "Irradiate",
+            "Pulse",
+            "Banish",
+            "Valkyrie's Discretion",
+        ]).with_roles(vec!["ADC"]))
         .add(God::new(
             "he_bo",
             "Mage",
@@ -109,7 +118,7 @@ pub static GODS: Lazy<HashMap<String, God>> = Lazy::new(|| {
             "Atlas of the Yellow River",
             "Waterspout",
             "Crushing Wave",
-        ]).with_roles(vec!["Mage"]))
+        ]).with_roles(vec!["Mid, Jungle, Support"]))
         .add(God::new(
             "mercury",
             "Assassin",
@@ -118,7 +127,7 @@ pub static GODS: Lazy<HashMap<String, God>> = Lazy::new(|| {
             "Maximum Velocity",
             "Special Delivery",
             "Sonic Boom",
-        ]).with_roles(vec!["Assassin"]))
+        ]).with_roles(vec!["Jungle"]))
         .add(God::new(
             "poseidon",
             "Mage",
@@ -127,7 +136,7 @@ pub static GODS: Lazy<HashMap<String, God>> = Lazy::new(|| {
             "Trident",
             "Whirlpool",
             "Release the Kraken",
-        ]).with_roles(vec!["Mage"]))
+        ]).with_roles(vec!["Mid, Jungle, ADC"]))
         .add(God::new(
             "thanatos",
             "Assassin",
@@ -136,7 +145,7 @@ pub static GODS: Lazy<HashMap<String, God>> = Lazy::new(|| {
             "Scent of Death",
             "Soul Reap",
             "Hovering Death",
-        ]).with_roles(vec!["Assassin"]));
+        ]).with_roles(vec!["Jungle"]));
 
     gods
 }); 

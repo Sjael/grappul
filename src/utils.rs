@@ -1,3 +1,4 @@
+#![allow(unused)]
 const NON_CAP_WORDS: [&str; 4] = ["and", "or", "the", "of"];
 pub const ATTR_FLIP: [&str; 2] = ["cooldown", "mana cost"];
 
@@ -34,6 +35,30 @@ pub fn slug(text: &str) -> String {
 /// Example: "Warrior's Axe" -> "warriors axe"
 pub fn simplify(text: &str) -> String {
     text.replace('\'', "").to_lowercase()
+}
+
+use web_sys::window;
+
+pub fn save_to_storage(key: &str, value: &str) {
+    if let Some(window) = window() {
+        if let Ok(Some(storage)) = window.local_storage() {
+            let _ = storage.set_item(key, value);
+        }
+    }
+}
+
+pub fn load_from_storage(key: &str) -> Option<String> {
+    window()
+        .and_then(|window| window.local_storage().ok().flatten())
+        .and_then(|storage| storage.get_item(key).ok().flatten())
+}
+
+pub fn clear_from_storage(key: &str) {
+    if let Some(window) = window() {
+        if let Ok(Some(storage)) = window.local_storage() {
+            let _ = storage.remove_item(key);
+        }
+    }
 }
 
 #[cfg(test)]

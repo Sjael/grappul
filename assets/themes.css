@@ -1,0 +1,246 @@
+/* Base Theme Variables */
+:root {
+    /* Typography */
+    --font-primary: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    --font-secondary: 'Helvetica Neue', Arial, sans-serif;
+    
+    /* Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+
+    /* Borders & Radius */
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
+    --border: var(--color-border);
+
+    /* Animation */
+    --transition-speed: 0.3s;
+
+    /* Base Colors */
+    --white: #ffffff;
+    --black: #000000;
+    --gold: #ffd700;
+    --silver: #c4c4c4;
+
+    /* Brand Colors */
+    --mandarin: #f4743bff;
+    --honeydew: #d5f2e3ff;
+    --ocean-green: #73ba9bff;
+    --british-racing-green: #003e1fff;
+    --dark-jungle-green: #01110aff;
+    --maximum-yellow-red: #ffbc42;
+    --ruby: #d81159ff;
+    --charcoal: #273e47ff;
+    --carolina-blue: #00a8e8ff;
+    --medium-slate-blue: #7678edff;
+
+    /* Additional Colors */
+    --purple: rgb(123, 31, 162);
+    --violet: rgb(103, 58, 183);
+    --pink: rgb(244, 143, 177);
+
+    /* Class Colors */
+    --warrior-red: #8B2E2E;
+    --assassin-purple: #553285;
+    --guardian-green: #2E5E2E;
+    --hunter-gold: #8B6914;
+    --mage-blue: #1E4B8B;
+    --dark-bg: #222226;
+
+    /* Overlay Colors */
+    --overlay-light: rgba(255, 255, 255, 0.05);
+    --overlay-dark: rgba(0, 0, 0, 0.1);
+    --overlay-shadow: rgba(0, 0, 0, 0.7);
+    --overlay-mandarin: rgba(244, 116, 59, 0.1);
+    
+    /* Scrollbar */
+    --scrollbar-width: 8px;
+    --scrollbar-track: rgba(244, 116, 59, 0.05);
+    --scrollbar-thumb: rgba(244, 116, 59, 0.3);
+    --scrollbar-thumb-hover: rgba(244, 116, 59, 0.5);
+
+    /* Layout */
+    --header-height: 60px;
+    --sidebar-width: 300px;
+
+    /* Theme Colors */
+    --bg-primary: var(--color-bg-primary);
+    --bg-secondary: var(--color-bg-secondary);
+    --text-primary: var(--color-text-primary);
+    --text-secondary: var(--color-text-secondary);
+    --accent: var(--color-accent);
+    --accent-hover: var(--color-accent-hover);
+
+    
+    --color-opaque: rgba(76, 66, 120, 0.4);
+
+    /* Highlights */
+    --highlight-green: url("https://s2.svgbox.net/pen-brushes.svg?ic=brush-9&color=6cd77b");
+    --highlight-red: url("https://s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=ff3a3a");
+}
+
+/* Light Theme */
+:root,
+[data-theme="light"] {
+    --color-bg-primary: var(--white);
+    --color-bg-secondary: #f5f5f5;
+    --color-bg-tertiary: #e9e9e9;
+    
+    --color-text-primary: #1a1a1a;
+    --color-text-secondary: #2d2d2d;
+    --color-text-muted: #595959;
+    
+    --color-border: #e0e0e0;
+    --color-shadow: var(--overlay-dark);
+    
+    --color-accent: var(--mandarin);          /* Base mandarin */
+    --color-accent-hover: #f95b1d;            /* Slightly more saturated mandarin */
+    --color-accent-muted: #ffa07a;            /* Lighter mandarin */
+    --logo-color: var(--mandarin);
+
+    --gray1: #f8f9fa;
+    --gray2: #e9ecef;
+    --gray3: #dee2e6;
+    --gray4: #ced4da;
+    --gray5: #adb5bd;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+    --color-bg-primary: #1a1e25;
+    --color-bg-secondary: #2a2e35;
+    --color-bg-tertiary: #2d2d2d;
+    
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #e6e6e6;
+    --color-text-muted: #b0b0b0;
+    
+    --color-border: #404040;
+    --color-shadow: rgba(0, 0, 0, 0.3);
+    
+    --color-accent: #ff8155;          /* Brighter mandarin for dark theme */
+    --color-accent-hover: #ff9b76;    /* Lighter mandarin */
+    --color-accent-muted: #cc6544;    /* Darker mandarin */
+    --logo-color: var(--color-accent);
+
+    --gray1: #f0f0f0;
+    --gray2: #d0d0d0;
+    --gray3: #a0a0a0;
+    --gray4: #808080;
+    --gray5: #606060;
+}
+
+/* Smite Theme */
+[data-theme="smite"] {
+    --color-bg-primary: #0a1428;
+    --color-bg-secondary: #152238;
+    --color-bg-tertiary: #1f3148;
+    
+    --color-text-primary: var(--gold);
+    --color-text-secondary: #e6c200;
+    --color-text-muted: var(--silver);
+    
+    --color-border: #2a436b;
+    --color-shadow: rgba(10, 20, 40, 0.3);
+    
+    --color-accent: #4a90e2;
+    --color-accent-hover: #64a6f4;
+    --color-accent-muted: #90caf9;
+    --logo-color: var(--mandarin);
+
+    --gray1: #0d1b2a;
+    --gray2: #1b263b;
+    --gray3: #415a77;
+    --gray4: #778da9;
+    --gray5: #e0e1dd;
+}
+
+/* Element Styles */
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    font-family: var(--font-primary);
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+#logo svg path, 
+object svg path {
+    fill: var(--logo-color);
+    transition: fill var(--transition-speed);
+}
+
+.theme-toggle {
+    margin-right: 1em;
+    padding: var(--spacing-sm) var(--spacing-md);
+    background-color: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-md);
+    color: var(--color-text-primary);
+    cursor: pointer;
+    transition: all var(--transition-speed);
+}
+
+.theme-toggle:hover {
+    background-color: var(--color-bg-tertiary);
+    transform: scale(1.05);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-text-primary);
+}
+
+p {
+    color: var(--color-text-secondary);
+}
+
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: color var(--transition-speed);
+}
+
+a:hover {
+    color: var(--color-accent-hover);
+}
+
+button {
+    padding: var(--spacing-sm) var(--spacing-md);
+    background-color: var(--color-accent);
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    transition: background-color var(--transition-speed);
+}
+
+button:hover {
+    background-color: var(--color-accent-hover);
+}
+
+.card {
+    padding: var(--spacing-md);
+    background-color: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-md);
+    box-shadow: 0 2px 4px var(--color-shadow);
+}
+
+input, textarea, select {
+    padding: var(--spacing-sm);
+    background-color: var(--color-bg-tertiary);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-sm);
+    color: var(--color-text-primary);
+    transition: all var(--transition-speed);
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: var(--color-accent);
+    outline: none;
+    box-shadow: 0 0 0 2px var(--color-accent-muted);
+} 

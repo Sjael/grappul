@@ -249,6 +249,53 @@ pub static GUIDES: Lazy<HashMap<String, Vec<Guide>>> = Lazy::new(|| {
     ];
     guides.insert("cliodhna".to_string(), cliodhna_guides);
 
+    // Freya Guides
+    let freya_guides = vec![
+        Guide::new("freya", "adc")
+            .with_build(vec![
+                "s_conduit",
+                "fatalis",
+                "demonic",
+                "bancroftsclaw",
+                "typhons",
+                "tahuti"
+            ])
+            .with_relics(vec!["beads", "aegis"])
+            .with_timeline(vec![
+                TimelineEntry {
+                    percent: 0,
+                    items: Some(vec!["s_conduit".to_string(), "magic-focus".to_string()]),
+                    tip: None,
+                },
+                TimelineEntry {
+                    percent: 15,
+                    items: Some(vec!["fatalis".to_string()]),
+                    tip: None,
+                },
+                TimelineEntry {
+                    percent: 30,
+                    items: Some(vec!["demonic".to_string()]),
+                    tip: None,
+                },
+                TimelineEntry {
+                    percent: 45,
+                    items: Some(vec!["bancroftsclaw".to_string()]),
+                    tip: None,
+                },
+                TimelineEntry {
+                    percent: 60,
+                    items: Some(vec!["typhons".to_string()]),
+                    tip: None,
+                },
+                TimelineEntry {
+                    percent: 75,
+                    items: Some(vec!["tahuti".to_string()]),
+                    tip: None,
+                },
+            ])
+    ];
+    guides.insert("freya".to_string(), freya_guides);
+
     // Eset Guides
     let eset_guides = vec![
         Guide::new("eset", "support")
@@ -411,9 +458,72 @@ pub static GUIDES: Lazy<HashMap<String, Vec<Guide>>> = Lazy::new(|| {
                     items: Some(vec!["powerpot".to_string()]),
                     tip: None,
                 },
+            ]),
+            Guide::new("poseidon", "jungle")
+            .with_build(vec![
+                "s_bumbasspear",
+                "fatalis",
+                "spearofdeso",
+                "bancrofts",
+                "typhons",
+                "tahuti"
             ])
+            .with_relics(vec!["beads", "aegis"])
+            .with_timeline(vec![
+                TimelineEntry {
+                    percent: 0,
+                    items: Some(vec!["s_sands".to_string(), "spellbook".to_string()]),
+                    tip: None,
+                },
+                TimelineEntry {
+                    percent: 15,
+                    items: Some(vec!["bookofthoth".to_string()]),
+                    tip: None,
+                },
+                TimelineEntry {
+                    percent: 30,
+                    items: Some(vec!["spearmagus".to_string()]),
+                    tip: None,
+                },
+                TimelineEntry {
+                    percent: 45,
+                    items: Some(vec!["myrdin".to_string()]),
+                    tip: None,
+                },
+                TimelineEntry {
+                    percent: 60,
+                    items: Some(vec!["spearofdeso".to_string()]),
+                    tip: None,
+                },
+                TimelineEntry {
+                    percent: 75,
+                    items: Some(vec!["s_pendulum".to_string()]),
+                    tip: None,
+                },
+                TimelineEntry {
+                    percent: 90,
+                    items: Some(vec!["obshard".to_string()]),
+                    tip: None,
+                },
+                TimelineEntry {
+                    percent: 100,
+                    items: Some(vec!["powerpot".to_string()]),
+                    tip: None,
+                },
+            ]),
+            Guide::new("poseidon", "adc")
+            .with_build(vec![
+                "s_pendulum",
+                "fatalis",
+                "spearofdeso",
+                "bancrofts",
+                "typhons",
+                "tahuti"
+            ])
+            .with_relics(vec!["beads", "blink"])
     ];
     guides.insert("poseidon".to_string(), poseidon_guides);
+
 
     // Mercury Guides
     let mercury_guides = vec![

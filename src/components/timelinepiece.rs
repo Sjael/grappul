@@ -8,26 +8,33 @@ pub struct TimelinePieceProps {
     entry: TimelineEntry,
 }
 
+#[component]
 pub fn TimelinePiece(props: TimelinePieceProps) -> Element {
     let left_style = format!("left: {}%", props.entry.percent);
 
     rsx! {
         div {
-            class: "entry",
-            style: left_style,
-            div {
-                class: "tick-h",
-                div {
-                    class: "tick"
+            class: {
+                let mut classes = String::from("entry");
+                if props.entry.percent == 0 {
+                    classes.push_str(" entry-start");
                 }
-                if let Some(items) = &props.entry.items {
+                classes
+            },
+            style: left_style,
+            if let Some(items) = &props.entry.items {
+                div {
+                    class: "items",
                     for item in items {
                         Item {
                             item: item.clone(),
-                            small: true
+                            size: 30
                         }
                     }
                 }
+            }
+            div {
+                class: "tick"
             }
         }
     }

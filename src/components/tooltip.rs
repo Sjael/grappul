@@ -1,78 +1,75 @@
 #![allow(non_snake_case)]
 use dioxus::prelude::*;
-use crate::data::items::ITEMS;
-use std::collections::HashMap;
+use crate::{data::items::ITEMS, TooltipPos};
+use crate::HoveredItem;
 
-#[derive(Props, Clone, PartialEq)]
-pub struct TooltipProps {
-    item_id: String,
-    #[props(default = false)]
-    show_base: bool,
-}
+#[component]
+pub fn Tooltip() -> Element {
+    let hovered_item = use_context::<Signal<HoveredItem>>();
+    let mouse_pos = use_context::<Signal<TooltipPos>>();
 
-fn render_stats(stats: &HashMap<String, String>) -> Option<Element> {
-    (!stats.is_empty()).then(|| rsx! {
-        div {
-            class: "tooltip-stats",
-            for (stat, value) in stats {
-                p { key: "{stat}", "{stat}: {value}" }
-            }
-        }
-    })
-}
+    // Only render if we have an item
+    let Some(item_id) = &hovered_item().0 else {
+        return rsx! { div {} };
+    };
 
-fn render_passives(passives: Vec<&str>) -> Option<Element> {
-    (!passives.is_empty()).then(|| rsx! {
-        for passive in passives {
-            div {
-                key: "{passive}",
-                class: "tooltip-passive",
-                p { "PASSIVE - {passive}" }
-            }
-        }
-    })
-}
-
-pub fn Tooltip(props: TooltipProps) -> Element {
-    let item = match ITEMS.get(&props.item_id) {
-        Some(item) => item,
-        None => return rsx! { div { "Unknown item" } }
+    let Some(item) = ITEMS.get(item_id) else {
+        return rsx! { div {} };
     };
 
     rsx! {
         div {
             class: "tooltip",
+            style: "left: {mouse_pos.read().x + 15}px; top: {mouse_pos.read().y + 25}px; pointer-events: none;",
             div {
                 class: "tooltip-header",
                 h3 { "{item.display_name}" }
                 if item.price > 0 {
-                    p { class: "price", "{item.price} gold" }
+                    span { class: "price", "{item.price}" }
                 }
             }
             
             // Render main item stats and passives
-            {render_stats(&item.stats.0)}
-            {render_passives(item.get_passives())}
+            for (stat, value) in &item.stats.0 {
+                p { 
+                    key: "{stat:?}", 
+                    class: "tooltip-stat",
+                    span { 
+                        class: "stat-value",
+                        "{value}"
+                    }
+                    span { 
+                        class: "stat-name",
+                        "{stat.to_string()}"
+                    }
+                }
+            }
+            
+            for passive in item.get_passives() {
+                p { 
+                    key: "{passive}",
+                    class: "passive",
+                    span { class: "label", "PASSIVE" }
+                    " - {passive}"
+                }
+            }
             
             // Render active ability if present
             if let Some((desc, cd)) = item.get_active() {
-                div {
-                    class: "tooltip-active",
-                    p { "ACTIVE - {desc} (Cooldown: {cd}s)" }
+                p { 
+                    class: "active",
+                    span { class: "label", "ACTIVE" }
+                    " - {desc} "
+                    span { class: "cd", "(Cooldown: {cd}s)" }
                 }
             }
             
             // Render glyph information
-            if let Some((desc, base)) = item.get_glyph() {
-                if props.show_base {
-                    if let Some(base_item) = ITEMS.get(base) {
-                        {render_stats(&base_item.stats.0)}
-                        {render_passives(base_item.get_passives())}
-                    }
-                }
-                div {
-                    class: "tooltip-glyph",
-                    p { "GLYPH - {desc}" }
+            if let Some((desc, _)) = item.get_glyph() {
+                p { 
+                    class: "glyph",
+                    span { class: "label", "GLYPH" }
+                    " - {desc}"
                 }
             }
         }

@@ -11,6 +11,7 @@ pub struct IconProps {
     fill: String,
 }
 
+#[component]
 pub fn Icon(props: IconProps) -> Element {
     let IconProps { name, size, fill } = props;
     
@@ -34,13 +35,12 @@ pub fn Icon(props: IconProps) -> Element {
             }
         },
         None => {
-            let img_src = format!("/icons/{}.svg", name);
+            let img_src = format!("assets/icons/{}.svg", name);
             let img_style = format!("fill: {}", fill);
             rsx! {
                 img {
                     class: "icon",
                     src: "{img_src}",
-                    alt: "{name}",
                     width: "{size}",
                     height: "{size}",
                     style: "{img_style}"

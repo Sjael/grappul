@@ -1,0 +1,769 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import 'themes.css';
+
+/* =================
+/* 🌍 Global Styles */
+/* ================= */
+::selection {
+    background: var(--color-accent);
+    color: var(--color-text-primary);
+}
+
+* {
+    transition: color var(--transition-speed);
+}
+
+html {
+    overflow-y: overlay; /* Shows scrollbar only when scrolling, but reserves space */
+    scrollbar-width: thin; /* Firefox */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    font-family: 'PT Sans';
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    padding-left: 16px;
+    color: var(--color-text-secondary);
+}
+
+ul.dia {
+    padding-left: 8px;
+    list-style-type: "⬩ ";
+}
+
+ul.dia li, ol li {
+    margin-bottom: 1em;
+    padding-left: 8px;
+    line-height: 2em;
+}
+
+ol > li::marker {
+    color: var(--color-text-secondary);
+    font-weight: bold;
+}
+
+i {
+    text-align: center;
+    vertical-align: middle;
+    color: var(--color-text-primary);
+}
+
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+/* =================
+/* 📝 Header Component */
+/* ================= */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 1rem;
+    color: var(--color-text-primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all var(--transition-speed);
+}
+
+nav a:hover {
+    background: var(--overlay-light);
+}
+
+nav a:hover * {
+    color: var(--color-accent);
+}
+
+nav .logo img {
+    width: 6rem;
+    height: 32px;
+}
+
+/* =================
+/* 🌓 Dark Mode Component */
+/* ================= */
+body {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+}
+
+body[data-dark] {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+}
+
+
+.dark-mode-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    color: var(--color-text-primary);
+    transition: color var(--transition-speed);
+}
+
+.dark-mode-toggle:hover {
+    color: var(--color-accent);
+}
+
+/* =================
+/* 🎮 God Grid Component */
+/* ================= */
+.god-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
+    grid-auto-rows: min-content;
+    align-items: start;
+    height: calc(100vh - 120px);
+    padding: 0.25rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+.god-grid::-webkit-scrollbar {
+    width: 8px;
+}
+
+.god-grid::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.god-grid::-webkit-scrollbar-thumb {
+    background: var(--text-muted);
+    border-radius: 4px;
+}
+
+.god-grid::-webkit-scrollbar-button {
+    display: none;
+}
+
+.god {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1;
+    height: 64px;
+    background: var(--overlay-dark);
+    border: 2px transparent solid;
+    border-radius: 1px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all 0.6s, transform 300ms ease;
+}
+
+.god img {
+    width: 100%;
+    height: 100%;
+    max-width: 64px;
+    max-height: 64px;
+    object-fit: cover;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.god:hover:not(.selected) {
+    transform: translateY(-2px);
+}
+
+.god.selected {
+    border: 2px solid var(--color-accent);
+}
+
+
+.god:hover, 
+.god.selected{
+    opacity: 1;
+}
+
+.god.filtered img {
+    opacity: 0.1;
+}
+
+
+
+/* =================
+/* 📖 Explain Component */
+/* ================= */
+
+.explain-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.explain-title {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 1rem;
+}
+
+.explain-title h1 {
+    margin: 0;
+    color: var(--color-text-primary);
+    font-size: 2em;
+    text-transform: capitalize;
+}
+
+.explain-title h4 {
+    margin: 0;
+    color: var(--color-text-secondary);
+    opacity: 0.7;
+    text-transform: uppercase;
+}
+
+.god-img {
+    width: 2.5em;
+    height: 2.5em;
+    object-fit: cover;
+}
+
+.explain-content {
+    display: grid;
+    flex-direction: column;
+}
+
+.explain-content h5 {
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    color: var(--color-text-secondary);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.itemrow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.topdetails {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.role-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.role-button {
+    padding: 0.5rem 1rem;
+    background: transparent;
+    border: 1px solid var(--color-text-muted);
+    border-radius: 4px;
+    color: var(--color-text-muted);
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all var(--transition-speed);
+}
+
+.role-button:hover {
+    background: var(--overlay-mandarin);
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+}
+
+.role-button.selected {
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+    color: var(--color-bg-primary);
+    font-weight: 700;
+}
+
+.role-button.selected:hover {
+    background: var(--color-accent-hover);
+}
+
+
+/* =================
+/* ⏱️ Timeline Component */
+/* ================= */
+.timeline {
+    position: relative;
+    height: 10px;
+    width: 80%;
+    margin: auto;
+    margin-top: 7rem;
+    margin-bottom: -3rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+    height: 2px;
+    background: var(--color-border);
+}
+
+.entry {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    bottom:40px;
+    transform: translateX(-50%);
+}
+.entry .items{
+    padding: 0.5rem;
+    border-radius: 4px;
+    display: flex;
+    gap: 0.25rem;
+    margin-bottom: 0.15rem;
+}
+
+.entry-start .items{
+    background-color: var(--color-opaque);
+}
+
+
+.entry .tick {
+    width: 2px;
+    height: 10px;
+    background: var(--color-border);
+}
+
+/* =================
+/* 🎭 Role Filter Component */
+/* ================= */
+.role-filters {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+#role-filter {
+    width: 150px;
+    height: 150px;
+    transition: transform var(--transition-speed);
+}
+
+#role-filter > * {
+    fill: var(--color-text-muted);
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+#role-filter #base {
+    fill: var(--color-bg-secondary);
+    fill-opacity: 1;
+}
+
+#role-filter > *:hover {
+    fill: var(--color-text-primary);
+}
+
+#role-filter > *.selected {
+    fill: var(--color-text-primary);
+}
+
+#role-filter > .role.highlight:not(.selected) {
+    fill: var(--color-accent);
+}
+
+#role-filter > .role.highlight.selected {
+    fill: var(--color-text-primary);
+}
+
+/* Clear Filters Button */
+.clear-filters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border: 1px solid var(--color-text-primary);
+    border-radius: 50%;
+    color: var(--color-text-primary);
+    cursor: pointer;
+    transition: all var(--transition-speed);
+    opacity: 0;
+    visibility: hidden;
+    background-color: transparent;
+    transform: scale(0.8);
+}
+
+.clear-filters.visible {
+    opacity: 0.5;
+    visibility: visible;
+    transform: scale(1);
+}
+
+.clear-filters:hover {
+    opacity: 1;
+    background-color: transparent;
+}
+
+.filters-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* =================
+/* 🔄 Class Filter Component */
+/* ================= */
+.class-filters {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.class {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 55px;
+    padding: 0;
+    background: var(--dark-bg);
+    opacity: .5;
+    color: var(--white);
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+
+.class:hover {
+    opacity: 0.8;
+    transform: translateY(-1px);
+}
+
+.class.selected {
+    opacity: 1;
+    transform: translateY(-1px);
+}
+
+.class[data-class="warrior"] { background: var(--warrior-red); }
+.class[data-class="assassin"] { background: var(--assassin-purple); }
+.class[data-class="guardian"] { background: var(--guardian-green); }
+.class[data-class="hunter"] { background: var(--hunter-gold); }
+.class[data-class="mage"] { background: var(--mage-blue); }
+
+.class:not(.selected) {
+    filter: brightness(0.8);
+}
+
+/* =================
+/* 💬 Tooltip Component */
+/* ================= */
+.tooltip-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip {
+    position: absolute;
+    z-index: 1000;
+    width: 300px;
+    padding: 0.75rem;
+    transform: translateX(-50%);
+    background: var(--color-bg-tertiary);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    box-shadow: 0px 1px 4px var(--overlay-shadow);
+    color: var(--color-text-primary);
+    font-size: 0.875rem;
+    white-space: pre-wrap;
+}
+
+.tooltip-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.tooltip-header h3 {
+    margin: 0;
+    color: var(--color-text-primary);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.tooltip-header .price {
+    color: var(--color-accent);
+    font-weight: bold;
+}
+
+.tooltip-stats {
+    margin-bottom: 0.5rem;
+}
+
+.tooltip-stats p {
+    margin: 0.25rem 0;
+    color: var(--color-text-secondary);
+}
+
+.tooltip-stat {
+    margin: 0.25rem 0;
+    padding-left: 1rem;
+    color: var(--color-text-secondary);
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    gap: 0.5rem;
+    align-items: baseline;
+}
+
+.tooltip-stat .stat-name {
+    color: var(--text-muted);
+    text-align: left;
+}
+
+.tooltip-stat .stat-value {
+    color: var(--color-text-secondary);
+    font-weight: bold;
+    text-align: right;
+}
+
+.tooltip p {
+    margin: 0.25rem 0;
+    color: var(--color-text-secondary);
+    line-height: 1.4;
+}
+
+.tooltip .label {
+    color: var(--color-accent);
+    font-weight: bold;
+}
+
+.tooltip .cd {
+    color: var(--color-text-secondary);
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.tooltip .passive,
+.tooltip .active,
+.tooltip .glyph {
+    margin: 0.25rem 0;
+}
+
+.tooltip .name {
+    color: var(--color-text-primary);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.tooltip .price {
+    color: var(--gold);
+    font-size: 0.9rem;
+}
+
+.tooltip .stat {
+    color: var(--color-text-secondary);
+    font-size: 0.9rem;
+}
+
+.tooltip .stat span {
+    color: var(--color-text-primary);
+}
+
+.tooltip .passive {
+    color: var(--color-text-secondary);
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+/* =================
+/* 📐 Layout Components */
+/* ================= */
+.container {
+    width: 80vw;
+    margin: 0 auto;
+    margin-left: 10vw;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas:
+        "sidebar main"
+        "sidebar main"
+        "sidebar main"
+        "sidebar main";
+    min-height: calc(100vh - 60px);
+    margin: auto;
+    gap: 2rem;
+    column-gap: 40px;
+}
+
+.sidebar {
+    position: fixed;
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    height: calc(100vh - 60px);
+    padding: 3rem 0rem;
+    gap: 1rem;
+    overflow: hidden;
+}
+
+.main-content {
+    grid-area: main;
+    padding: 3rem 0rem;
+    max-width: 800px;
+}
+
+/* =================
+/* ✨ Animation Keyframes */
+/* ================= */
+@keyframes color-rotate {
+    from { filter: hue-rotate(0deg); }
+    to { filter: hue-rotate(360deg); }
+}
+
+@keyframes background-pan {
+    from { background-position: 0% center; }
+    to { background-position: -200% center; }
+}
+
+@keyframes scale {
+    from, to { transform: scale(0); }
+    50% { transform: scale(1); }
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(180deg); }
+}
+
+@keyframes drift {
+    from { transform: translate(0, 0) scale(0); }
+    50% { transform: translate(150%, 100%) scale(1); }
+    to { transform: translate(300%, 200%) scale(0); }
+}
+
+/* =================
+/* 📱 Media Queries */
+/* ================= */
+@media(prefers-reduced-motion) {
+    .hidden { 
+        transition: none; 
+    }
+}
+
+@media (max-width: 768px) {
+    #role-filter {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    #role-filter {
+        width: 64px;
+        height: 64px;
+    }
+}
+
+.item, .ability  {
+    border-radius: 4px;
+}
+
+/* Pros Section */
+.pros{
+    list-style-type: decimal;
+    padding-left: 1.5rem;
+}
+
+.pros li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.grid_hold {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.skillrow {
+    display: flex;
+    gap: 0.2rem;
+    align-items: center;
+}
+
+.rowpoints {
+    display: flex;
+    gap: 0.25rem;
+    flex: 1;
+}
+
+.point {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.point.level {
+    background: var(--color-opaque);
+    font-weight: 500;
+}
+
+.point.level.skill1 {
+    color: #ff4757;
+}
+
+.point.level.skill2 {
+    color: #2ed573;
+}
+
+.point.level.skill3 {
+    color: #1e90ff;
+}
+
+.point.level.skill4 {
+    color: #ffa502;
+}
+

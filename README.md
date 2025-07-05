@@ -1,38 +1,72 @@
-# create-svelte
+# <img src="static/logo.svg" height="60">
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+A modern web application built with Rust and Dioxus for exploring and learning about gods, abilities, and items in gaming. Grappul provides an interactive interface for viewing character builds, abilities, and strategic information.
 
-## Creating a project
+## Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+- 🎮 Comprehensive god information and abilities
+- 🛠️ Item builds and recommendations
+- 📊 Cheatsheets for quick reference
+- 🎯 Role and class filtering
+- 💡 Detailed tooltips and explanations
+- 🖼️ High-quality ability and item icons
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Technology Stack
 
-# create a new project in my-app
-npm create svelte@latest my-app
+- **Frontend Framework**: [Dioxus](https://dioxuslabs.com/) - A React-like framework for Rust
+- **Language**: [Rust](https://www.rust-lang.org/)
+- **Styling**: CSS
+- **Asset Management**: Static file serving for images and icons
+
+## Project Structure
+
+```
+grappul/
+├── src/
+│   ├── components/     # Reusable UI components
+│   ├── data/          # Game data and JSON files
+│   ├── routes/        # Application routes
+│   └── utils.rs       # Utility functions
+├── assets/
+│   ├── abilities/     # Ability icons
+│   ├── gods/         # God portraits
+│   ├── icons/        # UI icons
+│   └── items/        # Item icons
+└── Cargo.toml         # Rust dependencies
 ```
 
-## Developing
+## Getting Started
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+1. **Prerequisites**
+   - Install Rust and Cargo
+   - Install Dioxus CLI
 
-```bash
-npm run dev
+2. **Installation**
+   ```bash
+   # Clone the repository
+   git clone https://github.com/yourusername/grappul.git
+   cd grappul
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+   # Install Dioxus CLI
+   cargo install dioxus-cli
+   ```
 
-## Building
+3. **Development**
+   ```bash
+   # Start the development server
+   dx serve
+   ```
 
-To create a production version of your app:
+4. **Building**
+   ```bash
+   # Create a production build
+   dx build --release
+   ```
 
-```bash
-npm run build
-```
+## Contributing
 
-You can preview the production build with `npm run preview`.
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.

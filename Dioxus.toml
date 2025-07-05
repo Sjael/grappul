@@ -1,17 +1,17 @@
 [application]
-name = "Grappul"
-default_platform = "web"
+name = "grappul"
+asset_dir = "assets"
+out_dir = "dist"
 
 [web.app]
 title = "Grappul - SMITE Guides"
-base_path = "/grappul_svelte2"
+
 
 [web.watcher]
 reload_html = true
 watch_path = ["src", "public"]
 
 [web.resource]
-style = ["tailwind.css"]
 script = []
 
 [web.resource.dev]
