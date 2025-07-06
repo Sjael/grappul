@@ -1,0 +1,1423 @@
+{
+  "beads": {
+    "display_name": "Purification Beads",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Relic",
+      "Tier1"
+    ]
+  },
+  "blink": {
+    "display_name": "Blink Rune",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Relic",
+      "Tier1"
+    ]
+  },
+  "shell": {
+    "display_name": "Shell",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Relic",
+      "Tier1"
+    ]
+  },
+  "ankh": {
+    "display_name": "Ankh",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Relic",
+      "Tier1"
+    ]
+  },
+  "aegis": {
+    "display_name": "Aegis",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Relic",
+      "Tier1"
+    ]
+  },
+  "mace": {
+    "display_name": "Mace",
+    "price": 0,
+    "stats": [
+      "Physical Power: 15",
+      "Physical Penetration: 10"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier1"
+    ]
+  },
+  "magic-focus": {
+    "display_name": "Tiny Trinket",
+    "price": 0,
+    "stats": [
+      "Magical Power: 20",
+      "Magical Lifesteal: 6%"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier1"
+    ]
+  },
+  "s_bumbas": {
+    "display_name": "Bumba's Dagger",
+    "price": 0,
+    "stats": [
+      "Physical Power: 7",
+      "Magical Power: 12",
+      "Health: 50",
+      "Mana: 50"
+    ],
+    "effects": [],
+    "tags": [
+      "Starter"
+    ]
+  },
+  "s_bumbasspear": {
+    "display_name": "Bumba's Spear",
+    "price": 0,
+    "stats": [
+      "Physical Power: 70",
+      "Magical Power: 105",
+      "Penetration: 10%",
+      "Cooldown Reduction: 10%"
+    ],
+    "effects": [],
+    "tags": [
+      "Starter",
+      "Evolved"
+    ]
+  },
+  "s_manikin": {
+    "display_name": "Manikin's Scepter",
+    "price": 0,
+    "stats": [
+      "Basic Attack Damage: 10",
+      "Physical Protection: 30"
+    ],
+    "effects": [],
+    "tags": [
+      "Starter"
+    ]
+  },
+  "s_hidden": {
+    "display_name": "Manikin's Hidden Blade",
+    "price": 0,
+    "stats": [
+      "Physical Power: 60",
+      "Magical Power: 90",
+      "Physical Protection: 30",
+      "Damage Reduction: 5"
+    ],
+    "effects": [],
+    "tags": [
+      "Starter",
+      "Evolved"
+    ]
+  },
+  "s_sands": {
+    "display_name": "Sands of Time",
+    "price": 0,
+    "stats": [
+      "Magical Power: 25",
+      "MP5: 10",
+      "Cooldown Reduction: 10%"
+    ],
+    "effects": [],
+    "tags": [
+      "Starter"
+    ]
+  },
+  "s_pendulum": {
+    "display_name": "Pendulum of Ages",
+    "price": 0,
+    "stats": [
+      "Magical Power: 90",
+      "MP5: 20",
+      "Cooldown Reduction: 20%"
+    ],
+    "effects": [],
+    "tags": [
+      "Starter",
+      "Evolved"
+    ]
+  },
+  "bancrofts": {
+    "display_name": "Bancroft's Talon",
+    "price": 0,
+    "stats": [
+      "Magical Power: 100",
+      "Magical Lifesteal: 20%",
+      "Mana: 150"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier3"
+    ]
+  },
+  "soulreaver": {
+    "display_name": "Soul Reaver",
+    "price": 0,
+    "stats": [
+      "Magical Power: 95",
+      "Mana: 300"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier3"
+    ]
+  },
+  "tahuti": {
+    "display_name": "Rod of Tahuti",
+    "price": 0,
+    "stats": [
+      "Magical Power: 135",
+      "Magical Penetration: 10%",
+      "MP5: 30"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier3"
+    ]
+  },
+  "tahuti_calamitous": {
+    "display_name": "Rod of Tahuti - Calamitous Power",
+    "price": 0,
+    "stats": [
+      "Magical Power: 140",
+      "MP5: 30",
+      "Movement Speed: 6%"
+    ],
+    "effects": [],
+    "tags": [
+      "Evolved",
+      "Tier3"
+    ]
+  },
+  "tahuti_perfected": {
+    "display_name": "Perfected Rod of Tahuti",
+    "price": 0,
+    "stats": [
+      "Magical Power: 135",
+      "Magical Penetration: 10%",
+      "MP5: 30"
+    ],
+    "effects": [],
+    "tags": [
+      "Evolved",
+      "Tier3"
+    ]
+  },
+  "obshard": {
+    "display_name": "Obsidian Shard",
+    "price": 0,
+    "stats": [
+      "Magical Power: 100",
+      "Magical Penetration: 20%"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier3"
+    ]
+  },
+  "spearofdeso": {
+    "display_name": "Spear of Desolation",
+    "price": 0,
+    "stats": [
+      "Magical Power: 110",
+      "Magical Penetration: 15",
+      "Cooldown Reduction: 10%"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier3"
+    ]
+  },
+  "spearmagus": {
+    "display_name": "Spear of the Magus",
+    "price": 0,
+    "stats": [
+      "Magical Power: 110",
+      "Magical Penetration: 15"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier2"
+    ]
+  },
+  "myrdin": {
+    "display_name": "Staff of Myrddin",
+    "price": 0,
+    "stats": [
+      "Magical Power: 110",
+      "Magical Penetration: 10%",
+      "Cooldown Reduction: 10%"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier3"
+    ]
+  },
+  "arondight": {
+    "display_name": "Arondight",
+    "price": 0,
+    "stats": [
+      "Physical Power: 75",
+      "Cooldown Reduction: 10%"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier3"
+    ]
+  },
+  "trans": {
+    "display_name": "Transcendence",
+    "price": 0,
+    "stats": [
+      "Physical Power: 45",
+      "Cooldown Reduction: 10%",
+      "Mana: 1050",
+      "MP5: 10"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier3"
+    ]
+  },
+  "heartseeker": {
+    "display_name": "Heartseeker",
+    "price": 0,
+    "stats": [
+      "Physical Power: 65",
+      "Physical Penetration: 10%",
+      "Mana: 200",
+      "MP5: 20"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier2"
+    ]
+  },
+  "dom": {
+    "display_name": "Dominance",
+    "price": 0,
+    "stats": [
+      "Physical Power: 55",
+      "Physical Penetration: 10%",
+      "Mana: 200",
+      "MP5: 20"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier2"
+    ]
+  },
+  "hydras": {
+    "display_name": "Hydra's Lament",
+    "price": 0,
+    "stats": [
+      "Physical Power: 40",
+      "Physical Penetration: 10%",
+      "Cooldown Reduction: 10%",
+      "MP5: 10"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier2"
+    ]
+  },
+  "souleater2": {
+    "display_name": "Soul Eater",
+    "price": 0,
+    "stats": [
+      "Physical Power: 40",
+      "Physical Lifesteal: 15%",
+      "Physical Penetration: 10%",
+      "Cooldown Reduction: 10%"
+    ],
+    "effects": [],
+    "tags": [
+      "Evolved",
+      "Tier3"
+    ]
+  },
+  "jotunns": {
+    "display_name": "Jotunn's Wrath",
+    "price": 0,
+    "stats": [
+      "Physical Power: 45",
+      "Physical Penetration: 10",
+      "Cooldown Reduction: 20%",
+      "Mana: 150"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier2"
+    ]
+  },
+  "jotunnsvigor": {
+    "display_name": "Jotunn's Vigor",
+    "price": 0,
+    "stats": [
+      "Physical Power: 45",
+      "MP5: 10",
+      "Physical Penetration: 10",
+      "Cooldown Reduction: 20%"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier2"
+    ]
+  },
+  "titans": {
+    "display_name": "Titan's Bane",
+    "price": 0,
+    "stats": [
+      "Physical Power: 50",
+      "Physical Penetration: 20%"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier2"
+    ]
+  },
+  "crusher": {
+    "display_name": "The Crusher",
+    "price": 0,
+    "stats": [
+      "Physical Power: 45",
+      "Attack Speed: 10%",
+      "Physical Penetration: 15"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier2"
+    ]
+  },
+  "chronos": {
+    "display_name": "Chronos' Pendant",
+    "price": 0,
+    "stats": [
+      "Magical Power: 100",
+      "MP5: 20",
+      "Cooldown Reduction: 20%"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier3"
+    ]
+  },
+  "ethereal": {
+    "display_name": "Ethereal Staff",
+    "price": 0,
+    "stats": [
+      "Magical Power: 90",
+      "Health: 200",
+      "MP5: 20"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier3"
+    ]
+  },
+  "typhons": {
+    "display_name": "Typhon's Fang",
+    "price": 0,
+    "stats": [
+      "Magical Power: 100",
+      "Magical Lifesteal: 15%",
+      "Magical Penetration: 10%"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier3"
+    ]
+  },
+  "doom_orb": {
+    "display_name": "Doom Orb",
+    "price": 0,
+    "stats": [
+      "Magical Power: 145",
+      "MP5: 25",
+      "Movement Speed: 6%"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier3"
+    ]
+  },
+  "bloodforge": {
+    "display_name": "Bloodforge",
+    "price": 0,
+    "stats": [
+      "Physical Power: 75",
+      "Physical Lifesteal: 15%"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier3"
+    ]
+  },
+  "qins": {
+    "display_name": "Qin's Sais",
+    "price": 0,
+    "stats": [
+      "Physical Power: 40",
+      "Attack Speed: 20%"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier3"
+    ]
+  },
+  "failnot": {
+    "display_name": "Fail-not",
+    "price": 0,
+    "stats": [
+      "Physical Power: 40",
+      "Critical Strike Chance: 20%",
+      "Cooldown Reduction: 20%"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier3"
+    ]
+  },
+  "deathbringer": {
+    "display_name": "Deathbringer",
+    "price": 0,
+    "stats": [
+      "Physical Power: 50",
+      "Critical Strike Chance: 30%"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier3"
+    ]
+  },
+  "rage": {
+    "display_name": "Rage",
+    "price": 0,
+    "stats": [
+      "Physical Power: 30",
+      "Critical Strike Chance: 30%"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier2"
+    ]
+  },
+  "winddemon": {
+    "display_name": "Wind Demon",
+    "price": 0,
+    "stats": [
+      "Physical Power: 25",
+      "Attack Speed: 20%",
+      "Critical Strike Chance: 20%"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier2"
+    ]
+  },
+  "rage2": {
+    "display_name": "Evolved Rage",
+    "price": 0,
+    "stats": [
+      "Physical Power: 55",
+      "Critical Strike Chance: 45%"
+    ],
+    "effects": [],
+    "tags": [
+      "Evolved",
+      "Tier3"
+    ]
+  },
+  "bookofthoth": {
+    "display_name": "Book of Thoth",
+    "price": 0,
+    "stats": [
+      "Magical Power: 80",
+      "Mana: 1000",
+      "MP5: 20"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier3"
+    ]
+  },
+  "bookofthoth2": {
+    "display_name": "Evolved Book of Thoth",
+    "price": 0,
+    "stats": [
+      "Magical Power: 80",
+      "Mana: 1000",
+      "MP5: 20"
+    ],
+    "effects": [],
+    "tags": [
+      "Evolved",
+      "Tier3"
+    ]
+  },
+  "asi": {
+    "display_name": "Asi",
+    "price": 0,
+    "stats": [
+      "Physical Power: 30",
+      "Attack Speed: 25%",
+      "Physical Penetration: 15",
+      "Physical Lifesteal: 15%"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier2"
+    ]
+  },
+  "spiritrobe": {
+    "display_name": "Spirit Robe",
+    "price": 0,
+    "stats": [
+      "Physical Protection: 40",
+      "Magical Protection: 40",
+      "Cooldown Reduction: 10%",
+      "Damage Reduction: 10%"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier3"
+    ]
+  },
+  "thebes": {
+    "display_name": "Gauntlet of Thebes",
+    "price": 0,
+    "stats": [
+      "Health: 300",
+      "Physical Protection: 30",
+      "Magical Protection: 30"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier3"
+    ]
+  },
+  "thebes2": {
+    "display_name": "Evolved Gauntlet of Thebes",
+    "price": 0,
+    "stats": [
+      "Health: 300",
+      "Physical Protection: 40",
+      "Magical Protection: 40"
+    ],
+    "effects": [],
+    "tags": [
+      "Evolved",
+      "Tier3"
+    ]
+  },
+  "stoneofbinding": {
+    "display_name": "Stone of Binding",
+    "price": 0,
+    "stats": [
+      "Physical Protection: 35",
+      "Magical Protection: 35",
+      "MP5: 20"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier3"
+    ]
+  },
+  "fatalis": {
+    "display_name": "Hastened Fatalis",
+    "price": 0,
+    "stats": [
+      "Attack Speed: 30%",
+      "Movement Speed: 7%",
+      "Physical Penetration: 10"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier3"
+    ]
+  },
+  "serrated": {
+    "display_name": "Serrated Edge",
+    "price": 0,
+    "stats": [
+      "Physical Power: 40",
+      "Physical Lifesteal: 15%",
+      "Movement Speed: 7%"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier2"
+    ]
+  },
+  "s_warriors": {
+    "display_name": "Warrior's Axe",
+    "price": 0,
+    "stats": [
+      "Health: 100",
+      "Physical Protection: 15",
+      "MP5: 10"
+    ],
+    "effects": [],
+    "tags": [
+      "Starter"
+    ]
+  },
+  "s_bluestone": {
+    "display_name": "Bluestone Pendant",
+    "price": 0,
+    "stats": [
+      "Physical Power: 15",
+      "MP5: 10"
+    ],
+    "effects": [],
+    "tags": [
+      "Starter"
+    ]
+  },
+  "s_protectors": {
+    "display_name": "Protector's Mask",
+    "price": 0,
+    "stats": [
+      "Health: 75",
+      "Physical Protection: 10",
+      "Magical Protection: 10",
+      "MP5: 10"
+    ],
+    "effects": [],
+    "tags": [
+      "Starter"
+    ]
+  },
+  "s_eye": {
+    "display_name": "Eye of the Jungle",
+    "price": 0,
+    "stats": [
+      "Physical Power: 15",
+      "MP5: 10"
+    ],
+    "effects": [],
+    "tags": [
+      "Starter"
+    ]
+  },
+  "spellbook": {
+    "display_name": "Spell Focus",
+    "price": 0,
+    "stats": [
+      "Magical Power: 25",
+      "MP5: 5"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier1"
+    ]
+  },
+  "spiked": {
+    "display_name": "Spiked Gauntlet",
+    "price": 0,
+    "stats": [
+      "Physical Power: 15",
+      "Physical Lifesteal: 8%"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier1"
+    ]
+  },
+  "druidstone": {
+    "display_name": "Magic Focus",
+    "price": 0,
+    "stats": [
+      "Magical Power: 25"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier1"
+    ]
+  },
+  "s_bluestonebrooch": {
+    "display_name": "Bluestone Brooch",
+    "price": 0,
+    "stats": [
+      "Physical Power: 65",
+      "MP5: 20",
+      "Physical Protection: 35"
+    ],
+    "effects": [],
+    "tags": [
+      "Starter",
+      "Evolved"
+    ]
+  },
+  "db_mal": {
+    "display_name": "Malicious Deathbringer",
+    "price": 0,
+    "stats": [
+      "Physical Power: 30",
+      "Critical Strike Chance: 30%"
+    ],
+    "effects": [],
+    "tags": [
+      "Evolved",
+      "Tier3"
+    ]
+  },
+  "db_envenom": {
+    "display_name": "Envenomed Deathbringer",
+    "price": 0,
+    "stats": [
+      "Physical Power: 30",
+      "Critical Strike Chance: 30%"
+    ],
+    "effects": [],
+    "tags": [
+      "Evolved",
+      "Tier3"
+    ]
+  },
+  "pridwen": {
+    "display_name": "Pridwen",
+    "price": 0,
+    "stats": [
+      "Physical Protection: 30",
+      "Magical Protection: 30",
+      "Cooldown Reduction: 20%"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier3"
+    ]
+  },
+  "s_lonos": {
+    "display_name": "Lono's Mask",
+    "price": 0,
+    "stats": [
+      "Health: 75",
+      "Physical Protection: 10",
+      "Magical Protection: 10",
+      "MP5: 7"
+    ],
+    "effects": [],
+    "tags": [
+      "Starter"
+    ]
+  },
+  "s_conduit": {
+    "display_name": "Conduit Gem",
+    "price": 0,
+    "stats": [
+      "Magical Power: 25",
+      "MP5: 10",
+      "Magical Penetration: 5"
+    ],
+    "effects": [],
+    "tags": [
+      "Starter"
+    ]
+  },
+  "demonic": {
+    "display_name": "Demonic Grip",
+    "price": 0,
+    "stats": [
+      "Magical Power: 75",
+      "Attack Speed: 30%",
+      "Magical Penetration: 10%"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier2"
+    ]
+  },
+  "bancroftsclaw": {
+    "display_name": "Bancroft's Claw",
+    "price": 0,
+    "stats": [
+      "Magical Power: 100",
+      "Magical Lifesteal: 20%",
+      "Mana: 150"
+    ],
+    "effects": [],
+    "tags": [
+      "Tier3"
+    ]
+  },
+  "babas_brew": {
+    "display_name": "Baba's Brew",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Consumable"
+    ]
+  },
+  "runic_bomb": {
+    "display_name": "Runic Bomb",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Tier2"
+    ]
+  },
+  "healing_potion": {
+    "display_name": "Healing Potion",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Consumable"
+    ]
+  },
+  "mana_potion": {
+    "display_name": "Mana Potion",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Consumable"
+    ]
+  },
+  "multi_potion": {
+    "display_name": "Multi Potion",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Consumable"
+    ]
+  },
+  "ward": {
+    "display_name": "Ward",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Consumable"
+    ]
+  },
+  "proximity_ward": {
+    "display_name": "Proximity Ward",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Consumable"
+    ]
+  },
+  "raven_ward": {
+    "display_name": "Raven Ward",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Consumable"
+    ]
+  },
+  "sentry_ward": {
+    "display_name": "Sentry Ward",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Consumable"
+    ]
+  },
+  "barons_brew": {
+    "display_name": "Baron's Brew",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Consumable"
+    ]
+  },
+  "chalice_of_healing": {
+    "display_name": "Chalice of Healing",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Consumable"
+    ]
+  },
+  "chalice_of_the_oracle": {
+    "display_name": "Chalice of the Oracle",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Consumable"
+    ]
+  },
+  "potion_of_power": {
+    "display_name": "Potion of Power",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Consumable"
+    ]
+  },
+  "elixir_of_defense": {
+    "display_name": "Elixir of Defense",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Consumable"
+    ]
+  },
+  "elixir_of_power": {
+    "display_name": "Elixir of Power",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Consumable"
+    ]
+  },
+  "relic": {
+    "display_name": "Relic",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Tier2"
+    ]
+  },
+  "shard_relic": {
+    "display_name": "Shard Relic",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Tier2"
+    ]
+  },
+  "aegis_amulet": {
+    "display_name": "Aegis Amulet",
+    "price": 0,
+    "stats": [],
+    "effects": [
+      "Using this item makes you invulnerable to damage and healing for 1.5s, and prevents you from taking any actions. You may still move. Cooldown: 160s."
+    ],
+    "tags": [
+      "Relic",
+      "Tier1"
+    ]
+  },
+  "blink_rune": {
+    "display_name": "Blink Rune",
+    "price": 0,
+    "stats": [],
+    "effects": [
+      "Using this item will allow you to teleport up to 45 units away instantly. This item can not be used if you have taken or dealt damage in the last 3s. Cooldown: 140s."
+    ],
+    "tags": [
+      "Relic",
+      "Tier1"
+    ]
+  },
+  "bracer_of_radiance": {
+    "display_name": "Bracer of Radiance",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Relic",
+      "Tier1"
+    ]
+  },
+  "cloak_of_meditation": {
+    "display_name": "Cloak of Meditation",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Relic",
+      "Tier1"
+    ]
+  },
+  "divine_barrier": {
+    "display_name": "Divine Barrier",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Relic",
+      "Tier1"
+    ]
+  },
+  "heavenly_wings": {
+    "display_name": "Heavenly Wings",
+    "price": 0,
+    "stats": [],
+    "effects": [
+      "Using this item increases the Movement Speed of allied gods within 55 units by 25% for 5s and grants them immunity to Slow effects. Cooldown: 140s."
+    ],
+    "tags": [
+      "Relic",
+      "Tier1"
+    ]
+  },
+  "horrific_emblem": {
+    "display_name": "Horrific Emblem",
+    "price": 0,
+    "stats": [],
+    "effects": [
+      "Using this item Slows the Movement Speed and reduces the Attack Speed of enemies within 35 units by 35% for 5s. Cooldown: 150s."
+    ],
+    "tags": [
+      "Relic",
+      "Tier1"
+    ]
+  },
+  "magic_shell": {
+    "display_name": "Magic Shell",
+    "price": 0,
+    "stats": [],
+    "effects": [
+      "Using this item applies a shield to yourself and allies within 35 units for 100 Health + 12 Health per God Level for 3s. Additionally, all allies take 20% reduced damage from Basic Attacks while the shield is active. Cooldown: 150s."
+    ],
+    "tags": [
+      "Relic",
+      "Tier1"
+    ]
+  },
+  "purification_beads": {
+    "display_name": "Purification Beads",
+    "price": 0,
+    "stats": [],
+    "effects": [
+      "Using this item removes Crowd Control Effects and makes you immune to new ones for 2s. Cooldown: 170s."
+    ],
+    "tags": [
+      "Relic",
+      "Tier1"
+    ]
+  },
+  "shield_of_thorns": {
+    "display_name": "Shield of Thorns",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Relic",
+      "Tier1"
+    ]
+  },
+  "sundering_spear": {
+    "display_name": "Sundering Spear",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Relic",
+      "Tier1"
+    ]
+  },
+  "teleport_fragment": {
+    "display_name": "Teleport Fragment",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Relic",
+      "Tier1"
+    ]
+  },
+  "greater_aegis_amulet": {
+    "display_name": "Greater Aegis Amulet",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Relic",
+      "Tier2"
+    ]
+  },
+  "greater_blink_rune": {
+    "display_name": "Greater Blink Rune",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Relic",
+      "Tier2"
+    ]
+  },
+  "greater_bracer_of_radiance": {
+    "display_name": "Greater Bracer of Radiance",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Relic",
+      "Tier2"
+    ]
+  },
+  "greater_cloak_of_meditation": {
+    "display_name": "Greater Cloak of Meditation",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Relic",
+      "Tier2"
+    ]
+  },
+  "greater_divine_barrier": {
+    "display_name": "Greater Divine Barrier",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Relic",
+      "Tier2"
+    ]
+  },
+  "greater_heavenly_wings": {
+    "display_name": "Greater Heavenly Wings",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Relic",
+      "Tier2"
+    ]
+  },
+  "greater_horrific_emblem": {
+    "display_name": "Greater Horrific Emblem",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Relic",
+      "Tier2"
+    ]
+  },
+  "greater_magic_shell": {
+    "display_name": "Greater Magic Shell",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Relic",
+      "Tier2"
+    ]
+  },
+  "greater_purification_beads": {
+    "display_name": "Greater Purification Beads",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Relic",
+      "Tier2"
+    ]
+  },
+  "greater_shield_of_thorns": {
+    "display_name": "Greater Shield of Thorns",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Relic",
+      "Tier2"
+    ]
+  },
+  "greater_sundering_spear": {
+    "display_name": "Greater Sundering Spear",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Relic",
+      "Tier2"
+    ]
+  },
+  "greater_teleport_fragment": {
+    "display_name": "Greater Teleport Fragment",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Relic",
+      "Tier2"
+    ]
+  },
+  "aegis_of_acceleration": {
+    "display_name": "Aegis of Acceleration",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Relic",
+      "Tier3"
+    ]
+  },
+  "blessed_barrier": {
+    "display_name": "Blessed Barrier",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Tier2"
+    ]
+  },
+  "bracer_of_brilliance": {
+    "display_name": "Bracer of Brilliance",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Relic",
+      "Tier3"
+    ]
+  },
+  "cloak_of_the_ascetic": {
+    "display_name": "Cloak of the Ascetic",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Relic",
+      "Tier3"
+    ]
+  },
+  "emblem_of_increasing_peril": {
+    "display_name": "Emblem of Increasing Peril",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Tier2"
+    ]
+  },
+  "entangling_wings": {
+    "display_name": "Entangling Wings",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Tier2"
+    ]
+  },
+  "persistent_teleport": {
+    "display_name": "Persistent Teleport",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Relic",
+      "Tier3"
+    ]
+  },
+  "phantom_shell": {
+    "display_name": "Phantom Shell",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Relic",
+      "Tier1"
+    ]
+  },
+  "scorching_blink_rune": {
+    "display_name": "Scorching Blink Rune",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Relic",
+      "Tier3"
+    ]
+  },
+  "sundering_blast": {
+    "display_name": "Sundering Blast",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Relic",
+      "Tier3"
+    ]
+  },
+  "temporal_beads": {
+    "display_name": "Temporal Beads",
+    "price": 0,
+    "stats": [],
+    "effects": [
+      "Using this item removes Crowd Control Effects and makes you immune to new ones for 2s. Also provides 4s of 20% damage mitigation. Cooldown: 140s."
+    ],
+    "tags": [
+      "Relic",
+      "Tier3"
+    ]
+  },
+  "thorns_of_judgement": {
+    "display_name": "Thorns of Judgement",
+    "price": 0,
+    "stats": [],
+    "effects": [],
+    "tags": [
+      "Relic",
+      "Tier3"
+    ]
+  },
+  "meditation_cloak": {
+    "display_name": "Meditation Cloak",
+    "price": 0,
+    "stats": [],
+    "effects": [
+      "Using this item restores 35% Health and 30% Mana to all allied gods within 35 units. Cooldown: 150s."
+    ],
+    "tags": [
+      "Relic",
+      "Tier1"
+    ]
+  },
+  "phantom_veil": {
+    "display_name": "Phantom Veil",
+    "price": 0,
+    "stats": [],
+    "effects": [
+      "Using this item allows you and allies within 35 units to pass through players and player deployables for 5s. Cooldown: 150s."
+    ],
+    "tags": [
+      "Relic",
+      "Tier1"
+    ]
+  },
+  "teleport_glyph": {
+    "display_name": "Teleport Glyph",
+    "price": 0,
+    "stats": [],
+    "effects": [
+      "Using this item allows you to teleport to any allied tower or phoenix. Cooldown: 240s."
+    ],
+    "tags": [
+      "Relic",
+      "Tier1"
+    ]
+  }
+}

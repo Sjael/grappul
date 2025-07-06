@@ -1,0 +1,1432 @@
+{
+  "achilles": {
+    "display_name": "Achilles",
+    "class": "Warrior",
+    "abilities": [
+      "gift_of_the_gods",
+      "shield_of_achilles",
+      "radiant_glory",
+      "combat_dodge",
+      "fatal_strike"
+    ]
+  },
+  "amaterasu": {
+    "display_name": "Amaterasu",
+    "class": "Warrior",
+    "abilities": [
+      "illuminating_strike",
+      "divine_presence",
+      "heavenly_reflection",
+      "glorious_charge",
+      "dazzling_offensive"
+    ]
+  },
+  "bellona": {
+    "display_name": "Bellona",
+    "class": "Warrior",
+    "abilities": [
+      "master_of_war",
+      "shield_bash",
+      "bludgeon",
+      "scourge",
+      "eagles_rally"
+    ]
+  },
+  "chaac": {
+    "display_name": "Chaac",
+    "class": "Warrior",
+    "abilities": [
+      "overflow",
+      "thunder_strike",
+      "torrent",
+      "rain_dance",
+      "storm_call"
+    ]
+  },
+  "cu_chulainn": {
+    "display_name": "Cu Chulainn",
+    "class": "Warrior",
+    "abilities": [
+      "berserk",
+      "barbed_spear_ground_slam",
+      "vent_anger_salmon_leap",
+      "rage_furious_charge",
+      "spear_of_mortal_pain_war_cry"
+    ]
+  },
+  "erlang_shen": {
+    "display_name": "Erlang Shen",
+    "class": "Warrior",
+    "abilities": [
+      "howling_celestial_dog",
+      "spot_weakness",
+      "pin",
+      "nine_turns_blessing",
+      "9_form_arcane"
+    ]
+  },
+  "gilgamesh": {
+    "display_name": "Gilgamesh",
+    "class": "Warrior",
+    "abilities": [
+      "epic_of_gilgamesh",
+      "sun_forged_scimitar",
+      "drop_kick",
+      "heros_advance",
+      "winds_of_shamash"
+    ]
+  },
+  "guan_yu": {
+    "display_name": "Guan Yu",
+    "class": "Warrior",
+    "abilities": [
+      "painless",
+      "conviction",
+      "warrior_will",
+      "cavalry_charge",
+      "the_lost_kingdom"
+    ]
+  },
+  "hercules": {
+    "display_name": "Hercules",
+    "class": "Warrior",
+    "abilities": [
+      "strength_from_pain",
+      "driving_strike",
+      "earthbreaker",
+      "mitigate_wounds",
+      "excavate"
+    ]
+  },
+  "horus": {
+    "display_name": "Horus",
+    "class": "Warrior",
+    "abilities": [
+      "resolute",
+      "updraft",
+      "fracture",
+      "protectors_surge",
+      "to_the_skies"
+    ]
+  },
+  "king_arthur": {
+    "display_name": "King Arthur",
+    "class": "Warrior",
+    "abilities": [
+      "steadfast",
+      "overhead_slash_hamstring",
+      "battle_stomp_uppercut",
+      "twin_cleave_bladestorm",
+      "excaliburs_wrath_sundering_strike"
+    ]
+  },
+  "mulan": {
+    "display_name": "Mulan",
+    "class": "Warrior",
+    "abilities": [
+      "training_arc",
+      "cross_strike",
+      "spear_thrust",
+      "grapple",
+      "divine_spear"
+    ]
+  },
+  "nike": {
+    "display_name": "Nike",
+    "class": "Warrior",
+    "abilities": [
+      "to_victory",
+      "rend",
+      "plan_of_action",
+      "valiant_leap",
+      "sentinel_of_zeus"
+    ]
+  },
+  "odin": {
+    "display_name": "Odin",
+    "class": "Warrior",
+    "abilities": [
+      "path_to_valhalla",
+      "lunge",
+      "raven_shout",
+      "gungnirs_might",
+      "ring_of_spears"
+    ]
+  },
+  "osiris": {
+    "display_name": "Osiris",
+    "class": "Warrior",
+    "abilities": [
+      "fragmented",
+      "sickle_strike",
+      "spirit_flail",
+      "judgement_tether",
+      "lord_of_the_afterlife"
+    ]
+  },
+  "shiva": {
+    "display_name": "Shiva",
+    "class": "Warrior",
+    "abilities": [
+      "tandava_karma",
+      "bladed_arrow",
+      "pillar_of_dawn",
+      "dash",
+      "shivas_destruction"
+    ]
+  },
+  "sun_wukong": {
+    "display_name": "Sun Wukong",
+    "class": "Warrior",
+    "abilities": [
+      "undefeated_body",
+      "magic_cudgel",
+      "master_will",
+      "72_transformations",
+      "somersault_cloud"
+    ]
+  },
+  "surtr": {
+    "display_name": "Surtr",
+    "class": "Warrior",
+    "abilities": [
+      "obsidian_flesh",
+      "flames_of_muspell",
+      "magma_wall",
+      "blazing_trail",
+      "giant_inferno"
+    ]
+  },
+  "tyr": {
+    "display_name": "Tyr",
+    "class": "Warrior",
+    "abilities": [
+      "unyielding",
+      "fearless_power_cleave",
+      "change_stance",
+      "lawbringer_guard_stance",
+      "lawbringer"
+    ]
+  },
+  "vamana": {
+    "display_name": "Vamana",
+    "class": "Warrior",
+    "abilities": [
+      "sleeping_giant",
+      "clear_the_path",
+      "armored_umbrella",
+      "umbrellarang",
+      "colossal_fury"
+    ]
+  },
+  "arachne": {
+    "display_name": "Arachne",
+    "class": "Assassin",
+    "abilities": [
+      "predator",
+      "venomous_bite",
+      "cocoon",
+      "web",
+      "night_crawler"
+    ]
+  },
+  "awilix": {
+    "display_name": "Awilix",
+    "class": "Assassin",
+    "abilities": [
+      "initiative",
+      "summon_suku",
+      "feather_step",
+      "moonlight_charge",
+      "gravity_surge"
+    ]
+  },
+  "bakasura": {
+    "display_name": "Bakasura",
+    "class": "Assassin",
+    "abilities": [
+      "insatiable_hunger",
+      "take_down",
+      "eat_minion",
+      "butcher_blades",
+      "regurgitate"
+    ]
+  },
+  "bastet": {
+    "display_name": "Bastet",
+    "class": "Assassin",
+    "abilities": [
+      "nightstalker",
+      "pounce",
+      "razor_whip",
+      "declaw",
+      "huntress_of_bast"
+    ]
+  },
+  "camazotz": {
+    "display_name": "Camazotz",
+    "class": "Assassin",
+    "abilities": [
+      "essence_drinker",
+      "screech",
+      "vampire_bats",
+      "devour",
+      "bat_out_of_hell"
+    ]
+  },
+  "cliodhna": {
+    "display_name": "Cliodhna",
+    "class": "Assassin",
+    "abilities": [
+      "lurking_in_the_shadows",
+      "banshees_wail",
+      "deafening_whispers",
+      "ghostly_presence",
+      "rushing_terror"
+    ]
+  },
+  "da_ji": {
+    "display_name": "Da Ji",
+    "class": "Assassin",
+    "abilities": [
+      "torture_blades",
+      "horrible_burns",
+      "one_thousand_cuts",
+      "trickster_spirit",
+      "pao_lao"
+    ]
+  },
+  "fenrir": {
+    "display_name": "Fenrir",
+    "class": "Assassin",
+    "abilities": [
+      "unbound_runes",
+      "unchained",
+      "seething_howl",
+      "brutalize",
+      "ragnarok"
+    ]
+  },
+  "hun_batz": {
+    "display_name": "Hun Batz",
+    "class": "Assassin",
+    "abilities": [
+      "infused_strikes",
+      "somersault",
+      "overhand_smash",
+      "sacred_monkey",
+      "fear_no_evil"
+    ]
+  },
+  "kali": {
+    "display_name": "Kali",
+    "class": "Assassin",
+    "abilities": [
+      "marked_for_death",
+      "nimble_strike",
+      "lash",
+      "incense",
+      "destruction"
+    ]
+  },
+  "lancelot": {
+    "display_name": "Lancelot",
+    "class": "Assassin",
+    "abilities": [
+      "knights_virtue",
+      "piercing_thrust",
+      "skilled_strikes",
+      "mount_up",
+      "the_grand_joust"
+    ]
+  },
+  "loki": {
+    "display_name": "Loki",
+    "class": "Assassin",
+    "abilities": [
+      "behind_you",
+      "vanish",
+      "decoy",
+      "aimed_strike",
+      "assassinate"
+    ]
+  },
+  "mercury": {
+    "display_name": "Mercury",
+    "class": "Assassin",
+    "abilities": [
+      "fastest_god_alive",
+      "made_you_look",
+      "maximum_velocity",
+      "special_delivery",
+      "sonic_boom"
+    ]
+  },
+  "ne_zha": {
+    "display_name": "Ne Zha",
+    "class": "Assassin",
+    "abilities": [
+      "righteous_spirit",
+      "universe_ring_toss",
+      "flaming_spear",
+      "armillary_sash",
+      "wind_fire_wheels"
+    ]
+  },
+  "nemesis": {
+    "display_name": "Nemesis",
+    "class": "Assassin",
+    "abilities": [
+      "scales_of_fate",
+      "swift_vengeance",
+      "slice_and_dice",
+      "retribution",
+      "divine_judgement"
+    ]
+  },
+  "pele": {
+    "display_name": "Pele",
+    "class": "Assassin",
+    "abilities": [
+      "everlasting_flame",
+      "pyroclast",
+      "eruption",
+      "magma_rush",
+      "volcanic_lightning"
+    ]
+  },
+  "ratatoskr": {
+    "display_name": "Ratatoskr",
+    "class": "Assassin",
+    "abilities": [
+      "acorn_of_yggdrasil",
+      "dart",
+      "flurry",
+      "acorn_blast",
+      "through_the_cosmos"
+    ]
+  },
+  "ravana": {
+    "display_name": "Ravana",
+    "class": "Assassin",
+    "abilities": [
+      "chain_of_blows",
+      "prana_onslaught",
+      "overhead_kick",
+      "10_hand_shadow_fist",
+      "mystic_rush"
+    ]
+  },
+  "serqet": {
+    "display_name": "Serqet",
+    "class": "Assassin",
+    "abilities": [
+      "catalyst",
+      "deathbane",
+      "cobras_kiss",
+      "ambush",
+      "last_breath"
+    ]
+  },
+  "set": {
+    "display_name": "Set",
+    "class": "Assassin",
+    "abilities": [
+      "relentless",
+      "skewer",
+      "spawn_of_set",
+      "sandstorm",
+      "kingslayer"
+    ]
+  },
+  "susano": {
+    "display_name": "Susano",
+    "class": "Assassin",
+    "abilities": [
+      "swift_as_the_summer_storm",
+      "storm_kata",
+      "wind_siphon",
+      "jet_stream",
+      "typhoon"
+    ]
+  },
+  "thanatos": {
+    "display_name": "Thanatos",
+    "class": "Assassin",
+    "abilities": [
+      "harvester_of_souls",
+      "death_scythe",
+      "scent_of_death",
+      "soul_reap",
+      "hovering_death"
+    ]
+  },
+  "thor": {
+    "display_name": "Thor",
+    "class": "Assassin",
+    "abilities": [
+      "warriors_madness",
+      "mjolnirs_attunement",
+      "tectonic_rift",
+      "berserker_barrage",
+      "anvil_of_dawn"
+    ]
+  },
+  "tsukuyomi": {
+    "display_name": "Tsukuyomi",
+    "class": "Assassin",
+    "abilities": [
+      "shingetsu_aura",
+      "dark_moon_shuriken",
+      "kusarigama",
+      "silver_moon_caltrops",
+      "piercing_moonlight"
+    ]
+  },
+  "ah_muzen_cab": {
+    "display_name": "Ah Muzen Cab",
+    "class": "Hunter",
+    "abilities": [
+      "bees",
+      "hive",
+      "swarm",
+      "honey",
+      "stinger"
+    ]
+  },
+  "anhur": {
+    "display_name": "Anhur",
+    "class": "Hunter",
+    "abilities": [
+      "enfeeble",
+      "shifting_sands",
+      "impale",
+      "disperse",
+      "desert_fury"
+    ]
+  },
+  "apollo": {
+    "display_name": "Apollo",
+    "class": "Hunter",
+    "abilities": [
+      "audacity",
+      "so_beautiful",
+      "serenade",
+      "the_moves",
+      "across_the_sky"
+    ]
+  },
+  "artemis": {
+    "display_name": "Artemis",
+    "class": "Hunter",
+    "abilities": [
+      "still_target",
+      "transgessors_fate",
+      "seek_and_destroy",
+      "suppress_the_insolent",
+      "calydonian_boar"
+    ]
+  },
+  "cernunnos": {
+    "display_name": "Cernunnos",
+    "class": "Hunter",
+    "abilities": [
+      "heavy_glaive",
+      "shifter_of_seasons",
+      "bramble_blast",
+      "horn_charge",
+      "the_wild_hunt"
+    ]
+  },
+  "charybdis": {
+    "display_name": "Charybdis",
+    "class": "Hunter",
+    "abilities": [
+      "raging_tides",
+      "spike_shot",
+      "capsize",
+      "whirlpool_form",
+      "the_maw_hungers"
+    ]
+  },
+  "chernobog": {
+    "display_name": "Chernobog",
+    "class": "Hunter",
+    "abilities": [
+      "heart_of_cold",
+      "crystallized_curses",
+      "vicious_barrage",
+      "into_darkness",
+      "living_nightmare"
+    ]
+  },
+  "chiron": {
+    "display_name": "Chiron",
+    "class": "Hunter",
+    "abilities": [
+      "herbal_medicine",
+      "centaurus",
+      "masterful_shot",
+      "giddyup",
+      "hierophant"
+    ]
+  },
+  "cupid": {
+    "display_name": "Cupid",
+    "class": "Hunter",
+    "abilities": [
+      "lovestruck",
+      "heart_bomb",
+      "share_the_love",
+      "flutter",
+      "fields_of_love"
+    ]
+  },
+  "danzaburou": {
+    "display_name": "Danzaburou",
+    "class": "Hunter",
+    "abilities": [
+      "dubious_savings",
+      "fools_gold",
+      "alluring_spirits",
+      "tanuki_trickery",
+      "uproarious_rocket"
+    ]
+  },
+  "hachiman": {
+    "display_name": "Hachiman",
+    "class": "Hunter",
+    "abilities": [
+      "master_of_arms",
+      "eagle_eye",
+      "heavenly_banner",
+      "iaijutsu",
+      "mounted_archery"
+    ]
+  },
+  "heimdallr": {
+    "display_name": "Heimdallr",
+    "class": "Hunter",
+    "abilities": [
+      "the_vigilant",
+      "piercing_sight",
+      "gjallarhorn",
+      "the_bifrost",
+      "through_the_realms"
+    ]
+  },
+  "hou_yi": {
+    "display_name": "Hou Yi",
+    "class": "Hunter",
+    "abilities": [
+      "golden_crow",
+      "ricochet",
+      "mark_of_the_golden_crow",
+      "dive_bomb",
+      "sunbreaker"
+    ]
+  },
+  "ishtar": {
+    "display_name": "Ishtar",
+    "class": "Hunter",
+    "abilities": [
+      "mark_of_vengeance",
+      "imbue_arrows",
+      "rolling_thunder",
+      "jolt",
+      "blades_of_retribution"
+    ]
+  },
+  "izanami": {
+    "display_name": "Izanami",
+    "class": "Hunter",
+    "abilities": [
+      "of_death_and_darkness",
+      "sickle_storm",
+      "spectral_projection",
+      "fade_away",
+      "dark_portal"
+    ]
+  },
+  "jing_wei": {
+    "display_name": "Jing Wei",
+    "class": "Hunter",
+    "abilities": [
+      "rapid_reincarnation",
+      "persistent_gust",
+      "explosive_bolts",
+      "agility",
+      "air_strike"
+    ]
+  },
+  "martichoras": {
+    "display_name": "Martichoras",
+    "class": "Hunter",
+    "abilities": [
+      "barbed_spines",
+      "stinger_shot",
+      "acid_spray",
+      "trail_blazer",
+      "death_from_above"
+    ]
+  },
+  "medusa": {
+    "display_name": "Medusa",
+    "class": "Hunter",
+    "abilities": [
+      "sidewinder",
+      "viper_shot",
+      "acid_spray",
+      "lacerate",
+      "petrify"
+    ]
+  },
+  "neith": {
+    "display_name": "Neith",
+    "class": "Hunter",
+    "abilities": [
+      "broken_weave",
+      "spirit_arrow",
+      "unravel",
+      "back_flip",
+      "world_weaver"
+    ]
+  },
+  "nut": {
+    "display_name": "Nut",
+    "class": "Hunter",
+    "abilities": [
+      "broken_barrier",
+      "convergence",
+      "skyfall",
+      "gravity_well",
+      "across_the_cosmos"
+    ]
+  },
+  "rama": {
+    "display_name": "Rama",
+    "class": "Hunter",
+    "abilities": [
+      "astral_quiver",
+      "astral_strike",
+      "pick_me_up",
+      "rolling_assault",
+      "astral_barrage"
+    ]
+  },
+  "skadi": {
+    "display_name": "Skadi",
+    "class": "Hunter",
+    "abilities": [
+      "kaldr_the_winter_wolf",
+      "piercing_cold",
+      "rune_of_the_hunt",
+      "permafrost",
+      "winters_grasp"
+    ]
+  },
+  "ullr": {
+    "display_name": "Ullr",
+    "class": "Hunter",
+    "abilities": [
+      "weapon_master",
+      "bladed_arrow_thrown_axe",
+      "expose_weakness_invigorate",
+      "hail_of_arrows_glory_bound",
+      "wield_axes_wield_bow"
+    ]
+  },
+  "xbalanque": {
+    "display_name": "Xbalanque",
+    "class": "Hunter",
+    "abilities": [
+      "dead_of_night",
+      "branching_bola",
+      "poison_darts",
+      "rising_jaguar",
+      "darkest_of_nights"
+    ]
+  },
+  "agni": {
+    "display_name": "Agni",
+    "class": "Mage",
+    "abilities": [
+      "combustion",
+      "noxious_fumes",
+      "flame_wave",
+      "path_of_flames",
+      "rain_fire"
+    ]
+  },
+  "ah_puch": {
+    "display_name": "Ah Puch",
+    "class": "Mage",
+    "abilities": [
+      "hollow_ground",
+      "undead_surge",
+      "corpse_explosion",
+      "fleeting_breath",
+      "empty_the_crypts"
+    ]
+  },
+  "anubis": {
+    "display_name": "Anubis",
+    "class": "Mage",
+    "abilities": [
+      "sorrow",
+      "plague_of_locusts",
+      "mummify",
+      "grasping_hands",
+      "death_gaze"
+    ]
+  },
+  "ao_kuang": {
+    "display_name": "Ao Kuang",
+    "class": "Mage",
+    "abilities": [
+      "dragon_kings_sword",
+      "water_illusion",
+      "dragon_call",
+      "wild_storm",
+      "king_of_the_eastern_seas"
+    ]
+  },
+  "aphrodite": {
+    "display_name": "Aphrodite",
+    "class": "Mage",
+    "abilities": [
+      "loving_embrace",
+      "kiss",
+      "back_off",
+      "love_birds",
+      "undying_love"
+    ]
+  },
+  "baba_yaga": {
+    "display_name": "Baba Yaga",
+    "class": "Mage",
+    "abilities": [
+      "creeping_cabin",
+      "baba_brew",
+      "baba_blast",
+      "home_run",
+      "home_sweet_home"
+    ]
+  },
+  "baron_samedi": {
+    "display_name": "Baron Samedi",
+    "class": "Mage",
+    "abilities": [
+      "hysteria",
+      "vivid_gaze",
+      "consign_spirits",
+      "wrap_it_up",
+      "life_of_the_party"
+    ]
+  },
+  "change": {
+    "display_name": "Chang'e",
+    "class": "Mage",
+    "abilities": [
+      "jade_rabbit",
+      "crescent_moon_dance",
+      "moonlit_waltz",
+      "moonflower_dance",
+      "waxing_moon"
+    ]
+  },
+  "chronos": {
+    "display_name": "Chronos",
+    "class": "Mage",
+    "abilities": [
+      "the_wheel_of_time",
+      "time_rift",
+      "accelerate",
+      "stop_time",
+      "rewind"
+    ]
+  },
+  "discordia": {
+    "display_name": "Discordia",
+    "class": "Mage",
+    "abilities": [
+      "contest_of_gods",
+      "unruly_magic",
+      "strife",
+      "erratic_behavior",
+      "golden_apple_of_discord"
+    ]
+  },
+  "eset": {
+    "display_name": "Eset",
+    "class": "Mage",
+    "abilities": [
+      "funeral_rites",
+      "wing_gust",
+      "spirit_ball",
+      "dispel_magic",
+      "circle_of_protection"
+    ]
+  },
+  "freya": {
+    "display_name": "Freya",
+    "class": "Mage",
+    "abilities": [
+      "brisingamens_blessing",
+      "irradiate",
+      "pulse",
+      "banish",
+      "valkyries_discretion"
+    ]
+  },
+  "hades": {
+    "display_name": "Hades",
+    "class": "Mage",
+    "abilities": [
+      "blight",
+      "death_from_below",
+      "shroud_of_darkness",
+      "devour_souls",
+      "pillar_of_agony"
+    ]
+  },
+  "he_bo": {
+    "display_name": "He Bo",
+    "class": "Mage",
+    "abilities": [
+      "steady_flow",
+      "water_cannon",
+      "atlas_of_the_yellow_river",
+      "waterspout",
+      "crushing_wave"
+    ]
+  },
+  "hel": {
+    "display_name": "Hel",
+    "class": "Mage",
+    "abilities": [
+      "stance_attunement",
+      "decay_restoration",
+      "hinder_cleanse",
+      "repulse_inspire",
+      "switch_stances"
+    ]
+  },
+  "hera": {
+    "display_name": "Hera",
+    "class": "Mage",
+    "abilities": [
+      "commanding_presence",
+      "royal_assault",
+      "polymorph",
+      "divine_shroud",
+      "argus_the_defender"
+    ]
+  },
+  "ix_chel": {
+    "display_name": "Ix Chel",
+    "class": "Mage",
+    "abilities": [
+      "rainbow_weaver",
+      "gleaming_blast",
+      "strands_of_moonlight",
+      "lunar_invocation",
+      "great_deluge"
+    ]
+  },
+  "janus": {
+    "display_name": "Janus",
+    "class": "Mage",
+    "abilities": [
+      "passages",
+      "portal",
+      "unstable_vortex",
+      "threshold",
+      "through_space_and_time"
+    ]
+  },
+  "kukulkan": {
+    "display_name": "Kukulkan",
+    "class": "Mage",
+    "abilities": [
+      "power_of_the_wind_jewel",
+      "zephyr",
+      "slipstream",
+      "whirlwind",
+      "spirit_of_the_nine_winds"
+    ]
+  },
+  "maman_brigitte": {
+    "display_name": "Maman Brigitte",
+    "class": "Mage",
+    "abilities": [
+      "consort_of_baron",
+      "madame_fangs",
+      "soul_spikes",
+      "spiritual_seance",
+      "party_trick"
+    ]
+  },
+  "merlin": {
+    "display_name": "Merlin",
+    "class": "Mage",
+    "abilities": [
+      "overload",
+      "eclipse_radiate",
+      "frostbolt_dragonfire",
+      "blizzard_inferno",
+      "elemental_mastery"
+    ]
+  },
+  "morgan_le_fay": {
+    "display_name": "Morgan Le Fay",
+    "class": "Mage",
+    "abilities": [
+      "empowered_blade",
+      "sigil_mastery",
+      "shroud_of_mist",
+      "banish",
+      "consuming_power"
+    ]
+  },
+  "nox": {
+    "display_name": "Nox",
+    "class": "Mage",
+    "abilities": [
+      "flame_of_the_night",
+      "shadow_lock",
+      "siphon_darkness",
+      "shadow_step",
+      "night_terror"
+    ]
+  },
+  "nu_wa": {
+    "display_name": "Nu Wa",
+    "class": "Mage",
+    "abilities": [
+      "strength_of_wood",
+      "mysterious_fog",
+      "clay_soldiers",
+      "shining_metal",
+      "fire_shards"
+    ]
+  },
+  "olorun": {
+    "display_name": "Olorun",
+    "class": "Mage",
+    "abilities": [
+      "touch_of_fate",
+      "focused_light",
+      "overflowing_divinity",
+      "consecration",
+      "sanctified_field"
+    ]
+  },
+  "persephone": {
+    "display_name": "Persephone",
+    "class": "Mage",
+    "abilities": [
+      "pomegranate_seeds",
+      "bone_rush",
+      "flourish",
+      "grasp_of_death",
+      "life_death_rebirth"
+    ]
+  },
+  "poseidon": {
+    "display_name": "Poseidon",
+    "class": "Mage",
+    "abilities": [
+      "changing_tides",
+      "tidal_surge",
+      "trident",
+      "whirlpool",
+      "release_the_kraken"
+    ]
+  },
+  "ra": {
+    "display_name": "Ra",
+    "class": "Mage",
+    "abilities": [
+      "speed_of_light",
+      "celestial_beam",
+      "divine_light",
+      "solar_blessing",
+      "searing_pain"
+    ]
+  },
+  "raijin": {
+    "display_name": "Raijin",
+    "class": "Mage",
+    "abilities": [
+      "charged_tempo",
+      "percussive_storm",
+      "thunder_crash",
+      "raiju",
+      "taiko_drums"
+    ]
+  },
+  "scylla": {
+    "display_name": "Scylla",
+    "class": "Mage",
+    "abilities": [
+      "quick_learner",
+      "sic_em",
+      "crush",
+      "sentinel",
+      "im_a_monster"
+    ]
+  },
+  "sol": {
+    "display_name": "Sol",
+    "class": "Mage",
+    "abilities": [
+      "unstable_manifestation",
+      "radiance",
+      "stellar_burst",
+      "disapparate",
+      "supernova"
+    ]
+  },
+  "the_morrigan": {
+    "display_name": "The Morrigan",
+    "class": "Mage",
+    "abilities": [
+      "doomsayer",
+      "deadly_aspects",
+      "dark_omen",
+      "confusion",
+      "changeling"
+    ]
+  },
+  "thoth": {
+    "display_name": "Thoth",
+    "class": "Mage",
+    "abilities": [
+      "dead_reckoning",
+      "hieroglyphic_assault",
+      "evade_and_punish",
+      "glyph_of_pain",
+      "final_judgement"
+    ]
+  },
+  "tiamat": {
+    "display_name": "Tiamat",
+    "class": "Mage",
+    "abilities": [
+      "primordial_onslaught",
+      "primordial_onslaught",
+      "consume",
+      "grounding_dive_ruination",
+      "children_of_creation_summon_serpents"
+    ]
+  },
+  "vulcan": {
+    "display_name": "Vulcan",
+    "class": "Mage",
+    "abilities": [
+      "master_craftsman",
+      "backfire",
+      "inferno_cannon",
+      "magma_bomb",
+      "earthshaker"
+    ]
+  },
+  "yu_huang": {
+    "display_name": "Yu Huang",
+    "class": "Mage",
+    "abilities": [
+      "master_of_the_dao",
+      "flames_of_the_phoenix",
+      "dao_cultivation",
+      "celestial_flight",
+      "dueling_dragons"
+    ]
+  },
+  "zeus": {
+    "display_name": "Zeus",
+    "class": "Mage",
+    "abilities": [
+      "overcharge",
+      "chain_lightning",
+      "aegis_assault",
+      "detonate_charge",
+      "lightning_storm"
+    ]
+  },
+  "zhong_kui": {
+    "display_name": "Zhong Kui",
+    "class": "Mage",
+    "abilities": [
+      "demon_bag",
+      "expose_evil",
+      "exorcism",
+      "book_of_demons",
+      "recall_demons"
+    ]
+  },
+  "ares": {
+    "display_name": "Ares",
+    "class": "Guardian",
+    "abilities": [
+      "blessed_presence",
+      "shackles",
+      "bolster_defenses",
+      "searing_flesh",
+      "no_escape"
+    ]
+  },
+  "artio": {
+    "display_name": "Artio",
+    "class": "Guardian",
+    "abilities": [
+      "decompose",
+      "energy_surge_maul",
+      "ferocious_roar_entangling_vines",
+      "heavy_charge_life_tap",
+      "shapeshift"
+    ]
+  },
+  "athena": {
+    "display_name": "Athena",
+    "class": "Guardian",
+    "abilities": [
+      "reach",
+      "preemptive_strike",
+      "confound",
+      "shield_wall",
+      "defender_of_olympus"
+    ]
+  },
+  "atlas": {
+    "display_name": "Atlas",
+    "class": "Guardian",
+    "abilities": [
+      "the_astrolabe",
+      "unburden",
+      "gravity_pull",
+      "kinetic_charge",
+      "gamma_ray_burst"
+    ]
+  },
+  "bacchus": {
+    "display_name": "Bacchus",
+    "class": "Guardian",
+    "abilities": [
+      "drunk_o_meter",
+      "chug",
+      "belly_flop",
+      "belch_of_the_gods",
+      "intoxicate"
+    ]
+  },
+  "bake_kujira": {
+    "display_name": "Bake Kujira",
+    "class": "Guardian",
+    "abilities": [
+      "ghostly_crew",
+      "leviathan_charge",
+      "whales_bellow",
+      "brackish_waters",
+      "wrath_of_the_deep"
+    ]
+  },
+  "cabrakan": {
+    "display_name": "Cabrakan",
+    "class": "Guardian",
+    "abilities": [
+      "shadow_zone",
+      "seismic_crush",
+      "refraction_shield",
+      "tremors",
+      "tectonic_shift"
+    ]
+  },
+  "cerberus": {
+    "display_name": "Cerberus",
+    "class": "Guardian",
+    "abilities": [
+      "spirit_of_death",
+      "paralyzing_spit",
+      "ghastly_breath",
+      "soul_expulsion",
+      "stygian_torment"
+    ]
+  },
+  "charon": {
+    "display_name": "Charon",
+    "class": "Guardian",
+    "abilities": [
+      "stygian_judgment",
+      "spectral_surge",
+      "tormented_souls",
+      "swift_death",
+      "summon_stygian_claw"
+    ]
+  },
+  "cthulhu": {
+    "display_name": "Cthulhu",
+    "class": "Guardian",
+    "abilities": [
+      "prey_on_fear",
+      "sanity_break",
+      "the_mire",
+      "rushing_terror",
+      "descend_into_madness"
+    ]
+  },
+  "fafnir": {
+    "display_name": "Fafnir",
+    "class": "Guardian",
+    "abilities": [
+      "endless_greed",
+      "cursed_strength",
+      "coerce",
+      "underhanded_tactics",
+      "dragonic_corruption"
+    ]
+  },
+  "ganesha": {
+    "display_name": "Ganesha",
+    "class": "Guardian",
+    "abilities": [
+      "good_fortune",
+      "turn_of_fate",
+      "ohm",
+      "remove_obstacles",
+      "dharmic_pillars"
+    ]
+  },
+  "geb": {
+    "display_name": "Geb",
+    "class": "Guardian",
+    "abilities": [
+      "hard_as_rock",
+      "roll_out",
+      "shock_wave",
+      "stone_shield",
+      "cataclysm"
+    ]
+  },
+  "jormungandr": {
+    "display_name": "Jormungandr",
+    "class": "Guardian",
+    "abilities": [
+      "immovable",
+      "venomous_haze",
+      "consuming_bellow",
+      "submerge",
+      "the_world_serpent"
+    ]
+  },
+  "khepri": {
+    "display_name": "Khepri",
+    "class": "Guardian",
+    "abilities": [
+      "fortitude",
+      "abduct",
+      "rising_dawn",
+      "solar_flare",
+      "scarabs_blessing"
+    ]
+  },
+  "kumbhakarna": {
+    "display_name": "Kumbhakarna",
+    "class": "Guardian",
+    "abilities": [
+      "sleepy",
+      "throw_back",
+      "mighty_yawn",
+      "groggy_strike",
+      "epic_uppercut"
+    ]
+  },
+  "kuzenbo": {
+    "display_name": "Kuzenbo",
+    "class": "Guardian",
+    "abilities": [
+      "water_bowl",
+      "nene_kappa",
+      "shell_spikes",
+      "sumo_slam",
+      "watery_grave"
+    ]
+  },
+  "maui": {
+    "display_name": "Maui",
+    "class": "Guardian",
+    "abilities": [
+      "heros_entrance",
+      "master_fisherman",
+      "mystical_ulua",
+      "solar_swing",
+      "landfall"
+    ]
+  },
+  "sobek": {
+    "display_name": "Sobek",
+    "class": "Guardian",
+    "abilities": [
+      "blessing_of_the_nile",
+      "charge_prey",
+      "tail_whip",
+      "sickening_strike",
+      "lurking_in_the_waters"
+    ]
+  },
+  "sylvanus": {
+    "display_name": "Sylvanus",
+    "class": "Guardian",
+    "abilities": [
+      "natures_protection",
+      "verdant_growth",
+      "wisps",
+      "nature_grasp",
+      "wrath_of_terra"
+    ]
+  },
+  "terra": {
+    "display_name": "Terra",
+    "class": "Guardian",
+    "abilities": [
+      "standing_stones",
+      "force_of_nature",
+      "crushing_earth",
+      "monolith",
+      "terra_blessing"
+    ]
+  },
+  "xing_tian": {
+    "display_name": "Xing Tian",
+    "class": "Guardian",
+    "abilities": [
+      "smoldering_rage",
+      "furious_roar",
+      "hook_slam",
+      "sky_cutting_axe",
+      "whirlwind_of_rage_and_steel"
+    ]
+  },
+  "yemoja": {
+    "display_name": "Yemoja",
+    "class": "Guardian",
+    "abilities": [
+      "omi",
+      "mending_waters",
+      "bouncing_bubble",
+      "riptide",
+      "river_of_sorrow"
+    ]
+  },
+  "ymir": {
+    "display_name": "Ymir",
+    "class": "Guardian",
+    "abilities": [
+      "frostbite",
+      "ice_wall",
+      "glacial_strike",
+      "frost_breath",
+      "shards_of_ice"
+    ]
+  }
+}

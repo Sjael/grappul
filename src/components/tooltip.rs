@@ -29,47 +29,44 @@ pub fn Tooltip() -> Element {
                 }
             }
             
-            // Render main item stats and passives
-            for (stat, value) in &item.stats.0 {
+            // Render stats
+            for stat in &item.stats {
                 p { 
-                    key: "{stat:?}", 
+                    key: "{stat}", 
                     class: "tooltip-stat",
-                    span { 
-                        class: "stat-value",
-                        "{value}"
+                    "{stat}"
+                }
+            }
+            
+            // Render effects (passives, actives, glyphs)
+            for effect in &item.effects {
+                if effect.starts_with("Passive:") {
+                    p { 
+                        key: "{effect}",
+                        class: "passive",
+                        span { class: "label", "PASSIVE" }
+                        " - {&effect[8..].trim()}"
                     }
-                    span { 
-                        class: "stat-name",
-                        "{stat.to_string()}"
+                } else if effect.starts_with("Active:") {
+                    p { 
+                        key: "{effect}",
+                        class: "active",
+                        span { class: "label", "ACTIVE" }
+                        " - {&effect[7..].trim()}"
                     }
-                }
-            }
-            
-            for passive in item.get_passives() {
-                p { 
-                    key: "{passive}",
-                    class: "passive",
-                    span { class: "label", "PASSIVE" }
-                    " - {passive}"
-                }
-            }
-            
-            // Render active ability if present
-            if let Some((desc, cd)) = item.get_active() {
-                p { 
-                    class: "active",
-                    span { class: "label", "ACTIVE" }
-                    " - {desc} "
-                    span { class: "cd", "(Cooldown: {cd}s)" }
-                }
-            }
-            
-            // Render glyph information
-            if let Some((desc, _)) = item.get_glyph() {
-                p { 
-                    class: "glyph",
-                    span { class: "label", "GLYPH" }
-                    " - {desc}"
+                } else if effect.starts_with("Glyph:") {
+                    p { 
+                        key: "{effect}",
+                        class: "glyph",
+                        span { class: "label", "GLYPH" }
+                        " - {&effect[6..].trim()}"
+                    }
+                } else {
+                    p { 
+                        key: "{effect}",
+                        class: "effect",
+                        "{effect}"
+                    }
                 }
             }
         }

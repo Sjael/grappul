@@ -1,0 +1,3812 @@
+{
+  "combustion": {
+    "display_name": "Combustion",
+    "description": "Hitting an enemy with a Basic Attack provides 1 stack of Combustion. Hitting an enemy god provides 2. At 4 stacks Agni's next Flame Wave or Rain Fire will ignite all enemies hit, dealing Magical Damage every 0.5s for 3s. When Agni kills an enemy god, he goes on a Hot Streak. When on a Hot Streak, Combustion is fully charged and using Flame Wave or Rain Fire does not consume Combustion.",
+    "details": {
+      "damage": "5 (+6% of your Magical Power)",
+      "hot_streak_duration": "10s"
+    }
+  },
+  "noxious_fumes": {
+    "display_name": "Noxious Fumes",
+    "description": "Summon a cloud of noxious fumes which deals Magical Damage every second. Enemies caught in the fumes are intoxicated, reducing their movement speed and protection. If ignited by Flame Wave or Rain Fire, enemies are stunned.",
+    "details": {
+      "damage": "10 (+5% of your Magical Power) per tick",
+      "movement_speed": "-20%",
+      "protection_reduction": "10",
+      "stun_duration": "1s",
+      "radius": "20",
+      "duration": "10s",
+      "cooldown": "14s",
+      "cost": "60/65/70/75/80 mana"
+    }
+  },
+  "flame_wave": {
+    "display_name": "Flame Wave",
+    "description": "Agni summons a wave of fire in front of him that scorches all enemies in its path, dealing Magical Damage. If the flames pass through Noxious Fumes, the gas ignites, stunning all enemies in the radius.",
+    "details": {
+      "damage": "90/145/200/255/310 (+65% of your Magical Power)",
+      "cooldown": "12s",
+      "cost": "60/65/70/75/80 mana"
+    }
+  },
+  "path_of_flames": {
+    "display_name": "Path of Flames",
+    "description": "Agni blazes a path forward in a quick dash, leaving flames trailing behind him. Enemies passing through the flames take Magical Damage and are marked with Combustion.",
+    "details": {
+      "damage": "90/140/190/240/290 (+65% of your Magical Power)",
+      "flame_duration": "2s",
+      "cooldown": "15s",
+      "cost": "70/75/80/85/90 mana"
+    }
+  },
+  "rain_fire": {
+    "display_name": "Rain Fire",
+    "description": "Agni summons a giant meteor from the sky that crashes down in front of him, dealing Magical Damage to all enemies in the area and marking them with Combustion. If the meteor passes through Noxious Fumes, the gas ignites, stunning all enemies in the radius. This ability has 3 charges.",
+    "details": {
+      "damage": "140/180/220/260/300 (+65% of your Magical Power)",
+      "radius": "20",
+      "charge_time": "20s",
+      "cost": "0 mana"
+    }
+  },
+  "overflow": {
+    "display_name": "Overflow",
+    "description": "Every time Chaac uses an ability he gains a stack of Overflow, reducing the Mana cost of his abilities by 20%. Stacks up to 5 times.",
+    "details": {
+      "mana_cost_reduction": "20% per stack",
+      "max_stacks": "5",
+      "stack_duration": "10s"
+    }
+  },
+  "thunder_strike": {
+    "display_name": "Thunder Strike",
+    "description": "Chaac throws his axe forward, dealing Magical Damage to all enemies in the target area. The axe remains in the ground for 5s. If Chaac uses another ability, it will interact with the axe at its location.",
+    "details": {
+      "damage": "80/125/170/215/260 (+75% of your Physical Power)",
+      "radius": "15",
+      "axe_duration": "5s",
+      "cooldown": "13s",
+      "cost": "50/55/60/65/70 mana"
+    }
+  },
+  "torrent": {
+    "display_name": "Torrent",
+    "description": "Chaac spins his axe around him, dealing Magical Damage to nearby enemies and slowing their Movement Speed. If his axe is deployed from Thunder Strike, Chaac teleports to its location before attacking.",
+    "details": {
+      "damage": "70/115/160/205/250 (+60% of your Physical Power)",
+      "movement_speed": "-20%",
+      "slow_duration": "3s",
+      "radius": "20",
+      "cooldown": "16/15/14/13/12s",
+      "cost": "60/65/70/75/80 mana"
+    }
+  },
+  "rain_dance": {
+    "display_name": "Rain Dance",
+    "description": "Chaac creates a rainstorm around him that heals him every second. If his axe is deployed from Thunder Strike, the rainstorm occurs at that location instead, and Chaac also gains Protections.",
+    "details": {
+      "heal": "30/45/60/75/90 (+15% of your Physical Power) per tick",
+      "protections": "20/25/30/35/40",
+      "duration": "6s",
+      "radius": "20",
+      "cooldown": "18s",
+      "cost": "65/70/75/80/85 mana"
+    }
+  },
+  "storm_call": {
+    "display_name": "Storm Call",
+    "description": "Chaac summons a giant storm at his location, charging for 3s. Upon release, enemies in the radius are damaged, knocked up, and silenced. While charging, Chaac is immune to Crowd Control. If his axe is deployed from Thunder Strike, Storm Call will instead fire at that location.",
+    "details": {
+      "damage": "200/275/350/425/500 (+100% of your Physical Power)",
+      "silence_duration": "3s",
+      "radius": "30",
+      "charge_time": "3s",
+      "cooldown": "90s",
+      "cost": "80/90/100/110/120 mana"
+    }
+  },
+  "lurking_in_the_shadows": {
+    "display_name": "Lurking in the Shadows",
+    "description": "While in walls, Cliodhna gains increased Movement Speed and Power. She also gains a stack of Unnatural Movement every 0.5s, up to 10. Upon exiting walls, she keeps the Power buff and consumes all stacks of Unnatural Movement to gain bonus Movement Speed that decays over time.",
+    "details": {
+      "movement_speed_in_walls": "20%",
+      "power": "7.5%",
+      "movement_speed_per_stack": "3%",
+      "max_stacks": "10",
+      "power_buff_duration": "5s"
+    }
+  },
+  "banshees_wail": {
+    "display_name": "Banshee's Wail",
+    "description": "Cliodhna channels a piercing wail in a cone, dealing Physical Damage to enemies hit and reducing their Physical Protection. While in walls, this ability can be cast through them and has increased range.",
+    "details": {
+      "damage": "80/130/180/230/280 (+80% of your Physical Power)",
+      "protection_reduction": "15%",
+      "debuff_duration": "3s",
+      "normal_range": "40",
+      "in_wall_range": "55",
+      "cooldown": "12s",
+      "cost": "60/65/70/75/80 mana"
+    }
+  },
+  "deafening_whispers": {
+    "display_name": "Deafening Whispers",
+    "description": "Cliodhna sends forth damaging whispers that swirl around her, dealing Physical Damage to enemies hit. After a delay, the whispers collapse inward, dealing additional damage and Silencing enemies hit by both instances. While in walls, this ability can be cast through them.",
+    "details": {
+      "initial_damage": "30/55/80/105/130 (+40% of your Physical Power)",
+      "collapse_damage": "50/85/120/155/190 (+60% of your Physical Power)",
+      "silence_duration": "1.5s",
+      "radius": "20",
+      "cooldown": "14s",
+      "cost": "70/75/80/85/90 mana"
+    }
+  },
+  "ghostly_presence": {
+    "display_name": "Ghostly Presence",
+    "description": "Cliodhna dashes forward, dealing Physical Damage to enemies she passes through. If she hits an enemy god, she can dash again within 3s. While in walls, she instead emerges at her target location, dealing damage in an area and Slowing enemies hit.",
+    "details": {
+      "damage": "70/120/170/220/270 (+70% of your Physical Power)",
+      "slow": "20%",
+      "slow_duration": "2s",
+      "dash_range": "35",
+      "cooldown": "16/15/14/13/12s",
+      "cost": "60/65/70/75/80 mana"
+    }
+  },
+  "rushing_terror": {
+    "display_name": "Rushing Terror",
+    "description": "Cliodhna channels her banshee form, becoming untargetable and gaining the ability to move through walls. While in walls, she gains increased Movement Speed and Power, and her abilities have enhanced effects. However, she constantly loses Health while in walls and will die if she stays too long.",
+    "details": {
+      "health_cost": "2% of Maximum Health per second",
+      "duration": "10s",
+      "cooldown": "90s",
+      "cost": "100 mana"
+    }
+  },
+  "funeral_rites": {
+    "display_name": "Funeral Rites",
+    "description": "Eset shares additional HP5 and MP5 with nearby allies. For every player death within 80 units, her aura gains an additional Stack (max. 10). Upon reaching 10 Stacks, Eset gains an additional 10% Cooldown Reduction. Additionally, Eset's final Basic Attack in her progression has a wider radius (+2).",
+    "details": {
+      "hp5_per_stack": "2",
+      "mp5_per_stack": "2",
+      "max_stacks": "10",
+      "aura_radius": "55",
+      "cooldown_reduction": "10%"
+    }
+  },
+  "wing_gust": {
+    "display_name": "Wing Gust",
+    "description": "Eset flaps her wings, gaining increased movement speed with no backpedal penalty, and sending forth 4 wing gusts in a line, each dealing Magical Damage to all targets in their path. Eset is immune to Root and Knockback effects while casting.",
+    "details": {
+      "damage": "45/65/85/105/125 (+45% of your Magical Power)",
+      "total_damage": "180/260/340/420/500 (+180% of your Magical Power)",
+      "movement_speed": "25%",
+      "duration": "3s",
+      "cost": "60/65/70/75/80 mana",
+      "cooldown": "10s"
+    }
+  },
+  "spirit_ball": {
+    "display_name": "Spirit Ball",
+    "description": "Eset sends forth a ball of spirit energy. As the ball travels, it gains in power up to 1.5x at max. range. At any time, Eset can activate the ability to detonate the ball, dealing Magical Damage and Stunning enemies within 10 units, scaling in duration up to 1.5s at max range.",
+    "details": {
+      "damage": "70/115/160/205/250 (+70% of your Magical Power)",
+      "max_range_damage": "105/172.5/240/307.5/375 (+105% of your Magical Power)",
+      "stun": "1s (up to 1.5s at max range)",
+      "radius": "10",
+      "range": "80",
+      "cost": "55/60/65/70/75 mana",
+      "cooldown": "10s"
+    }
+  },
+  "dispel_magic": {
+    "display_name": "Dispel Magic",
+    "description": "Eset Silences and slows enemy gods at her target location. Enemy gods hit also lose a portion of their Magical Protection. If Eset successfully hits an enemy god, allies near the Dispel Magic or Eset gain a shield. If Eset hits multiple enemy gods, the shield is increased by 30% for each enemy hit after the first up to a maximum of 60%.",
+    "details": {
+      "slow": "20/22.5/25/27.5/30%",
+      "magical_protection_debuff": "10%",
+      "debuff_duration": "1.5/1.75/2/2.25/2.5s",
+      "silence_duration": "1.5/1.75/2/2.25/2.5s",
+      "shield": "50/100/150/200/250",
+      "radius": "15",
+      "cost": "60/65/70/75/80 mana",
+      "cooldown": "14s"
+    }
+  },
+  "circle_of_protection": {
+    "display_name": "Circle of Protection",
+    "description": "Eset plants her staff at her target location for 5s. Allies within its radius take less damage. Any damage dealt within the radius charges up the staff. If Eset activates the staff again, it explodes, dealing damage to enemies inside and healing allies.",
+    "details": {
+      "damage": "180/215/250/285/320 (+50% of your Magical Power)",
+      "healing": "75/110/145/180/215",
+      "damage_mitigation": "30%",
+      "max_charge": "700/1400/2100/2800/3500",
+      "max_charge_scale": "2/2.25/2.5/2.75/3x",
+      "radius": "30",
+      "cost": "80/90/100/110/120 mana",
+      "cooldown": "90s"
+    }
+  },
+  "brisingamens_blessing": {
+    "display_name": "Brisingamen's Blessing",
+    "description": "Freya's necklace grants her additional Magical Lifesteal.",
+    "details": {
+      "magical_lifesteal": "6% + 0.3% per Level"
+    }
+  },
+  "irradiate": {
+    "display_name": "Irradiate",
+    "description": "Freya activates a Buff that makes her Basic Attacks do bonus Magical damage. Freya may cancel this ability early to put it on cooldown.",
+    "details": {
+      "damage": "35/50/65/80/95 (+20% of your Magical Power)",
+      "duration": "5s",
+      "cooldown": "8s",
+      "cost": "45/50/55/60/65 mana"
+    }
+  },
+  "pulse": {
+    "display_name": "Pulse",
+    "description": "Freya activates a Buff that makes her Basic Attacks ranged, dealing bonus Magical damage and Slowing the target and all nearby enemies. The area effect and slow are lost when Irradiate is active.",
+    "details": {
+      "damage": "25/35/45/55/65 (+15% of your Magical Power)",
+      "slow": "15/17.5/20/22.5/25%",
+      "duration": "6s",
+      "radius": "15",
+      "cooldown": "12s",
+      "cost": "45/50/55/60/65 mana"
+    }
+  },
+  "banish": {
+    "display_name": "Banish",
+    "description": "At her ground target location, Freya Banishes her enemies into the air for a short time. The enemies can't be hit or take action while in the air.",
+    "details": {
+      "banish_duration": "1.5s",
+      "radius": "10",
+      "cooldown": "18/17.5/17/16.5/16s",
+      "cost": "70/65/60/55/50 mana"
+    }
+  },
+  "valkyries_discretion": {
+    "display_name": "Valkyrie's Discretion",
+    "description": "Freya uses her Cloak of Feathers to fly above the battlefield where she fires down blasts of Magical damage up to 4 times while flying. Freya can't be hit when at full ascension and can cancel it anytime.",
+    "details": {
+      "damage": "90/125/160/195/230 (+35% of your Magical Power) per blast",
+      "duration": "3.6s",
+      "radius": "12",
+      "cooldown": "110s",
+      "cost": "90/95/100/105/110 mana"
+    }
+  },
+  "good_fortune": {
+    "display_name": "Good Fortune",
+    "description": "Any time Ganesha deals a killing blow, the nearest Friendly God receives credit for the kill and Ganesha receives the rewards for an assist instead. In addition, his assist range is increased by 20 and time before he loses assist credit is increased by 5s.",
+    "details": {
+      "assist_range_increase": "20",
+      "assist_duration_increase": "5s"
+    }
+  },
+  "turn_of_fate": {
+    "display_name": "Turn of Fate",
+    "description": "Ganesha curses his Enemies with his considerable willpower, damaging them. For each Enemy he hits (up to a maximum of 5), all Allied Gods within 55 units of Ganesha gain bonus Damage. Minions give 1 stack, enemy Gods give 2 stacks.",
+    "details": {
+      "damage": "90/150/210/270/330 (+55% of your Magical Power)",
+      "bonus_damage_per_stack": "3%",
+      "buff_duration": "4s",
+      "range": "55",
+      "cooldown": "14/13.5/13/12.5/12s",
+      "cost": "65/70/75/80/85 mana"
+    }
+  },
+  "ohm": {
+    "display_name": "Ohm",
+    "description": "Ganesha begins chanting and rises into the lotus position, where he is slowed slightly (-15%) but may travel freely in all directions. While chanting, he silences Enemy gods in a cone in front of him, increasing Physical and Magical Protections for all nearby Allied Gods. He gains an additional 50% of the Protections he provides, and he is knockback immune while channeling this ability.",
+    "details": {
+      "protections": "20/30/40/50/60",
+      "duration": "1.8s",
+      "radius": "35",
+      "cooldown": "14/13/12/11/10s",
+      "cost": "55/60/65/70/75 mana"
+    }
+  },
+  "remove_obstacles": {
+    "display_name": "Remove Obstacles",
+    "description": "Ganesha charges forward, hooking an enemy with his goad, holding them in place and damaging the enemy before knocking them up. While dashing, Ganesha passes through player-made deployables.",
+    "details": {
+      "damage": "90/135/180/225/270 (+45% of your Magical Power)",
+      "range": "7.5",
+      "cooldown": "14/13.5/13/12.5/12s",
+      "cost": "70 mana"
+    }
+  },
+  "dharmic_pillars": {
+    "display_name": "Dharmic Pillars",
+    "description": "Ganesha summons the Four Great Pillars of Righteousness to imprison his Enemies. Between each pair of pillars a magical field is created, and Enemies who pass through the field take Damage, are Slowed, and have their Protections reduced for 3s. The first tick of this damage does an additional 60%, and Enemy Minions and Jungle Monsters take 40% of this Damage.",
+    "details": {
+      "damage": "90/130/170/210/250 (+40% of your Magical Power)",
+      "first_hit_bonus": "60%",
+      "slow": "30%",
+      "protection_reduction": "10/20/30/40/50",
+      "debuff_duration": "3s",
+      "radius": "20",
+      "cooldown": "75s",
+      "cost": "80/90/100/110/120 mana"
+    }
+  },
+  "epic_of_gilgamesh": {
+    "display_name": "Epic of Gilgamesh",
+    "description": "Gilgamesh Embarks! At level 5 and 10 Gilgamesh gains a quest. The first quest is to visit a specific location on the map. The second quest is to defeat gods equal to half of an enemy team (rounded up) in a single fight. Each time Gilgamesh completes a quest he is awarded a Tier 1 item or 500 gold if he has a full inventory.",
+    "details": {
+      "quest_1_level": "5",
+      "quest_2_level": "10",
+      "quest_2_timer": "10s between kills/assists",
+      "reward": "Tier 1 item or 500 gold"
+    }
+  },
+  "sun_forged_scimitar": {
+    "display_name": "Sun-Forged Scimitar",
+    "description": "Gilgamesh ignites his sword with the ferocity of the Sun for 3s. Enemies around the ignition take damage and are slowed for 2s. Lane Minions take an extra +40% damage. Gilgamesh's Basic Attack deals bonus damage equal to 3% of his Maximum Health to enemies hit. When Gilgamesh successfully hits an enemy with his Basic Attack the duration of this effect is extended for 0.8s, up to a maximum of 6s.",
+    "details": {
+      "damage": "65/95/125/155/185 (+50% of your Physical Power)",
+      "slow": "15/17.5/20/22.5/25%",
+      "bonus_minion_damage": "40%",
+      "hp5": "10/15/20/25/30",
+      "radius": "20",
+      "cooldown": "12/11.5/11/10.5/10s",
+      "cost": "50/55/60/65/70 mana"
+    }
+  },
+  "drop_kick": {
+    "display_name": "Drop Kick",
+    "description": "Gilgamesh drop kicks an area in front of him. Enemies in the area are damaged while the closest enemy is launched through these enemies. The launched enemy takes bonus damage when hitting a minion or takes burst damage and is stunned if hitting a God or a Wall. If the launched enemy hits the Winds of Shamash they are thrown toward the center of the ring.",
+    "details": {
+      "kick_damage": "60/90/120/150/180 (+30% of your Physical Power)",
+      "bonus_damage": "25/40/55/70/85 (+20% of your Physical Power)",
+      "burst_damage": "50/95/140/185/230 (+30% of your Physical Power)",
+      "stun_duration": "1.2s",
+      "knockback_distance": "60",
+      "range": "25",
+      "cooldown": "14s",
+      "cost": "60/65/70/75/80 mana"
+    }
+  },
+  "heros_advance": {
+    "display_name": "Hero's Advance",
+    "description": "Gilgamesh leaps into the air, crashing down at a target location. Enemies around the impact take damage. Gilgamesh infuses the ground with energy, causing a beacon to appear for 5s. Allies who run towards the beacon will gain Movement Speed, halving once they enter the beacon. Allies who enter the beacon will gain bonus Lifesteal, boosted by 10% of Gilgamesh's highest Protection.",
+    "details": {
+      "damage": "70/110/150/190/230 (+40% of your Physical Power)",
+      "movement_speed": "25%",
+      "lifesteal": "10.5%",
+      "range": "55",
+      "radius": "30",
+      "cooldown": "16s",
+      "cost": "70 mana"
+    }
+  },
+  "winds_of_shamash": {
+    "display_name": "Winds of Shamash",
+    "description": "Gilgamesh calls upon Shamash to create a ring of wind at a target location for 6s. Enemies inside this ring when it starts take damage and are slowed for 2s. Enemies inside the ring take wind damage every .5s. Enemies who try to escape the ring are heavily slowed. If Gilgamesh damages an enemy trying to flee they are thrown back towards the center of the ring. The wind turns into thread over 6s; damaging and Rooting enemies who are still inside the ring.",
+    "details": {
+      "initial_damage": "90/145/200/255/310 (+40% of your Physical Power)",
+      "initial_slow": "20%",
+      "wind_damage": "16/20/24/28/32 (+5% of your Physical Power)",
+      "wind_wall_slow": "40%",
+      "binding_damage": "150/225/300/375/450 (+50% of your Physical Power)",
+      "root_duration": "1.5s",
+      "range": "45",
+      "radius": "35",
+      "duration": "6s",
+      "cooldown": "90s",
+      "cost": "80/85/90/95/100 mana"
+    }
+  },
+  "blight": {
+    "display_name": "Blight",
+    "description": "Hades' basic attacks apply Blight to enemies hit, reducing their physical and magical power. His abilities have additional effects on Blighted targets.",
+    "details": {
+      "power_reduction": "5%",
+      "duration": "8s"
+    }
+  },
+  "death_from_below": {
+    "display_name": "Death From Below",
+    "description": "Hades descends into the ground and erupts from below at his ground location, doing damage to all enemies in the area. If the enemy is Blighted, they are also Slowed. Applies Blight.",
+    "details": {
+      "damage": "70/120/170/220/270 (+60% of your Magical Power)",
+      "slow": "20/25/30/35/40%",
+      "slow_duration": "2s",
+      "radius": "20",
+      "cooldown": "14s",
+      "cost": "50/55/60/65/70 mana"
+    }
+  },
+  "shroud_of_darkness": {
+    "display_name": "Shroud of Darkness",
+    "description": "Hades silences all enemies in a cone in front of him. If the enemy is Blighted, they are also Feared. Applies Blight.",
+    "details": {
+      "silence_duration": "1/1.25/1.5/1.75/2s",
+      "cooldown": "13/12/11/10/9s",
+      "cost": "60 mana"
+    }
+  },
+  "devour_souls": {
+    "display_name": "Devour Souls",
+    "description": "Hades devours the souls of his enemies, dealing damage in an area around him. Blighted enemies hit by this ability are Detonated, dealing damage to enemies and healing your allies around the Detonated targets. Enemy gods only take 50% of the damage from Detonating Blights.",
+    "details": {
+      "damage": "75/125/175/225/275 (+85% of your Magical Power)",
+      "detonation_damage": "10/15/20/25/30 (+40% of your Magical Power)",
+      "detonation_healing": "20/35/50/65/80",
+      "detonation_radius": "20",
+      "radius": "20",
+      "cooldown": "10s",
+      "cost": "60/65/70/75/80 mana"
+    }
+  },
+  "pillar_of_agony": {
+    "display_name": "Pillar of Agony",
+    "description": "Hades calls to all enemy souls nearby, creating a Vortex which drags targets toward him, dealing damage every .5s for 4s. For each enemy hit Hades reduces his ability cooldowns by 0.4s. If the enemy is Blighted, their Protections are reduced. Hades also gains Protections and 10% damage mitigation for the duration.",
+    "details": {
+      "damage_per_tick": "45/60/75/90/105 (+35% of your Magical Power)",
+      "protections": "60/85/110/135/160",
+      "protection_debuff": "10% + 10/15/20/25/30",
+      "debuff_duration": "4s",
+      "radius": "30",
+      "cooldown": "90/85/80/75/70s",
+      "cost": "100 mana"
+    }
+  },
+  "steady_flow": {
+    "display_name": "Steady Flow",
+    "description": "He Bo gains +7% Movement Speed and +7% Magical Power for 8s every time he uses an ability. This effect can stack up to 2 times.",
+    "details": {
+      "movement_speed": "7% per stack",
+      "magical_power": "7% per stack",
+      "duration": "8s",
+      "max_stacks": "2"
+    }
+  },
+  "water_cannon": {
+    "display_name": "Water Cannon",
+    "description": "He Bo shoots a short burst of water forward, dealing Magical Damage to all enemies in its path.",
+    "details": {
+      "damage": "85/125/165/205/245 (+80% of your Magical Power)",
+      "cooldown": "3s",
+      "cost": "45/50/55/60/65 mana"
+    }
+  },
+  "atlas_of_the_yellow_river": {
+    "display_name": "Atlas of the Yellow River",
+    "description": "He Bo creates a scroll of water that knocks enemies into the air and deals Magical Damage. The scroll persists for 6s and provides a Movement Speed buff to allies that cross it.",
+    "details": {
+      "damage": "75/120/165/210/255 (+70% of your Magical Power)",
+      "movement_speed": "40%",
+      "speed_buff_duration": "2s",
+      "scroll_duration": "6s",
+      "cooldown": "10s",
+      "cost": "60/65/70/75/80 mana"
+    }
+  },
+  "waterspout": {
+    "display_name": "Waterspout",
+    "description": "He Bo launches himself and all nearby enemies into the air, dealing Magical Damage and knocking the enemies back away from him.",
+    "details": {
+      "damage": "85/130/175/220/265 (+70% of your Magical Power)",
+      "radius": "20",
+      "cooldown": "12s",
+      "cost": "70/75/80/85/90 mana"
+    }
+  },
+  "crushing_wave": {
+    "display_name": "Crushing Wave",
+    "description": "He Bo charges forward in his river, knocking all enemies aside and dealing Magical Damage. He is immune to Knockback for the duration.",
+    "details": {
+      "damage": "450/550/650/750/850 (+115% of your Magical Power)",
+      "cooldown": "90s",
+      "cost": "100 mana"
+    }
+  },
+  "fastest_god_alive": {
+    "display_name": "Fastest God Alive",
+    "description": "For every 1 unit traveled, Mercury gains a 0.04% Physical Power bonus on his next Basic Attack (max 20%). Mercury also gains additional Physical Power equal to 25% of movement speed from items, abilities, and the passive movement speed gained from levels 1 to 7.",
+    "details": {
+      "power_per_unit": "0.04%",
+      "max_power_bonus": "20%",
+      "movement_speed_conversion": "25%"
+    }
+  },
+  "made_you_look": {
+    "display_name": "Made You Look",
+    "description": "Mercury moves in the blink of an eye, dealing one melee attack to every enemy within the target area. This ability can Critically Hit, and triggers Ability related Item effects, not Basic Attack related Item effects.",
+    "details": {
+      "damage": "80/115/150/185/220 (+60% of your Basic Attack Power)",
+      "radius": "7.5/9/10.5/12/13.5",
+      "cooldown": "9s",
+      "cost": "50 mana"
+    }
+  },
+  "maximum_velocity": {
+    "display_name": "Maximum Velocity",
+    "description": "Mercury passively gains movement speed. When this ability is activated, Mercury increases his attack speed and is immune to slows for the duration.",
+    "details": {
+      "passive_movement_speed": "2/4/6/8/10%",
+      "attack_speed": "30/40/50/60/70%",
+      "duration": "5s",
+      "cooldown": "14/13.5/13/12.5/12s",
+      "cost": "60/65/70/75/80 mana"
+    }
+  },
+  "special_delivery": {
+    "display_name": "Special Delivery",
+    "description": "Mercury dashes forward, knocking aside minions, grabbing the first enemy god he encounters and spinning them. The enemy god takes damage until the effect ends, and Mercury throws the god in the direction of his choice.",
+    "details": {
+      "minion_damage": "70/115/160/205/250 (+80% of your Physical Power)",
+      "damage_per_tick": "15/20/25/30/35 (+20% of your Physical Power) every 0.25s",
+      "total_damage": "40/60/80/100/120 (+64% of your Physical Power)",
+      "duration": "1s",
+      "cooldown": "15s",
+      "cost": "60/65/70/75/80 mana"
+    }
+  },
+  "sonic_boom": {
+    "display_name": "Sonic Boom",
+    "description": "Mercury gathers energy for a powerful dash, with the range extending as he does so. He travels the distance faster than the speed of sound, dealing damage to all enemies, stunning them and spinning them around in a random direction.",
+    "details": {
+      "damage": "200/275/350/425/500 (100% of your Physical Power)",
+      "disorient_duration": "1.5s",
+      "cooldown": "90s",
+      "cost": "80/85/90/95/100 mana"
+    }
+  },
+  "broken_weave": {
+    "display_name": "Broken Weave",
+    "description": "Your abilities either create or detonate Weaves. Detonating Weaves deals Physical Damage to nearby enemies and Roots them. You gain a stacking Attack Speed and Intelligence increase per Weave detonated.",
+    "details": {
+      "damage": "25 (+5 per level) (+25% Intelligence) (+15% Strength)",
+      "root_duration": "1s",
+      "attack_speed_per_stack": "4% (+2% Strength)",
+      "intelligence_per_stack": "10 (+0.5 per level)",
+      "buff_duration": "30s",
+      "max_stacks": "3"
+    }
+  },
+  "spirit_arrow": {
+    "display_name": "Spirit Arrow",
+    "description": "Fire a Spirit Arrow projectile that deals Physical Damage and Roots enemies. This ability detonates Weaves that it hits. This arrow passes through everything.",
+    "details": {
+      "damage": "80/145/210/275/340 (+95% Strength) (+75% Intelligence)",
+      "root_duration": "1s",
+      "range": "10.4m",
+      "radius": "0.563m",
+      "cooldown": "13/12.5/12/11.5/11s",
+      "cost": "40/50/60/70/80"
+    }
+  },
+  "unravel": {
+    "display_name": "Unravel",
+    "description": "Unravel the world weaves, dealing Damage to enemies in an area. This ability creates a Weave. You Heal for each enemy hit. Hitting a god Heals for an increased amount.",
+    "details": {
+      "damage": "80/130/180/230/280 (+55% Strength) (+90% Intelligence)",
+      "heal": "15/20/25/30/35 (+10% Intelligence)",
+      "increased_heal": "30/40/50/60/70 (+10% Intelligence)",
+      "range": "8.8m",
+      "radius": "3.2m",
+      "cooldown": "12s",
+      "cost": "50/60/70/80/90"
+    }
+  },
+  "back_flip": {
+    "display_name": "Back Flip",
+    "description": "Deal Physical Damage and Slow enemies in front of you, then Leap backwards. This ability detonates Weaves that it hits.",
+    "details": {
+      "damage": "85/130/175/220/265 (+60% Intelligence)",
+      "slow": "30%",
+      "slow_duration": "2/2.5/3/3.5/4s",
+      "range": "9.6m",
+      "cone_range": "5.6m",
+      "cone_angle": "110 degrees",
+      "cooldown": "15/14.5/14/13.5/13s",
+      "cost": "50/55/60/65/70"
+    }
+  },
+  "world_weaver": {
+    "display_name": "World Weaver",
+    "description": "Charge up and fire an arrow across the world, locked on to an enemy god and ignoring obstacles. The arrow deals Physical Damage and Stuns. You can fire the arrow before it is fully charged, but it will deal less damage.",
+    "details": {
+      "damage": "200/250/300/350/400 (+105% Strength) (+90% Intelligence)",
+      "stun_duration": "1s",
+      "min_charge_time": "0.5s",
+      "max_charge_time": "2s",
+      "min_damage_percent": "50%",
+      "cooldown": "100s",
+      "cost": "80/90/100/110/120"
+    }
+  },
+  "path_to_valhalla": {
+    "display_name": "Path to Valhalla",
+    "description": "Odin gains a permanent stack of Power for every enemy god that dies within 80 units of him and a stack for each enemy killed by his ultimate Ring of Spears.",
+    "details": {
+      "power_per_stack": "2",
+      "radius": "80"
+    }
+  },
+  "lunge": {
+    "display_name": "Lunge",
+    "description": "Odin lunges forward with his spear, dealing Physical Damage to all enemies in front of him.",
+    "details": {
+      "damage": "70/120/170/220/270 (+60% of your Physical Power)",
+      "cooldown": "12s",
+      "cost": "50/55/60/65/70 mana"
+    }
+  },
+  "raven_shout": {
+    "display_name": "Raven Shout",
+    "description": "Odin summons a flock of ravens that grants him a shield and increased Movement Speed. If the shield is not destroyed before the duration ends, it explodes and deals damage to nearby enemies.",
+    "details": {
+      "shield_health": "100/150/200/250/300 (+60% of your Physical Power)",
+      "movement_speed": "20/25/30/35/40%",
+      "damage": "50/80/110/140/170 (+40% of your Physical Power)",
+      "duration": "3s",
+      "cooldown": "15s",
+      "cost": "60/65/70/75/80 mana"
+    }
+  },
+  "gungnirs_might": {
+    "display_name": "Gungnir's Might",
+    "description": "Odin throws his spear with great force, dealing Physical Damage and Slowing enemies hit.",
+    "details": {
+      "damage": "75/115/155/195/235 (+70% of your Physical Power)",
+      "slow": "20/25/30/35/40%",
+      "slow_duration": "2s",
+      "cooldown": "14s",
+      "cost": "60/65/70/75/80 mana"
+    }
+  },
+  "ring_of_spears": {
+    "display_name": "Ring of Spears",
+    "description": "Odin creates a ring of spears that blocks enemy movement and projectiles. Enemies inside the ring cannot escape through normal means while enemies outside cannot enter. Odin gains increased Attack Speed and Power while fighting inside the ring.",
+    "details": {
+      "attack_speed": "20/30/40/50/60%",
+      "power": "10/20/30/40/50",
+      "duration": "6s",
+      "cooldown": "75s",
+      "cost": "80/85/90/95/100 mana"
+    }
+  },
+  "speed_of_light": {
+    "display_name": "Speed of Light",
+    "description": "Ra's movement speed increases for each ability he uses. This effect stacks up to 3 times and lasts 10 seconds.",
+    "details": {
+      "movement_speed": "6% per stack",
+      "max_stacks": "3",
+      "duration": "10s"
+    }
+  },
+  "celestial_beam": {
+    "display_name": "Celestial Beam",
+    "description": "Ra summons a powerful beam of solar energy, focusing the rays to strike all enemies in a line, dealing Magical Damage.",
+    "details": {
+      "damage": "85/135/185/235/285 (+70% of your Magical Power)",
+      "cooldown": "10s",
+      "cost": "60/65/70/75/80 mana"
+    }
+  },
+  "divine_light": {
+    "display_name": "Divine Light",
+    "description": "Ra summons a ray of divine light that deals Magical Damage to all enemies in the area while slowing them, and heals all friendly gods within the radius.",
+    "details": {
+      "damage": "50/80/110/140/170 (+35% of your Magical Power) per tick",
+      "heal": "20/30/40/50/60 (+15% of your Magical Power) per tick",
+      "slow": "20%",
+      "duration": "6s",
+      "radius": "20",
+      "cooldown": "12s",
+      "cost": "60/65/70/75/80 mana"
+    }
+  },
+  "solar_blessing": {
+    "display_name": "Solar Blessing",
+    "description": "Ra creates a pillar of blessed light that deals Magical Damage to enemies and Blinds them while healing allies within the radius.",
+    "details": {
+      "damage": "70/115/160/205/250 (+70% of your Magical Power)",
+      "heal": "20/25/30/35/40 (+10% of your Magical Power) per tick",
+      "blind_duration": "2s",
+      "duration": "6s",
+      "radius": "15",
+      "cooldown": "15/14/13/12/11s",
+      "cost": "70/75/80/85/90 mana"
+    }
+  },
+  "searing_pain": {
+    "display_name": "Searing Pain",
+    "description": "Ra channels the power of the sun to emit a focused beam of solar energy, dealing Magical Damage to all enemies in its path.",
+    "details": {
+      "damage": "200/275/350/425/500 (+100% of your Magical Power)",
+      "cooldown": "90s",
+      "cost": "100 mana"
+    }
+  },
+  "quick_learner": {
+    "display_name": "Quick Learner",
+    "description": "Each of Scylla's abilities gain an additional effect at max rank. In addition, Scylla gains 20 magical power for each max rank ability.",
+    "details": {
+      "power_per_max_rank": "20"
+    }
+  },
+  "sic_em": {
+    "display_name": "Sic 'Em",
+    "description": "Scylla sends two hounds forward rooting and crippling the first enemy hit. At max rank, two additional enemies nearby the first target will also be hit.",
+    "details": {
+      "damage": "60/110/160/210/260 (+75% of your Magical Power)",
+      "root_duration": "1.75s",
+      "cooldown": "10s",
+      "cost": "60/65/70/75/80 mana"
+    }
+  },
+  "crush": {
+    "display_name": "Crush",
+    "description": "Scylla creates a magical field that Slows enemies. After 5s it detonates and damages enemies, dealing 30% increased damage to Minions and Jungle Camps. Scylla may activate the ability again to detonate it early. At max rank, enemies in the area also have their Magical Protection reduced, and targets hit by the damage retain the debuff and are Slowed for 1s.",
+    "details": {
+      "damage": "100/155/210/265/320 (+85% of your Magical Power)",
+      "slow": "30%",
+      "protection_reduction": "15%",
+      "radius": "20",
+      "cooldown": "10s",
+      "cost": "70/75/80/85/90 mana"
+    }
+  },
+  "sentinel": {
+    "display_name": "Sentinel",
+    "description": "Passive: Scylla gains MP5. Active: Scylla summons a Sentinel to the target area, granting vision of enemies for 5s. Scylla may activate the ability again within 5s to move to the Sentinel location. At max rank, the vision is granted through line of sight blockers, and placement range increases.",
+    "details": {
+      "mp5": "8/10/12/14/16",
+      "vision_range": "40/50/60/70/80",
+      "summon_range": "70",
+      "duration": "5s",
+      "cooldown": "15s",
+      "cost": "70/75/80/85/90 mana"
+    }
+  },
+  "im_a_monster": {
+    "display_name": "I'm a Monster",
+    "description": "Scylla reveals her true nature, becoming immune to Crowd Control for the next 6s, and gaining movement speed. She may make one powerful attack during this time. If she kills an enemy god with the attack, she gains another 6s and may attack again. At max rank, the movement speed bonus doubles.",
+    "details": {
+      "damage": "400/500/600/700/800 (+120% of your Magical Power)",
+      "movement_speed": "35/35/35/35/70%",
+      "range": "60",
+      "duration": "6s",
+      "cooldown": "90s",
+      "cost": "100 mana"
+    }
+  },
+  "harvester_of_souls": {
+    "display_name": "Harvester of Souls",
+    "description": "Enemy gods who are below a health threshold are revealed to Thanatos. Killing an enemy heals Thanatos and reduces all of his cooldowns. His abilities cost health instead of mana.",
+    "details": {
+      "god_kill_heal": "25",
+      "minion_kill_heal": "10",
+      "cooldown_reduction": "5s"
+    }
+  },
+  "death_scythe": {
+    "display_name": "Death Scythe",
+    "description": "Thanatos flings a scythe projectile that deals Physical Damage and Slows the first target hit. You heal for 50% of the total damage done. Gods take 12.5% of their Max Health as bonus Physical Damage.",
+    "details": {
+      "damage": "95/165/235/305/375 (+60% of your Physical Power)",
+      "slow": "20%",
+      "slow_duration": "3s",
+      "range": "11.2",
+      "radius": "0.48",
+      "cooldown": "11s",
+      "cost": "6% of current Health"
+    }
+  },
+  "scent_of_death": {
+    "display_name": "Scent of Death",
+    "description": "Thanatos senses death, becoming Slow Immune and gaining Movement Speed and Penetration. You also deal bonus damage to and run faster towards enemies at low health.",
+    "details": {
+      "movement_speed": "8/12/16/20/24%",
+      "bonus_movement_speed": "8/12/16/20/24%",
+      "penetration": "8/11/14/17/20",
+      "bonus_damage": "15%",
+      "cooldown": "13s",
+      "cost": "4% of current Health"
+    }
+  },
+  "soul_reap": {
+    "display_name": "Soul Reap",
+    "description": "Thanatos swings his scythe, dealing Physical Damage and Silencing enemies in front of him.",
+    "details": {
+      "damage": "100/150/200/250/300 (+70% of your Physical Power)",
+      "silence_duration": "1s",
+      "cone_angle": "110",
+      "cooldown": "14s",
+      "cost": "4% of current Health"
+    }
+  },
+  "hovering_death": {
+    "display_name": "Hovering Death",
+    "description": "Thanatos flies into the sky, then dives to a location dealing Physical Damage and Stunning enemies hit. Enemies at low health are Executed instead.",
+    "details": {
+      "damage": "110/150/180/215/250 (+80% of your Physical Power)",
+      "execute_threshold": "24/28/32/36/40% Health",
+      "stun_duration": "1s",
+      "radius": "2.4",
+      "cooldown": "90s",
+      "cost": "6% of current Health"
+    }
+  },
+  "warriors_madness": {
+    "display_name": "Warrior's Madness",
+    "description": "Thor gains Physical Power for each enemy god within 55 units of him.",
+    "details": {
+      "physical_power": "15 per enemy god",
+      "radius": "55"
+    }
+  },
+  "mjolnirs_attunement": {
+    "display_name": "Mjolnir's Attunement",
+    "description": "Thor throws his hammer Mjolnir forward, dealing Physical Damage to all enemies in its path. If Thor hits a wall, the hammer bounces off and travels half the original distance. While the hammer is flying, Thor can teleport to it by pressing the ability button again.",
+    "details": {
+      "damage": "70/115/160/205/250 (+90% of your Physical Power)",
+      "range": "75",
+      "cooldown": "14s",
+      "cost": "60/65/70/75/80 mana"
+    }
+  },
+  "tectonic_rift": {
+    "display_name": "Tectonic Rift",
+    "description": "Thor slams his hammer on the ground, creating a fissure of rocks in front of him that deal Physical Damage and stun enemies. The rocks persist as a wall for 4s.",
+    "details": {
+      "damage": "60/105/150/195/240 (+70% of your Physical Power)",
+      "stun_duration": "1.5s",
+      "wall_duration": "4s",
+      "cooldown": "16/15/14/13/12s",
+      "cost": "60/65/70/75/80 mana"
+    }
+  },
+  "berserker_barrage": {
+    "display_name": "Berserker Barrage",
+    "description": "Thor spins his hammer around him, damaging enemies with each hit while moving. Thor is immune to knockback for the duration.",
+    "details": {
+      "damage_per_hit": "35/50/65/80/95 (+45% of your Physical Power)",
+      "number_of_hits": "4",
+      "duration": "2s",
+      "cooldown": "13s",
+      "cost": "65/70/75/80/85 mana"
+    }
+  },
+  "anvil_of_dawn": {
+    "display_name": "Anvil of Dawn",
+    "description": "Thor leaps into the air. While in the air, Thor can target a great distance away to come crashing down, dealing Physical Damage and stunning enemy gods at the center. Enemies outside the center take half damage and are slowed.",
+    "details": {
+      "damage": "200/300/400/500/600 (+90% of your Physical Power)",
+      "stun_duration": "1.5s",
+      "slow": "30%",
+      "slow_duration": "2s",
+      "radius": "20",
+      "cooldown": "110s",
+      "cost": "100 mana"
+    }
+  },
+  "frostbite": {
+    "display_name": "Frostbite",
+    "description": "All of Ymir's abilities that affect enemies apply a Debuff called Frostbite. All of Ymir's Basic Attacks against a target afflicted by Frostbite do 100% more damage. Enemies afflicted by Frostbite also deal 15% less damage. Lasts for 6s.",
+    "details": {
+      "damage_bonus": "100%",
+      "damage_reduction": "15%",
+      "duration": "6s"
+    }
+  },
+  "ice_wall": {
+    "display_name": "Ice Wall",
+    "description": "Ymir summons a wall of ice out of the ground that blocks player movement.",
+    "details": {
+      "lifetime": "3/3.5/4/4.5/5s",
+      "cost": "60 mana",
+      "cooldown": "12/11.5/11/10.5/10s"
+    }
+  },
+  "glacial_strike": {
+    "display_name": "Glacial Strike",
+    "description": "Ymir smashes his club, doing damage to all enemies in front of him and slowing them. Applies Frostbite.",
+    "details": {
+      "damage": "90/160/230/300/370 (+70% of your Magical Power)",
+      "slow": "35%",
+      "slow_duration": "4s",
+      "cost": "55/60/65/70/75 mana",
+      "cooldown": "8s"
+    }
+  },
+  "frost_breath": {
+    "display_name": "Frost Breath",
+    "description": "Ymir uses his breath to freeze enemies in blocks of ice, doing damage and stunning them. Applies Frostbite.",
+    "details": {
+      "damage": "50/90/130/170/210 (+50% of your Magical Power)",
+      "stun_duration": "1.25/1.5/1.75/2/2.25s",
+      "range": "35",
+      "cost": "60/65/70/75/80 mana",
+      "cooldown": "14s"
+    }
+  },
+  "shards_of_ice": {
+    "display_name": "Shards of Ice",
+    "description": "Ymir begins to freeze the air around him, causing shards of ice to grow on his back and Slowing enemies. After a 3s channel, Ymir erupts out of his frozen state, causing shards of ice to do damage to all enemies in his range. Applies Frostbite. Cancelling the ability decreases the damage.",
+    "details": {
+      "damage": "500/650/800/950/1100 (+150% of your Magical Power)",
+      "slow": "40%",
+      "radius": "35",
+      "cost": "80/85/90/95/100 mana",
+      "cooldown": "90/85/80/75/70s"
+    }
+  },
+  "overcharge": {
+    "display_name": "Overcharge",
+    "description": "Deal damage to apply Charges. Enemies take increased basic attack damage from you for each Charge they have. Non-god enemies immediately take 3 stacks.",
+    "details": {
+      "damage_increase": "15% per stack",
+      "duration": "5s",
+      "max_stacks": "3"
+    }
+  },
+  "chain_lightning": {
+    "display_name": "Chain Lightning",
+    "description": "Hurl a bolt of lightning that arcs between enemies. Deals Magical Damage and Slows.",
+    "details": {
+      "damage": "70/115/160/205/250 (+60% of your Magical Power)",
+      "slow": "20%",
+      "slow_duration": "2s",
+      "bounces": "5/5/5/6/6",
+      "range": "8.8m",
+      "cost": "50/55/60/65/70 mana",
+      "cooldown": "12/11.5/11/10.5/10s"
+    }
+  },
+  "thunderclap": {
+    "display_name": "Thunderclap",
+    "description": "Call down lightning, dealing Magical Damage to nearby enemies. You also gain increased Attack Speed and Movement Speed.",
+    "details": {
+      "damage": "80/130/180/230/280 (+75% of your Magical Power)",
+      "attack_speed": "20/22.5/25/27.5/30%",
+      "movement_speed": "20/22.5/25/27.5/30%",
+      "buff_duration": "5s",
+      "radius": "3.2m",
+      "cost": "60/65/70/75/80 mana",
+      "cooldown": "12s"
+    }
+  },
+  "detonate_charge": {
+    "display_name": "Detonate Charge",
+    "description": "Detonate the Charges on all enemies, dealing Magical Damage for each Charge. Enemies at Max Charges are Stunned.",
+    "details": {
+      "damage": "40/65/90/115/140 (+30% of your Magical Power) per charge",
+      "damage_multiplier": "1/1.7/2.4 based on charges",
+      "stun_duration": "0.5s at max charges",
+      "cost": "70/75/80/85/90 mana",
+      "cooldown": "12/11.5/11/10.5/10s"
+    }
+  },
+  "lightning_storm": {
+    "display_name": "Lightning Storm",
+    "description": "Conjure a lightning storm that deals Magical Damage repeatedly in an area.",
+    "details": {
+      "damage_per_hit": "100/140/180/220/260 (+65% of your Magical Power)",
+      "hits": "5",
+      "duration": "4.5s",
+      "range": "8.8m",
+      "radius": "4.8m",
+      "cost": "100 mana",
+      "cooldown": "90/85/80/75/70s"
+    }
+  },
+  "demon_bag": {
+    "display_name": "Demon Bag",
+    "description": "Zhong Kui captures demons each time anything dies within 80 units of him and stores them in his Demon Bag, giving him additional Protections. When Recall Demons is activated, Zhong Kui gains double the Protections from his Demon Bag, but loses half the demons in the process. Zhong Kui also loses half the demons in his bag if he dies.",
+    "details": {
+      "protections": "1.3 per captured demon",
+      "max_stacks": "30"
+    }
+  },
+  "expose_evil": {
+    "display_name": "Expose Evil",
+    "description": "Zhong Kui pastes a card on all enemies in front of him, marking them as a demon, Slowing and damaging them each second while they are marked. If the card is removed, 75% of the remaining damage is done instantly.",
+    "details": {
+      "damage_per_tick": "20/30/40/50/60 (+20% of your Magical Power)",
+      "slow": "20%",
+      "card_lifetime": "5s",
+      "cost": "60/65/70/75/80 mana",
+      "cooldown": "12s"
+    }
+  },
+  "exorcism": {
+    "display_name": "Exorcism",
+    "description": "Zhong Kui drives out the demons of his enemies, dealing damage as they leave the body. Demons exorcised from Enemies marked by Expose Evil will be absorbed by Zhong Kui, healing him per demon (up to 3), and will remove the card.",
+    "details": {
+      "damage": "75/125/175/225/275 (+50% of your Magical Power)",
+      "heal": "15/40/65/90/115",
+      "cost": "60/65/70/75/80 mana",
+      "cooldown": "10s"
+    }
+  },
+  "book_of_demons": {
+    "display_name": "Book of Demons",
+    "description": "When fired, the Book of Demons deals damage and Stuns enemies, stunning marked enemies for 2x the duration and removing the card. Once this ability has been ranked, the Book of Demons flies nearby Zhong Kui, firing for 50% of Zhong Kui's basic damage.",
+    "details": {
+      "damage": "80/135/190/245/300 (+50% of your Magical Power)",
+      "stun": "1s (2x for marked targets)",
+      "radius": "20",
+      "cost": "60/65/70/75/80 mana",
+      "cooldown": "13s"
+    }
+  },
+  "recall_demons": {
+    "display_name": "Recall Demons",
+    "description": "Upon activation, demons pulse out from his bag at nearby players every second for 5s. They chase and accelerate over time, doing damage to enemies as they enter the body. Zhong Kui is immune to Knockback and Slows for the duration.",
+    "details": {
+      "damage": "80/95/110/125/140 (+25% of your Magical Power)",
+      "radius": "40",
+      "duration": "5s",
+      "cost": "100 mana",
+      "cooldown": "90s"
+    }
+  },
+  "gift_of_the_gods": {
+    "display_name": "Gift Of The Gods",
+    "description": "Gift Of The Gods ability",
+    "details": {}
+  },
+  "shield_of_achilles": {
+    "display_name": "Shield Of Achilles",
+    "description": "Shield Of Achilles ability",
+    "details": {}
+  },
+  "radiant_glory": {
+    "display_name": "Radiant Glory",
+    "description": "Radiant Glory ability",
+    "details": {}
+  },
+  "combat_dodge": {
+    "display_name": "Combat Dodge",
+    "description": "Combat Dodge ability",
+    "details": {}
+  },
+  "fatal_strike": {
+    "display_name": "Fatal Strike",
+    "description": "Fatal Strike ability",
+    "details": {}
+  },
+  "illuminating_strike": {
+    "display_name": "Illuminating Strike",
+    "description": "Illuminating Strike ability",
+    "details": {}
+  },
+  "divine_presence": {
+    "display_name": "Divine Presence",
+    "description": "Divine Presence ability",
+    "details": {}
+  },
+  "heavenly_reflection": {
+    "display_name": "Heavenly Reflection",
+    "description": "Heavenly Reflection ability",
+    "details": {}
+  },
+  "glorious_charge": {
+    "display_name": "Glorious Charge",
+    "description": "Glorious Charge ability",
+    "details": {}
+  },
+  "dazzling_offensive": {
+    "display_name": "Dazzling Offensive",
+    "description": "Dazzling Offensive ability",
+    "details": {}
+  },
+  "master_of_war": {
+    "display_name": "Master Of War",
+    "description": "Master Of War ability",
+    "details": {}
+  },
+  "shield_bash": {
+    "display_name": "Shield Bash",
+    "description": "Shield Bash ability",
+    "details": {}
+  },
+  "bludgeon": {
+    "display_name": "Bludgeon",
+    "description": "Bludgeon ability",
+    "details": {}
+  },
+  "scourge": {
+    "display_name": "Scourge",
+    "description": "Scourge ability",
+    "details": {}
+  },
+  "eagles_rally": {
+    "display_name": "Eagles Rally",
+    "description": "Eagles Rally ability",
+    "details": {}
+  },
+  "berserk": {
+    "display_name": "Berserk",
+    "description": "Berserk ability",
+    "details": {}
+  },
+  "barbed_spear_ground_slam": {
+    "display_name": "Barbed Spear Ground Slam",
+    "description": "Barbed Spear Ground Slam ability",
+    "details": {}
+  },
+  "vent_anger_salmon_leap": {
+    "display_name": "Vent Anger Salmon Leap",
+    "description": "Vent Anger Salmon Leap ability",
+    "details": {}
+  },
+  "rage_furious_charge": {
+    "display_name": "Rage Furious Charge",
+    "description": "Rage Furious Charge ability",
+    "details": {}
+  },
+  "spear_of_mortal_pain_war_cry": {
+    "display_name": "Spear Of Mortal Pain War Cry",
+    "description": "Spear Of Mortal Pain War Cry ability",
+    "details": {}
+  },
+  "howling_celestial_dog": {
+    "display_name": "Howling Celestial Dog",
+    "description": "Howling Celestial Dog ability",
+    "details": {}
+  },
+  "spot_weakness": {
+    "display_name": "Spot Weakness",
+    "description": "Spot Weakness ability",
+    "details": {}
+  },
+  "pin": {
+    "display_name": "Pin",
+    "description": "Pin ability",
+    "details": {}
+  },
+  "nine_turns_blessing": {
+    "display_name": "Nine Turns Blessing",
+    "description": "Nine Turns Blessing ability",
+    "details": {}
+  },
+  "9_form_arcane": {
+    "display_name": "9 Form Arcane",
+    "description": "9 Form Arcane ability",
+    "details": {}
+  },
+  "painless": {
+    "display_name": "Painless",
+    "description": "Painless ability",
+    "details": {}
+  },
+  "conviction": {
+    "display_name": "Conviction",
+    "description": "Conviction ability",
+    "details": {}
+  },
+  "warrior_will": {
+    "display_name": "Warrior Will",
+    "description": "Warrior Will ability",
+    "details": {}
+  },
+  "cavalry_charge": {
+    "display_name": "Cavalry Charge",
+    "description": "Cavalry Charge ability",
+    "details": {}
+  },
+  "the_lost_kingdom": {
+    "display_name": "The Lost Kingdom",
+    "description": "The Lost Kingdom ability",
+    "details": {}
+  },
+  "strength_from_pain": {
+    "display_name": "Strength From Pain",
+    "description": "Strength From Pain ability",
+    "details": {}
+  },
+  "driving_strike": {
+    "display_name": "Driving Strike",
+    "description": "Driving Strike ability",
+    "details": {}
+  },
+  "earthbreaker": {
+    "display_name": "Earthbreaker",
+    "description": "Earthbreaker ability",
+    "details": {}
+  },
+  "mitigate_wounds": {
+    "display_name": "Mitigate Wounds",
+    "description": "Mitigate Wounds ability",
+    "details": {}
+  },
+  "excavate": {
+    "display_name": "Excavate",
+    "description": "Excavate ability",
+    "details": {}
+  },
+  "resolute": {
+    "display_name": "Resolute",
+    "description": "Resolute ability",
+    "details": {}
+  },
+  "updraft": {
+    "display_name": "Updraft",
+    "description": "Updraft ability",
+    "details": {}
+  },
+  "fracture": {
+    "display_name": "Fracture",
+    "description": "Fracture ability",
+    "details": {}
+  },
+  "protectors_surge": {
+    "display_name": "Protectors Surge",
+    "description": "Protectors Surge ability",
+    "details": {}
+  },
+  "to_the_skies": {
+    "display_name": "To The Skies",
+    "description": "To The Skies ability",
+    "details": {}
+  },
+  "steadfast": {
+    "display_name": "Steadfast",
+    "description": "Steadfast ability",
+    "details": {}
+  },
+  "overhead_slash_hamstring": {
+    "display_name": "Overhead Slash Hamstring",
+    "description": "Overhead Slash Hamstring ability",
+    "details": {}
+  },
+  "battle_stomp_uppercut": {
+    "display_name": "Battle Stomp Uppercut",
+    "description": "Battle Stomp Uppercut ability",
+    "details": {}
+  },
+  "twin_cleave_bladestorm": {
+    "display_name": "Twin Cleave Bladestorm",
+    "description": "Twin Cleave Bladestorm ability",
+    "details": {}
+  },
+  "excaliburs_wrath_sundering_strike": {
+    "display_name": "Excaliburs Wrath Sundering Strike",
+    "description": "Excaliburs Wrath Sundering Strike ability",
+    "details": {}
+  },
+  "training_arc": {
+    "display_name": "Training Arc",
+    "description": "Training Arc ability",
+    "details": {}
+  },
+  "cross_strike": {
+    "display_name": "Cross Strike",
+    "description": "Cross Strike ability",
+    "details": {}
+  },
+  "spear_thrust": {
+    "display_name": "Spear Thrust",
+    "description": "Spear Thrust ability",
+    "details": {}
+  },
+  "grapple": {
+    "display_name": "Grapple",
+    "description": "Grapple ability",
+    "details": {}
+  },
+  "divine_spear": {
+    "display_name": "Divine Spear",
+    "description": "Divine Spear ability",
+    "details": {}
+  },
+  "to_victory": {
+    "display_name": "To Victory",
+    "description": "To Victory ability",
+    "details": {}
+  },
+  "rend": {
+    "display_name": "Rend",
+    "description": "Rend ability",
+    "details": {}
+  },
+  "plan_of_action": {
+    "display_name": "Plan Of Action",
+    "description": "Plan Of Action ability",
+    "details": {}
+  },
+  "valiant_leap": {
+    "display_name": "Valiant Leap",
+    "description": "Valiant Leap ability",
+    "details": {}
+  },
+  "sentinel_of_zeus": {
+    "display_name": "Sentinel Of Zeus",
+    "description": "Sentinel Of Zeus ability",
+    "details": {}
+  },
+  "fragmented": {
+    "display_name": "Fragmented",
+    "description": "Fragmented ability",
+    "details": {}
+  },
+  "sickle_strike": {
+    "display_name": "Sickle Strike",
+    "description": "Sickle Strike ability",
+    "details": {}
+  },
+  "spirit_flail": {
+    "display_name": "Spirit Flail",
+    "description": "Spirit Flail ability",
+    "details": {}
+  },
+  "judgement_tether": {
+    "display_name": "Judgement Tether",
+    "description": "Judgement Tether ability",
+    "details": {}
+  },
+  "lord_of_the_afterlife": {
+    "display_name": "Lord Of The Afterlife",
+    "description": "Lord Of The Afterlife ability",
+    "details": {}
+  },
+  "tandava_karma": {
+    "display_name": "Tandava Karma",
+    "description": "Tandava Karma ability",
+    "details": {}
+  },
+  "bladed_arrow": {
+    "display_name": "Bladed Arrow",
+    "description": "Bladed Arrow ability",
+    "details": {}
+  },
+  "pillar_of_dawn": {
+    "display_name": "Pillar Of Dawn",
+    "description": "Pillar Of Dawn ability",
+    "details": {}
+  },
+  "dash": {
+    "display_name": "Dash",
+    "description": "Dash ability",
+    "details": {}
+  },
+  "shivas_destruction": {
+    "display_name": "Shivas Destruction",
+    "description": "Shivas Destruction ability",
+    "details": {}
+  },
+  "undefeated_body": {
+    "display_name": "Undefeated Body",
+    "description": "Undefeated Body ability",
+    "details": {}
+  },
+  "magic_cudgel": {
+    "display_name": "Magic Cudgel",
+    "description": "Magic Cudgel ability",
+    "details": {}
+  },
+  "master_will": {
+    "display_name": "Master Will",
+    "description": "Master Will ability",
+    "details": {}
+  },
+  "72_transformations": {
+    "display_name": "72 Transformations",
+    "description": "72 Transformations ability",
+    "details": {}
+  },
+  "somersault_cloud": {
+    "display_name": "Somersault Cloud",
+    "description": "Somersault Cloud ability",
+    "details": {}
+  },
+  "obsidian_flesh": {
+    "display_name": "Obsidian Flesh",
+    "description": "Obsidian Flesh ability",
+    "details": {}
+  },
+  "flames_of_muspell": {
+    "display_name": "Flames Of Muspell",
+    "description": "Flames Of Muspell ability",
+    "details": {}
+  },
+  "magma_wall": {
+    "display_name": "Magma Wall",
+    "description": "Magma Wall ability",
+    "details": {}
+  },
+  "blazing_trail": {
+    "display_name": "Blazing Trail",
+    "description": "Blazing Trail ability",
+    "details": {}
+  },
+  "giant_inferno": {
+    "display_name": "Giant Inferno",
+    "description": "Giant Inferno ability",
+    "details": {}
+  },
+  "unyielding": {
+    "display_name": "Unyielding",
+    "description": "Unyielding ability",
+    "details": {}
+  },
+  "fearless_power_cleave": {
+    "display_name": "Fearless Power Cleave",
+    "description": "Fearless Power Cleave ability",
+    "details": {}
+  },
+  "change_stance": {
+    "display_name": "Change Stance",
+    "description": "Change Stance ability",
+    "details": {}
+  },
+  "lawbringer_guard_stance": {
+    "display_name": "Lawbringer Guard Stance",
+    "description": "Lawbringer Guard Stance ability",
+    "details": {}
+  },
+  "lawbringer": {
+    "display_name": "Lawbringer",
+    "description": "Lawbringer ability",
+    "details": {}
+  },
+  "sleeping_giant": {
+    "display_name": "Sleeping Giant",
+    "description": "Sleeping Giant ability",
+    "details": {}
+  },
+  "clear_the_path": {
+    "display_name": "Clear The Path",
+    "description": "Clear The Path ability",
+    "details": {}
+  },
+  "armored_umbrella": {
+    "display_name": "Armored Umbrella",
+    "description": "Armored Umbrella ability",
+    "details": {}
+  },
+  "umbrellarang": {
+    "display_name": "Umbrellarang",
+    "description": "Umbrellarang ability",
+    "details": {}
+  },
+  "colossal_fury": {
+    "display_name": "Colossal Fury",
+    "description": "Colossal Fury ability",
+    "details": {}
+  },
+  "predator": {
+    "display_name": "Predator",
+    "description": "Predator ability",
+    "details": {}
+  },
+  "venomous_bite": {
+    "display_name": "Venomous Bite",
+    "description": "Venomous Bite ability",
+    "details": {}
+  },
+  "cocoon": {
+    "display_name": "Cocoon",
+    "description": "Cocoon ability",
+    "details": {}
+  },
+  "web": {
+    "display_name": "Web",
+    "description": "Web ability",
+    "details": {}
+  },
+  "night_crawler": {
+    "display_name": "Night Crawler",
+    "description": "Night Crawler ability",
+    "details": {}
+  },
+  "initiative": {
+    "display_name": "Initiative",
+    "description": "Initiative ability",
+    "details": {}
+  },
+  "summon_suku": {
+    "display_name": "Summon Suku",
+    "description": "Summon Suku ability",
+    "details": {}
+  },
+  "feather_step": {
+    "display_name": "Feather Step",
+    "description": "Feather Step ability",
+    "details": {}
+  },
+  "moonlight_charge": {
+    "display_name": "Moonlight Charge",
+    "description": "Moonlight Charge ability",
+    "details": {}
+  },
+  "gravity_surge": {
+    "display_name": "Gravity Surge",
+    "description": "Gravity Surge ability",
+    "details": {}
+  },
+  "insatiable_hunger": {
+    "display_name": "Insatiable Hunger",
+    "description": "Insatiable Hunger ability",
+    "details": {}
+  },
+  "take_down": {
+    "display_name": "Take Down",
+    "description": "Take Down ability",
+    "details": {}
+  },
+  "eat_minion": {
+    "display_name": "Eat Minion",
+    "description": "Eat Minion ability",
+    "details": {}
+  },
+  "butcher_blades": {
+    "display_name": "Butcher Blades",
+    "description": "Butcher Blades ability",
+    "details": {}
+  },
+  "regurgitate": {
+    "display_name": "Regurgitate",
+    "description": "Regurgitate ability",
+    "details": {}
+  },
+  "nightstalker": {
+    "display_name": "Nightstalker",
+    "description": "Nightstalker ability",
+    "details": {}
+  },
+  "pounce": {
+    "display_name": "Pounce",
+    "description": "Pounce ability",
+    "details": {}
+  },
+  "razor_whip": {
+    "display_name": "Razor Whip",
+    "description": "Razor Whip ability",
+    "details": {}
+  },
+  "declaw": {
+    "display_name": "Declaw",
+    "description": "Declaw ability",
+    "details": {}
+  },
+  "huntress_of_bast": {
+    "display_name": "Huntress Of Bast",
+    "description": "Huntress Of Bast ability",
+    "details": {}
+  },
+  "essence_drinker": {
+    "display_name": "Essence Drinker",
+    "description": "Essence Drinker ability",
+    "details": {}
+  },
+  "screech": {
+    "display_name": "Screech",
+    "description": "Screech ability",
+    "details": {}
+  },
+  "vampire_bats": {
+    "display_name": "Vampire Bats",
+    "description": "Vampire Bats ability",
+    "details": {}
+  },
+  "devour": {
+    "display_name": "Devour",
+    "description": "Devour ability",
+    "details": {}
+  },
+  "bat_out_of_hell": {
+    "display_name": "Bat Out Of Hell",
+    "description": "Bat Out Of Hell ability",
+    "details": {}
+  },
+  "torture_blades": {
+    "display_name": "Torture Blades",
+    "description": "Torture Blades ability",
+    "details": {}
+  },
+  "horrible_burns": {
+    "display_name": "Horrible Burns",
+    "description": "Horrible Burns ability",
+    "details": {}
+  },
+  "one_thousand_cuts": {
+    "display_name": "One Thousand Cuts",
+    "description": "One Thousand Cuts ability",
+    "details": {}
+  },
+  "trickster_spirit": {
+    "display_name": "Trickster Spirit",
+    "description": "Trickster Spirit ability",
+    "details": {}
+  },
+  "pao_lao": {
+    "display_name": "Pao Lao",
+    "description": "Pao Lao ability",
+    "details": {}
+  },
+  "unbound_runes": {
+    "display_name": "Unbound Runes",
+    "description": "Unbound Runes ability",
+    "details": {}
+  },
+  "unchained": {
+    "display_name": "Unchained",
+    "description": "Unchained ability",
+    "details": {}
+  },
+  "seething_howl": {
+    "display_name": "Seething Howl",
+    "description": "Seething Howl ability",
+    "details": {}
+  },
+  "brutalize": {
+    "display_name": "Brutalize",
+    "description": "Brutalize ability",
+    "details": {}
+  },
+  "ragnarok": {
+    "display_name": "Ragnarok",
+    "description": "Ragnarok ability",
+    "details": {}
+  },
+  "infused_strikes": {
+    "display_name": "Infused Strikes",
+    "description": "Infused Strikes ability",
+    "details": {}
+  },
+  "somersault": {
+    "display_name": "Somersault",
+    "description": "Somersault ability",
+    "details": {}
+  },
+  "overhand_smash": {
+    "display_name": "Overhand Smash",
+    "description": "Overhand Smash ability",
+    "details": {}
+  },
+  "sacred_monkey": {
+    "display_name": "Sacred Monkey",
+    "description": "Sacred Monkey ability",
+    "details": {}
+  },
+  "fear_no_evil": {
+    "display_name": "Fear No Evil",
+    "description": "Fear No Evil ability",
+    "details": {}
+  },
+  "marked_for_death": {
+    "display_name": "Marked For Death",
+    "description": "Marked For Death ability",
+    "details": {}
+  },
+  "nimble_strike": {
+    "display_name": "Nimble Strike",
+    "description": "Nimble Strike ability",
+    "details": {}
+  },
+  "lash": {
+    "display_name": "Lash",
+    "description": "Lash ability",
+    "details": {}
+  },
+  "incense": {
+    "display_name": "Incense",
+    "description": "Incense ability",
+    "details": {}
+  },
+  "destruction": {
+    "display_name": "Destruction",
+    "description": "Destruction ability",
+    "details": {}
+  },
+  "knights_virtue": {
+    "display_name": "Knights Virtue",
+    "description": "Knights Virtue ability",
+    "details": {}
+  },
+  "piercing_thrust": {
+    "display_name": "Piercing Thrust",
+    "description": "Piercing Thrust ability",
+    "details": {}
+  },
+  "skilled_strikes": {
+    "display_name": "Skilled Strikes",
+    "description": "Skilled Strikes ability",
+    "details": {}
+  },
+  "mount_up": {
+    "display_name": "Mount Up",
+    "description": "Mount Up ability",
+    "details": {}
+  },
+  "the_grand_joust": {
+    "display_name": "The Grand Joust",
+    "description": "The Grand Joust ability",
+    "details": {}
+  },
+  "behind_you": {
+    "display_name": "Behind You",
+    "description": "Behind You ability",
+    "details": {}
+  },
+  "vanish": {
+    "display_name": "Vanish",
+    "description": "Vanish ability",
+    "details": {}
+  },
+  "decoy": {
+    "display_name": "Decoy",
+    "description": "Decoy ability",
+    "details": {}
+  },
+  "aimed_strike": {
+    "display_name": "Aimed Strike",
+    "description": "Aimed Strike ability",
+    "details": {}
+  },
+  "assassinate": {
+    "display_name": "Assassinate",
+    "description": "Assassinate ability",
+    "details": {}
+  },
+  "righteous_spirit": {
+    "display_name": "Righteous Spirit",
+    "description": "Righteous Spirit ability",
+    "details": {}
+  },
+  "universe_ring_toss": {
+    "display_name": "Universe Ring Toss",
+    "description": "Universe Ring Toss ability",
+    "details": {}
+  },
+  "flaming_spear": {
+    "display_name": "Flaming Spear",
+    "description": "Flaming Spear ability",
+    "details": {}
+  },
+  "armillary_sash": {
+    "display_name": "Armillary Sash",
+    "description": "Armillary Sash ability",
+    "details": {}
+  },
+  "wind_fire_wheels": {
+    "display_name": "Wind Fire Wheels",
+    "description": "Wind Fire Wheels ability",
+    "details": {}
+  },
+  "scales_of_fate": {
+    "display_name": "Scales Of Fate",
+    "description": "Scales Of Fate ability",
+    "details": {}
+  },
+  "swift_vengeance": {
+    "display_name": "Swift Vengeance",
+    "description": "Swift Vengeance ability",
+    "details": {}
+  },
+  "slice_and_dice": {
+    "display_name": "Slice And Dice",
+    "description": "Slice And Dice ability",
+    "details": {}
+  },
+  "retribution": {
+    "display_name": "Retribution",
+    "description": "Retribution ability",
+    "details": {}
+  },
+  "divine_judgement": {
+    "display_name": "Divine Judgement",
+    "description": "Divine Judgement ability",
+    "details": {}
+  },
+  "everlasting_flame": {
+    "display_name": "Everlasting Flame",
+    "description": "Everlasting Flame ability",
+    "details": {}
+  },
+  "pyroclast": {
+    "display_name": "Pyroclast",
+    "description": "Pyroclast ability",
+    "details": {}
+  },
+  "eruption": {
+    "display_name": "Eruption",
+    "description": "Eruption ability",
+    "details": {}
+  },
+  "magma_rush": {
+    "display_name": "Magma Rush",
+    "description": "Magma Rush ability",
+    "details": {}
+  },
+  "volcanic_lightning": {
+    "display_name": "Volcanic Lightning",
+    "description": "Volcanic Lightning ability",
+    "details": {}
+  },
+  "acorn_of_yggdrasil": {
+    "display_name": "Acorn Of Yggdrasil",
+    "description": "Acorn Of Yggdrasil ability",
+    "details": {}
+  },
+  "dart": {
+    "display_name": "Dart",
+    "description": "Dart ability",
+    "details": {}
+  },
+  "flurry": {
+    "display_name": "Flurry",
+    "description": "Flurry ability",
+    "details": {}
+  },
+  "acorn_blast": {
+    "display_name": "Acorn Blast",
+    "description": "Acorn Blast ability",
+    "details": {}
+  },
+  "through_the_cosmos": {
+    "display_name": "Through The Cosmos",
+    "description": "Through The Cosmos ability",
+    "details": {}
+  },
+  "chain_of_blows": {
+    "display_name": "Chain Of Blows",
+    "description": "Chain Of Blows ability",
+    "details": {}
+  },
+  "prana_onslaught": {
+    "display_name": "Prana Onslaught",
+    "description": "Prana Onslaught ability",
+    "details": {}
+  },
+  "overhead_kick": {
+    "display_name": "Overhead Kick",
+    "description": "Overhead Kick ability",
+    "details": {}
+  },
+  "10_hand_shadow_fist": {
+    "display_name": "10 Hand Shadow Fist",
+    "description": "10 Hand Shadow Fist ability",
+    "details": {}
+  },
+  "mystic_rush": {
+    "display_name": "Mystic Rush",
+    "description": "Mystic Rush ability",
+    "details": {}
+  },
+  "catalyst": {
+    "display_name": "Catalyst",
+    "description": "Catalyst ability",
+    "details": {}
+  },
+  "deathbane": {
+    "display_name": "Deathbane",
+    "description": "Deathbane ability",
+    "details": {}
+  },
+  "cobras_kiss": {
+    "display_name": "Cobras Kiss",
+    "description": "Cobras Kiss ability",
+    "details": {}
+  },
+  "ambush": {
+    "display_name": "Ambush",
+    "description": "Ambush ability",
+    "details": {}
+  },
+  "last_breath": {
+    "display_name": "Last Breath",
+    "description": "Last Breath ability",
+    "details": {}
+  },
+  "relentless": {
+    "display_name": "Relentless",
+    "description": "Relentless ability",
+    "details": {}
+  },
+  "skewer": {
+    "display_name": "Skewer",
+    "description": "Skewer ability",
+    "details": {}
+  },
+  "spawn_of_set": {
+    "display_name": "Spawn Of Set",
+    "description": "Spawn Of Set ability",
+    "details": {}
+  },
+  "sandstorm": {
+    "display_name": "Sandstorm",
+    "description": "Sandstorm ability",
+    "details": {}
+  },
+  "kingslayer": {
+    "display_name": "Kingslayer",
+    "description": "Kingslayer ability",
+    "details": {}
+  },
+  "swift_as_the_summer_storm": {
+    "display_name": "Swift As The Summer Storm",
+    "description": "Swift As The Summer Storm ability",
+    "details": {}
+  },
+  "storm_kata": {
+    "display_name": "Storm Kata",
+    "description": "Storm Kata ability",
+    "details": {}
+  },
+  "wind_siphon": {
+    "display_name": "Wind Siphon",
+    "description": "Wind Siphon ability",
+    "details": {}
+  },
+  "jet_stream": {
+    "display_name": "Jet Stream",
+    "description": "Jet Stream ability",
+    "details": {}
+  },
+  "typhoon": {
+    "display_name": "Typhoon",
+    "description": "Typhoon ability",
+    "details": {}
+  },
+  "shingetsu_aura": {
+    "display_name": "Shingetsu Aura",
+    "description": "Shingetsu Aura ability",
+    "details": {}
+  },
+  "dark_moon_shuriken": {
+    "display_name": "Dark Moon Shuriken",
+    "description": "Dark Moon Shuriken ability",
+    "details": {}
+  },
+  "kusarigama": {
+    "display_name": "Kusarigama",
+    "description": "Kusarigama ability",
+    "details": {}
+  },
+  "silver_moon_caltrops": {
+    "display_name": "Silver Moon Caltrops",
+    "description": "Silver Moon Caltrops ability",
+    "details": {}
+  },
+  "piercing_moonlight": {
+    "display_name": "Piercing Moonlight",
+    "description": "Piercing Moonlight ability",
+    "details": {}
+  },
+  "bees": {
+    "display_name": "Bees",
+    "description": "Bees ability",
+    "details": {}
+  },
+  "hive": {
+    "display_name": "Hive",
+    "description": "Hive ability",
+    "details": {}
+  },
+  "swarm": {
+    "display_name": "Swarm",
+    "description": "Swarm ability",
+    "details": {}
+  },
+  "honey": {
+    "display_name": "Honey",
+    "description": "Honey ability",
+    "details": {}
+  },
+  "stinger": {
+    "display_name": "Stinger",
+    "description": "Stinger ability",
+    "details": {}
+  },
+  "enfeeble": {
+    "display_name": "Enfeeble",
+    "description": "Enfeeble ability",
+    "details": {}
+  },
+  "shifting_sands": {
+    "display_name": "Shifting Sands",
+    "description": "Shifting Sands ability",
+    "details": {}
+  },
+  "impale": {
+    "display_name": "Impale",
+    "description": "Impale ability",
+    "details": {}
+  },
+  "disperse": {
+    "display_name": "Disperse",
+    "description": "Disperse ability",
+    "details": {}
+  },
+  "desert_fury": {
+    "display_name": "Desert Fury",
+    "description": "Desert Fury ability",
+    "details": {}
+  },
+  "audacity": {
+    "display_name": "Audacity",
+    "description": "Audacity ability",
+    "details": {}
+  },
+  "so_beautiful": {
+    "display_name": "So Beautiful",
+    "description": "So Beautiful ability",
+    "details": {}
+  },
+  "serenade": {
+    "display_name": "Serenade",
+    "description": "Serenade ability",
+    "details": {}
+  },
+  "the_moves": {
+    "display_name": "The Moves",
+    "description": "The Moves ability",
+    "details": {}
+  },
+  "across_the_sky": {
+    "display_name": "Across The Sky",
+    "description": "Across The Sky ability",
+    "details": {}
+  },
+  "still_target": {
+    "display_name": "Still Target",
+    "description": "Still Target ability",
+    "details": {}
+  },
+  "transgessors_fate": {
+    "display_name": "Transgessors Fate",
+    "description": "Transgessors Fate ability",
+    "details": {}
+  },
+  "seek_and_destroy": {
+    "display_name": "Seek And Destroy",
+    "description": "Seek And Destroy ability",
+    "details": {}
+  },
+  "suppress_the_insolent": {
+    "display_name": "Suppress The Insolent",
+    "description": "Suppress The Insolent ability",
+    "details": {}
+  },
+  "calydonian_boar": {
+    "display_name": "Calydonian Boar",
+    "description": "Calydonian Boar ability",
+    "details": {}
+  },
+  "heavy_glaive": {
+    "display_name": "Heavy Glaive",
+    "description": "Heavy Glaive ability",
+    "details": {}
+  },
+  "shifter_of_seasons": {
+    "display_name": "Shifter Of Seasons",
+    "description": "Shifter Of Seasons ability",
+    "details": {}
+  },
+  "bramble_blast": {
+    "display_name": "Bramble Blast",
+    "description": "Bramble Blast ability",
+    "details": {}
+  },
+  "horn_charge": {
+    "display_name": "Horn Charge",
+    "description": "Horn Charge ability",
+    "details": {}
+  },
+  "the_wild_hunt": {
+    "display_name": "The Wild Hunt",
+    "description": "The Wild Hunt ability",
+    "details": {}
+  },
+  "raging_tides": {
+    "display_name": "Raging Tides",
+    "description": "Raging Tides ability",
+    "details": {}
+  },
+  "spike_shot": {
+    "display_name": "Spike Shot",
+    "description": "Spike Shot ability",
+    "details": {}
+  },
+  "capsize": {
+    "display_name": "Capsize",
+    "description": "Capsize ability",
+    "details": {}
+  },
+  "whirlpool_form": {
+    "display_name": "Whirlpool Form",
+    "description": "Whirlpool Form ability",
+    "details": {}
+  },
+  "the_maw_hungers": {
+    "display_name": "The Maw Hungers",
+    "description": "The Maw Hungers ability",
+    "details": {}
+  },
+  "heart_of_cold": {
+    "display_name": "Heart Of Cold",
+    "description": "Heart Of Cold ability",
+    "details": {}
+  },
+  "crystallized_curses": {
+    "display_name": "Crystallized Curses",
+    "description": "Crystallized Curses ability",
+    "details": {}
+  },
+  "vicious_barrage": {
+    "display_name": "Vicious Barrage",
+    "description": "Vicious Barrage ability",
+    "details": {}
+  },
+  "into_darkness": {
+    "display_name": "Into Darkness",
+    "description": "Into Darkness ability",
+    "details": {}
+  },
+  "living_nightmare": {
+    "display_name": "Living Nightmare",
+    "description": "Living Nightmare ability",
+    "details": {}
+  },
+  "herbal_medicine": {
+    "display_name": "Herbal Medicine",
+    "description": "Herbal Medicine ability",
+    "details": {}
+  },
+  "centaurus": {
+    "display_name": "Centaurus",
+    "description": "Centaurus ability",
+    "details": {}
+  },
+  "masterful_shot": {
+    "display_name": "Masterful Shot",
+    "description": "Masterful Shot ability",
+    "details": {}
+  },
+  "giddyup": {
+    "display_name": "Giddyup",
+    "description": "Giddyup ability",
+    "details": {}
+  },
+  "hierophant": {
+    "display_name": "Hierophant",
+    "description": "Hierophant ability",
+    "details": {}
+  },
+  "lovestruck": {
+    "display_name": "Lovestruck",
+    "description": "Lovestruck ability",
+    "details": {}
+  },
+  "heart_bomb": {
+    "display_name": "Heart Bomb",
+    "description": "Heart Bomb ability",
+    "details": {}
+  },
+  "share_the_love": {
+    "display_name": "Share The Love",
+    "description": "Share The Love ability",
+    "details": {}
+  },
+  "flutter": {
+    "display_name": "Flutter",
+    "description": "Flutter ability",
+    "details": {}
+  },
+  "fields_of_love": {
+    "display_name": "Fields Of Love",
+    "description": "Fields Of Love ability",
+    "details": {}
+  },
+  "dubious_savings": {
+    "display_name": "Dubious Savings",
+    "description": "Dubious Savings ability",
+    "details": {}
+  },
+  "fools_gold": {
+    "display_name": "Fools Gold",
+    "description": "Fools Gold ability",
+    "details": {}
+  },
+  "alluring_spirits": {
+    "display_name": "Alluring Spirits",
+    "description": "Alluring Spirits ability",
+    "details": {}
+  },
+  "tanuki_trickery": {
+    "display_name": "Tanuki Trickery",
+    "description": "Tanuki Trickery ability",
+    "details": {}
+  },
+  "uproarious_rocket": {
+    "display_name": "Uproarious Rocket",
+    "description": "Uproarious Rocket ability",
+    "details": {}
+  },
+  "master_of_arms": {
+    "display_name": "Master Of Arms",
+    "description": "Master Of Arms ability",
+    "details": {}
+  },
+  "eagle_eye": {
+    "display_name": "Eagle Eye",
+    "description": "Eagle Eye ability",
+    "details": {}
+  },
+  "heavenly_banner": {
+    "display_name": "Heavenly Banner",
+    "description": "Heavenly Banner ability",
+    "details": {}
+  },
+  "iaijutsu": {
+    "display_name": "Iaijutsu",
+    "description": "Iaijutsu ability",
+    "details": {}
+  },
+  "mounted_archery": {
+    "display_name": "Mounted Archery",
+    "description": "Mounted Archery ability",
+    "details": {}
+  },
+  "the_vigilant": {
+    "display_name": "The Vigilant",
+    "description": "The Vigilant ability",
+    "details": {}
+  },
+  "piercing_sight": {
+    "display_name": "Piercing Sight",
+    "description": "Piercing Sight ability",
+    "details": {}
+  },
+  "gjallarhorn": {
+    "display_name": "Gjallarhorn",
+    "description": "Gjallarhorn ability",
+    "details": {}
+  },
+  "the_bifrost": {
+    "display_name": "The Bifrost",
+    "description": "The Bifrost ability",
+    "details": {}
+  },
+  "through_the_realms": {
+    "display_name": "Through The Realms",
+    "description": "Through The Realms ability",
+    "details": {}
+  },
+  "golden_crow": {
+    "display_name": "Golden Crow",
+    "description": "Golden Crow ability",
+    "details": {}
+  },
+  "ricochet": {
+    "display_name": "Ricochet",
+    "description": "Ricochet ability",
+    "details": {}
+  },
+  "mark_of_the_golden_crow": {
+    "display_name": "Mark Of The Golden Crow",
+    "description": "Mark Of The Golden Crow ability",
+    "details": {}
+  },
+  "dive_bomb": {
+    "display_name": "Dive Bomb",
+    "description": "Dive Bomb ability",
+    "details": {}
+  },
+  "sunbreaker": {
+    "display_name": "Sunbreaker",
+    "description": "Sunbreaker ability",
+    "details": {}
+  },
+  "mark_of_vengeance": {
+    "display_name": "Mark Of Vengeance",
+    "description": "Mark Of Vengeance ability",
+    "details": {}
+  },
+  "imbue_arrows": {
+    "display_name": "Imbue Arrows",
+    "description": "Imbue Arrows ability",
+    "details": {}
+  },
+  "rolling_thunder": {
+    "display_name": "Rolling Thunder",
+    "description": "Rolling Thunder ability",
+    "details": {}
+  },
+  "jolt": {
+    "display_name": "Jolt",
+    "description": "Jolt ability",
+    "details": {}
+  },
+  "blades_of_retribution": {
+    "display_name": "Blades Of Retribution",
+    "description": "Blades Of Retribution ability",
+    "details": {}
+  },
+  "of_death_and_darkness": {
+    "display_name": "Of Death And Darkness",
+    "description": "Of Death And Darkness ability",
+    "details": {}
+  },
+  "sickle_storm": {
+    "display_name": "Sickle Storm",
+    "description": "Sickle Storm ability",
+    "details": {}
+  },
+  "spectral_projection": {
+    "display_name": "Spectral Projection",
+    "description": "Spectral Projection ability",
+    "details": {}
+  },
+  "fade_away": {
+    "display_name": "Fade Away",
+    "description": "Fade Away ability",
+    "details": {}
+  },
+  "dark_portal": {
+    "display_name": "Dark Portal",
+    "description": "Dark Portal ability",
+    "details": {}
+  },
+  "rapid_reincarnation": {
+    "display_name": "Rapid Reincarnation",
+    "description": "Rapid Reincarnation ability",
+    "details": {}
+  },
+  "persistent_gust": {
+    "display_name": "Persistent Gust",
+    "description": "Persistent Gust ability",
+    "details": {}
+  },
+  "explosive_bolts": {
+    "display_name": "Explosive Bolts",
+    "description": "Explosive Bolts ability",
+    "details": {}
+  },
+  "agility": {
+    "display_name": "Agility",
+    "description": "Agility ability",
+    "details": {}
+  },
+  "air_strike": {
+    "display_name": "Air Strike",
+    "description": "Air Strike ability",
+    "details": {}
+  },
+  "barbed_spines": {
+    "display_name": "Barbed Spines",
+    "description": "Barbed Spines ability",
+    "details": {}
+  },
+  "stinger_shot": {
+    "display_name": "Stinger Shot",
+    "description": "Stinger Shot ability",
+    "details": {}
+  },
+  "acid_spray": {
+    "display_name": "Acid Spray",
+    "description": "Acid Spray ability",
+    "details": {}
+  },
+  "trail_blazer": {
+    "display_name": "Trail Blazer",
+    "description": "Trail Blazer ability",
+    "details": {}
+  },
+  "death_from_above": {
+    "display_name": "Death From Above",
+    "description": "Death From Above ability",
+    "details": {}
+  },
+  "sidewinder": {
+    "display_name": "Sidewinder",
+    "description": "Sidewinder ability",
+    "details": {}
+  },
+  "viper_shot": {
+    "display_name": "Viper Shot",
+    "description": "Viper Shot ability",
+    "details": {}
+  },
+  "lacerate": {
+    "display_name": "Lacerate",
+    "description": "Lacerate ability",
+    "details": {}
+  },
+  "petrify": {
+    "display_name": "Petrify",
+    "description": "Petrify ability",
+    "details": {}
+  },
+  "broken_barrier": {
+    "display_name": "Broken Barrier",
+    "description": "Broken Barrier ability",
+    "details": {}
+  },
+  "convergence": {
+    "display_name": "Convergence",
+    "description": "Convergence ability",
+    "details": {}
+  },
+  "skyfall": {
+    "display_name": "Skyfall",
+    "description": "Skyfall ability",
+    "details": {}
+  },
+  "gravity_well": {
+    "display_name": "Gravity Well",
+    "description": "Gravity Well ability",
+    "details": {}
+  },
+  "across_the_cosmos": {
+    "display_name": "Across The Cosmos",
+    "description": "Across The Cosmos ability",
+    "details": {}
+  },
+  "astral_quiver": {
+    "display_name": "Astral Quiver",
+    "description": "Astral Quiver ability",
+    "details": {}
+  },
+  "astral_strike": {
+    "display_name": "Astral Strike",
+    "description": "Astral Strike ability",
+    "details": {}
+  },
+  "pick_me_up": {
+    "display_name": "Pick Me Up",
+    "description": "Pick Me Up ability",
+    "details": {}
+  },
+  "rolling_assault": {
+    "display_name": "Rolling Assault",
+    "description": "Rolling Assault ability",
+    "details": {}
+  },
+  "astral_barrage": {
+    "display_name": "Astral Barrage",
+    "description": "Astral Barrage ability",
+    "details": {}
+  },
+  "kaldr_the_winter_wolf": {
+    "display_name": "Kaldr The Winter Wolf",
+    "description": "Kaldr The Winter Wolf ability",
+    "details": {}
+  },
+  "piercing_cold": {
+    "display_name": "Piercing Cold",
+    "description": "Piercing Cold ability",
+    "details": {}
+  },
+  "rune_of_the_hunt": {
+    "display_name": "Rune Of The Hunt",
+    "description": "Rune Of The Hunt ability",
+    "details": {}
+  },
+  "permafrost": {
+    "display_name": "Permafrost",
+    "description": "Permafrost ability",
+    "details": {}
+  },
+  "winters_grasp": {
+    "display_name": "Winters Grasp",
+    "description": "Winters Grasp ability",
+    "details": {}
+  },
+  "weapon_master": {
+    "display_name": "Weapon Master",
+    "description": "Weapon Master ability",
+    "details": {}
+  },
+  "bladed_arrow_thrown_axe": {
+    "display_name": "Bladed Arrow Thrown Axe",
+    "description": "Bladed Arrow Thrown Axe ability",
+    "details": {}
+  },
+  "expose_weakness_invigorate": {
+    "display_name": "Expose Weakness Invigorate",
+    "description": "Expose Weakness Invigorate ability",
+    "details": {}
+  },
+  "hail_of_arrows_glory_bound": {
+    "display_name": "Hail Of Arrows Glory Bound",
+    "description": "Hail Of Arrows Glory Bound ability",
+    "details": {}
+  },
+  "wield_axes_wield_bow": {
+    "display_name": "Wield Axes Wield Bow",
+    "description": "Wield Axes Wield Bow ability",
+    "details": {}
+  },
+  "dead_of_night": {
+    "display_name": "Dead Of Night",
+    "description": "Dead Of Night ability",
+    "details": {}
+  },
+  "branching_bola": {
+    "display_name": "Branching Bola",
+    "description": "Branching Bola ability",
+    "details": {}
+  },
+  "poison_darts": {
+    "display_name": "Poison Darts",
+    "description": "Poison Darts ability",
+    "details": {}
+  },
+  "rising_jaguar": {
+    "display_name": "Rising Jaguar",
+    "description": "Rising Jaguar ability",
+    "details": {}
+  },
+  "darkest_of_nights": {
+    "display_name": "Darkest Of Nights",
+    "description": "Darkest Of Nights ability",
+    "details": {}
+  },
+  "hollow_ground": {
+    "display_name": "Hollow Ground",
+    "description": "Hollow Ground ability",
+    "details": {}
+  },
+  "undead_surge": {
+    "display_name": "Undead Surge",
+    "description": "Undead Surge ability",
+    "details": {}
+  },
+  "corpse_explosion": {
+    "display_name": "Corpse Explosion",
+    "description": "Corpse Explosion ability",
+    "details": {}
+  },
+  "fleeting_breath": {
+    "display_name": "Fleeting Breath",
+    "description": "Fleeting Breath ability",
+    "details": {}
+  },
+  "empty_the_crypts": {
+    "display_name": "Empty The Crypts",
+    "description": "Empty The Crypts ability",
+    "details": {}
+  },
+  "sorrow": {
+    "display_name": "Sorrow",
+    "description": "Sorrow ability",
+    "details": {}
+  },
+  "plague_of_locusts": {
+    "display_name": "Plague Of Locusts",
+    "description": "Plague Of Locusts ability",
+    "details": {}
+  },
+  "mummify": {
+    "display_name": "Mummify",
+    "description": "Mummify ability",
+    "details": {}
+  },
+  "grasping_hands": {
+    "display_name": "Grasping Hands",
+    "description": "Grasping Hands ability",
+    "details": {}
+  },
+  "death_gaze": {
+    "display_name": "Death Gaze",
+    "description": "Death Gaze ability",
+    "details": {}
+  },
+  "dragon_kings_sword": {
+    "display_name": "Dragon Kings Sword",
+    "description": "Dragon Kings Sword ability",
+    "details": {}
+  },
+  "water_illusion": {
+    "display_name": "Water Illusion",
+    "description": "Water Illusion ability",
+    "details": {}
+  },
+  "dragon_call": {
+    "display_name": "Dragon Call",
+    "description": "Dragon Call ability",
+    "details": {}
+  },
+  "wild_storm": {
+    "display_name": "Wild Storm",
+    "description": "Wild Storm ability",
+    "details": {}
+  },
+  "king_of_the_eastern_seas": {
+    "display_name": "King Of The Eastern Seas",
+    "description": "King Of The Eastern Seas ability",
+    "details": {}
+  },
+  "loving_embrace": {
+    "display_name": "Loving Embrace",
+    "description": "Loving Embrace ability",
+    "details": {}
+  },
+  "kiss": {
+    "display_name": "Kiss",
+    "description": "Kiss ability",
+    "details": {}
+  },
+  "back_off": {
+    "display_name": "Back Off",
+    "description": "Back Off ability",
+    "details": {}
+  },
+  "love_birds": {
+    "display_name": "Love Birds",
+    "description": "Love Birds ability",
+    "details": {}
+  },
+  "undying_love": {
+    "display_name": "Undying Love",
+    "description": "Undying Love ability",
+    "details": {}
+  },
+  "creeping_cabin": {
+    "display_name": "Creeping Cabin",
+    "description": "Creeping Cabin ability",
+    "details": {}
+  },
+  "baba_brew": {
+    "display_name": "Baba Brew",
+    "description": "Baba Brew ability",
+    "details": {}
+  },
+  "baba_blast": {
+    "display_name": "Baba Blast",
+    "description": "Baba Blast ability",
+    "details": {}
+  },
+  "home_run": {
+    "display_name": "Home Run",
+    "description": "Home Run ability",
+    "details": {}
+  },
+  "home_sweet_home": {
+    "display_name": "Home Sweet Home",
+    "description": "Home Sweet Home ability",
+    "details": {}
+  },
+  "hysteria": {
+    "display_name": "Hysteria",
+    "description": "Hysteria ability",
+    "details": {}
+  },
+  "vivid_gaze": {
+    "display_name": "Vivid Gaze",
+    "description": "Vivid Gaze ability",
+    "details": {}
+  },
+  "consign_spirits": {
+    "display_name": "Consign Spirits",
+    "description": "Consign Spirits ability",
+    "details": {}
+  },
+  "wrap_it_up": {
+    "display_name": "Wrap It Up",
+    "description": "Wrap It Up ability",
+    "details": {}
+  },
+  "life_of_the_party": {
+    "display_name": "Life Of The Party",
+    "description": "Life Of The Party ability",
+    "details": {}
+  },
+  "jade_rabbit": {
+    "display_name": "Jade Rabbit",
+    "description": "Jade Rabbit ability",
+    "details": {}
+  },
+  "crescent_moon_dance": {
+    "display_name": "Crescent Moon Dance",
+    "description": "Crescent Moon Dance ability",
+    "details": {}
+  },
+  "moonlit_waltz": {
+    "display_name": "Moonlit Waltz",
+    "description": "Moonlit Waltz ability",
+    "details": {}
+  },
+  "moonflower_dance": {
+    "display_name": "Moonflower Dance",
+    "description": "Moonflower Dance ability",
+    "details": {}
+  },
+  "waxing_moon": {
+    "display_name": "Waxing Moon",
+    "description": "Waxing Moon ability",
+    "details": {}
+  },
+  "the_wheel_of_time": {
+    "display_name": "The Wheel Of Time",
+    "description": "The Wheel Of Time ability",
+    "details": {}
+  },
+  "time_rift": {
+    "display_name": "Time Rift",
+    "description": "Time Rift ability",
+    "details": {}
+  },
+  "accelerate": {
+    "display_name": "Accelerate",
+    "description": "Accelerate ability",
+    "details": {}
+  },
+  "stop_time": {
+    "display_name": "Stop Time",
+    "description": "Stop Time ability",
+    "details": {}
+  },
+  "rewind": {
+    "display_name": "Rewind",
+    "description": "Rewind ability",
+    "details": {}
+  },
+  "contest_of_gods": {
+    "display_name": "Contest Of Gods",
+    "description": "Contest Of Gods ability",
+    "details": {}
+  },
+  "unruly_magic": {
+    "display_name": "Unruly Magic",
+    "description": "Unruly Magic ability",
+    "details": {}
+  },
+  "strife": {
+    "display_name": "Strife",
+    "description": "Strife ability",
+    "details": {}
+  },
+  "erratic_behavior": {
+    "display_name": "Erratic Behavior",
+    "description": "Erratic Behavior ability",
+    "details": {}
+  },
+  "golden_apple_of_discord": {
+    "display_name": "Golden Apple Of Discord",
+    "description": "Golden Apple Of Discord ability",
+    "details": {}
+  },
+  "stance_attunement": {
+    "display_name": "Stance Attunement",
+    "description": "Stance Attunement ability",
+    "details": {}
+  },
+  "decay_restoration": {
+    "display_name": "Decay Restoration",
+    "description": "Decay Restoration ability",
+    "details": {}
+  },
+  "hinder_cleanse": {
+    "display_name": "Hinder Cleanse",
+    "description": "Hinder Cleanse ability",
+    "details": {}
+  },
+  "repulse_inspire": {
+    "display_name": "Repulse Inspire",
+    "description": "Repulse Inspire ability",
+    "details": {}
+  },
+  "switch_stances": {
+    "display_name": "Switch Stances",
+    "description": "Switch Stances ability",
+    "details": {}
+  },
+  "commanding_presence": {
+    "display_name": "Commanding Presence",
+    "description": "Commanding Presence ability",
+    "details": {}
+  },
+  "royal_assault": {
+    "display_name": "Royal Assault",
+    "description": "Royal Assault ability",
+    "details": {}
+  },
+  "polymorph": {
+    "display_name": "Polymorph",
+    "description": "Polymorph ability",
+    "details": {}
+  },
+  "divine_shroud": {
+    "display_name": "Divine Shroud",
+    "description": "Divine Shroud ability",
+    "details": {}
+  },
+  "argus_the_defender": {
+    "display_name": "Argus The Defender",
+    "description": "Argus The Defender ability",
+    "details": {}
+  },
+  "rainbow_weaver": {
+    "display_name": "Rainbow Weaver",
+    "description": "Rainbow Weaver ability",
+    "details": {}
+  },
+  "gleaming_blast": {
+    "display_name": "Gleaming Blast",
+    "description": "Gleaming Blast ability",
+    "details": {}
+  },
+  "strands_of_moonlight": {
+    "display_name": "Strands Of Moonlight",
+    "description": "Strands Of Moonlight ability",
+    "details": {}
+  },
+  "lunar_invocation": {
+    "display_name": "Lunar Invocation",
+    "description": "Lunar Invocation ability",
+    "details": {}
+  },
+  "great_deluge": {
+    "display_name": "Great Deluge",
+    "description": "Great Deluge ability",
+    "details": {}
+  },
+  "passages": {
+    "display_name": "Passages",
+    "description": "Passages ability",
+    "details": {}
+  },
+  "portal": {
+    "display_name": "Portal",
+    "description": "Portal ability",
+    "details": {}
+  },
+  "unstable_vortex": {
+    "display_name": "Unstable Vortex",
+    "description": "Unstable Vortex ability",
+    "details": {}
+  },
+  "threshold": {
+    "display_name": "Threshold",
+    "description": "Threshold ability",
+    "details": {}
+  },
+  "through_space_and_time": {
+    "display_name": "Through Space And Time",
+    "description": "Through Space And Time ability",
+    "details": {}
+  },
+  "power_of_the_wind_jewel": {
+    "display_name": "Power Of The Wind Jewel",
+    "description": "Power Of The Wind Jewel ability",
+    "details": {}
+  },
+  "zephyr": {
+    "display_name": "Zephyr",
+    "description": "Zephyr ability",
+    "details": {}
+  },
+  "slipstream": {
+    "display_name": "Slipstream",
+    "description": "Slipstream ability",
+    "details": {}
+  },
+  "whirlwind": {
+    "display_name": "Whirlwind",
+    "description": "Whirlwind ability",
+    "details": {}
+  },
+  "spirit_of_the_nine_winds": {
+    "display_name": "Spirit Of The Nine Winds",
+    "description": "Spirit Of The Nine Winds ability",
+    "details": {}
+  },
+  "consort_of_baron": {
+    "display_name": "Consort Of Baron",
+    "description": "Consort Of Baron ability",
+    "details": {}
+  },
+  "madame_fangs": {
+    "display_name": "Madame Fangs",
+    "description": "Madame Fangs ability",
+    "details": {}
+  },
+  "soul_spikes": {
+    "display_name": "Soul Spikes",
+    "description": "Soul Spikes ability",
+    "details": {}
+  },
+  "spiritual_seance": {
+    "display_name": "Spiritual Seance",
+    "description": "Spiritual Seance ability",
+    "details": {}
+  },
+  "party_trick": {
+    "display_name": "Party Trick",
+    "description": "Party Trick ability",
+    "details": {}
+  },
+  "overload": {
+    "display_name": "Overload",
+    "description": "Overload ability",
+    "details": {}
+  },
+  "eclipse_radiate": {
+    "display_name": "Eclipse Radiate",
+    "description": "Eclipse Radiate ability",
+    "details": {}
+  },
+  "frostbolt_dragonfire": {
+    "display_name": "Frostbolt Dragonfire",
+    "description": "Frostbolt Dragonfire ability",
+    "details": {}
+  },
+  "blizzard_inferno": {
+    "display_name": "Blizzard Inferno",
+    "description": "Blizzard Inferno ability",
+    "details": {}
+  },
+  "elemental_mastery": {
+    "display_name": "Elemental Mastery",
+    "description": "Elemental Mastery ability",
+    "details": {}
+  },
+  "empowered_blade": {
+    "display_name": "Empowered Blade",
+    "description": "Empowered Blade ability",
+    "details": {}
+  },
+  "sigil_mastery": {
+    "display_name": "Sigil Mastery",
+    "description": "Sigil Mastery ability",
+    "details": {}
+  },
+  "shroud_of_mist": {
+    "display_name": "Shroud Of Mist",
+    "description": "Shroud Of Mist ability",
+    "details": {}
+  },
+  "consuming_power": {
+    "display_name": "Consuming Power",
+    "description": "Consuming Power ability",
+    "details": {}
+  },
+  "flame_of_the_night": {
+    "display_name": "Flame Of The Night",
+    "description": "Flame Of The Night ability",
+    "details": {}
+  },
+  "shadow_lock": {
+    "display_name": "Shadow Lock",
+    "description": "Shadow Lock ability",
+    "details": {}
+  },
+  "siphon_darkness": {
+    "display_name": "Siphon Darkness",
+    "description": "Siphon Darkness ability",
+    "details": {}
+  },
+  "shadow_step": {
+    "display_name": "Shadow Step",
+    "description": "Shadow Step ability",
+    "details": {}
+  },
+  "night_terror": {
+    "display_name": "Night Terror",
+    "description": "Night Terror ability",
+    "details": {}
+  },
+  "strength_of_wood": {
+    "display_name": "Strength Of Wood",
+    "description": "Strength Of Wood ability",
+    "details": {}
+  },
+  "mysterious_fog": {
+    "display_name": "Mysterious Fog",
+    "description": "Mysterious Fog ability",
+    "details": {}
+  },
+  "clay_soldiers": {
+    "display_name": "Clay Soldiers",
+    "description": "Clay Soldiers ability",
+    "details": {}
+  },
+  "shining_metal": {
+    "display_name": "Shining Metal",
+    "description": "Shining Metal ability",
+    "details": {}
+  },
+  "fire_shards": {
+    "display_name": "Fire Shards",
+    "description": "Fire Shards ability",
+    "details": {}
+  },
+  "touch_of_fate": {
+    "display_name": "Touch Of Fate",
+    "description": "Touch Of Fate ability",
+    "details": {}
+  },
+  "focused_light": {
+    "display_name": "Focused Light",
+    "description": "Focused Light ability",
+    "details": {}
+  },
+  "overflowing_divinity": {
+    "display_name": "Overflowing Divinity",
+    "description": "Overflowing Divinity ability",
+    "details": {}
+  },
+  "consecration": {
+    "display_name": "Consecration",
+    "description": "Consecration ability",
+    "details": {}
+  },
+  "sanctified_field": {
+    "display_name": "Sanctified Field",
+    "description": "Sanctified Field ability",
+    "details": {}
+  },
+  "pomegranate_seeds": {
+    "display_name": "Pomegranate Seeds",
+    "description": "Pomegranate Seeds ability",
+    "details": {}
+  },
+  "bone_rush": {
+    "display_name": "Bone Rush",
+    "description": "Bone Rush ability",
+    "details": {}
+  },
+  "flourish": {
+    "display_name": "Flourish",
+    "description": "Flourish ability",
+    "details": {}
+  },
+  "grasp_of_death": {
+    "display_name": "Grasp Of Death",
+    "description": "Grasp Of Death ability",
+    "details": {}
+  },
+  "life_death_rebirth": {
+    "display_name": "Life Death Rebirth",
+    "description": "Life Death Rebirth ability",
+    "details": {}
+  },
+  "changing_tides": {
+    "display_name": "Changing Tides",
+    "description": "Changing Tides ability",
+    "details": {}
+  },
+  "tidal_surge": {
+    "display_name": "Tidal Surge",
+    "description": "Tidal Surge ability",
+    "details": {}
+  },
+  "trident": {
+    "display_name": "Trident",
+    "description": "Trident ability",
+    "details": {}
+  },
+  "whirlpool": {
+    "display_name": "Whirlpool",
+    "description": "Whirlpool ability",
+    "details": {}
+  },
+  "release_the_kraken": {
+    "display_name": "Release The Kraken",
+    "description": "Release The Kraken ability",
+    "details": {}
+  },
+  "charged_tempo": {
+    "display_name": "Charged Tempo",
+    "description": "Charged Tempo ability",
+    "details": {}
+  },
+  "percussive_storm": {
+    "display_name": "Percussive Storm",
+    "description": "Percussive Storm ability",
+    "details": {}
+  },
+  "thunder_crash": {
+    "display_name": "Thunder Crash",
+    "description": "Thunder Crash ability",
+    "details": {}
+  },
+  "raiju": {
+    "display_name": "Raiju",
+    "description": "Raiju ability",
+    "details": {}
+  },
+  "taiko_drums": {
+    "display_name": "Taiko Drums",
+    "description": "Taiko Drums ability",
+    "details": {}
+  },
+  "unstable_manifestation": {
+    "display_name": "Unstable Manifestation",
+    "description": "Unstable Manifestation ability",
+    "details": {}
+  },
+  "radiance": {
+    "display_name": "Radiance",
+    "description": "Radiance ability",
+    "details": {}
+  },
+  "stellar_burst": {
+    "display_name": "Stellar Burst",
+    "description": "Stellar Burst ability",
+    "details": {}
+  },
+  "disapparate": {
+    "display_name": "Disapparate",
+    "description": "Disapparate ability",
+    "details": {}
+  },
+  "supernova": {
+    "display_name": "Supernova",
+    "description": "Supernova ability",
+    "details": {}
+  },
+  "doomsayer": {
+    "display_name": "Doomsayer",
+    "description": "Doomsayer ability",
+    "details": {}
+  },
+  "deadly_aspects": {
+    "display_name": "Deadly Aspects",
+    "description": "Deadly Aspects ability",
+    "details": {}
+  },
+  "dark_omen": {
+    "display_name": "Dark Omen",
+    "description": "Dark Omen ability",
+    "details": {}
+  },
+  "confusion": {
+    "display_name": "Confusion",
+    "description": "Confusion ability",
+    "details": {}
+  },
+  "changeling": {
+    "display_name": "Changeling",
+    "description": "Changeling ability",
+    "details": {}
+  },
+  "dead_reckoning": {
+    "display_name": "Dead Reckoning",
+    "description": "Dead Reckoning ability",
+    "details": {}
+  },
+  "hieroglyphic_assault": {
+    "display_name": "Hieroglyphic Assault",
+    "description": "Hieroglyphic Assault ability",
+    "details": {}
+  },
+  "evade_and_punish": {
+    "display_name": "Evade And Punish",
+    "description": "Evade And Punish ability",
+    "details": {}
+  },
+  "glyph_of_pain": {
+    "display_name": "Glyph Of Pain",
+    "description": "Glyph Of Pain ability",
+    "details": {}
+  },
+  "final_judgement": {
+    "display_name": "Final Judgement",
+    "description": "Final Judgement ability",
+    "details": {}
+  },
+  "primordial_onslaught": {
+    "display_name": "Primordial Onslaught",
+    "description": "Primordial Onslaught ability",
+    "details": {}
+  },
+  "consume": {
+    "display_name": "Consume",
+    "description": "Consume ability",
+    "details": {}
+  },
+  "grounding_dive_ruination": {
+    "display_name": "Grounding Dive Ruination",
+    "description": "Grounding Dive Ruination ability",
+    "details": {}
+  },
+  "children_of_creation_summon_serpents": {
+    "display_name": "Children Of Creation Summon Serpents",
+    "description": "Children Of Creation Summon Serpents ability",
+    "details": {}
+  },
+  "master_craftsman": {
+    "display_name": "Master Craftsman",
+    "description": "Master Craftsman ability",
+    "details": {}
+  },
+  "backfire": {
+    "display_name": "Backfire",
+    "description": "Backfire ability",
+    "details": {}
+  },
+  "inferno_cannon": {
+    "display_name": "Inferno Cannon",
+    "description": "Inferno Cannon ability",
+    "details": {}
+  },
+  "magma_bomb": {
+    "display_name": "Magma Bomb",
+    "description": "Magma Bomb ability",
+    "details": {}
+  },
+  "earthshaker": {
+    "display_name": "Earthshaker",
+    "description": "Earthshaker ability",
+    "details": {}
+  },
+  "master_of_the_dao": {
+    "display_name": "Master Of The Dao",
+    "description": "Master Of The Dao ability",
+    "details": {}
+  },
+  "flames_of_the_phoenix": {
+    "display_name": "Flames Of The Phoenix",
+    "description": "Flames Of The Phoenix ability",
+    "details": {}
+  },
+  "dao_cultivation": {
+    "display_name": "Dao Cultivation",
+    "description": "Dao Cultivation ability",
+    "details": {}
+  },
+  "celestial_flight": {
+    "display_name": "Celestial Flight",
+    "description": "Celestial Flight ability",
+    "details": {}
+  },
+  "dueling_dragons": {
+    "display_name": "Dueling Dragons",
+    "description": "Dueling Dragons ability",
+    "details": {}
+  },
+  "aegis_assault": {
+    "display_name": "Aegis Assault",
+    "description": "Aegis Assault ability",
+    "details": {}
+  },
+  "blessed_presence": {
+    "display_name": "Blessed Presence",
+    "description": "Blessed Presence ability",
+    "details": {}
+  },
+  "shackles": {
+    "display_name": "Shackles",
+    "description": "Shackles ability",
+    "details": {}
+  },
+  "bolster_defenses": {
+    "display_name": "Bolster Defenses",
+    "description": "Bolster Defenses ability",
+    "details": {}
+  },
+  "searing_flesh": {
+    "display_name": "Searing Flesh",
+    "description": "Searing Flesh ability",
+    "details": {}
+  },
+  "no_escape": {
+    "display_name": "No Escape",
+    "description": "No Escape ability",
+    "details": {}
+  },
+  "decompose": {
+    "display_name": "Decompose",
+    "description": "Decompose ability",
+    "details": {}
+  },
+  "energy_surge_maul": {
+    "display_name": "Energy Surge Maul",
+    "description": "Energy Surge Maul ability",
+    "details": {}
+  },
+  "ferocious_roar_entangling_vines": {
+    "display_name": "Ferocious Roar Entangling Vines",
+    "description": "Ferocious Roar Entangling Vines ability",
+    "details": {}
+  },
+  "heavy_charge_life_tap": {
+    "display_name": "Heavy Charge Life Tap",
+    "description": "Heavy Charge Life Tap ability",
+    "details": {}
+  },
+  "shapeshift": {
+    "display_name": "Shapeshift",
+    "description": "Shapeshift ability",
+    "details": {}
+  },
+  "reach": {
+    "display_name": "Reach",
+    "description": "Reach ability",
+    "details": {}
+  },
+  "preemptive_strike": {
+    "display_name": "Preemptive Strike",
+    "description": "Preemptive Strike ability",
+    "details": {}
+  },
+  "confound": {
+    "display_name": "Confound",
+    "description": "Confound ability",
+    "details": {}
+  },
+  "shield_wall": {
+    "display_name": "Shield Wall",
+    "description": "Shield Wall ability",
+    "details": {}
+  },
+  "defender_of_olympus": {
+    "display_name": "Defender Of Olympus",
+    "description": "Defender Of Olympus ability",
+    "details": {}
+  },
+  "the_astrolabe": {
+    "display_name": "The Astrolabe",
+    "description": "The Astrolabe ability",
+    "details": {}
+  },
+  "unburden": {
+    "display_name": "Unburden",
+    "description": "Unburden ability",
+    "details": {}
+  },
+  "gravity_pull": {
+    "display_name": "Gravity Pull",
+    "description": "Gravity Pull ability",
+    "details": {}
+  },
+  "kinetic_charge": {
+    "display_name": "Kinetic Charge",
+    "description": "Kinetic Charge ability",
+    "details": {}
+  },
+  "gamma_ray_burst": {
+    "display_name": "Gamma Ray Burst",
+    "description": "Gamma Ray Burst ability",
+    "details": {}
+  },
+  "drunk_o_meter": {
+    "display_name": "Drunk O Meter",
+    "description": "Drunk O Meter ability",
+    "details": {}
+  },
+  "chug": {
+    "display_name": "Chug",
+    "description": "Chug ability",
+    "details": {}
+  },
+  "belly_flop": {
+    "display_name": "Belly Flop",
+    "description": "Belly Flop ability",
+    "details": {}
+  },
+  "belch_of_the_gods": {
+    "display_name": "Belch Of The Gods",
+    "description": "Belch Of The Gods ability",
+    "details": {}
+  },
+  "intoxicate": {
+    "display_name": "Intoxicate",
+    "description": "Intoxicate ability",
+    "details": {}
+  },
+  "ghostly_crew": {
+    "display_name": "Ghostly Crew",
+    "description": "Ghostly Crew ability",
+    "details": {}
+  },
+  "leviathan_charge": {
+    "display_name": "Leviathan Charge",
+    "description": "Leviathan Charge ability",
+    "details": {}
+  },
+  "whales_bellow": {
+    "display_name": "Whales Bellow",
+    "description": "Whales Bellow ability",
+    "details": {}
+  },
+  "brackish_waters": {
+    "display_name": "Brackish Waters",
+    "description": "Brackish Waters ability",
+    "details": {}
+  },
+  "wrath_of_the_deep": {
+    "display_name": "Wrath Of The Deep",
+    "description": "Wrath Of The Deep ability",
+    "details": {}
+  },
+  "shadow_zone": {
+    "display_name": "Shadow Zone",
+    "description": "Shadow Zone ability",
+    "details": {}
+  },
+  "seismic_crush": {
+    "display_name": "Seismic Crush",
+    "description": "Seismic Crush ability",
+    "details": {}
+  },
+  "refraction_shield": {
+    "display_name": "Refraction Shield",
+    "description": "Refraction Shield ability",
+    "details": {}
+  },
+  "tremors": {
+    "display_name": "Tremors",
+    "description": "Tremors ability",
+    "details": {}
+  },
+  "tectonic_shift": {
+    "display_name": "Tectonic Shift",
+    "description": "Tectonic Shift ability",
+    "details": {}
+  },
+  "spirit_of_death": {
+    "display_name": "Spirit Of Death",
+    "description": "Spirit Of Death ability",
+    "details": {}
+  },
+  "paralyzing_spit": {
+    "display_name": "Paralyzing Spit",
+    "description": "Paralyzing Spit ability",
+    "details": {}
+  },
+  "ghastly_breath": {
+    "display_name": "Ghastly Breath",
+    "description": "Ghastly Breath ability",
+    "details": {}
+  },
+  "soul_expulsion": {
+    "display_name": "Soul Expulsion",
+    "description": "Soul Expulsion ability",
+    "details": {}
+  },
+  "stygian_torment": {
+    "display_name": "Stygian Torment",
+    "description": "Stygian Torment ability",
+    "details": {}
+  },
+  "stygian_judgment": {
+    "display_name": "Stygian Judgment",
+    "description": "Stygian Judgment ability",
+    "details": {}
+  },
+  "spectral_surge": {
+    "display_name": "Spectral Surge",
+    "description": "Spectral Surge ability",
+    "details": {}
+  },
+  "tormented_souls": {
+    "display_name": "Tormented Souls",
+    "description": "Tormented Souls ability",
+    "details": {}
+  },
+  "swift_death": {
+    "display_name": "Swift Death",
+    "description": "Swift Death ability",
+    "details": {}
+  },
+  "summon_stygian_claw": {
+    "display_name": "Summon Stygian Claw",
+    "description": "Summon Stygian Claw ability",
+    "details": {}
+  },
+  "prey_on_fear": {
+    "display_name": "Prey On Fear",
+    "description": "Prey On Fear ability",
+    "details": {}
+  },
+  "sanity_break": {
+    "display_name": "Sanity Break",
+    "description": "Sanity Break ability",
+    "details": {}
+  },
+  "the_mire": {
+    "display_name": "The Mire",
+    "description": "The Mire ability",
+    "details": {}
+  },
+  "descend_into_madness": {
+    "display_name": "Descend Into Madness",
+    "description": "Descend Into Madness ability",
+    "details": {}
+  },
+  "endless_greed": {
+    "display_name": "Endless Greed",
+    "description": "Endless Greed ability",
+    "details": {}
+  },
+  "cursed_strength": {
+    "display_name": "Cursed Strength",
+    "description": "Cursed Strength ability",
+    "details": {}
+  },
+  "coerce": {
+    "display_name": "Coerce",
+    "description": "Coerce ability",
+    "details": {}
+  },
+  "underhanded_tactics": {
+    "display_name": "Underhanded Tactics",
+    "description": "Underhanded Tactics ability",
+    "details": {}
+  },
+  "dragonic_corruption": {
+    "display_name": "Dragonic Corruption",
+    "description": "Dragonic Corruption ability",
+    "details": {}
+  },
+  "hard_as_rock": {
+    "display_name": "Hard As Rock",
+    "description": "Hard As Rock ability",
+    "details": {}
+  },
+  "roll_out": {
+    "display_name": "Roll Out",
+    "description": "Roll Out ability",
+    "details": {}
+  },
+  "shock_wave": {
+    "display_name": "Shock Wave",
+    "description": "Shock Wave ability",
+    "details": {}
+  },
+  "stone_shield": {
+    "display_name": "Stone Shield",
+    "description": "Stone Shield ability",
+    "details": {}
+  },
+  "cataclysm": {
+    "display_name": "Cataclysm",
+    "description": "Cataclysm ability",
+    "details": {}
+  },
+  "immovable": {
+    "display_name": "Immovable",
+    "description": "Immovable ability",
+    "details": {}
+  },
+  "venomous_haze": {
+    "display_name": "Venomous Haze",
+    "description": "Venomous Haze ability",
+    "details": {}
+  },
+  "consuming_bellow": {
+    "display_name": "Consuming Bellow",
+    "description": "Consuming Bellow ability",
+    "details": {}
+  },
+  "submerge": {
+    "display_name": "Submerge",
+    "description": "Submerge ability",
+    "details": {}
+  },
+  "the_world_serpent": {
+    "display_name": "The World Serpent",
+    "description": "The World Serpent ability",
+    "details": {}
+  },
+  "fortitude": {
+    "display_name": "Fortitude",
+    "description": "Fortitude ability",
+    "details": {}
+  },
+  "abduct": {
+    "display_name": "Abduct",
+    "description": "Abduct ability",
+    "details": {}
+  },
+  "rising_dawn": {
+    "display_name": "Rising Dawn",
+    "description": "Rising Dawn ability",
+    "details": {}
+  },
+  "solar_flare": {
+    "display_name": "Solar Flare",
+    "description": "Solar Flare ability",
+    "details": {}
+  },
+  "scarabs_blessing": {
+    "display_name": "Scarabs Blessing",
+    "description": "Scarabs Blessing ability",
+    "details": {}
+  },
+  "sleepy": {
+    "display_name": "Sleepy",
+    "description": "Sleepy ability",
+    "details": {}
+  },
+  "throw_back": {
+    "display_name": "Throw Back",
+    "description": "Throw Back ability",
+    "details": {}
+  },
+  "mighty_yawn": {
+    "display_name": "Mighty Yawn",
+    "description": "Mighty Yawn ability",
+    "details": {}
+  },
+  "groggy_strike": {
+    "display_name": "Groggy Strike",
+    "description": "Groggy Strike ability",
+    "details": {}
+  },
+  "epic_uppercut": {
+    "display_name": "Epic Uppercut",
+    "description": "Epic Uppercut ability",
+    "details": {}
+  },
+  "water_bowl": {
+    "display_name": "Water Bowl",
+    "description": "Water Bowl ability",
+    "details": {}
+  },
+  "nene_kappa": {
+    "display_name": "Nene Kappa",
+    "description": "Nene Kappa ability",
+    "details": {}
+  },
+  "shell_spikes": {
+    "display_name": "Shell Spikes",
+    "description": "Shell Spikes ability",
+    "details": {}
+  },
+  "sumo_slam": {
+    "display_name": "Sumo Slam",
+    "description": "Sumo Slam ability",
+    "details": {}
+  },
+  "watery_grave": {
+    "display_name": "Watery Grave",
+    "description": "Watery Grave ability",
+    "details": {}
+  },
+  "heros_entrance": {
+    "display_name": "Heros Entrance",
+    "description": "Heros Entrance ability",
+    "details": {}
+  },
+  "master_fisherman": {
+    "display_name": "Master Fisherman",
+    "description": "Master Fisherman ability",
+    "details": {}
+  },
+  "mystical_ulua": {
+    "display_name": "Mystical Ulua",
+    "description": "Mystical Ulua ability",
+    "details": {}
+  },
+  "solar_swing": {
+    "display_name": "Solar Swing",
+    "description": "Solar Swing ability",
+    "details": {}
+  },
+  "landfall": {
+    "display_name": "Landfall",
+    "description": "Landfall ability",
+    "details": {}
+  },
+  "blessing_of_the_nile": {
+    "display_name": "Blessing Of The Nile",
+    "description": "Blessing Of The Nile ability",
+    "details": {}
+  },
+  "charge_prey": {
+    "display_name": "Charge Prey",
+    "description": "Charge Prey ability",
+    "details": {}
+  },
+  "tail_whip": {
+    "display_name": "Tail Whip",
+    "description": "Tail Whip ability",
+    "details": {}
+  },
+  "sickening_strike": {
+    "display_name": "Sickening Strike",
+    "description": "Sickening Strike ability",
+    "details": {}
+  },
+  "lurking_in_the_waters": {
+    "display_name": "Lurking In The Waters",
+    "description": "Lurking In The Waters ability",
+    "details": {}
+  },
+  "natures_protection": {
+    "display_name": "Natures Protection",
+    "description": "Natures Protection ability",
+    "details": {}
+  },
+  "verdant_growth": {
+    "display_name": "Verdant Growth",
+    "description": "Verdant Growth ability",
+    "details": {}
+  },
+  "wisps": {
+    "display_name": "Wisps",
+    "description": "Wisps ability",
+    "details": {}
+  },
+  "nature_grasp": {
+    "display_name": "Nature Grasp",
+    "description": "Nature Grasp ability",
+    "details": {}
+  },
+  "wrath_of_terra": {
+    "display_name": "Wrath Of Terra",
+    "description": "Wrath Of Terra ability",
+    "details": {}
+  },
+  "standing_stones": {
+    "display_name": "Standing Stones",
+    "description": "Standing Stones ability",
+    "details": {}
+  },
+  "force_of_nature": {
+    "display_name": "Force Of Nature",
+    "description": "Force Of Nature ability",
+    "details": {}
+  },
+  "crushing_earth": {
+    "display_name": "Crushing Earth",
+    "description": "Crushing Earth ability",
+    "details": {}
+  },
+  "monolith": {
+    "display_name": "Monolith",
+    "description": "Monolith ability",
+    "details": {}
+  },
+  "terra_blessing": {
+    "display_name": "Terra Blessing",
+    "description": "Terra Blessing ability",
+    "details": {}
+  },
+  "smoldering_rage": {
+    "display_name": "Smoldering Rage",
+    "description": "Smoldering Rage ability",
+    "details": {}
+  },
+  "furious_roar": {
+    "display_name": "Furious Roar",
+    "description": "Furious Roar ability",
+    "details": {}
+  },
+  "hook_slam": {
+    "display_name": "Hook Slam",
+    "description": "Hook Slam ability",
+    "details": {}
+  },
+  "sky_cutting_axe": {
+    "display_name": "Sky Cutting Axe",
+    "description": "Sky Cutting Axe ability",
+    "details": {}
+  },
+  "whirlwind_of_rage_and_steel": {
+    "display_name": "Whirlwind Of Rage And Steel",
+    "description": "Whirlwind Of Rage And Steel ability",
+    "details": {}
+  },
+  "omi": {
+    "display_name": "Omi",
+    "description": "Omi ability",
+    "details": {}
+  },
+  "mending_waters": {
+    "display_name": "Mending Waters",
+    "description": "Mending Waters ability",
+    "details": {}
+  },
+  "bouncing_bubble": {
+    "display_name": "Bouncing Bubble",
+    "description": "Bouncing Bubble ability",
+    "details": {}
+  },
+  "riptide": {
+    "display_name": "Riptide",
+    "description": "Riptide ability",
+    "details": {}
+  },
+  "river_of_sorrow": {
+    "display_name": "River Of Sorrow",
+    "description": "River Of Sorrow ability",
+    "details": {}
+  }
+}

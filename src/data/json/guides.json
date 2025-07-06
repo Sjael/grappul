@@ -1,0 +1,205 @@
+{
+  "agni": [
+    {
+      "god_id": "agni",
+      "role": "mid",
+      "build": ["s_pendulum", "spearmagus", "spearofdeso", "myrdin", "tahuti_calamitous", "obshard"],
+      "relics": ["beads", "aegis"],
+      "timeline": [
+        {"percent": 0, "items": ["s_sands", "magic-focus"], "tip": null},
+        {"percent": 15, "items": ["spearmagus"], "tip": null},
+        {"percent": 30, "items": ["spearofdeso"], "tip": null},
+        {"percent": 45, "items": ["myrdin"], "tip": null},
+        {"percent": 60, "items": ["tahuti"], "tip": null},
+        {"percent": 75, "items": ["s_pendulum"], "tip": null},
+        {"percent": 90, "items": ["tahuti_calamitous"], "tip": null},
+        {"percent": 100, "items": ["obshard"], "tip": null}
+      ],
+      "skill_order": [],
+      "strategy": "## Build Reasoning\n\n- **Flat Pen early** for wave clear and easy kills\n- Build **spearmagus** because our main damage is from combos\n- **tahuti_calamitous** synergizes perfectly with our fumes combo\n- **myrdin** is ideal for ult-initiating gods, perfect for meteor\n- If the enemy team has any healing whatsoever, **divine** first is needed, and it's a cheap easy spike\n\n## Tips and Tricks\n\n- Late game, don't use meteor to clear if Fire Giant is being contested, as you will lose myrdin buff for the fight\n- In Conquest, start red and ditch speed to fdash first wave safely"
+    }
+  ],
+  "chaac": [
+    {
+      "god_id": "chaac",
+      "role": "mid",
+      "build": ["crusher", "jotunnsvigor", "trans", "souleater2", "heartseeker", "titans"],
+      "relics": ["blink", "beads"],
+      "timeline": [
+        {"percent": 0, "items": ["s_warriors", "mace"], "tip": null},
+        {"percent": 15, "items": ["jotunns"], "tip": null},
+        {"percent": 30, "items": ["trans"], "tip": null},
+        {"percent": 45, "items": ["souleater"], "tip": null},
+        {"percent": 60, "items": ["jotunnsvigor"], "tip": null},
+        {"percent": 75, "items": ["heartseeker"], "tip": null},
+        {"percent": 90, "items": ["titans"], "tip": null},
+        {"percent": 100, "items": ["crusher"], "tip": null}
+      ],
+      "skill_order": [],
+      "strategy": null
+    }
+  ],
+  "cliodhna": [
+    {
+      "god_id": "cliodhna",
+      "role": "mid",
+      "build": ["s_bluestonebrooch", "souleater2", "crusher", "jotunnsvigor", "arondight", "titans"],
+      "relics": ["blink", "beads"],
+      "timeline": [
+        {"percent": 0, "items": ["s_bluestone", "spiked"], "tip": null},
+        {"percent": 15, "items": ["souleater"], "tip": null},
+        {"percent": 30, "items": ["crusher"], "tip": null},
+        {"percent": 45, "items": ["jotunns"], "tip": null},
+        {"percent": 60, "items": ["jotunnsvigor"], "tip": null},
+        {"percent": 75, "items": ["arondight"], "tip": null},
+        {"percent": 90, "items": ["s_bluestonebrooch"], "tip": null},
+        {"percent": 100, "items": ["titans"], "tip": null}
+      ],
+      "skill_order": [],
+      "strategy": null
+    }
+  ],
+  "freya": [
+    {
+      "god_id": "freya",
+      "role": "adc",
+      "build": ["s_conduit", "fatalis", "demonic", "bancroftsclaw", "typhons", "tahuti"],
+      "relics": ["beads", "aegis"],
+      "timeline": [
+        {"percent": 0, "items": ["s_conduit", "magic-focus"], "tip": null},
+        {"percent": 15, "items": ["fatalis"], "tip": null},
+        {"percent": 30, "items": ["demonic"], "tip": null},
+        {"percent": 45, "items": ["bancroftsclaw"], "tip": null},
+        {"percent": 60, "items": ["typhons"], "tip": null},
+        {"percent": 75, "items": ["tahuti"], "tip": null}
+      ],
+      "skill_order": [],
+      "strategy": null
+    }
+  ],
+  "eset": [
+    {
+      "god_id": "eset",
+      "role": "support",
+      "build": ["s_lonos", "stoneofbinding", "thebes2", "pridwen", "spiritrobe", "soulreaver"],
+      "relics": ["shell", "ankh"],
+      "timeline": [
+        {"percent": 0, "items": ["s_protectors", "druidstone"], "tip": null},
+        {"percent": 15, "items": ["stoneofbinding"], "tip": null},
+        {"percent": 30, "items": ["thebes"], "tip": null},
+        {"percent": 45, "items": ["pridwen"], "tip": null},
+        {"percent": 60, "items": ["spiritrobe"], "tip": null},
+        {"percent": 75, "items": ["s_lonos"], "tip": null},
+        {"percent": 90, "items": ["soulreaver"], "tip": null}
+      ],
+      "skill_order": [],
+      "strategy": null
+    }
+  ],
+  "he_bo": [
+    {
+      "god_id": "he_bo",
+      "role": "jungle",
+      "build": ["s_bumbasspear", "spearmagus", "tahuti_perfected", "spearofdeso", "obshard", "soulreaver"],
+      "relics": ["blink", "beads"],
+      "timeline": [
+        {"percent": 0, "items": ["s_bumbas", "magic-focus"], "tip": null},
+        {"percent": 15, "items": ["spearmagus"], "tip": null},
+        {"percent": 30, "items": ["tahuti"], "tip": null},
+        {"percent": 45, "items": ["tahuti_perfected"], "tip": null},
+        {"percent": 60, "items": ["spearofdeso"], "tip": null},
+        {"percent": 75, "items": ["obshard"], "tip": null},
+        {"percent": 90, "items": ["s_bumbasspear"], "tip": null},
+        {"percent": 100, "items": ["soulreaver"], "tip": null}
+      ],
+      "skill_order": [],
+      "strategy": "## Build Philosophy\n\n- **Full Lifesteal** - your best defense is a good offense on He Bo\n- **spearmagus** gives us massive damage after waterspout\n- **Full % Penetration** for damage on tanks\n- **s_bumbasspear** gives great Fire Giant Secure\n\n## Important Tips\n\n- Don't waterspout instantly into crushing_wave, you will go under the enemy\n- Save river to cleanse slows or you're throwing\n- If you can, use water_cannon before ulting\n- crushing_wave + bancrofts gives 1/2 of your health back if low"
+    }
+  ],
+  "poseidon": [
+    {
+      "god_id": "poseidon",
+      "role": "mid",
+      "build": ["s_pendulum", "bookofthoth2", "spearmagus", "myrdin", "spearofdeso", "obshard"],
+      "relics": ["beads", "aegis"],
+      "timeline": [
+        {"percent": 0, "items": ["s_sands", "spellbook"], "tip": null},
+        {"percent": 15, "items": ["bookofthoth"], "tip": null},
+        {"percent": 30, "items": ["spearmagus"], "tip": null},
+        {"percent": 45, "items": ["myrdin"], "tip": null},
+        {"percent": 60, "items": ["spearofdeso"], "tip": null},
+        {"percent": 75, "items": ["s_pendulum"], "tip": null},
+        {"percent": 90, "items": ["obshard"], "tip": null},
+        {"percent": 100, "items": ["powerpot"], "tip": null}
+      ],
+      "skill_order": [],
+      "strategy": null
+    },
+    {
+      "god_id": "poseidon",
+      "role": "jungle",
+      "build": ["s_bumbasspear", "fatalis", "spearofdeso", "bancrofts", "typhons", "tahuti"],
+      "relics": ["beads", "aegis"],
+      "timeline": [
+        {"percent": 0, "items": ["s_sands", "spellbook"], "tip": null},
+        {"percent": 15, "items": ["bookofthoth"], "tip": null},
+        {"percent": 30, "items": ["spearmagus"], "tip": null},
+        {"percent": 45, "items": ["myrdin"], "tip": null},
+        {"percent": 60, "items": ["spearofdeso"], "tip": null},
+        {"percent": 75, "items": ["s_pendulum"], "tip": null},
+        {"percent": 90, "items": ["obshard"], "tip": null},
+        {"percent": 100, "items": ["powerpot"], "tip": null}
+      ],
+      "skill_order": [],
+      "strategy": null
+    },
+    {
+      "god_id": "poseidon",
+      "role": "adc",
+      "build": ["s_pendulum", "fatalis", "spearofdeso", "bancrofts", "typhons", "tahuti"],
+      "relics": ["beads", "blink"],
+      "timeline": [],
+      "skill_order": [],
+      "strategy": null
+    }
+  ],
+  "mercury": [
+    {
+      "god_id": "mercury",
+      "role": "jungle",
+      "build": ["dom", "rage2", "winddemon", "db_envenom", "asi", "serrated"],
+      "relics": ["blink", "beads"],
+      "timeline": [
+        {"percent": 0, "items": ["s_eye", "hiddendag"], "tip": null},
+        {"percent": 15, "items": ["rage"], "tip": null},
+        {"percent": 30, "items": ["winddemon"], "tip": null},
+        {"percent": 45, "items": ["deathbringer"], "tip": null},
+        {"percent": 60, "items": ["asi"], "tip": null},
+        {"percent": 75, "items": ["serrated"], "tip": null},
+        {"percent": 90, "items": ["dom"], "tip": null},
+        {"percent": 100, "items": ["db_envenom"], "tip": null}
+      ],
+      "skill_order": [],
+      "strategy": null
+    }
+  ],
+  "thanatos": [
+    {
+      "god_id": "thanatos",
+      "role": "jungle",
+      "build": ["s_hidden", "jotunns", "hydras", "arondight", "titans", "heartseeker"],
+      "relics": ["blink", "beads"],
+      "timeline": [
+        {"percent": 0, "items": ["s_manikin", "mace"], "tip": null},
+        {"percent": 15, "items": ["jotunns"], "tip": null},
+        {"percent": 30, "items": ["hydras"], "tip": null},
+        {"percent": 45, "items": ["arondight"], "tip": null},
+        {"percent": 60, "items": ["titans"], "tip": null},
+        {"percent": 75, "items": ["s_hidden"], "tip": null},
+        {"percent": 90, "items": ["dom"], "tip": null}
+      ],
+      "skill_order": [],
+      "strategy": null
+    }
+  ]
+}
