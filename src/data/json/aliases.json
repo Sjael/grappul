@@ -1,22 +1,41 @@
 {
-    "noxious fumes": "fumes",
-    "flame wave" : "fwave",
-    "path of flames" : "fdash",
-    "rain fire" : "meteor",
-    "atlas of the yellow river" : "river",
-    "release the kraken": "kraken",
-
-    "thunder strike" : "axe",
-    "storm call" : "stormcall",
-    "rain dance" : "raindance",
-
-    "dispel magic": "dispel",
-    "circle of protection" : "bunker",
-
-    "death scythe": "scythe",
-
-    "tearing the veil" : "rift",
-    "banshees wail" : "wail",
-    "flickering visions" : "clio_blind",
-    "lurching claw" : "claw"
+    "abilities": {
+        "fumes": ["fumes", "noxious_fumes", "noxious fumes"],
+        "flame_wave": ["flame_wave", "fwave", "flame wave", "fdash"],
+        "path_of_flames": ["path_of_flames", "path of flames", "flames"],
+        "rain_fire": ["rain_fire", "meteor", "rain fire", "meteors"],
+        "atlas_of_the_yellow_river": ["atlas_of_the_yellow_river", "river", "atlas of the yellow river", "yellow river"],
+        "water_cannon": ["water_cannon", "water cannon", "cannon"],
+        "waterspout": ["waterspout", "water spout", "spout"],
+        "crushing_wave": ["crushing_wave", "crushing wave", "wave"],
+        "release_the_kraken": ["release_the_kraken", "kraken", "release the kraken"],
+        "thunder_strike": ["thunder_strike", "axe", "thunder strike"],
+        "storm_call": ["storm_call", "stormcall", "storm call"],
+        "rain_dance": ["rain_dance", "raindance", "rain dance"],
+        "dispel_magic": ["dispel_magic", "dispel", "dispel magic"],
+        "circle_of_protection": ["circle_of_protection", "bunker", "circle of protection", "circle"],
+        "death_scythe": ["death_scythe", "scythe", "death scythe"],
+        "tearing_the_veil": ["tearing_the_veil", "rift", "tearing the veil", "veil"],
+        "banshees_wail": ["banshees_wail", "wail", "banshees wail", "banshee"],
+        "flickering_visions": ["flickering_visions", "clio_blind", "flickering visions", "blind"],
+        "lurching_claw": ["lurching_claw", "claw", "lurching claw"]
+    },
+    "items": {
+        "spearmagus": ["spearmagus", "spear_of_the_magus", "spear of the magus", "magus", "spear magus"],
+        "tahuti": ["tahuti", "rod_of_tahuti", "rod of tahuti", "tahuti_calamitous", "calamitous"],
+        "myrdin": ["myrdin", "staff_of_myrddin", "staff of myrddin", "myrddin"],
+        "divine": ["divine", "divine_ruin", "divine ruin"],
+        "bancrofts": ["bancrofts", "bancrofts_talon", "bancroft's talon", "bancroft"],
+        "spearofdeso": ["spearofdeso", "spear_of_desolation", "spear of desolation", "deso", "desolation"],
+        "obshard": ["obshard", "obsidian_shard", "obsidian shard", "shard"],
+        "s_pendulum": ["s_pendulum", "pendulum_of_ages", "pendulum of ages", "pendulum"],
+        "s_bumbasspear": ["s_bumbasspear", "bumbas_spear", "bumba's spear", "bumbas"],
+        "s_sands": ["s_sands", "sands_of_time", "sands of time", "sands"],
+        "magic-focus": ["magic-focus", "magic_focus", "magic focus", "focus"],
+        "beads": ["beads", "purification", "purification beads"],
+        "aegis": ["aegis", "aegis_amulet", "aegis amulet"],
+        "blink": ["blink", "blink_rune", "blink rune"],
+        "shell": ["shell", "shell_relic", "magic shell"],
+        "ankh": ["ankh", "cursed_ankh", "cursed ankh"]
+    }
 }

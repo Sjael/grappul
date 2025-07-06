@@ -2,6 +2,94 @@
 @import 'themes.css';
 
 /* =================
+/* 🎨 Animations */
+/* ================= */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes bounce-left {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(0);
+    }
+    40% {
+        transform: translateX(-20px);
+    }
+    60% {
+        transform: translateX(-10px);
+    }
+}
+
+/* =================
+/* 📋 Cheatsheet Styles */
+/* ================= */
+.cheatsheet-card {
+    transition: border-color 0.2s ease, opacity 0.2s ease;
+}
+
+/* Items in cheatsheet don't have hover since they're not clickable */
+.cheatsheet-card .item {
+    cursor: default;
+}
+
+.cheatsheet-card .item:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.cheatsheet-card .item::before,
+.cheatsheet-card .item::after {
+    display: none;
+}
+
+.cheatsheet-card button {
+    transition: all 0.2s ease;
+}
+
+.cheatsheet-card button:hover {
+    background: var(--color-accent-hover) !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Role badges in cheatsheet */
+.cheatsheet-card button[style*="border-radius: 10px"]:hover {
+    background: var(--color-accent) !important;
+    color: white !important;
+    transform: scale(1.05);
+}
+
+/* =================
+/* 📝 Guide Creator Styles */
+/* ================= */
+.guide-creator-container {
+    font-family: var(--font-primary);
+}
+
+.guide-creator-sidebar button:hover {
+    background: var(--color-bg-tertiary) !important;
+}
+
+.guide-creator-container input:focus,
+.guide-creator-container textarea:focus {
+    outline: none;
+    border-color: var(--color-accent);
+}
+
+.guide-creator-container button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* =================
 /* 🌍 Global Styles */
 /* ================= */
 ::selection {
@@ -16,6 +104,7 @@
 html {
     overflow-y: overlay; /* Shows scrollbar only when scrolling, but reserves space */
     scrollbar-width: thin; /* Firefox */
+    scroll-behavior: smooth;
 }
 
 body {
@@ -93,6 +182,14 @@ nav a:hover * {
     color: var(--color-accent);
 }
 
+nav a.active {
+    border-bottom: 2px solid var(--color-accent);
+}
+
+nav a.active h5 {
+    color: var(--color-accent);
+}
+
 nav .logo img {
     width: 6rem;
     height: 32px;
@@ -134,7 +231,7 @@ body[data-dark] {
     grid-auto-rows: min-content;
     align-items: start;
     height: calc(100vh - 120px);
-    padding: 0.25rem;
+    padding: 2px;
     overflow-x: hidden;
     overflow-y: auto;
     scrollbar-width: thin;
@@ -167,9 +264,9 @@ body[data-dark] {
     background: var(--overlay-dark);
     border: 2px transparent solid;
     border-radius: 1px;
-    opacity: 0.5;
+    opacity: 0.7;
     cursor: pointer;
-    transition: all 0.6s, transform 300ms ease;
+    transition: all 0.6s;
 }
 
 .god img {
@@ -182,9 +279,6 @@ body[data-dark] {
     transition: opacity 0.3s ease;
 }
 
-.god:hover:not(.selected) {
-    transform: translateY(-2px);
-}
 
 .god.selected {
     border: 2px solid var(--color-accent);
@@ -196,8 +290,12 @@ body[data-dark] {
     opacity: 1;
 }
 
+.god.filtered {
+    opacity: 0.3;
+}
+
 .god.filtered img {
-    opacity: 0.1;
+    opacity: 0.5;
 }
 
 
@@ -431,9 +529,21 @@ body[data-dark] {
 .filters-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 1rem;
+    max-width: 100%;
+}
+
+.filters-container .role-filters {
+    flex: 1;
+    justify-content: flex-start;
+}
+
+.filters-container .clear-filters {
+    flex-shrink: 0;
+    margin-left: auto;
 }
 
 /* =================
@@ -609,9 +719,8 @@ body[data-dark] {
 /* 📐 Layout Components */
 /* ================= */
 .container {
-    width: 80vw;
+    width: 100%;
     margin: 0 auto;
-    margin-left: 10vw;
 }
 
 .grid {
@@ -627,24 +736,96 @@ body[data-dark] {
     margin: auto;
     gap: 2rem;
     column-gap: 40px;
+    position: relative;
+}
+
+/* When no god is selected, expand sidebar */
+.grid.no-selection {
+    grid-template-columns: 1fr;
+}
+
+.grid.no-selection .sidebar {
+    width: 60vw;
+    max-width: 60vw;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* When a god is selected, transition sidebar to side */
+.grid.has-selection .sidebar {
+    width: 300px;
+    max-width: 300px;
+    position: fixed;
+    left: 0;
+    transform: translateX(0);
+    z-index: 100;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+    border-radius: 0;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sidebar {
     position: fixed;
     grid-area: sidebar;
     display: flex;
+    background: var(--color-bg-primary);
     flex-direction: column;
-    min-width: 300px;
     height: calc(100vh - 60px);
-    padding: 3rem 0rem;
+    padding: 2rem;
     gap: 1rem;
     overflow: hidden;
 }
 
 .main-content {
     grid-area: main;
-    padding: 3rem 0rem;
+    padding: 8rem 0rem 0rem 4rem;
     max-width: 800px;
+    animation: fadeInFromBehind 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    animation-delay: 0.2s;
+    opacity: 0;
+}
+
+@keyframes fadeInFromBehind {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* =================
+/* 🔤 Alphabet Navigation */
+/* ================= */
+.alphabet-link:hover {
+    color: var(--color-accent) !important;
+    background: var(--color-accent-alpha);
+}
+
+/* Role Badge Button */
+.role-badge-btn {
+    font-size: 11px;
+    padding: 4px 10px;
+    background: var(--color-accent-alpha);
+    border-radius: 12px;
+    color: var(--color-accent);
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.role-badge-btn:hover {
+    background: var(--color-accent);
+    color: white;
+    transform: scale(1.05);
 }
 
 /* =================
@@ -677,6 +858,94 @@ body[data-dark] {
 }
 
 /* =================
+/* 📦 Build Container */
+/* ================= */
+.build-container {
+    padding: 8px;
+    margin: -8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
+.build-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, 
+        transparent 0%, 
+        var(--color-accent-alpha) 50%, 
+        transparent 100%
+    );
+    opacity: 0;
+    border-radius: 6px;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.build-container:hover {
+    background: var(--color-bg-tertiary);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.build-container:hover::before {
+    opacity: 0.1;
+}
+
+.build-container:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Remove hover effect from items within build containers on cheatsheet */
+.build-container .item:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.build-container .item::before {
+    display: none;
+}
+
+/* Responsive item grid */
+.item-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 4px;
+}
+
+/* Build items container - prevent wrapping */
+.build-items-container {
+    max-width: 100%;
+}
+
+.build-items-container .itemrow {
+    display: flex;
+    flex-wrap: nowrap !important;
+    gap: 0.75rem;
+}
+
+/* Scale down items when space is limited */
+@media (max-width: 600px) {
+    .build-items-container .item {
+        width: 36px !important;
+        height: 36px !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .build-items-container .item {
+        width: 32px !important;
+        height: 32px !important;
+    }
+}
+
+/* =================
 /* 📱 Media Queries */
 /* ================= */
 @media(prefers-reduced-motion) {
@@ -690,31 +959,103 @@ body[data-dark] {
         width: 80px;
         height: 80px;
     }
-}
+    
+    /* Maintain readable item sizes on tablets */
+    .cheatsheet-card .item {
+        width: 36px !important;
+        height: 36px !important;
+    }
+    
+    .cheatsheet-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+    }
+    }
 
 @media (max-width: 480px) {
     #role-filter {
         width: 64px;
         height: 64px;
     }
+    
+    /* Keep items readable on mobile */
+    .cheatsheet-card .item {
+        width: 32px !important;
+        height: 32px !important;
+    }
+    
+    .cheatsheet-grid {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .cheatsheet-grid-container {
+        padding: 16px !important;
+    }
+    
+    /* Stack build and relics on mobile */
+    .build-relics-row {
+        flex-direction: column !important;
+    }
+    
+    .build-relics-row > div {
+        min-width: 100% !important;
+    }
 }
 
 .item, .ability  {
     border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.2s ease;
+    border: 2px solid transparent;
+    background-clip: padding-box;
 }
 
-/* Pros Section */
-.pros{
-    list-style-type: decimal;
-    padding-left: 1.5rem;
+/* Animated gradient border on hover */
+.item::before, .ability::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, 
+        var(--color-accent), 
+        #ff6b6b, 
+        var(--color-accent), 
+        #4ecdc4, 
+        var(--color-accent)
+    );
+    background-size: 300% 300%;
+    border-radius: 6px;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.3s ease;
+    animation: gradient-scroll 3s ease infinite;
 }
 
-.pros li {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 0.5rem;
+@keyframes gradient-scroll {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
+
+.item:hover::before, .ability:hover::before {
+    opacity: 1;
+}
+
+.item:hover, .ability:hover {
+    transform: none;
+    z-index: 10;
+    border-color: transparent;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
 
 .grid_hold {
     display: flex;
@@ -765,5 +1106,195 @@ body[data-dark] {
 
 .point.level.skill4 {
     color: #ffa502;
+}
+
+/* =================
+/* 📋 Cheatsheet Styles */
+/* ================= */
+.cheatsheet-container {
+    --bg-color: var(--color-bg-primary);
+    --bg-secondary: var(--color-bg-secondary);
+    --bg-tertiary: var(--color-bg-tertiary);
+    --text-color: var(--color-text-primary);
+    --text-secondary: var(--color-text-secondary);
+    --border-color: var(--color-border);
+    --accent-color: var(--color-accent);
+}
+
+.cheatsheet-header {
+    background: var(--bg-secondary);
+    box-shadow: 0 2px 4px var(--color-shadow);
+}
+
+.cheatsheet-grid-container {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+.cheatsheet-grid-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.cheatsheet-grid-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.cheatsheet-grid-container::-webkit-scrollbar-thumb {
+    background: var(--text-muted);
+    border-radius: 4px;
+}
+
+.cheatsheet-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.cheatsheet-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, transparent 0%, var(--overlay-mandarin) 100%);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+}
+
+
+/* Cheatsheet Item Grid */
+/* Items in cheatsheet are not clickable, so no hover effects */
+
+/* Empty state styling */
+.cheatsheet-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    color: var(--text-secondary);
+}
+
+.cheatsheet-empty svg {
+    width: 64px;
+    height: 64px;
+    opacity: 0.3;
+    margin-bottom: 1rem;
+}
+
+/* Loading state for cheatsheet */
+.cheatsheet-loading {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.cheatsheet-skeleton {
+    height: 180px;
+    background: linear-gradient(90deg, var(--bg-secondary) 25%, var(--bg-tertiary) 50%, var(--bg-secondary) 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+    border-radius: 8px;
+}
+
+@keyframes loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+@keyframes skeleton-loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+/* =================
+/* 📝 Text with Icons */
+/* ================= */
+.item, .ability {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 2px;
+}
+
+/* Formatted list styles */
+ul.dia li, ul li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+}
+
+ul.dia li span:first-child, ul li span:first-child {
+    flex-shrink: 0;
+    user-select: none;
+    line-height: 1.5;
+}
+
+/* Inline icon alignment in text */
+span img.item, span img.ability {
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+}
+
+/* Text with icons container */
+span[style*="inline-flex"] {
+    line-height: 1.8 !important;
+}
+
+span[style*="inline-flex"] > span {
+    display: inline-flex;
+    align-items: center;
+}
+
+span[style*="inline-flex"] .item,
+span[style*="inline-flex"] .ability {
+    margin-right: 4px;
+}
+
+/* =================
+/* 📍 Scroll to Top Button */
+/* ================= */
+.scroll-to-top {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.3s ease !important;
+    animation: none !important;
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-to-top:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2) !important;
+}
+
+.scroll-to-top:active {
+    transform: translateY(0);
+}
+
+/* =================
+/* 🎯 CTA Animations */
+/* ================= */
+@keyframes bounce-left {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-10px);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
 }
 

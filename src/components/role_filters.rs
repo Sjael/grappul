@@ -1,71 +1,58 @@
 #![allow(non_snake_case)]
 use dioxus::prelude::*;
-use crate::SelectedRole;
-
-struct RolePathData {
-    id: String,
-    d: Vec<String>,
-}
+use crate::FilteredRole;
 
 #[component]
 pub fn RoleFilters() -> Element {
-    let mut role = use_context::<Signal<SelectedRole>>();
+    let mut role = use_context::<Signal<FilteredRole>>();
     let roles = [
-        RolePathData { 
-            id: "jungle".to_string(), 
-            d: vec![
-                "M37 16.9 37 47.1 52.1 32 37 16.9z".to_string(),
-                "M27 47.1 27 16.9 11.9 32 27 47.1z".to_string()
-            ]
-        },
-        RolePathData { 
-            id: "adc".to_string(), 
-            d: vec!["M32 52.1 32 62 62 32 52.1 32 32 52.1z".to_string()]
-        },
-        RolePathData { 
-            id: "support".to_string(), 
-            d: vec!["M32 11.9 52.1 32 62 32 32 2 32 11.9z".to_string()]
-        },
-        RolePathData { 
-            id: "solo".to_string(), 
-            d: vec!["M11.9 32 32 11.9 32 2 2 32 32 62 32 52.1 11.9 32z".to_string()]
-        },
-        RolePathData { 
-            id: "mid".to_string(), 
-            d: vec!["M27 7 27 57 32 62 37 57 37 7 32 2 27 7z".to_string()]
-        },
+        ("Solo", "solo"),
+        ("Jungle", "jungle"), 
+        ("Mid", "mid"),
+        ("Support", "support"),
+        ("Carry", "adc"),
     ];
 
     rsx! {
         div {
             class: "role-filters",
-            svg {
-                id: "role-filter",
-                xmlns: "http://www.w3.org/2000/svg",
-                view_box: "0 0 64 64",
-                for path_data in roles {
-                    for d_path in &path_data.d {
-                        path {
-                            key: "{path_data.id}-{d_path}",
-                            id: "{path_data.id}",
-                            class: format!("role {}", 
-                                if role.read().0.as_ref().map_or(false, |r| &r == &path_data.id.as_str()) { "selected" } else { "" }
-                            ),
-                            onclick: {
-                                let role_id = path_data.id.clone();
-                                move |_| {
-                                    let current = role.read().0.clone();
-                                    role.write().0 = match current {
-                                        Some(r) if r == role_id => None,
-                                        _ => Some(role_id.clone())
-                                    };
-                                }
-                            },
-                            d: "{d_path}"
+            style: "display: flex; gap: 8px; align-items: center; flex-wrap: wrap; justify-content: flex-start;",
+            
+            for (display_name, role_id) in roles {
+                button {
+                    key: "{role_id}",
+                    style: format!(
+                        "padding: 4px 8px; border: 1px solid {}; background: {}; color: {}; border-radius: 4px; cursor: pointer; transition: all 0.2s ease; font-size: 13px; display: flex; align-items: center; gap: 4px; flex: 0 0 auto; white-space: nowrap;",
+                        if role.read().0.as_ref().map_or(false, |r| r == role_id) { "var(--color-accent)" } else { "var(--color-border)" },
+                        if role.read().0.as_ref().map_or(false, |r| r == role_id) { "var(--color-accent)" } else { "transparent" },
+                        if role.read().0.as_ref().map_or(false, |r| r == role_id) { "white" } else { "var(--color-text-primary)" }
+                    ),
+                    onclick: {
+                        let role_id = role_id.to_string();
+                        move |_| {
+                            let current = role.read().0.clone();
+                            role.write().0 = match current {
+                                Some(r) if r == role_id => None,
+                                _ => Some(role_id.clone())
+                            };
+                        }
+                    },
+                    span { 
+                        style: "font-size: 16px;",
+                        {
+                            match role_id {
+                                "solo" => "🛡️",
+                                "jungle" => "🌳",
+                                "mid" => "⚡",
+                                "support" => "💚",
+                                "adc" => "🏹",
+                                _ => "❓"
+                            }
                         }
                     }
+                    span { "{display_name}" }
                 }
             }
         }
     }
-} 
+}

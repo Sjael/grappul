@@ -4,7 +4,7 @@ asset_dir = "assets"
 out_dir = "dist"
 
 [web.app]
-title = "Grappul - SMITE Guides"
+title = "Grappul"
 
 
 [web.watcher]

@@ -28,6 +28,8 @@ pub struct Guide {
     pub timeline: Vec<TimelineEntry>,
     #[serde(default)]
     pub skill_order: Vec<u8>, // indices of abilities to level up (0-3)
+    #[serde(default)]
+    pub strategy: Option<String>, // Markdown strategy guide
 }
 
 impl Guide {
@@ -39,6 +41,7 @@ impl Guide {
             relics: Vec::new(),
             timeline: Vec::new(),
             skill_order: Vec::new(),
+            strategy: None,
         }
     }
 
@@ -59,6 +62,11 @@ impl Guide {
 
     pub fn with_skill_order(mut self, skill_order: Vec<u8>) -> Self {
         self.skill_order = skill_order;
+        self
+    }
+    
+    pub fn with_strategy<T: Into<String>>(mut self, strategy: T) -> Self {
+        self.strategy = Some(strategy.into());
         self
     }
 }
@@ -90,6 +98,7 @@ pub static GUIDES: Lazy<HashMap<String, Vec<Guide>>> = Lazy::new(|| {
                 "obshard"
             ])
             .with_relics(vec!["beads", "aegis"])
+            .with_strategy("## Build Reasoning\n\n- **Flat Pen early** for wave clear and easy kills\n- Build **spearmagus** because our main damage is from combos\n- **tahuti_calamitous** synergizes perfectly with our fumes combo\n- **myrdin** is ideal for ult-initiating gods, perfect for meteor\n- If the enemy team has any healing whatsoever, **divine** first is needed, and it's a cheap easy spike\n\n## Tips and Tricks\n\n- Late game, don't use meteor to clear if Fire Giant is being contested, as you will lose myrdin buff for the fight\n- In Conquest, start red and ditch speed to fdash first wave safely")
             .with_timeline(vec![
                 TimelineEntry {
                     percent: 0,
@@ -360,6 +369,7 @@ pub static GUIDES: Lazy<HashMap<String, Vec<Guide>>> = Lazy::new(|| {
                 "soulreaver"
             ])
             .with_relics(vec!["blink", "beads"])
+            .with_strategy("## Build Philosophy\n\n- **Full Lifesteal** - your best defense is a good offense on He Bo\n- **spearmagus** gives us massive damage after waterspout\n- **Full % Penetration** for damage on tanks\n- **s_bumbasspear** gives great Fire Giant Secure\n\n## Important Tips\n\n- Don't waterspout instantly into crushing_wave, you will go under the enemy\n- Save river to cleanse slows or you're throwing\n- If you can, use water_cannon before ulting\n- crushing_wave + bancrofts gives 1/2 of your health back if low")
             .with_timeline(vec![
                 TimelineEntry {
                     percent: 0,

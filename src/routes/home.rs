@@ -3,12 +3,14 @@ use crate::components::{Header, ClassFilters, RoleFilters, Explain, GodGrid, Cle
 
 #[component]
 pub fn Home() -> Element {
+    let selected_god = use_context::<Signal<crate::SelectedGod>>();
+    let has_selection = selected_god().0.is_some();
 
     rsx! {
         div {
             class: "container",
             div {
-                class: "grid",
+                class: if has_selection { "grid has-selection" } else { "grid no-selection" },
                 // Sidebar with filters
                 div {
                     class: "sidebar",
@@ -22,11 +24,12 @@ pub fn Home() -> Element {
                     GodGrid {}
                 }
                 
-                // Main content area
-                div {
-                    class: "main-content",
-
-                    Explain {}
+                // Main content area - only render if god is selected
+                if has_selection {
+                    div {
+                        class: "main-content",
+                        Explain {}
+                    }
                 }
             }
         }

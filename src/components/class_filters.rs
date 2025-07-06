@@ -1,11 +1,11 @@
 #![allow(non_snake_case)]
 use dioxus::prelude::*;
 use crate::components::Icon;
-use crate::SelectedClass;
+use crate::FilteredClass;
 
 #[component]
 pub fn ClassFilters() -> Element {
-    let mut class = use_context::<Signal<SelectedClass>>();
+    let mut class = use_context::<Signal<FilteredClass>>();
     let classes = [ "warrior", "assassin", "mage", "guardian", "hunter",];
     
     rsx! {

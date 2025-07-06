@@ -7,7 +7,8 @@ mod data;
 mod routes;
 mod utils;
 
-use routes::{cheatsheet::Cheatsheet, home::Home};
+use routes::{cheatsheet::Cheatsheet, home::Home, guide_creator::GuideCreator};
+use components::ScrollToTop;
 
 #[derive(Routable, Clone)]
 enum Route {
@@ -15,10 +16,15 @@ enum Route {
     Home,
     #[route("/cheatsheet")]
     Cheatsheet,
+    #[route("/guide/create")]
+    GuideCreator,
 }
 
 #[derive(Debug, Clone, PartialEq, Default)]
-pub struct SelectedClass(pub Option<String>);
+pub struct FilteredClass(pub Option<String>);
+
+#[derive(Debug, Clone, PartialEq, Default)]
+pub struct FilteredRole(pub Option<String>);
 
 #[derive(Debug, Clone, PartialEq, Default)]
 pub struct SelectedRole(pub Option<String>);
@@ -79,8 +85,12 @@ fn main() {
 #[component]
 fn app() -> Element {
     // Initialize selections from localStorage
-    let selected_class = use_context_provider(|| Signal::new(SelectedClass(
-        load_from_storage("selected_class").map(|s| s.to_string())
+    let filtered_class = use_context_provider(|| Signal::new(FilteredClass(
+        load_from_storage("filtered_class").map(|s| s.to_string())
+    )));
+    
+    let filtered_role = use_context_provider(|| Signal::new(FilteredRole(
+        load_from_storage("filtered_role").map(|s| s.to_string())
     )));
     
     let selected_role = use_context_provider(|| Signal::new(SelectedRole(
@@ -97,9 +107,14 @@ fn app() -> Element {
 
     // Watch for changes and save to localStorage
     use_effect(move || {
-        match &selected_class.read().0 {
-            Some(class) => save_to_storage("selected_class", class),
-            None => clear_from_storage("selected_class"),
+        match &filtered_class.read().0 {
+            Some(class) => save_to_storage("filtered_class", class),
+            None => clear_from_storage("filtered_class"),
+        }
+        
+        match &filtered_role.read().0 {
+            Some(role) => save_to_storage("filtered_role", role),
+            None => clear_from_storage("filtered_role"),
         }
         
         match &selected_role.read().0 {
@@ -136,6 +151,7 @@ fn app() -> Element {
             document::Link { rel: "stylesheet", href: asset!("/assets/app.css") }
 
             Router::<Route> {}
+            ScrollToTop {}
         }
     }
 } 

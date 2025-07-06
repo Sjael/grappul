@@ -100,7 +100,10 @@
     --color-accent: var(--mandarin);          /* Base mandarin */
     --color-accent-hover: #f95b1d;            /* Slightly more saturated mandarin */
     --color-accent-muted: #ffa07a;            /* Lighter mandarin */
+    --color-accent-alpha: rgba(244, 116, 59, 0.1);  /* Transparent mandarin */
     --logo-color: var(--mandarin);
+    
+    --color-border-light: #f0f0f0;
 
     --gray1: #f8f9fa;
     --gray2: #e9ecef;
@@ -125,7 +128,10 @@
     --color-accent: #ff8155;          /* Brighter mandarin for dark theme */
     --color-accent-hover: #ff9b76;    /* Lighter mandarin */
     --color-accent-muted: #cc6544;    /* Darker mandarin */
+    --color-accent-alpha: rgba(255, 129, 85, 0.15);  /* Transparent mandarin */
     --logo-color: var(--color-accent);
+    
+    --color-border-light: #303030;
 
     --gray1: #f0f0f0;
     --gray2: #d0d0d0;
@@ -150,7 +156,10 @@
     --color-accent: #4a90e2;
     --color-accent-hover: #64a6f4;
     --color-accent-muted: #90caf9;
+    --color-accent-alpha: rgba(74, 144, 226, 0.15);  /* Transparent accent */
     --logo-color: var(--mandarin);
+    
+    --color-border-light: #1a2b45;
 
     --gray1: #0d1b2a;
     --gray2: #1b263b;

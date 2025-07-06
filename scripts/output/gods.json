@@ -1,1 +1,1586 @@
-{}
+{
+  "achilles": {
+    "name": "achilles",
+    "display_name": "Achilles",
+    "class_name": "Warrior",
+    "pantheon": "Greek",
+    "title": "",
+    "roles": [
+      "Solo"
+    ],
+    "abilities": [],
+    "image_path": "gods/achilles.png"
+  },
+  "agni": {
+    "name": "agni",
+    "display_name": "Agni",
+    "class_name": "Mage",
+    "pantheon": "Hindu",
+    "title": "",
+    "roles": [
+      "Mid"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "ah_muzen_cab": {
+    "name": "ah_muzen_cab",
+    "display_name": "Ah Muzen Cab",
+    "class_name": "Hunter",
+    "pantheon": "Maya",
+    "title": "",
+    "roles": [
+      "ADC",
+      "Carry"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "ah_puch": {
+    "name": "ah_puch",
+    "display_name": "Ah Puch",
+    "class_name": "Mage",
+    "pantheon": "Maya",
+    "title": "",
+    "roles": [
+      "Mid"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "amaterasu": {
+    "name": "amaterasu",
+    "display_name": "Amaterasu",
+    "class_name": "Warrior",
+    "pantheon": "Japanese",
+    "title": "",
+    "roles": [
+      "Solo"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "anhur": {
+    "name": "anhur",
+    "display_name": "Anhur",
+    "class_name": "Hunter",
+    "pantheon": "Egyptian",
+    "title": "",
+    "roles": [
+      "ADC",
+      "Carry"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "anubis": {
+    "name": "anubis",
+    "display_name": "Anubis",
+    "class_name": "Mage",
+    "pantheon": "Egyptian",
+    "title": "",
+    "roles": [
+      "Mid"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "ao_kuang": {
+    "name": "ao_kuang",
+    "display_name": "Ao Kuang",
+    "class_name": "Mage",
+    "pantheon": "Chinese",
+    "title": "",
+    "roles": [
+      "Mid"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "aphrodite": {
+    "name": "aphrodite",
+    "display_name": "Aphrodite",
+    "class_name": "Mage",
+    "pantheon": "Greek",
+    "title": "",
+    "roles": [
+      "Mid"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "apollo": {
+    "name": "apollo",
+    "display_name": "Apollo",
+    "class_name": "Hunter",
+    "pantheon": "Greek",
+    "title": "",
+    "roles": [
+      "ADC",
+      "Carry"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "arachne": {
+    "name": "arachne",
+    "display_name": "Arachne",
+    "class_name": "Assassin",
+    "pantheon": "Greek",
+    "title": "",
+    "roles": [
+      "Jungle"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "ares": {
+    "name": "ares",
+    "display_name": "Ares",
+    "class_name": "Guardian",
+    "pantheon": "Greek",
+    "title": "",
+    "roles": [
+      "Support"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "artemis": {
+    "name": "artemis",
+    "display_name": "Artemis",
+    "class_name": "Hunter",
+    "pantheon": "Greek",
+    "title": "",
+    "roles": [
+      "ADC",
+      "Carry"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "artio": {
+    "name": "artio",
+    "display_name": "Artio",
+    "class_name": "Guardian",
+    "pantheon": "Celtic",
+    "title": "",
+    "roles": [
+      "Support"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "athena": {
+    "name": "athena",
+    "display_name": "Athena",
+    "class_name": "Guardian",
+    "pantheon": "Greek",
+    "title": "",
+    "roles": [
+      "Support"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "atlas": {
+    "name": "atlas",
+    "display_name": "Atlas",
+    "class_name": "Guardian",
+    "pantheon": "Greek",
+    "title": "",
+    "roles": [
+      "Support"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "awilix": {
+    "name": "awilix",
+    "display_name": "Awilix",
+    "class_name": "Assassin",
+    "pantheon": "Maya",
+    "title": "",
+    "roles": [
+      "Jungle"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "baba_yaga": {
+    "name": "baba_yaga",
+    "display_name": "Baba Yaga",
+    "class_name": "Mage",
+    "pantheon": "Slavic",
+    "title": "",
+    "roles": [
+      "Mid"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "bacchus": {
+    "name": "bacchus",
+    "display_name": "Bacchus",
+    "class_name": "Guardian",
+    "pantheon": "Roman",
+    "title": "",
+    "roles": [
+      "Support"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "bakasura": {
+    "name": "bakasura",
+    "display_name": "Bakasura",
+    "class_name": "Assassin",
+    "pantheon": "Hindu",
+    "title": "",
+    "roles": [
+      "Jungle"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "bake_kujira": {
+    "name": "bake_kujira",
+    "display_name": "Bake Kujira",
+    "class_name": "Guardian",
+    "pantheon": "Japanese",
+    "title": "",
+    "roles": [
+      "Support"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "baron_samedi": {
+    "name": "baron_samedi",
+    "display_name": "Baron Samedi",
+    "class_name": "Mage",
+    "pantheon": "Voodoo",
+    "title": "",
+    "roles": [
+      "Mid"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "bastet": {
+    "name": "bastet",
+    "display_name": "Bastet",
+    "class_name": "Assassin",
+    "pantheon": "Egyptian",
+    "title": "",
+    "roles": [
+      "Jungle"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "bellona": {
+    "name": "bellona",
+    "display_name": "Bellona",
+    "class_name": "Warrior",
+    "pantheon": "Roman",
+    "title": "",
+    "roles": [
+      "Solo"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "cabrakan": {
+    "name": "cabrakan",
+    "display_name": "Cabrakan",
+    "class_name": "Guardian",
+    "pantheon": "Maya",
+    "title": "",
+    "roles": [
+      "Support"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "camazotz": {
+    "name": "camazotz",
+    "display_name": "Camazotz",
+    "class_name": "Assassin",
+    "pantheon": "Maya",
+    "title": "",
+    "roles": [
+      "Jungle"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "cerberus": {
+    "name": "cerberus",
+    "display_name": "Cerberus",
+    "class_name": "Guardian",
+    "pantheon": "Greek",
+    "title": "",
+    "roles": [
+      "Support"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "cernunnos": {
+    "name": "cernunnos",
+    "display_name": "Cernunnos",
+    "class_name": "Hunter",
+    "pantheon": "Celtic",
+    "title": "",
+    "roles": [
+      "ADC",
+      "Carry"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "chaac": {
+    "name": "chaac",
+    "display_name": "Chaac",
+    "class_name": "Warrior",
+    "pantheon": "Maya",
+    "title": "",
+    "roles": [
+      "Solo"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "change": {
+    "name": "change",
+    "display_name": "Chang'e",
+    "class_name": "Mage",
+    "pantheon": "Chinese",
+    "title": "",
+    "roles": [
+      "Mid"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "charon": {
+    "name": "charon",
+    "display_name": "Charon",
+    "class_name": "Guardian",
+    "pantheon": "Greek",
+    "title": "",
+    "roles": [
+      "Support"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "charybdis": {
+    "name": "charybdis",
+    "display_name": "Charybdis",
+    "class_name": "Hunter",
+    "pantheon": "Greek",
+    "title": "",
+    "roles": [
+      "ADC",
+      "Carry"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "chernobog": {
+    "name": "chernobog",
+    "display_name": "Chernobog",
+    "class_name": "Hunter",
+    "pantheon": "Slavic",
+    "title": "",
+    "roles": [
+      "ADC",
+      "Carry"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "chiron": {
+    "name": "chiron",
+    "display_name": "Chiron",
+    "class_name": "Hunter",
+    "pantheon": "Greek",
+    "title": "",
+    "roles": [
+      "ADC",
+      "Carry"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "chronos": {
+    "name": "chronos",
+    "display_name": "Chronos",
+    "class_name": "Mage",
+    "pantheon": "Greek",
+    "title": "",
+    "roles": [
+      "Mid"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "cliodhna": {
+    "name": "cliodhna",
+    "display_name": "Cliodhna",
+    "class_name": "Assassin",
+    "pantheon": "Celtic",
+    "title": "",
+    "roles": [
+      "Jungle"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "cthulhu": {
+    "name": "cthulhu",
+    "display_name": "Cthulhu",
+    "class_name": "Guardian",
+    "pantheon": "Great Old Ones",
+    "title": "",
+    "roles": [
+      "Support"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "cu_chulainn": {
+    "name": "cu_chulainn",
+    "display_name": "Cu Chulainn",
+    "class_name": "Warrior",
+    "pantheon": "Celtic",
+    "title": "",
+    "roles": [
+      "Solo"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "cupid": {
+    "name": "cupid",
+    "display_name": "Cupid",
+    "class_name": "Hunter",
+    "pantheon": "Roman",
+    "title": "",
+    "roles": [
+      "ADC",
+      "Carry"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "da_ji": {
+    "name": "da_ji",
+    "display_name": "Da Ji",
+    "class_name": "Assassin",
+    "pantheon": "Chinese",
+    "title": "",
+    "roles": [
+      "Jungle"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "danzaburou": {
+    "name": "danzaburou",
+    "display_name": "Danzaburou",
+    "class_name": "Hunter",
+    "pantheon": "Japanese",
+    "title": "",
+    "roles": [
+      "ADC",
+      "Carry"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "discordia": {
+    "name": "discordia",
+    "display_name": "Discordia",
+    "class_name": "Mage",
+    "pantheon": "Roman",
+    "title": "",
+    "roles": [
+      "Mid"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "erlang_shen": {
+    "name": "erlang_shen",
+    "display_name": "Erlang Shen",
+    "class_name": "Warrior",
+    "pantheon": "Chinese",
+    "title": "",
+    "roles": [
+      "Solo"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "eset": {
+    "name": "eset",
+    "display_name": "Eset",
+    "class_name": "Mage",
+    "pantheon": "Egyptian",
+    "title": "",
+    "roles": [
+      "Mid"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "fafnir": {
+    "name": "fafnir",
+    "display_name": "Fafnir",
+    "class_name": "Guardian",
+    "pantheon": "Norse",
+    "title": "",
+    "roles": [
+      "Support"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "fenrir": {
+    "name": "fenrir",
+    "display_name": "Fenrir",
+    "class_name": "Assassin",
+    "pantheon": "Norse",
+    "title": "",
+    "roles": [
+      "Jungle"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "freya": {
+    "name": "freya",
+    "display_name": "Freya",
+    "class_name": "Mage",
+    "pantheon": "Norse",
+    "title": "",
+    "roles": [
+      "Mid"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "ganesha": {
+    "name": "ganesha",
+    "display_name": "Ganesha",
+    "class_name": "Guardian",
+    "pantheon": "Hindu",
+    "title": "",
+    "roles": [
+      "Support"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "geb": {
+    "name": "geb",
+    "display_name": "Geb",
+    "class_name": "Guardian",
+    "pantheon": "Egyptian",
+    "title": "",
+    "roles": [
+      "Support"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "gilgamesh": {
+    "name": "gilgamesh",
+    "display_name": "Gilgamesh",
+    "class_name": "Warrior",
+    "pantheon": "Babylonian",
+    "title": "",
+    "roles": [
+      "Solo"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "guan_yu": {
+    "name": "guan_yu",
+    "display_name": "Guan Yu",
+    "class_name": "Warrior",
+    "pantheon": "Chinese",
+    "title": "",
+    "roles": [
+      "Solo"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "hachiman": {
+    "name": "hachiman",
+    "display_name": "Hachiman",
+    "class_name": "Hunter",
+    "pantheon": "Japanese",
+    "title": "",
+    "roles": [
+      "ADC",
+      "Carry"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "hades": {
+    "name": "hades",
+    "display_name": "Hades",
+    "class_name": "Mage",
+    "pantheon": "Greek",
+    "title": "",
+    "roles": [
+      "Mid"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "he_bo": {
+    "name": "he_bo",
+    "display_name": "He Bo",
+    "class_name": "Mage",
+    "pantheon": "Chinese",
+    "title": "",
+    "roles": [
+      "Mid"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "heimdallr": {
+    "name": "heimdallr",
+    "display_name": "Heimdallr",
+    "class_name": "Hunter",
+    "pantheon": "Norse",
+    "title": "",
+    "roles": [
+      "ADC",
+      "Carry"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "hel": {
+    "name": "hel",
+    "display_name": "Hel",
+    "class_name": "Mage",
+    "pantheon": "Norse",
+    "title": "",
+    "roles": [
+      "Mid"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "hera": {
+    "name": "hera",
+    "display_name": "Hera",
+    "class_name": "Mage",
+    "pantheon": "Greek",
+    "title": "",
+    "roles": [
+      "Mid"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "hercules": {
+    "name": "hercules",
+    "display_name": "Hercules",
+    "class_name": "Warrior",
+    "pantheon": "Roman",
+    "title": "",
+    "roles": [
+      "Solo"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "horus": {
+    "name": "horus",
+    "display_name": "Horus",
+    "class_name": "Warrior",
+    "pantheon": "Egyptian",
+    "title": "",
+    "roles": [
+      "Solo"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "hou_yi": {
+    "name": "hou_yi",
+    "display_name": "Hou Yi",
+    "class_name": "Hunter",
+    "pantheon": "Chinese",
+    "title": "",
+    "roles": [
+      "ADC",
+      "Carry"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "hun_batz": {
+    "name": "hun_batz",
+    "display_name": "Hun Batz",
+    "class_name": "Assassin",
+    "pantheon": "Maya",
+    "title": "",
+    "roles": [
+      "Jungle"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "ishtar": {
+    "name": "ishtar",
+    "display_name": "Ishtar",
+    "class_name": "Hunter",
+    "pantheon": "Babylonian",
+    "title": "",
+    "roles": [
+      "ADC",
+      "Carry"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "ix_chel": {
+    "name": "ix_chel",
+    "display_name": "Ix Chel",
+    "class_name": "Mage",
+    "pantheon": "Maya",
+    "title": "",
+    "roles": [
+      "Mid"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "izanami": {
+    "name": "izanami",
+    "display_name": "Izanami",
+    "class_name": "Hunter",
+    "pantheon": "Japanese",
+    "title": "",
+    "roles": [
+      "ADC",
+      "Carry"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "janus": {
+    "name": "janus",
+    "display_name": "Janus",
+    "class_name": "Mage",
+    "pantheon": "Roman",
+    "title": "",
+    "roles": [
+      "Mid"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "jing_wei": {
+    "name": "jing_wei",
+    "display_name": "Jing Wei",
+    "class_name": "Hunter",
+    "pantheon": "Chinese",
+    "title": "",
+    "roles": [
+      "ADC",
+      "Carry"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "jormungandr": {
+    "name": "jormungandr",
+    "display_name": "Jormungandr",
+    "class_name": "Guardian",
+    "pantheon": "Norse",
+    "title": "",
+    "roles": [
+      "Support"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "kali": {
+    "name": "kali",
+    "display_name": "Kali",
+    "class_name": "Assassin",
+    "pantheon": "Hindu",
+    "title": "",
+    "roles": [
+      "Jungle"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "khepri": {
+    "name": "khepri",
+    "display_name": "Khepri",
+    "class_name": "Guardian",
+    "pantheon": "Egyptian",
+    "title": "",
+    "roles": [
+      "Support"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "king_arthur": {
+    "name": "king_arthur",
+    "display_name": "King Arthur",
+    "class_name": "Warrior",
+    "pantheon": "Arthurian",
+    "title": "",
+    "roles": [
+      "Solo"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "kukulkan": {
+    "name": "kukulkan",
+    "display_name": "Kukulkan",
+    "class_name": "Mage",
+    "pantheon": "Maya",
+    "title": "",
+    "roles": [
+      "Mid"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "kumbhakarna": {
+    "name": "kumbhakarna",
+    "display_name": "Kumbhakarna",
+    "class_name": "Guardian",
+    "pantheon": "Hindu",
+    "title": "",
+    "roles": [
+      "Support"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "kuzenbo": {
+    "name": "kuzenbo",
+    "display_name": "Kuzenbo",
+    "class_name": "Guardian",
+    "pantheon": "Japanese",
+    "title": "",
+    "roles": [
+      "Support"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "lancelot": {
+    "name": "lancelot",
+    "display_name": "Lancelot",
+    "class_name": "Assassin",
+    "pantheon": "Arthurian",
+    "title": "",
+    "roles": [
+      "Jungle"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "loki": {
+    "name": "loki",
+    "display_name": "Loki",
+    "class_name": "Assassin",
+    "pantheon": "Norse",
+    "title": "",
+    "roles": [
+      "Jungle"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "maman_brigitte": {
+    "name": "maman_brigitte",
+    "display_name": "Maman Brigitte",
+    "class_name": "Mage",
+    "pantheon": "Voodoo",
+    "title": "",
+    "roles": [
+      "Mid"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "martichoras": {
+    "name": "martichoras",
+    "display_name": "Martichoras",
+    "class_name": "Hunter",
+    "pantheon": "Greek",
+    "title": "",
+    "roles": [
+      "ADC",
+      "Carry"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "maui": {
+    "name": "maui",
+    "display_name": "Maui",
+    "class_name": "Guardian",
+    "pantheon": "Polynesian",
+    "title": "",
+    "roles": [
+      "Support"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "medusa": {
+    "name": "medusa",
+    "display_name": "Medusa",
+    "class_name": "Hunter",
+    "pantheon": "Greek",
+    "title": "",
+    "roles": [
+      "ADC",
+      "Carry"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "mercury": {
+    "name": "mercury",
+    "display_name": "Mercury",
+    "class_name": "Assassin",
+    "pantheon": "Roman",
+    "title": "",
+    "roles": [
+      "Jungle"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "merlin": {
+    "name": "merlin",
+    "display_name": "Merlin",
+    "class_name": "Mage",
+    "pantheon": "Arthurian",
+    "title": "",
+    "roles": [
+      "Mid"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "morgan_le_fay": {
+    "name": "morgan_le_fay",
+    "display_name": "Morgan Le Fay",
+    "class_name": "Mage",
+    "pantheon": "Arthurian",
+    "title": "",
+    "roles": [
+      "Mid"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "mulan": {
+    "name": "mulan",
+    "display_name": "Mulan",
+    "class_name": "Warrior",
+    "pantheon": "Chinese",
+    "title": "",
+    "roles": [
+      "Solo"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "ne_zha": {
+    "name": "ne_zha",
+    "display_name": "Ne Zha",
+    "class_name": "Assassin",
+    "pantheon": "Chinese",
+    "title": "",
+    "roles": [
+      "Jungle"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "neith": {
+    "name": "neith",
+    "display_name": "Neith",
+    "class_name": "Hunter",
+    "pantheon": "Egyptian",
+    "title": "",
+    "roles": [
+      "ADC",
+      "Carry"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "nemesis": {
+    "name": "nemesis",
+    "display_name": "Nemesis",
+    "class_name": "Assassin",
+    "pantheon": "Greek",
+    "title": "",
+    "roles": [
+      "Jungle"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "nike": {
+    "name": "nike",
+    "display_name": "Nike",
+    "class_name": "Warrior",
+    "pantheon": "Greek",
+    "title": "",
+    "roles": [
+      "Solo"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "nox": {
+    "name": "nox",
+    "display_name": "Nox",
+    "class_name": "Mage",
+    "pantheon": "Roman",
+    "title": "",
+    "roles": [
+      "Mid"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "nu_wa": {
+    "name": "nu_wa",
+    "display_name": "Nu Wa",
+    "class_name": "Mage",
+    "pantheon": "Chinese",
+    "title": "",
+    "roles": [
+      "Mid"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "nut": {
+    "name": "nut",
+    "display_name": "Nut",
+    "class_name": "Hunter",
+    "pantheon": "Egyptian",
+    "title": "",
+    "roles": [
+      "ADC",
+      "Carry"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "odin": {
+    "name": "odin",
+    "display_name": "Odin",
+    "class_name": "Warrior",
+    "pantheon": "Norse",
+    "title": "",
+    "roles": [
+      "Solo"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "olorun": {
+    "name": "olorun",
+    "display_name": "Olorun",
+    "class_name": "Mage",
+    "pantheon": "Yoruba",
+    "title": "",
+    "roles": [
+      "Mid"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "osiris": {
+    "name": "osiris",
+    "display_name": "Osiris",
+    "class_name": "Warrior",
+    "pantheon": "Egyptian",
+    "title": "",
+    "roles": [
+      "Solo"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "pele": {
+    "name": "pele",
+    "display_name": "Pele",
+    "class_name": "Assassin",
+    "pantheon": "Polynesian",
+    "title": "",
+    "roles": [
+      "Jungle"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "persephone": {
+    "name": "persephone",
+    "display_name": "Persephone",
+    "class_name": "Mage",
+    "pantheon": "Greek",
+    "title": "",
+    "roles": [
+      "Mid"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "poseidon": {
+    "name": "poseidon",
+    "display_name": "Poseidon",
+    "class_name": "Mage",
+    "pantheon": "Greek",
+    "title": "",
+    "roles": [
+      "Mid"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "ra": {
+    "name": "ra",
+    "display_name": "Ra",
+    "class_name": "Mage",
+    "pantheon": "Egyptian",
+    "title": "",
+    "roles": [
+      "Mid"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "raijin": {
+    "name": "raijin",
+    "display_name": "Raijin",
+    "class_name": "Mage",
+    "pantheon": "Japanese",
+    "title": "",
+    "roles": [
+      "Mid"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "rama": {
+    "name": "rama",
+    "display_name": "Rama",
+    "class_name": "Hunter",
+    "pantheon": "Hindu",
+    "title": "",
+    "roles": [
+      "ADC",
+      "Carry"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "ratatoskr": {
+    "name": "ratatoskr",
+    "display_name": "Ratatoskr",
+    "class_name": "Assassin",
+    "pantheon": "Norse",
+    "title": "",
+    "roles": [
+      "Jungle"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "ravana": {
+    "name": "ravana",
+    "display_name": "Ravana",
+    "class_name": "Assassin",
+    "pantheon": "Hindu",
+    "title": "",
+    "roles": [
+      "Jungle"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "scylla": {
+    "name": "scylla",
+    "display_name": "Scylla",
+    "class_name": "Mage",
+    "pantheon": "Greek",
+    "title": "",
+    "roles": [
+      "Mid"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "serqet": {
+    "name": "serqet",
+    "display_name": "Serqet",
+    "class_name": "Assassin",
+    "pantheon": "Egyptian",
+    "title": "",
+    "roles": [
+      "Jungle"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "set": {
+    "name": "set",
+    "display_name": "Set",
+    "class_name": "Assassin",
+    "pantheon": "Egyptian",
+    "title": "",
+    "roles": [
+      "Jungle"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "shiva": {
+    "name": "shiva",
+    "display_name": "Shiva",
+    "class_name": "Warrior",
+    "pantheon": "Hindu",
+    "title": "",
+    "roles": [
+      "Solo"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "skadi": {
+    "name": "skadi",
+    "display_name": "Skadi",
+    "class_name": "Hunter",
+    "pantheon": "Norse",
+    "title": "",
+    "roles": [
+      "ADC",
+      "Carry"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "sobek": {
+    "name": "sobek",
+    "display_name": "Sobek",
+    "class_name": "Guardian",
+    "pantheon": "Egyptian",
+    "title": "",
+    "roles": [
+      "Support"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "sol": {
+    "name": "sol",
+    "display_name": "Sol",
+    "class_name": "Mage",
+    "pantheon": "Norse",
+    "title": "",
+    "roles": [
+      "Mid"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "sun_wukong": {
+    "name": "sun_wukong",
+    "display_name": "Sun Wukong",
+    "class_name": "Warrior",
+    "pantheon": "Chinese",
+    "title": "",
+    "roles": [
+      "Solo"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "surtr": {
+    "name": "surtr",
+    "display_name": "Surtr",
+    "class_name": "Warrior",
+    "pantheon": "Norse",
+    "title": "",
+    "roles": [
+      "Solo"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "susano": {
+    "name": "susano",
+    "display_name": "Susano",
+    "class_name": "Assassin",
+    "pantheon": "Japanese",
+    "title": "",
+    "roles": [
+      "Jungle"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "sylvanus": {
+    "name": "sylvanus",
+    "display_name": "Sylvanus",
+    "class_name": "Guardian",
+    "pantheon": "Roman",
+    "title": "",
+    "roles": [
+      "Support"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "terra": {
+    "name": "terra",
+    "display_name": "Terra",
+    "class_name": "Guardian",
+    "pantheon": "Roman",
+    "title": "",
+    "roles": [
+      "Support"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "thanatos": {
+    "name": "thanatos",
+    "display_name": "Thanatos",
+    "class_name": "Assassin",
+    "pantheon": "Greek",
+    "title": "",
+    "roles": [
+      "Jungle"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "the_morrigan": {
+    "name": "the_morrigan",
+    "display_name": "The Morrigan",
+    "class_name": "Mage",
+    "pantheon": "Celtic",
+    "title": "",
+    "roles": [
+      "Mid"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "thor": {
+    "name": "thor",
+    "display_name": "Thor",
+    "class_name": "Assassin",
+    "pantheon": "Norse",
+    "title": "",
+    "roles": [
+      "Jungle"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "thoth": {
+    "name": "thoth",
+    "display_name": "Thoth",
+    "class_name": "Mage",
+    "pantheon": "Egyptian",
+    "title": "",
+    "roles": [
+      "Mid"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "tiamat": {
+    "name": "tiamat",
+    "display_name": "Tiamat",
+    "class_name": "Mage",
+    "pantheon": "Babylonian",
+    "title": "",
+    "roles": [
+      "Mid"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "tsukuyomi": {
+    "name": "tsukuyomi",
+    "display_name": "Tsukuyomi",
+    "class_name": "Assassin",
+    "pantheon": "Japanese",
+    "title": "",
+    "roles": [
+      "Jungle"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "tyr": {
+    "name": "tyr",
+    "display_name": "Tyr",
+    "class_name": "Warrior",
+    "pantheon": "Norse",
+    "title": "",
+    "roles": [
+      "Solo"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "ullr": {
+    "name": "ullr",
+    "display_name": "Ullr",
+    "class_name": "Hunter",
+    "pantheon": "Norse",
+    "title": "",
+    "roles": [
+      "ADC",
+      "Carry"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "vamana": {
+    "name": "vamana",
+    "display_name": "Vamana",
+    "class_name": "Warrior",
+    "pantheon": "Hindu",
+    "title": "",
+    "roles": [
+      "Solo"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "vulcan": {
+    "name": "vulcan",
+    "display_name": "Vulcan",
+    "class_name": "Mage",
+    "pantheon": "Roman",
+    "title": "",
+    "roles": [
+      "Mid"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "xbalanque": {
+    "name": "xbalanque",
+    "display_name": "Xbalanque",
+    "class_name": "Hunter",
+    "pantheon": "Maya",
+    "title": "",
+    "roles": [
+      "ADC",
+      "Carry"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "xing_tian": {
+    "name": "xing_tian",
+    "display_name": "Xing Tian",
+    "class_name": "Guardian",
+    "pantheon": "Chinese",
+    "title": "",
+    "roles": [
+      "Support"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "yemoja": {
+    "name": "yemoja",
+    "display_name": "Yemoja",
+    "class_name": "Guardian",
+    "pantheon": "Yoruba",
+    "title": "",
+    "roles": [
+      "Support"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "ymir": {
+    "name": "ymir",
+    "display_name": "Ymir",
+    "class_name": "Guardian",
+    "pantheon": "Norse",
+    "title": "",
+    "roles": [
+      "Support"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "yu_huang": {
+    "name": "yu_huang",
+    "display_name": "Yu Huang",
+    "class_name": "Mage",
+    "pantheon": "Chinese",
+    "title": "",
+    "roles": [
+      "Mid"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "zeus": {
+    "name": "zeus",
+    "display_name": "Zeus",
+    "class_name": "Mage",
+    "pantheon": "Greek",
+    "title": "",
+    "roles": [
+      "Mid"
+    ],
+    "abilities": [],
+    "image_path": ""
+  },
+  "zhong_kui": {
+    "name": "zhong_kui",
+    "display_name": "Zhong Kui",
+    "class_name": "Mage",
+    "pantheon": "Chinese",
+    "title": "",
+    "roles": [
+      "Mid"
+    ],
+    "abilities": [],
+    "image_path": ""
+  }
+}
