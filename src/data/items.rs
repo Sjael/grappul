@@ -1,14 +1,15 @@
-use std::collections::HashMap;
+use std::collections::{HashMap, BTreeMap};
 use serde::{Deserialize, Serialize};
 use once_cell::sync::Lazy;
 
-#[derive(Debug, Clone, Serialize, Deserialize, PartialEq, Eq, Hash)]
+#[derive(Debug, Clone, Serialize, Deserialize, PartialEq, Eq, Hash, PartialOrd, Ord)]
 pub enum ItemStat {
+    BasicAttackDamage,
     PhysicalPower,
     MagicalPower,
+    Health,
     PhysicalProtection,
     MagicalProtection,
-    Health,
     Mana,
     HP5,
     MP5,
@@ -17,11 +18,20 @@ pub enum ItemStat {
     MagicalLifesteal,
     PhysicalPenetration,
     MagicalPenetration,
+    PhysicalPenetrationPercent,
+    MagicalPenetrationPercent,
     CriticalStrikeChance,
     CooldownReduction,
     MovementSpeed,
-    BasicAttackDamage,
     DamageReduction,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize, PartialEq, Eq, Hash, PartialOrd, Ord)]
+pub enum Effect {
+    Passive,
+    Active,
+    Glyph,
+    Aura,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize, PartialEq)]
@@ -45,7 +55,7 @@ pub struct Item {
     #[serde(default)]
     pub stats: HashMap<ItemStat, i32>,
     #[serde(default)]
-    pub effects: Vec<String>,
+    pub effects: BTreeMap<Effect, String>,
     #[serde(default)]
     pub tags: Vec<ItemTag>,
 }

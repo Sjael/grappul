@@ -3,39 +3,39 @@
     {
       "god_id": "agni",
       "role": "mid",
-      "build": ["s_pendulum", "spearmagus", "spearofdeso", "myrdin", "tahuti_calamitous", "obshard"],
-      "relics": ["beads", "aegis"],
+      "build": ["pendulum_of_ages", "spear_of_the_magus", "spear_of_desolation", "staff_of_myrddin", "calamitous_rod_of_tahuti", "obsidian_shard"],
+      "relics": ["purification_beads", "aegis_amulet"],
       "timeline": [
-        {"percent": 0, "items": ["s_sands", "magic-focus"], "tip": null},
-        {"percent": 15, "items": ["spearmagus"], "tip": null},
-        {"percent": 30, "items": ["spearofdeso"], "tip": null},
-        {"percent": 45, "items": ["myrdin"], "tip": null},
-        {"percent": 60, "items": ["tahuti"], "tip": null},
-        {"percent": 75, "items": ["s_pendulum"], "tip": null},
-        {"percent": 90, "items": ["tahuti_calamitous"], "tip": null},
-        {"percent": 100, "items": ["obshard"], "tip": null}
+        {"percent": 0, "items": ["sands_of_time", "magic_focus"], "tip": null},
+        {"percent": 15, "items": ["spear_of_the_magus"], "tip": null},
+        {"percent": 30, "items": ["spear_of_desolation"], "tip": null},
+        {"percent": 45, "items": ["staff_of_myrddin"], "tip": null},
+        {"percent": 60, "items": ["rod_of_tahuti"], "tip": null},
+        {"percent": 75, "items": ["pendulum_of_ages"], "tip": null},
+        {"percent": 90, "items": ["calamitous_rod_of_tahuti"], "tip": null},
+        {"percent": 100, "items": ["obsidian_shard"], "tip": null}
       ],
-      "skill_order": [],
-      "strategy": "## Build Reasoning\n\n- **Flat Pen early** for wave clear and easy kills\n- Build **spearmagus** because our main damage is from combos\n- **tahuti_calamitous** synergizes perfectly with our fumes combo\n- **myrdin** is ideal for ult-initiating gods, perfect for meteor\n- If the enemy team has any healing whatsoever, **divine** first is needed, and it's a cheap easy spike\n\n## Tips and Tricks\n\n- Late game, don't use meteor to clear if Fire Giant is being contested, as you will lose myrdin buff for the fight\n- In Conquest, start red and ditch speed to fdash first wave safely"
+      "skill_order": [3,2,2,1,4,    2,2,3,4,2,  3,3,4,3,1,  1,4,1,1,4],
+      "strategy": "## Build Reasoning\n\n- **Flat Pen early** for wave clear and easy kills\n- Build **spear_of_the_magus** because our main damage is from combos\n- **calamitous_rod_of_tahuti** synergizes perfectly with our fumes combo\n- **staff_of_myrddin** is ideal for ult-initiating gods, perfect for meteor\n- If the enemy team has any healing whatsoever, **divine** first is needed, and it's a cheap easy spike\n\n## Tips and Tricks\n\n- Late game, don't use meteor to clear if Fire Giant is being contested, as you will lose myrdin buff for the fight\n- In Conquest, start red and ditch speed to fdash first wave safely"
     }
   ],
   "chaac": [
     {
       "god_id": "chaac",
       "role": "mid",
-      "build": ["crusher", "jotunnsvigor", "trans", "souleater2", "heartseeker", "titans"],
-      "relics": ["blink", "beads"],
+      "build": ["the_crusher", "jotunns_vigor", "transcendence", "evolved_soul_eater", "heartseeker", "titans_bane"],
+      "relics": ["blink_rune", "purification_beads"],
       "timeline": [
-        {"percent": 0, "items": ["s_warriors", "mace"], "tip": null},
-        {"percent": 15, "items": ["jotunns"], "tip": null},
-        {"percent": 30, "items": ["trans"], "tip": null},
-        {"percent": 45, "items": ["souleater"], "tip": null},
-        {"percent": 60, "items": ["jotunnsvigor"], "tip": null},
+        {"percent": 0, "items": ["warriors_axe", "mace"], "tip": null},
+        {"percent": 15, "items": ["jotunns_vigor"], "tip": null},
+        {"percent": 30, "items": ["transcendence"], "tip": null},
+        {"percent": 45, "items": ["soul_eater"], "tip": null},
+        {"percent": 60, "items": ["jotunns_vigor"], "tip": null},
         {"percent": 75, "items": ["heartseeker"], "tip": null},
-        {"percent": 90, "items": ["titans"], "tip": null},
-        {"percent": 100, "items": ["crusher"], "tip": null}
+        {"percent": 90, "items": ["titans_bane"], "tip": null},
+        {"percent": 100, "items": ["the_crusher"], "tip": null}
       ],
-      "skill_order": [],
+      "skill_order": [1,2,2,3,4,    2,2,1,2,1,  1,1,4,4,3,  3,4,3,3,4],
       "strategy": null
     }
   ],
@@ -43,19 +43,19 @@
     {
       "god_id": "cliodhna",
       "role": "mid",
-      "build": ["s_bluestonebrooch", "souleater2", "crusher", "jotunnsvigor", "arondight", "titans"],
-      "relics": ["blink", "beads"],
+      "build": ["bluestone_brooch", "evolved_soul_eater", "the_crusher", "jotunns_vigor", "arondight", "titans_bane"],
+      "relics": ["blink_rune", "purification_beads"],
       "timeline": [
-        {"percent": 0, "items": ["s_bluestone", "spiked"], "tip": null},
-        {"percent": 15, "items": ["souleater"], "tip": null},
-        {"percent": 30, "items": ["crusher"], "tip": null},
-        {"percent": 45, "items": ["jotunns"], "tip": null},
-        {"percent": 60, "items": ["jotunnsvigor"], "tip": null},
+        {"percent": 0, "items": ["bluestone_pendant", "spiked_gauntlet"], "tip": null},
+        {"percent": 15, "items": ["soul_eater"], "tip": null},
+        {"percent": 30, "items": ["the_crusher"], "tip": null},
+        {"percent": 45, "items": ["jotunns_vigor"], "tip": null},
+        {"percent": 60, "items": ["jotunns_vigor"], "tip": null},
         {"percent": 75, "items": ["arondight"], "tip": null},
-        {"percent": 90, "items": ["s_bluestonebrooch"], "tip": null},
-        {"percent": 100, "items": ["titans"], "tip": null}
+        {"percent": 90, "items": ["bluestone_brooch"], "tip": null},
+        {"percent": 100, "items": ["titans_bane"], "tip": null}
       ],
-      "skill_order": [],
+      "skill_order": [3,1,2,3,4,    3,3,1,4,3,  1,1,1,4,2,  2,4,2,2,4],
       "strategy": null
     }
   ],
@@ -63,17 +63,17 @@
     {
       "god_id": "freya",
       "role": "adc",
-      "build": ["s_conduit", "fatalis", "demonic", "bancroftsclaw", "typhons", "tahuti"],
-      "relics": ["beads", "aegis"],
+      "build": ["conduit_gem", "hastened_fatalis", "demonic_grip", "bancrofts_claw", "typhons_fang", "rod_of_tahuti"],
+      "relics": ["purification_beads", "aegis_amulet"],
       "timeline": [
-        {"percent": 0, "items": ["s_conduit", "magic-focus"], "tip": null},
-        {"percent": 15, "items": ["fatalis"], "tip": null},
-        {"percent": 30, "items": ["demonic"], "tip": null},
-        {"percent": 45, "items": ["bancroftsclaw"], "tip": null},
-        {"percent": 60, "items": ["typhons"], "tip": null},
-        {"percent": 75, "items": ["tahuti"], "tip": null}
+        {"percent": 0, "items": ["conduit_gem", "magic_focus"], "tip": null},
+        {"percent": 15, "items": ["hastened_fatalis"], "tip": null},
+        {"percent": 30, "items": ["demonic_grip"], "tip": null},
+        {"percent": 45, "items": ["bancrofts_claw"], "tip": null},
+        {"percent": 60, "items": ["typhons_fang"], "tip": null},
+        {"percent": 75, "items": ["rod_of_tahuti"], "tip": null}
       ],
-      "skill_order": [],
+      "skill_order": [2,1,2,3,4,    2,2,1,2,1,  1,1,4,3,4,  3,4,3,3,4],
       "strategy": null
     }
   ],
@@ -81,18 +81,18 @@
     {
       "god_id": "eset",
       "role": "support",
-      "build": ["s_lonos", "stoneofbinding", "thebes2", "pridwen", "spiritrobe", "soulreaver"],
-      "relics": ["shell", "ankh"],
+      "build": ["lonos_mask", "stone_of_binding", "evolved_gauntlet_of_thebes", "pridwen", "spirit_robe", "soul_reaver"],
+      "relics": ["magic_shell", "amulet_of_silence"],
       "timeline": [
-        {"percent": 0, "items": ["s_protectors", "druidstone"], "tip": null},
-        {"percent": 15, "items": ["stoneofbinding"], "tip": null},
-        {"percent": 30, "items": ["thebes"], "tip": null},
+        {"percent": 0, "items": ["protectors_mask", "druid_stone"], "tip": null},
+        {"percent": 15, "items": ["stone_of_binding"], "tip": null},
+        {"percent": 30, "items": ["gauntlet_of_thebes"], "tip": null},
         {"percent": 45, "items": ["pridwen"], "tip": null},
-        {"percent": 60, "items": ["spiritrobe"], "tip": null},
-        {"percent": 75, "items": ["s_lonos"], "tip": null},
-        {"percent": 90, "items": ["soulreaver"], "tip": null}
+        {"percent": 60, "items": ["spirit_robe"], "tip": null},
+        {"percent": 75, "items": ["lonos_mask"], "tip": null},
+        {"percent": 90, "items": ["soul_reaver"], "tip": null}
       ],
-      "skill_order": [],
+      "skill_order": [2,3,1,2,4,    1,1,3,1,3,  3,3,4,4,2,  2,4,2,2,4],
       "strategy": null
     }
   ],
@@ -100,66 +100,66 @@
     {
       "god_id": "he_bo",
       "role": "jungle",
-      "build": ["s_bumbasspear", "spearmagus", "tahuti_perfected", "spearofdeso", "obshard", "soulreaver"],
-      "relics": ["blink", "beads"],
+      "build": ["bumbas_spear", "spear_of_the_magus", "perfected_rod_of_tahuti", "spear_of_desolation", "obsidian_shard", "soul_reaver"],
+      "relics": ["blink_rune", "purification_beads"],
       "timeline": [
-        {"percent": 0, "items": ["s_bumbas", "magic-focus"], "tip": null},
-        {"percent": 15, "items": ["spearmagus"], "tip": null},
-        {"percent": 30, "items": ["tahuti"], "tip": null},
-        {"percent": 45, "items": ["tahuti_perfected"], "tip": null},
-        {"percent": 60, "items": ["spearofdeso"], "tip": null},
-        {"percent": 75, "items": ["obshard"], "tip": null},
-        {"percent": 90, "items": ["s_bumbasspear"], "tip": null},
-        {"percent": 100, "items": ["soulreaver"], "tip": null}
+        {"percent": 0, "items": ["bumbas_dagger", "magic_focus"], "tip": null},
+        {"percent": 15, "items": ["spear_of_the_magus"], "tip": null},
+        {"percent": 30, "items": ["rod_of_tahuti"], "tip": null},
+        {"percent": 45, "items": ["perfected_rod_of_tahuti"], "tip": null},
+        {"percent": 60, "items": ["spear_of_desolation"], "tip": null},
+        {"percent": 75, "items": ["obsidian_shard"], "tip": null},
+        {"percent": 90, "items": ["bumbas_spear"], "tip": null},
+        {"percent": 100, "items": ["soul_reaver"], "tip": null}
       ],
-      "skill_order": [],
-      "strategy": "## Build Philosophy\n\n- **Full Lifesteal** - your best defense is a good offense on He Bo\n- **spearmagus** gives us massive damage after waterspout\n- **Full % Penetration** for damage on tanks\n- **s_bumbasspear** gives great Fire Giant Secure\n\n## Important Tips\n\n- Don't waterspout instantly into crushing_wave, you will go under the enemy\n- Save river to cleanse slows or you're throwing\n- If you can, use water_cannon before ulting\n- crushing_wave + bancrofts gives 1/2 of your health back if low"
+      "skill_order": [1,3,1,2,4,    1,1,3,4,1,  3,3,4,3,2,  2,4,2,2,4],
+      "strategy": "## Build Philosophy\n\n- **Full Lifesteal** - your best defense is a good offense on He Bo\n- **spear_of_the_magus** gives us massive damage after waterspout\n- **Full % Penetration** for damage on tanks\n- **bumbas_spear** gives great Fire Giant Secure\n\n## Important Tips\n\n- Don't waterspout instantly into crushing_wave, you will go under the enemy\n- Save river to cleanse slows or you're throwing\n- If you can, use water_cannon before ulting\n- crushing_wave + bancrofts gives 1/2 of your health back if low"
     }
   ],
   "poseidon": [
     {
       "god_id": "poseidon",
       "role": "mid",
-      "build": ["s_pendulum", "bookofthoth2", "spearmagus", "myrdin", "spearofdeso", "obshard"],
-      "relics": ["beads", "aegis"],
+      "build": ["pendulum_of_ages", "evolved_book_of_thoth", "spear_of_the_magus", "staff_of_myrddin", "spear_of_desolation", "obsidian_shard"],
+      "relics": ["purification_beads", "aegis_amulet"],
       "timeline": [
-        {"percent": 0, "items": ["s_sands", "spellbook"], "tip": null},
-        {"percent": 15, "items": ["bookofthoth"], "tip": null},
-        {"percent": 30, "items": ["spearmagus"], "tip": null},
-        {"percent": 45, "items": ["myrdin"], "tip": null},
-        {"percent": 60, "items": ["spearofdeso"], "tip": null},
-        {"percent": 75, "items": ["s_pendulum"], "tip": null},
-        {"percent": 90, "items": ["obshard"], "tip": null},
-        {"percent": 100, "items": ["powerpot"], "tip": null}
+        {"percent": 0, "items": ["sands_of_time", "spellbook"], "tip": null},
+        {"percent": 15, "items": ["book_of_thoth"], "tip": null},
+        {"percent": 30, "items": ["spear_of_the_magus"], "tip": null},
+        {"percent": 45, "items": ["staff_of_myrddin"], "tip": null},
+        {"percent": 60, "items": ["spear_of_desolation"], "tip": null},
+        {"percent": 75, "items": ["pendulum_of_ages"], "tip": null},
+        {"percent": 90, "items": ["obsidian_shard"], "tip": null},
+        {"percent": 100, "items": ["potion_of_power"], "tip": null}
       ],
-      "skill_order": [],
+      "skill_order": [1,3,2,3,4,    3,2,2,4,2,  3,2,4,1,1,  1,4,1,3,4],
       "strategy": null
     },
     {
       "god_id": "poseidon",
       "role": "jungle",
-      "build": ["s_bumbasspear", "fatalis", "spearofdeso", "bancrofts", "typhons", "tahuti"],
-      "relics": ["beads", "aegis"],
+      "build": ["bumbas_spear", "hastened_fatalis", "spear_of_desolation", "bancrofts_claw", "typhons_fang", "rod_of_tahuti"],
+      "relics": ["purification_beads", "aegis_amulet"],
       "timeline": [
-        {"percent": 0, "items": ["s_sands", "spellbook"], "tip": null},
-        {"percent": 15, "items": ["bookofthoth"], "tip": null},
-        {"percent": 30, "items": ["spearmagus"], "tip": null},
-        {"percent": 45, "items": ["myrdin"], "tip": null},
-        {"percent": 60, "items": ["spearofdeso"], "tip": null},
-        {"percent": 75, "items": ["s_pendulum"], "tip": null},
-        {"percent": 90, "items": ["obshard"], "tip": null},
-        {"percent": 100, "items": ["powerpot"], "tip": null}
+        {"percent": 0, "items": ["sands_of_time", "spellbook"], "tip": null},
+        {"percent": 15, "items": ["book_of_thoth"], "tip": null},
+        {"percent": 30, "items": ["spear_of_the_magus"], "tip": null},
+        {"percent": 45, "items": ["staff_of_myrddin"], "tip": null},
+        {"percent": 60, "items": ["spear_of_desolation"], "tip": null},
+        {"percent": 75, "items": ["pendulum_of_ages"], "tip": null},
+        {"percent": 90, "items": ["obsidian_shard"], "tip": null},
+        {"percent": 100, "items": ["potion_of_power"], "tip": null}
       ],
-      "skill_order": [],
+      "skill_order": [1,3,2,3,4,    3,2,2,4,2,  3,2,4,1,1,  1,4,1,3,4],
       "strategy": null
     },
     {
       "god_id": "poseidon",
       "role": "adc",
-      "build": ["s_pendulum", "fatalis", "spearofdeso", "bancrofts", "typhons", "tahuti"],
-      "relics": ["beads", "blink"],
+      "build": ["pendulum_of_ages", "hastened_fatalis", "spear_of_desolation", "bancrofts_claw", "typhons_fang", "rod_of_tahuti"],
+      "relics": ["purification_beads", "blink_rune"],
       "timeline": [],
-      "skill_order": [],
+      "skill_order": [1,3,2,3,4,    3,2,2,4,2,  3,2,4,1,1,  1,4,1,3,4],
       "strategy": null
     }
   ],
@@ -167,19 +167,18 @@
     {
       "god_id": "mercury",
       "role": "jungle",
-      "build": ["dom", "rage2", "winddemon", "db_envenom", "asi", "serrated"],
-      "relics": ["blink", "beads"],
+      "build": ["seer_of_the_jungle", "evolved_rage", "devoted_deathbringer", "fail_not", "serrated_edge", "asi"],
+      "relics": ["blink_rune", "purification_beads"],
       "timeline": [
-        {"percent": 0, "items": ["s_eye", "hiddendag"], "tip": null},
+        {"percent": 0, "items": ["eye_of_the_jungle", "hidden_dagger"], "tip": null},
         {"percent": 15, "items": ["rage"], "tip": null},
-        {"percent": 30, "items": ["winddemon"], "tip": null},
-        {"percent": 45, "items": ["deathbringer"], "tip": null},
-        {"percent": 60, "items": ["asi"], "tip": null},
-        {"percent": 75, "items": ["serrated"], "tip": null},
-        {"percent": 90, "items": ["dom"], "tip": null},
-        {"percent": 100, "items": ["db_envenom"], "tip": null}
+        {"percent": 30, "items": ["devoted_deathbringer"], "tip": null},
+        {"percent": 60, "items": ["fail_not"], "tip": null},
+        {"percent": 75, "items": ["serrated_edge"], "tip": null},
+        {"percent": 100, "items": ["seer_of_the_jungle"], "tip": null},
+        {"percent": 90, "items": ["asi"], "tip": null}
       ],
-      "skill_order": [],
+      "skill_order": [1,3,1,2,4,    1,1,2,1,2,  2,2,4,4,3,  3,4,3,3,4],
       "strategy": null
     }
   ],
@@ -187,18 +186,18 @@
     {
       "god_id": "thanatos",
       "role": "jungle",
-      "build": ["s_hidden", "jotunns", "hydras", "arondight", "titans", "heartseeker"],
-      "relics": ["blink", "beads"],
+      "build": ["manikin_hidden_blade", "jotunns_vigor", "hydras_lament", "arondight", "titans_bane", "heartseeker"],
+      "relics": ["blink_rune", "purification_beads"],
       "timeline": [
-        {"percent": 0, "items": ["s_manikin", "mace"], "tip": null},
-        {"percent": 15, "items": ["jotunns"], "tip": null},
-        {"percent": 30, "items": ["hydras"], "tip": null},
+        {"percent": 0, "items": ["manikin_mace", "mace"], "tip": null},
+        {"percent": 15, "items": ["jotunns_vigor"], "tip": null},
+        {"percent": 30, "items": ["hydras_lament"], "tip": null},
         {"percent": 45, "items": ["arondight"], "tip": null},
-        {"percent": 60, "items": ["titans"], "tip": null},
-        {"percent": 75, "items": ["s_hidden"], "tip": null},
-        {"percent": 90, "items": ["dom"], "tip": null}
+        {"percent": 60, "items": ["titans_bane"], "tip": null},
+        {"percent": 75, "items": ["manikin_hidden_blade"], "tip": null},
+        {"percent": 90, "items": ["dominance"], "tip": null}
       ],
-      "skill_order": [],
+      "skill_order": [1,2,3,1,4,    1,1,2,1,2,  2,2,4,4,3,  3,4,3,3,4],
       "strategy": null
     }
   ]

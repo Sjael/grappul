@@ -40,7 +40,7 @@ fn render_item_row(items: &[String], size: Option<u32>) -> Element {
 fn skill_point(skill_order: &[u8], skill_idx: usize, i: usize) -> Element {
     let mut level = None;
     for (level_idx, &skill) in skill_order.iter().enumerate() {
-        if skill as usize == skill_idx && level_idx == i {
+        if skill as usize == (skill_idx + 1) && level_idx == i {
             level = Some(level_idx + 1);
             break;
         }
@@ -66,7 +66,7 @@ fn skill_row(ability: &str, skill_order: &[u8], skill_idx: usize) -> Element {
     rsx! {
         div {
             class: "skillrow",
-            Ability { ab: ability.to_string(), size: 24 }
+            Ability { ab: ability.to_string(), size: 32 }
             for i in 0..20 {
                 {skill_point(&skill_order, skill_idx, i)}
             }
@@ -94,8 +94,8 @@ pub fn Explain() -> Element {
 
     let builds = GUIDES.get(&god_name);
 
-    // Get the skill order for this god
-    let skill_order = SKILL_ORDER.get(&god_name).unwrap_or(&vec![]).clone();
+    // Get the skill order for this god (will be updated later based on selected build)
+    let default_skill_order = SKILL_ORDER.get(&god_name).unwrap_or(&vec![]).clone();
 
     let display_name = god_name.replace("_", " ");
 
@@ -266,9 +266,13 @@ pub fn Explain() -> Element {
                         class: {
                             if role_name == build.role { "role-button selected" } else { "role-button" }
                         },
-                        onclick: move |_| {
-                            selected_role.set(SelectedRole(Some(role_name.clone())));
-                            selected_build_role.set(role_name.clone());
+                        onclick: {
+                            let role = role_name.clone();
+                            let role2 = role_name.clone();
+                            move |_| {
+                                selected_role.set(SelectedRole(Some(role.clone())));
+                                selected_build_role.set(role2.clone());
+                            }
                         },
                         "{role_name}"
                     }
@@ -305,18 +309,35 @@ pub fn Explain() -> Element {
 
             h5 { "Timeline" }
             div {
+                key: "{build.role}_{god_name}_timeline",
                 class: "timeline",
                 for (i, entry) in build.timeline.iter().enumerate() {
-                    TimelinePiece { key: "{i}", entry: entry.clone() }
+                    TimelinePiece { 
+                        key: "{build.role}_{god_name}_{i}_{entry.percent}", 
+                        entry: entry.clone() 
+                    }
                 }
             }
 
 
             h5 { "Skill Order" }
-            div {
-                class: "grid_hold",
-                for (skill_idx, ability) in god_info.abilities.iter().enumerate() {
-                    {skill_row(ability, &skill_order, skill_idx + 1)}
+            {
+                // Use build-specific skill order if available, otherwise fall back to default
+                let skill_order_to_use = if !build.skill_order.is_empty() {
+                    &build.skill_order
+                } else {
+                    &default_skill_order
+                };
+                
+                rsx! {
+                    div {
+                        key: "{build.role}_{god_name}",
+                        class: "grid_hold",
+                        // Show only active abilities (with skill points) - skip passive (index 0)
+                        for (skill_idx, ability) in god_info.abilities.iter().enumerate().skip(1) {
+                            {skill_row(ability, skill_order_to_use, skill_idx - 1)}
+                        }
+                    }
                 }
             }
 

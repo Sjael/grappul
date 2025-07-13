@@ -57,7 +57,7 @@ impl TooltipPos {
         // let height = window.inner_height().unwrap().as_f64().unwrap() as i32;
         
         // Tooltip dimensions (adjust these based on your actual tooltip size)
-        let tooltip_width = 400; // matches the CSS width
+        let tooltip_width = 600; // matches the CSS width
         // let tooltip_height = 600; // approximate height, adjust as needed
         // let padding = 10; // space between mouse and tooltip
         
@@ -137,15 +137,28 @@ fn app() -> Element {
     let mut mouse_pos = use_context_provider(|| Signal::new(MousePos::default()));
     let mut tooltip_pos = use_context_provider(|| Signal::new(TooltipPos::default()));
 
+    use_effect(move || {
+        // Add css-loaded class to body once component is mounted
+        if let Some(window) = web_sys::window() {
+            if let Some(document) = window.document() {
+                if let Some(body) = document.body() {
+                    let _ = body.class_list().add_1("css-loaded");
+                }
+            }
+        }
+    });
+
     rsx! {
         div {
             onmousemove: move |event: Event<MouseData>| {
                 let coords = event.data().page_coordinates();
                 let x = coords.x as i32;
                 let y = coords.y as i32;
-                mouse_pos.write().x = x;
-                mouse_pos.write().y = y;
-                *tooltip_pos.write() = TooltipPos::calculate(x, y);
+                spawn(async move {
+                    mouse_pos.write().x = x;
+                    mouse_pos.write().y = y;
+                    *tooltip_pos.write() = TooltipPos::calculate(x, y);
+                });
             },
             document::Link { rel: "icon", href: asset!("/assets/icons/favicon.ico") }
             document::Link { rel: "stylesheet", href: asset!("/assets/app.css") }

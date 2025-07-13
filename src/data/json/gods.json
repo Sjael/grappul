@@ -1,6 +1,7 @@
 {
   "achilles": {
     "display_name": "Achilles",
+    "class": "Warrior",
     "abilities": [
       "gift_of_the_gods",
       "shield_of_achilles",
@@ -11,6 +12,7 @@
   },
   "agni": {
     "display_name": "Agni",
+    "class": "Mage",
     "abilities": [
       "combustion",
       "noxious_fumes",
@@ -21,6 +23,7 @@
   },
   "ah_muzen_cab": {
     "display_name": "Ah Muzen Cab",
+    "class": "Hunter",
     "abilities": [
       "bees",
       "hive",
@@ -31,6 +34,7 @@
   },
   "ah_puch": {
     "display_name": "Ah Puch",
+    "class": "Mage",
     "abilities": [
       "hollow_ground",
       "undead_surge",
@@ -41,6 +45,7 @@
   },
   "amaterasu": {
     "display_name": "Amaterasu",
+    "class": "Warrior",
     "abilities": [
       "illuminating_strike",
       "divine_presence",
@@ -51,6 +56,7 @@
   },
   "anhur": {
     "display_name": "Anhur",
+    "class": "Hunter",
     "abilities": [
       "enfeeble",
       "shifting_sands",
@@ -61,6 +67,7 @@
   },
   "anubis": {
     "display_name": "Anubis",
+    "class": "Mage",
     "abilities": [
       "sorrow",
       "plague_of_locusts",
@@ -71,6 +78,7 @@
   },
   "ao_kuang": {
     "display_name": "Ao Kuang",
+    "class": "Mage",
     "abilities": [
       "dragon_kings_sword",
       "water_illusion",
@@ -81,6 +89,7 @@
   },
   "aphrodite": {
     "display_name": "Aphrodite",
+    "class": "Mage",
     "abilities": [
       "center_of_attention",
       "kiss",
@@ -91,6 +100,7 @@
   },
   "apollo": {
     "display_name": "Apollo",
+    "class": "Hunter",
     "abilities": [
       "audacity",
       "so_beautiful",
@@ -101,6 +111,7 @@
   },
   "arachne": {
     "display_name": "Arachne",
+    "class": "Assassin",
     "abilities": [
       "predator",
       "venomous_bite",
@@ -111,6 +122,7 @@
   },
   "ares": {
     "display_name": "Ares",
+    "class": "Guardian",
     "abilities": [
       "blessed_presence",
       "shackles",
@@ -121,6 +133,7 @@
   },
   "artemis": {
     "display_name": "Artemis",
+    "class": "Hunter",
     "abilities": [
       "still_target",
       "transgressors_fate",
@@ -131,6 +144,7 @@
   },
   "artio": {
     "display_name": "Artio",
+    "class": "Guardian",
     "abilities": [
       "decompose",
       "energy_surge_maul_prey",
@@ -141,6 +155,7 @@
   },
   "athena": {
     "display_name": "Athena",
+    "class": "Guardian",
     "abilities": [
       "reach",
       "preemptive_strike",
@@ -151,6 +166,7 @@
   },
   "atlas": {
     "display_name": "Atlas",
+    "class": "Guardian",
     "abilities": [
       "the_astrolabe",
       "unburden",
@@ -161,6 +177,7 @@
   },
   "awilix": {
     "display_name": "Awilix",
+    "class": "Assassin",
     "abilities": [
       "initiative",
       "summon_suku",
@@ -171,6 +188,7 @@
   },
   "baba_yaga": {
     "display_name": "Baba Yaga",
+    "class": "Mage",
     "abilities": [
       "creeping_cabin",
       "wild_witchcraft",
@@ -181,6 +199,7 @@
   },
   "bacchus": {
     "display_name": "Bacchus",
+    "class": "Guardian",
     "abilities": [
       "drunk_o_meter",
       "chug",
@@ -191,6 +210,7 @@
   },
   "bakasura": {
     "display_name": "Bakasura",
+    "class": "Assassin",
     "abilities": [
       "insatiable_hunger",
       "take_down",
@@ -201,6 +221,7 @@
   },
   "bake_kujira": {
     "display_name": "Bake Kujira",
+    "class": "Guardian",
     "abilities": [
       "curse_of_the_ghost_whale",
       "rough_waters",
@@ -211,6 +232,7 @@
   },
   "baron_samedi": {
     "display_name": "Baron Samedi",
+    "class": "Mage",
     "abilities": [
       "hysteria",
       "vivid_gaze",
@@ -221,6 +243,7 @@
   },
   "bastet": {
     "display_name": "Bastet",
+    "class": "Assassin",
     "abilities": [
       "nightstalker",
       "pounce",
@@ -231,6 +254,7 @@
   },
   "bellona": {
     "display_name": "Bellona",
+    "class": "Warrior",
     "abilities": [
       "master_of_war",
       "shield_bash",
@@ -241,6 +265,7 @@
   },
   "cabrakan": {
     "display_name": "Cabrakan",
+    "class": "Guardian",
     "abilities": [
       "shadow_zone",
       "seismic_crush",
@@ -251,6 +276,7 @@
   },
   "camazotz": {
     "display_name": "Camazotz",
+    "class": "Assassin",
     "abilities": [
       "essence_drinker",
       "screech",
@@ -261,6 +287,7 @@
   },
   "cerberus": {
     "display_name": "Cerberus",
+    "class": "Guardian",
     "abilities": [
       "spirit_of_death",
       "paralyzing_spit",
@@ -271,6 +298,7 @@
   },
   "cernunnos": {
     "display_name": "Cernunnos",
+    "class": "Hunter",
     "abilities": [
       "heavy_glaive",
       "shifter_of_seasons",
@@ -281,6 +309,7 @@
   },
   "chaac": {
     "display_name": "Chaac",
+    "class": "Warrior",
     "abilities": [
       "overflow",
       "thunder_strike",
@@ -291,6 +320,7 @@
   },
   "change": {
     "display_name": "Chang'e",
+    "class": "Mage",
     "abilities": [
       "jade_rabbit",
       "crescent_moon_dance",
@@ -301,6 +331,7 @@
   },
   "charon": {
     "display_name": "Charon",
+    "class": "Guardian",
     "abilities": [
       "ferryman_of_souls",
       "spectral_surge",
@@ -311,6 +342,7 @@
   },
   "charybdis": {
     "display_name": "Charybdis",
+    "class": "Hunter",
     "abilities": [
       "raging_tides",
       "spike_shot",
@@ -321,6 +353,7 @@
   },
   "chernobog": {
     "display_name": "Chernobog",
+    "class": "Hunter",
     "abilities": [
       "heart_of_cold",
       "crystallized_curses",
@@ -331,6 +364,7 @@
   },
   "chiron": {
     "display_name": "Chiron",
+    "class": "Hunter",
     "abilities": [
       "herbal_medicine",
       "training_exercise",
@@ -341,6 +375,7 @@
   },
   "chronos": {
     "display_name": "Chronos",
+    "class": "Mage",
     "abilities": [
       "time_lord",
       "time_rift",
@@ -351,6 +386,7 @@
   },
   "cliodhna": {
     "display_name": "Cliodhna",
+    "class": "Assassin",
     "abilities": [
       "phantasmal",
       "banshees_wail",
@@ -361,6 +397,7 @@
   },
   "cthulhu": {
     "display_name": "Cthulhu",
+    "class": "Guardian",
     "abilities": [
       "prey_on_fear",
       "sanity_break",
@@ -371,6 +408,7 @@
   },
   "cu_chulainn": {
     "display_name": "Cu Chulainn",
+    "class": "Warrior",
     "abilities": [
       "berserk",
       "barbed_spear_ground_slam",
@@ -381,6 +419,7 @@
   },
   "cupid": {
     "display_name": "Cupid",
+    "class": "Hunter",
     "abilities": [
       "lovestruck",
       "heart_bomb",
@@ -391,6 +430,7 @@
   },
   "da_ji": {
     "display_name": "Da Ji",
+    "class": "Assassin",
     "abilities": [
       "torture_blades",
       "horrible_burns",
@@ -401,6 +441,7 @@
   },
   "danzaburou": {
     "display_name": "Danzaburou",
+    "class": "Hunter",
     "abilities": [
       "dubious_savings",
       "fools_gold",
@@ -411,6 +452,7 @@
   },
   "discordia": {
     "display_name": "Discordia",
+    "class": "Mage",
     "abilities": [
       "contest_of_gods",
       "unruly_magic",
@@ -421,6 +463,7 @@
   },
   "erlang_shen": {
     "display_name": "Erlang Shen",
+    "class": "Warrior",
     "abilities": [
       "howling_celestial_dog",
       "spot_weakness",
@@ -431,6 +474,7 @@
   },
   "eset": {
     "display_name": "Eset",
+    "class": "Mage",
     "abilities": [
       "funeral_rites",
       "wing_gust",
@@ -441,6 +485,7 @@
   },
   "fafnir": {
     "display_name": "Fafnir",
+    "class": "Guardian",
     "abilities": [
       "endless_greed",
       "cursed_strength",
@@ -451,6 +496,7 @@
   },
   "fenrir": {
     "display_name": "Fenrir",
+    "class": "Assassin",
     "abilities": [
       "unbound_runes",
       "unchained",
@@ -461,6 +507,7 @@
   },
   "freya": {
     "display_name": "Freya",
+    "class": "Mage",
     "abilities": [
       "brisingamens_blessing",
       "irradiate",
@@ -471,6 +518,7 @@
   },
   "ganesha": {
     "display_name": "Ganesha",
+    "class": "Guardian",
     "abilities": [
       "good_fortune",
       "turn_of_fate",
@@ -481,6 +529,7 @@
   },
   "geb": {
     "display_name": "Geb",
+    "class": "Guardian",
     "abilities": [
       "hard_as_rock",
       "roll_out",
@@ -491,6 +540,7 @@
   },
   "gilgamesh": {
     "display_name": "Gilgamesh",
+    "class": "Warrior",
     "abilities": [
       "epic_of_gilgamesh",
       "sun_forged_scimitar",
@@ -501,6 +551,7 @@
   },
   "guan_yu": {
     "display_name": "Guan Yu",
+    "class": "Warrior",
     "abilities": [
       "painless",
       "conviction",
@@ -511,6 +562,7 @@
   },
   "hachiman": {
     "display_name": "Hachiman",
+    "class": "Hunter",
     "abilities": [
       "master_of_arms",
       "eagle_eye",
@@ -521,6 +573,7 @@
   },
   "hades": {
     "display_name": "Hades",
+    "class": "Mage",
     "abilities": [
       "blight",
       "death_from_below",
@@ -531,6 +584,7 @@
   },
   "he_bo": {
     "display_name": "He Bo",
+    "class": "Mage",
     "abilities": [
       "steady_flow",
       "water_cannon",
@@ -541,6 +595,7 @@
   },
   "heimdallr": {
     "display_name": "Heimdallr",
+    "class": "Hunter",
     "abilities": [
       "the_vigilant",
       "piercing_sight",
@@ -551,6 +606,7 @@
   },
   "hel": {
     "display_name": "Hel",
+    "class": "Mage",
     "abilities": [
       "stance_attunement",
       "decay_restoration",
@@ -561,6 +617,7 @@
   },
   "hera": {
     "display_name": "Hera",
+    "class": "Mage",
     "abilities": [
       "commanding_presence",
       "royal_assault",
@@ -571,6 +628,7 @@
   },
   "hercules": {
     "display_name": "Hercules",
+    "class": "Warrior",
     "abilities": [
       "strength_from_pain",
       "driving_strike",
@@ -581,6 +639,7 @@
   },
   "horus": {
     "display_name": "Horus",
+    "class": "Warrior",
     "abilities": [
       "resolute",
       "updraft",
@@ -591,6 +650,7 @@
   },
   "hou_yi": {
     "display_name": "Hou Yi",
+    "class": "Hunter",
     "abilities": [
       "suntouched",
       "ricochet",
@@ -601,6 +661,7 @@
   },
   "hun_batz": {
     "display_name": "Hun Batz",
+    "class": "Assassin",
     "abilities": [
       "infused_strikes",
       "somersault",
@@ -611,6 +672,7 @@
   },
   "ishtar": {
     "display_name": "Ishtar",
+    "class": "Hunter",
     "abilities": [
       "mark_of_vengeance",
       "imbue_arrows",
@@ -621,6 +683,7 @@
   },
   "ix_chel": {
     "display_name": "Ix Chel",
+    "class": "Mage",
     "abilities": [
       "rainbow_weaver",
       "gleaming_blast_threads_of_light",
@@ -631,6 +694,7 @@
   },
   "izanami": {
     "display_name": "Izanami",
+    "class": "Hunter",
     "abilities": [
       "death_draws_nigh",
       "sickle_storm",
@@ -641,6 +705,7 @@
   },
   "janus": {
     "display_name": "Janus",
+    "class": "Mage",
     "abilities": [
       "passages",
       "portal",
@@ -651,6 +716,7 @@
   },
   "jing_wei": {
     "display_name": "Jing Wei",
+    "class": "Hunter",
     "abilities": [
       "rapid_reincarnation",
       "persistent_gust",
@@ -661,6 +727,7 @@
   },
   "jormungandr": {
     "display_name": "Jormungandr",
+    "class": "Guardian",
     "abilities": [
       "immovable",
       "venomous_haze",
@@ -671,6 +738,7 @@
   },
   "kali": {
     "display_name": "Kali",
+    "class": "Assassin",
     "abilities": [
       "marked_for_death",
       "nimble_strike",
@@ -681,6 +749,7 @@
   },
   "khepri": {
     "display_name": "Khepri",
+    "class": "Guardian",
     "abilities": [
       "fortitude",
       "abduct",
@@ -691,6 +760,7 @@
   },
   "king_arthur": {
     "display_name": "King Arthur",
+    "class": "Warrior",
     "abilities": [
       "steadfast",
       "overhead_slash_hamstring",
@@ -701,6 +771,7 @@
   },
   "kukulkan": {
     "display_name": "Kukulkan",
+    "class": "Mage",
     "abilities": [
       "power_of_the_wind_jewel",
       "zephyr",
@@ -711,6 +782,7 @@
   },
   "kumbhakarna": {
     "display_name": "Kumbhakarna",
+    "class": "Guardian",
     "abilities": [
       "sleepy",
       "throw_back",
@@ -721,6 +793,7 @@
   },
   "kuzenbo": {
     "display_name": "Kuzenbo",
+    "class": "Guardian",
     "abilities": [
       "water_bowl",
       "nene_kappa",
@@ -731,6 +804,7 @@
   },
   "lancelot": {
     "display_name": "Lancelot",
+    "class": "Assassin",
     "abilities": [
       "camelots_quest",
       "piercing_thrust",
@@ -741,6 +815,7 @@
   },
   "loki": {
     "display_name": "Loki",
+    "class": "Assassin",
     "abilities": [
       "behind_you",
       "vanish",
@@ -751,6 +826,7 @@
   },
   "maman_brigitte": {
     "display_name": "Maman Brigitte",
+    "class": "Mage",
     "abilities": [
       "soul_spikes",
       "party_trick",
@@ -761,6 +837,7 @@
   },
   "martichoras": {
     "display_name": "Martichoras",
+    "class": "Hunter",
     "abilities": [
       "monstrosity",
       "acid_rain",
@@ -771,6 +848,7 @@
   },
   "maui": {
     "display_name": "Maui",
+    "class": "Guardian",
     "abilities": [
       "manaiakalani",
       "master_fisherman",
@@ -781,6 +859,7 @@
   },
   "medusa": {
     "display_name": "Medusa",
+    "class": "Hunter",
     "abilities": [
       "sidewinder",
       "viper_shot",
@@ -791,6 +870,7 @@
   },
   "mercury": {
     "display_name": "Mercury",
+    "class": "Assassin",
     "abilities": [
       "fastest_god_alive",
       "made_you_look",
@@ -801,6 +881,7 @@
   },
   "merlin": {
     "display_name": "Merlin",
+    "class": "Mage",
     "abilities": [
       "overload",
       "eclipse",
@@ -811,6 +892,7 @@
   },
   "morgan_le_fay": {
     "display_name": "Morgan Le Fay",
+    "class": "Mage",
     "abilities": [
       "empowered_blade",
       "sigil_mastery",
@@ -821,6 +903,7 @@
   },
   "mulan": {
     "display_name": "Mulan",
+    "class": "Warrior",
     "abilities": [
       "training_arc",
       "cross_strike",
@@ -831,6 +914,7 @@
   },
   "ne_zha": {
     "display_name": "Ne Zha",
+    "class": "Assassin",
     "abilities": [
       "righteous_spirit",
       "universe_ring_toss",
@@ -841,6 +925,7 @@
   },
   "neith": {
     "display_name": "Neith",
+    "class": "Hunter",
     "abilities": [
       "broken_weave",
       "spirit_arrow",
@@ -851,6 +936,7 @@
   },
   "nemesis": {
     "display_name": "Nemesis",
+    "class": "Assassin",
     "abilities": [
       "scales_of_fate",
       "swift_vengeance",
@@ -861,6 +947,7 @@
   },
   "nike": {
     "display_name": "Nike",
+    "class": "Warrior",
     "abilities": [
       "to_victory",
       "rend",
@@ -871,6 +958,7 @@
   },
   "nox": {
     "display_name": "Nox",
+    "class": "Mage",
     "abilities": [
       "flame_of_the_night",
       "shadow_lock",
@@ -881,6 +969,7 @@
   },
   "nu_wa": {
     "display_name": "Nu Wa",
+    "class": "Mage",
     "abilities": [
       "strength_of_wood",
       "mysterious_fog",
@@ -891,6 +980,7 @@
   },
   "nut": {
     "display_name": "Nut",
+    "class": "Hunter",
     "abilities": [
       "flux",
       "convergence",
@@ -901,6 +991,7 @@
   },
   "odin": {
     "display_name": "Odin",
+    "class": "Warrior",
     "abilities": [
       "path_to_valhalla",
       "lunge",
@@ -911,6 +1002,7 @@
   },
   "olorun": {
     "display_name": "Olorun",
+    "class": "Mage",
     "abilities": [
       "touch_of_fate",
       "focused_light",
@@ -921,6 +1013,7 @@
   },
   "osiris": {
     "display_name": "Osiris",
+    "class": "Warrior",
     "abilities": [
       "fragmented",
       "sickle_strike",
@@ -931,6 +1024,7 @@
   },
   "pele": {
     "display_name": "Pele",
+    "class": "Assassin",
     "abilities": [
       "everlasting_flame",
       "pyroclast",
@@ -941,6 +1035,7 @@
   },
   "persephone": {
     "display_name": "Persephone",
+    "class": "Mage",
     "abilities": [
       "pomegranate_seeds",
       "bone_rush",
@@ -951,6 +1046,7 @@
   },
   "poseidon": {
     "display_name": "Poseidon",
+    "class": "Mage",
     "abilities": [
       "changing_tides",
       "tidal_surge",
@@ -961,6 +1057,7 @@
   },
   "ra": {
     "display_name": "Ra",
+    "class": "Mage",
     "abilities": [
       "speed_of_light",
       "celestial_beam",
@@ -971,6 +1068,7 @@
   },
   "raijin": {
     "display_name": "Raijin",
+    "class": "Mage",
     "abilities": [
       "charged_tempo",
       "percussive_storm",
@@ -981,6 +1079,7 @@
   },
   "rama": {
     "display_name": "Rama",
+    "class": "Hunter",
     "abilities": [
       "astral_quiver",
       "astral_strike",
@@ -991,6 +1090,7 @@
   },
   "ratatoskr": {
     "display_name": "Ratatoskr",
+    "class": "Assassin",
     "abilities": [
       "acorn_of_yggdrasil",
       "dart",
@@ -1001,6 +1101,7 @@
   },
   "ravana": {
     "display_name": "Ravana",
+    "class": "Assassin",
     "abilities": [
       "chain_of_blows",
       "prana_onslaught",
@@ -1011,6 +1112,7 @@
   },
   "scylla": {
     "display_name": "Scylla",
+    "class": "Mage",
     "abilities": [
       "quick_learner",
       "sic_em",
@@ -1021,6 +1123,7 @@
   },
   "serqet": {
     "display_name": "Serqet",
+    "class": "Assassin",
     "abilities": [
       "catalyst",
       "deathbane",
@@ -1031,6 +1134,7 @@
   },
   "set": {
     "display_name": "Set",
+    "class": "Assassin",
     "abilities": [
       "relentless",
       "skewer",
@@ -1041,6 +1145,7 @@
   },
   "shiva": {
     "display_name": "Shiva",
+    "class": "Warrior",
     "abilities": [
       "samsara",
       "emblazoned_sweep",
@@ -1051,6 +1156,7 @@
   },
   "skadi": {
     "display_name": "Skadi",
+    "class": "Hunter",
     "abilities": [
       "kaldr_the_winter_wolf",
       "piercing_cold",
@@ -1061,6 +1167,7 @@
   },
   "sobek": {
     "display_name": "Sobek",
+    "class": "Guardian",
     "abilities": [
       "blessing_of_the_nile",
       "charge_prey",
@@ -1071,6 +1178,7 @@
   },
   "sol": {
     "display_name": "Sol",
+    "class": "Mage",
     "abilities": [
       "unstable_manifestation",
       "radiance",
@@ -1081,6 +1189,7 @@
   },
   "sun_wukong": {
     "display_name": "Sun Wukong",
+    "class": "Warrior",
     "abilities": [
       "undefeated_body",
       "the_magic_cudgel",
@@ -1091,6 +1200,7 @@
   },
   "surtr": {
     "display_name": "Surtr",
+    "class": "Warrior",
     "abilities": [
       "obsidian_flesh",
       "flames_of_muspell",
@@ -1101,6 +1211,7 @@
   },
   "susano": {
     "display_name": "Susano",
+    "class": "Assassin",
     "abilities": [
       "gathering_storm",
       "storm_kata",
@@ -1111,6 +1222,7 @@
   },
   "sylvanus": {
     "display_name": "Sylvanus",
+    "class": "Guardian",
     "abilities": [
       "natures_bounty",
       "verdant_growth",
@@ -1121,6 +1233,7 @@
   },
   "terra": {
     "display_name": "Terra",
+    "class": "Guardian",
     "abilities": [
       "standing_stones",
       "force_of_nature",
@@ -1131,6 +1244,7 @@
   },
   "thanatos": {
     "display_name": "Thanatos",
+    "class": "Assassin",
     "abilities": [
       "harvester_of_souls",
       "death_scythe",
@@ -1141,6 +1255,7 @@
   },
   "the_morrigan": {
     "display_name": "The Morrigan",
+    "class": "Mage",
     "abilities": [
       "doomsayer",
       "deadly_aspects",
@@ -1151,6 +1266,7 @@
   },
   "thor": {
     "display_name": "Thor",
+    "class": "Assassin",
     "abilities": [
       "warriors_madness",
       "mjolnirs_attunement",
@@ -1161,6 +1277,7 @@
   },
   "thoth": {
     "display_name": "Thoth",
+    "class": "Mage",
     "abilities": [
       "dead_reckoning",
       "hieroglyphic_assault",
@@ -1171,6 +1288,7 @@
   },
   "tiamat": {
     "display_name": "Tiamat",
+    "class": "Mage",
     "abilities": [
       "death_begets_life",
       "primordial_onslaught",
@@ -1181,6 +1299,7 @@
   },
   "tsukuyomi": {
     "display_name": "Tsukuyomi",
+    "class": "Assassin",
     "abilities": [
       "shingetsu_mangetsu",
       "dark_moon_shuriken",
@@ -1191,6 +1310,7 @@
   },
   "tyr": {
     "display_name": "Tyr",
+    "class": "Warrior",
     "abilities": [
       "unyielding",
       "fearless",
@@ -1201,6 +1321,7 @@
   },
   "ullr": {
     "display_name": "Ullr",
+    "class": "Hunter",
     "abilities": [
       "weapon_master",
       "bladed_arrow_thrown_axe",
@@ -1211,6 +1332,7 @@
   },
   "vamana": {
     "display_name": "Vamana",
+    "class": "Warrior",
     "abilities": [
       "sleeping_giant",
       "clear_the_path",
@@ -1221,6 +1343,7 @@
   },
   "vulcan": {
     "display_name": "Vulcan",
+    "class": "Mage",
     "abilities": [
       "master_craftsman",
       "backfire",
@@ -1231,6 +1354,7 @@
   },
   "xbalanque": {
     "display_name": "Xbalanque",
+    "class": "Hunter",
     "abilities": [
       "dead_of_night",
       "branching_bola",
@@ -1241,6 +1365,7 @@
   },
   "xing_tian": {
     "display_name": "Xing Tian",
+    "class": "Guardian",
     "abilities": [
       "smouldering_rage",
       "furious_roar",
@@ -1251,6 +1376,7 @@
   },
   "yemoja": {
     "display_name": "Yemoja",
+    "class": "Guardian",
     "abilities": [
       "omi",
       "bouncing_bubble_moonstrike",
@@ -1261,6 +1387,7 @@
   },
   "ymir": {
     "display_name": "Ymir",
+    "class": "Guardian",
     "abilities": [
       "frostbite",
       "ice_wall",
@@ -1271,6 +1398,7 @@
   },
   "yu_huang": {
     "display_name": "Yu Huang",
+    "class": "Mage",
     "abilities": [
       "master_of_the_dao",
       "flames_of_the_phoenix",
@@ -1281,6 +1409,7 @@
   },
   "zeus": {
     "display_name": "Zeus",
+    "class": "Mage",
     "abilities": [
       "overcharge",
       "chain_lightning",
@@ -1291,6 +1420,7 @@
   },
   "zhong_kui": {
     "display_name": "Zhong Kui",
+    "class": "Mage",
     "abilities": [
       "demon_bag",
       "expose_evil",

@@ -1,5 +1,8 @@
 # Grappul Project Memory
 
+Reduce cache size as much as possible. this is a big project with a lot of images, and scripts. Unless specifically referenced, dont include images in the cache unless they are brought up
+
+
 ## Critical Scraper Information
 
 ### URL Structure (DO NOT FORGET)

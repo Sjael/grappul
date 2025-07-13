@@ -75,39 +75,32 @@ pub fn GodGrid() -> Element {
         GODS.iter()
             .map(|(name, god_info)| {
                 let class_matches = class.read().0.as_ref().map_or(true, |c| c.to_lowercase() == god_info.class.to_lowercase());
+                
+                // Check if god has any builds for the selected role
                 let role_matches = role.read().0.as_ref().map_or(true, |r| {
                     let resolved_role = resolve_role_alias(r);
-                    let r_lower = resolved_role.to_lowercase();
-                    god_info.roles.iter().any(|role| role.to_lowercase().contains(&r_lower))
+                    // Check if this god has any guides for the selected role
+                    GUIDES.get(name)
+                        .map(|guides| {
+                            guides.iter().any(|g| g.role == resolved_role)
+                        })
+                        .unwrap_or(false)
                 });
                 
                 // Print information about filtered gods
                 if !class_matches || !role_matches {
                     let message = format!(
-                        "{} | {} {} | {:?} {}",
+                        "{} | {} {} | Role Filter: {}",
                         name,
                         god_info.class,
                         if class_matches { "✅" } else { "❌" },
-                        god_info.roles,
                         if role_matches { "✅" } else { "❌" }
                     );
                     web_sys::console::log_1(&JsValue::from_str(&message));
                 }
                 
-                // Check if god has any builds for the selected filters
-                let has_builds = GUIDES.get(name)
-                    .map(|guides| {
-                        guides.iter().any(|g| {
-                            let build_role_matches = role.read().0.as_ref().map_or(true, |r| {
-                                let resolved_role = resolve_role_alias(r);
-                                g.role.contains(&resolved_role)
-                            });
-                            build_role_matches
-                        })
-                    })
-                    .unwrap_or(false);
-                
-                (name.clone(), god_info.clone(), class_matches, role_matches, has_builds)
+                let has_guides = GUIDES.get(name).is_some();
+                (name.clone(), god_info.clone(), class_matches, role_matches, has_guides)
             })
             .collect::<Vec<_>>()
     };
@@ -119,7 +112,7 @@ pub fn GodGrid() -> Element {
     rsx! {
         div {
             class: "god-grid",
-            for (god_name, _, class_matches, role_matches, has_builds) in filtered_gods {
+            for (god_name, _, class_matches, role_matches, has_guides) in filtered_gods {
                 div {
                     key: "{god_name}",
                     class: format!("god{}{}", 
@@ -128,7 +121,7 @@ pub fn GodGrid() -> Element {
                         } else { 
                             "" 
                         },
-                        if !class_matches || !role_matches || !has_builds {
+                        if !class_matches || !role_matches || !has_guides {
                             " filtered"
                         } else {
                             ""

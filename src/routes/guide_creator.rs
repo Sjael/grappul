@@ -1,7 +1,7 @@
 use dioxus::prelude::*;
 use crate::components::{Header, Ability, MarkdownRenderer};
 use crate::data::gods::GODS;
-use crate::data::items::ITEMS;
+use crate::data::items::{ITEMS, Effect};
 use crate::{SelectedGod, SelectedRole};
 use crate::utils::format_god_image_name;
 use serde::{Deserialize, Serialize};
@@ -316,13 +316,11 @@ fn BuildSection(guide_data: Signal<GuideData>, search_query: Signal<String>) -> 
             // If price is 0, check if it's an evolved item with a base item
             if item.price == 0 {
                 // Check if this item has a glyph effect
-                for effect in &item.effects {
-                    if effect.starts_with("Glyph:") {
-                        // For evolved items, use the base item's price
-                        // This is a simplification - in the full implementation,
-                        // we might extract the base item name from the effect string
-                        return 3000; // Default glyph item price
-                    }
+                if item.effects.contains_key(&Effect::Glyph) {
+                    // For evolved items, use the base item's price
+                    // This is a simplification - in the full implementation,
+                    // we might extract the base item name from the effect string
+                    return 3000; // Default glyph item price
                 }
             }
             item.price
@@ -333,18 +331,24 @@ fn BuildSection(guide_data: Signal<GuideData>, search_query: Signal<String>) -> 
     
     // Helper function to determine item tier
     let get_item_tier = |item_name: &str| -> u8 {
-        let price = get_effective_price(item_name);
-        
-        // Starter items (s_ prefix) are always shown regardless of tier filters
-        if item_name.starts_with("s_") {
-            return 0; // Special tier for starter items
+        if let Some(item) = ITEMS.get(item_name) {
+            use crate::data::items::ItemTag;
+            if item.tags.contains(&ItemTag::Tier1) {
+                return 1;
+            } else if item.tags.contains(&ItemTag::Tier2) {
+                return 2;
+            } else if item.tags.contains(&ItemTag::Tier3) {
+                return 3;
+            } else if item.tags.contains(&ItemTag::Tier4) {
+                return 4;
+            }
+            // Starter items get special handling
+            if item.tags.contains(&ItemTag::Starter) {
+                return 0; // Special tier for starter items
+            }
         }
-        
-        match price {
-            0..=999 => 1,      // Tier 1: Under 1000 gold
-            1000..=2499 => 2,  // Tier 2: 1000-2499 gold  
-            _ => 3,            // Tier 3: 2500+ gold
-        }
+        // Default to tier 3 if no tier tag found
+        3
     };
     
     // List of relics to exclude from build items
@@ -353,7 +357,7 @@ fn BuildSection(guide_data: Signal<GuideData>, search_query: Signal<String>) -> 
     // Helper function to check if an item is a glyph
     let is_glyph_item = |item_name: &str| -> bool {
         if let Some(item) = ITEMS.get(item_name) {
-            item.effects.iter().any(|effect| effect.starts_with("Glyph:"))
+            item.effects.contains_key(&Effect::Glyph)
         } else {
             false
         }
@@ -519,7 +523,7 @@ fn BuildSection(guide_data: Signal<GuideData>, search_query: Signal<String>) -> 
                                 },
                                 
                                 img {
-                                    src: format!("/assets/items/{}.png", item),
+                                    src: format!("/assets/items/{}.png", item.replace("-", "")),
                                     style: "width: 100%; height: 100%; border-radius: 4px; background: var(--color-bg-tertiary); cursor: move;",
                                 }
                                 
@@ -649,7 +653,7 @@ fn BuildSection(guide_data: Signal<GuideData>, search_query: Signal<String>) -> 
                     div {
                         style: "display: grid; grid-template-columns: repeat(auto-fill, minmax(64px, 1fr)); gap: 8px;",
                         
-                        for item in starter_items {
+                        for item in &starter_items {
                             button {
                                 key: "{item}",
                                 style: "aspect-ratio: 1; padding: 0; border: 1px solid var(--color-border); border-radius: 4px; cursor: pointer; background: var(--color-bg-secondary); transition: all 0.2s ease;",
@@ -682,7 +686,7 @@ fn BuildSection(guide_data: Signal<GuideData>, search_query: Signal<String>) -> 
                                 },
                                 
                                 img {
-                                    src: format!("/assets/items/{}.png", item),
+                                    src: format!("/assets/items/{}.png", item.replace("-", "")),
                                     style: format!("width: 100%; height: 100%; opacity: {};", 
                                         if guide_data().build.contains(&item) { "0.4" } else { "1" }
                                     )
@@ -706,7 +710,7 @@ fn BuildSection(guide_data: Signal<GuideData>, search_query: Signal<String>) -> 
                     div {
                         style: "display: grid; grid-template-columns: repeat(auto-fill, minmax(64px, 1fr)); gap: 8px;",
                         
-                        for item in glyph_items {
+                        for item in &glyph_items {
                             button {
                                 key: "{item}",
                                 style: "aspect-ratio: 1; padding: 0; border: 1px solid var(--color-border); border-radius: 4px; cursor: pointer; background: var(--color-bg-secondary); transition: all 0.2s ease;",
@@ -723,7 +727,7 @@ fn BuildSection(guide_data: Signal<GuideData>, search_query: Signal<String>) -> 
                                 },
                                 
                                 img {
-                                    src: format!("/assets/items/{}.png", item),
+                                    src: format!("/assets/items/{}.png", item.replace("-", "")),
                                     style: format!("width: 100%; height: 100%; opacity: {};", 
                                         if guide_data().build.contains(&item) { "0.4" } else { "1" }
                                     )
@@ -745,7 +749,7 @@ fn BuildSection(guide_data: Signal<GuideData>, search_query: Signal<String>) -> 
                     div {
                         style: "display: grid; grid-template-columns: repeat(auto-fill, minmax(64px, 1fr)); gap: 8px; max-height: 400px; overflow-y: auto;",
                         
-                        for item in regular_items {
+                        for item in &regular_items {
                             button {
                                 key: "{item}",
                                 style: "aspect-ratio: 1; padding: 0; border: 1px solid var(--color-border); border-radius: 4px; cursor: pointer; background: var(--color-bg-secondary); transition: all 0.2s ease;",
@@ -762,7 +766,7 @@ fn BuildSection(guide_data: Signal<GuideData>, search_query: Signal<String>) -> 
                                 },
                                 
                                 img {
-                                    src: format!("/assets/items/{}.png", item),
+                                    src: format!("/assets/items/{}.png", item.replace("-", "")),
                                     style: format!("width: 100%; height: 100%; opacity: {};", 
                                         if guide_data().build.contains(&item) { "0.4" } else { "1" }
                                     )
@@ -797,7 +801,7 @@ fn RelicsSection(guide_data: Signal<GuideData>) -> Element {
                             style: "aspect-ratio: 1; position: relative;",
                             
                             img {
-                                src: format!("/assets/items/{}.png", relic),
+                                src: format!("/assets/items/{}.png", relic.replace("-", "")),
                                 style: "width: 100%; height: 100%; border-radius: 8px; background: var(--color-bg-tertiary);",
                             }
                             
@@ -836,7 +840,7 @@ fn RelicsSection(guide_data: Signal<GuideData>) -> Element {
                         },
                         
                         img {
-                            src: format!("/assets/items/{}.png", relic),
+                            src: format!("/assets/items/{}.png", relic.replace("-", "")),
                             style: "width: 100%; height: 100%;",
                         }
                     }
@@ -857,11 +861,9 @@ fn BuildAndItemsSection(guide_data: Signal<GuideData>, search_query: Signal<Stri
     let get_effective_price = |item_name: &str| -> u32 {
         if let Some(item) = ITEMS.get(item_name) {
             if item.price == 0 {
-                for effect in &item.effects {
-                    if effect.starts_with("Glyph:") {
-                        // For glyph items, use a default price since we don't have base item info
-                        return 3000;
-                    }
+                if item.effects.contains_key(&Effect::Glyph) {
+                    // For glyph items, use a default price since we don't have base item info
+                    return 3000;
                 }
             }
             item.price
@@ -870,35 +872,57 @@ fn BuildAndItemsSection(guide_data: Signal<GuideData>, search_query: Signal<Stri
         }
     };
     
-    // Helper function to determine item tier
+    // Helper function to determine item tier from tags
     let get_item_tier = |item_name: &str| -> u8 {
-        let price = get_effective_price(item_name);
-        if item_name.starts_with("s_") {
-            return 0;
+        if let Some(item) = ITEMS.get(item_name) {
+            use crate::data::items::ItemTag;
+            if item.tags.contains(&ItemTag::Tier1) {
+                return 1;
+            } else if item.tags.contains(&ItemTag::Tier2) {
+                return 2;
+            } else if item.tags.contains(&ItemTag::Tier3) {
+                return 3;
+            } else if item.tags.contains(&ItemTag::Tier4) {
+                return 4; // For Tier 4 items if they exist
+            }
         }
-        match price {
-            0..=999 => 1,
-            1000..=2499 => 2,
-            _ => 3,
-        }
+        // Default to tier 3 if no tier tag found
+        3
     };
     
     // Helper function to check if an item is a glyph
     let is_glyph_item = |item_name: &str| -> bool {
         if let Some(item) = ITEMS.get(item_name) {
-            item.effects.iter().any(|effect| effect.starts_with("Glyph:"))
+            item.effects.contains_key(&Effect::Glyph)
         } else {
             false
         }
     };
     
-    // List of relics (define first so it can be used in helpers)
-    let relic_items = vec!["aegis", "beads", "blink", "shell", "ankh", "med", "thorns", "sprint", "teleport", "frenzy"];
+    // Helper function to check if an item is a relic
+    let is_relic_item = |item_name: &str| -> bool {
+        if let Some(item) = ITEMS.get(item_name) {
+            use crate::data::items::ItemTag;
+            item.tags.contains(&ItemTag::Relic)
+        } else {
+            false
+        }
+    };
+    
+    // Helper function to check if an item is a starter
+    let is_starter_item = |item_name: &str| -> bool {
+        if let Some(item) = ITEMS.get(item_name) {
+            use crate::data::items::ItemTag;
+            item.tags.contains(&ItemTag::Starter)
+        } else {
+            false
+        }
+    };
     
     // Helper function to check if an item should be hidden (filtered out)
     let should_hide_item = |item_name: &str| -> bool {
         // Apply tier filter for regular items - hide if tier is disabled
-        if !item_name.starts_with("s_") && !is_glyph_item(item_name) && !relic_items.iter().any(|relic| relic == &item_name) {
+        if !is_starter_item(item_name) && !is_glyph_item(item_name) && !is_relic_item(item_name) {
             let tier = get_item_tier(item_name);
             match tier {
                 1 => !tier1_enabled(),
@@ -917,29 +941,46 @@ fn BuildAndItemsSection(guide_data: Signal<GuideData>, search_query: Signal<Stri
         !search_query().is_empty() && !item_name.contains(&search_query().to_lowercase())
     };
     
-    // Get all items categorized
-    let starter_items: Vec<_> = ITEMS.keys()
-        .filter(|item_name| item_name.starts_with("s_"))
-        .cloned()
-        .collect();
-    
-    let glyph_items: Vec<_> = ITEMS.keys()
-        .filter(|item_name| !item_name.starts_with("s_") && is_glyph_item(item_name))
-        .cloned()
-        .collect();
-    
-    let regular_items: Vec<_> = ITEMS.keys()
-        .filter(|item_name| {
-            !item_name.starts_with("s_") && 
-            !is_glyph_item(item_name) &&
-            !relic_items.contains(&item_name.as_str())
+    // Get all items categorized using tags
+    let starter_items: Vec<_> = ITEMS.iter()
+        .filter(|(_, item)| {
+            use crate::data::items::ItemTag;
+            item.tags.contains(&ItemTag::Starter)
         })
-        .cloned()
+        .map(|(name, _)| name.clone())
         .collect();
     
-    let available_relics: Vec<_> = ITEMS.keys()
-        .filter(|item_name| relic_items.iter().any(|relic| relic == item_name))
-        .cloned()
+    let glyph_items: Vec<_> = ITEMS.iter()
+        .filter(|(_, item)| {
+            use crate::data::items::ItemTag;
+            item.tags.contains(&ItemTag::Glyph)
+        })
+        .map(|(name, _)| name.clone())
+        .collect();
+    
+    // Helper function to format item image names by removing hyphens
+    let format_item_image_name = |item_name: &str| -> String {
+        item_name.replace("-", "")
+    };
+    
+    let regular_items: Vec<_> = ITEMS.iter()
+        .filter(|(_, item)| {
+            use crate::data::items::ItemTag;
+            !item.tags.contains(&ItemTag::Starter) && 
+            !item.tags.contains(&ItemTag::Glyph) &&
+            !item.tags.contains(&ItemTag::Relic) &&
+            !item.tags.contains(&ItemTag::Consumable) &&
+            !item.tags.contains(&ItemTag::Shard)
+        })
+        .map(|(name, _)| name.clone())
+        .collect();
+    
+    let available_relics: Vec<_> = ITEMS.iter()
+        .filter(|(_, item)| {
+            use crate::data::items::ItemTag;
+            item.tags.contains(&ItemTag::Relic)
+        })
+        .map(|(name, _)| name.clone())
         .collect();
     
     rsx! {
@@ -1008,7 +1049,7 @@ fn BuildAndItemsSection(guide_data: Signal<GuideData>, search_query: Signal<Stri
                                     },
                                     
                                     img {
-                                        src: format!("/assets/items/{}.png", item),
+                                        src: format!("/assets/items/{}.png", format_item_image_name(&item)),
                                         style: "width: 100%; height: 100%; border-radius: 4px; background: var(--color-bg-tertiary); cursor: move;",
                                     }
                                     
@@ -1086,7 +1127,7 @@ fn BuildAndItemsSection(guide_data: Signal<GuideData>, search_query: Signal<Stri
                                     style: "width: 64px; height: 64px; position: relative; box-sizing: border-box;",
                                     
                                     img {
-                                        src: format!("/assets/items/{}.png", relic),
+                                        src: format!("/assets/items/{}.png", format_item_image_name(&relic)),
                                         style: "width: 100%; height: 100%; border-radius: 4px; background: var(--color-bg-tertiary);",
                                     }
                                     
@@ -1130,11 +1171,9 @@ fn BuildAndItemsSection(guide_data: Signal<GuideData>, search_query: Signal<Stri
                                             .map(|item| {
                                                 // For evolved items with 0 price, get base item price
                                                 if item.price == 0 {
-                                                    for effect in &item.effects {
-                                                        if effect.starts_with("Glyph:") {
-                                                            // For glyph items, use a default price
-                                                            return 3000;
-                                                        }
+                                                    if item.effects.contains_key(&Effect::Glyph) {
+                                                        // For glyph items, use a default price
+                                                        return 3000;
                                                     }
                                                 }
                                                 item.price
@@ -1220,118 +1259,150 @@ fn BuildAndItemsSection(guide_data: Signal<GuideData>, search_query: Signal<Stri
                 }
             }
             
-            // All items in separate rows
+            // All items in a 2x2 grid layout
             div {
-                style: "display: flex; flex-direction: column; gap: 16px; margin-top: 24px;",
+                style: "display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 24px;",
                 
-                // Row 1: Regular items
+                // Starter items section (top-left)
                 div {
-                    style: "display: grid; grid-template-columns: repeat(auto-fill, minmax(48px, 1fr)); gap: 6px;",
+                    style: "background: var(--color-bg-secondary); border-radius: 8px; padding: 16px;",
                     
-                    for item in regular_items {
-                        if !should_hide_item(&item) {
-                            button {
-                                key: "{item}",
-                                style: format!(
-                                    "aspect-ratio: 1; padding: 0; border: 2px solid {}; border-radius: 4px; cursor: pointer; background: var(--color-bg-secondary); transition: all 0.2s ease; opacity: {};",
-                                    if guide_data().build.contains(&item) { "var(--color-accent)" } else { "var(--color-border)" },
-                                    if should_fade_item(&item) { "0.3" } else { "1" }
-                                ),
-                                disabled: guide_data().build.len() >= 6 && !guide_data().build.contains(&item),
-                                onclick: {
-                                    let item_clone = item.clone();
-                                    move |_| {
-                                        let mut data = guide_data();
-                                        if let Some(pos) = data.build.iter().position(|x| x == &item_clone) {
-                                            // Item is in build, remove it
-                                            data.build.remove(pos);
-                                        } else if data.build.len() < 6 {
-                                            // Item not in build, add it
-                                            data.build.push(item_clone.clone());
-                                        }
-                                        guide_data.set(data);
-                                    }
-                                },
-                                
-                                img {
-                                    src: format!("/assets/items/{}.png", item),
-                                    style: "width: 100%; height: 100%;",
-                                }
-                            }
-                        }
+                    h4 {
+                        style: "margin: 0 0 12px 0; font-size: 14px; font-weight: 600; color: var(--color-text-primary); text-transform: uppercase; letter-spacing: 1px;",
+                        "Starter Items"
                     }
-                }
-                
-                // Row 2: Glyph items
-                div {
-                    style: "display: grid; grid-template-columns: repeat(auto-fill, minmax(48px, 1fr)); gap: 6px;",
                     
-                    for item in glyph_items {
-                        if !should_hide_item(&item) {
-                            button {
-                                key: "{item}",
-                                style: format!(
-                                    "aspect-ratio: 1; padding: 0; border: 2px solid {}; border-radius: 4px; cursor: pointer; background: var(--color-bg-secondary); transition: all 0.2s ease; opacity: {};",
-                                    if guide_data().build.contains(&item) { "var(--color-accent)" } else { "var(--color-border)" },
-                                    if should_fade_item(&item) { "0.3" } else { "1" }
-                                ),
-                                disabled: guide_data().build.len() >= 6 && !guide_data().build.contains(&item),
-                                onclick: {
-                                    let item_clone = item.clone();
-                                    move |_| {
-                                        let mut data = guide_data();
-                                        if let Some(pos) = data.build.iter().position(|x| x == &item_clone) {
-                                            // Item is in build, remove it
-                                            data.build.remove(pos);
-                                        } else if data.build.len() < 6 {
-                                            // Check if this is a glyph and if its base item is in the build
-                                            if let Some(item_data) = ITEMS.get(&item_clone) {
-                                                for effect in &item_data.effects {
-                                                    if effect.starts_with("Glyph:") {
-                                                        // For glyph items, just add them normally
-                                                        // In a full implementation, we might parse the base item from the effect string
-                                                        break;
+                    div {
+                        style: "display: grid; grid-template-columns: repeat(auto-fill, minmax(48px, 1fr)); gap: 6px; min-height: 200px; max-height: 300px; overflow-y: auto; padding-right: 8px;",
+                        
+                        if starter_items.is_empty() {
+                            div {
+                                style: "color: var(--color-text-secondary); text-align: center; padding: 40px 0;",
+                                "No starter items available"
+                            }
+                        } else {
+                            for item in &starter_items {
+                                if !should_hide_item(&item) {
+                                    button {
+                                        key: "{item}",
+                                        style: format!(
+                                            "aspect-ratio: 1; padding: 0; border: 2px solid {}; border-radius: 4px; cursor: pointer; background: var(--color-bg-tertiary); transition: all 0.2s ease; opacity: {};",
+                                            if guide_data().build.contains(&item) { "var(--color-accent)" } else { "transparent" },
+                                            if should_fade_item(&item) { "0.3" } else { "1" }
+                                        ),
+                                        disabled: {
+                                            let build = guide_data().build;
+                                            let has_starter = build.iter().any(|i| is_starter_item(i));
+                                            build.len() >= 6 && !build.contains(&item) && has_starter
+                                        },
+                                        onclick: {
+                                            let item_clone = item.clone();
+                                            move |_| {
+                                                let mut data = guide_data();
+                                                if let Some(pos) = data.build.iter().position(|x| x == &item_clone) {
+                                                    // Item is in build, remove it
+                                                    data.build.remove(pos);
+                                                } else if data.build.len() < 6 {
+                                                    let has_starter = data.build.iter().any(|i| is_starter_item(i));
+                                                    
+                                                    if !has_starter || is_starter_item(&item_clone) {
+                                                        if is_starter_item(&item_clone) && has_starter {
+                                                            data.build.retain(|i| !is_starter_item(i));
+                                                        }
+                                                        data.build.push(item_clone.clone());
                                                     }
                                                 }
+                                                guide_data.set(data);
                                             }
-                                            // No base item found, add normally
-                                            data.build.push(item_clone.clone());
+                                        },
+                                        
+                                        img {
+                                            src: format!("/assets/items/{}.png", format_item_image_name(&item)),
+                                            style: "width: 100%; height: 100%;",
                                         }
-                                        guide_data.set(data);
                                     }
-                                },
-                                
-                                img {
-                                    src: format!("/assets/items/{}.png", item),
-                                    style: "width: 100%; height: 100%;",
                                 }
                             }
                         }
                     }
                 }
                 
-                // Row 3: Starter items and relics side by side
+                // Relics section (top-right)
                 div {
-                    style: "display: grid; grid-template-columns: 2fr 1fr; gap: 24px;",
+                    style: "background: var(--color-bg-secondary); border-radius: 8px; padding: 16px;",
                     
-                    // Starter items
+                    h4 {
+                        style: "margin: 0 0 12px 0; font-size: 14px; font-weight: 600; color: var(--color-text-primary); text-transform: uppercase; letter-spacing: 1px;",
+                        "Relics"
+                    }
+                    
                     div {
-                        style: "display: grid; grid-template-columns: repeat(auto-fill, minmax(48px, 1fr)); gap: 6px;",
+                        style: "display: grid; grid-template-columns: repeat(auto-fill, minmax(48px, 1fr)); gap: 6px; min-height: 200px; max-height: 300px; overflow-y: auto; padding-right: 8px;",
                         
-                        for item in starter_items {
+                        if available_relics.is_empty() {
+                            div {
+                                style: "color: var(--color-text-secondary); text-align: center; padding: 40px 0;",
+                                "No relics available"
+                            }
+                        } else {
+                            for relic in &available_relics {
+                                if !should_hide_item(&relic) {
+                                    button {
+                                        key: "{relic}",
+                                        style: format!(
+                                            "aspect-ratio: 1; padding: 0; border: 2px solid {}; border-radius: 4px; cursor: pointer; background: var(--color-bg-tertiary); transition: all 0.2s ease; opacity: {};",
+                                            if guide_data().relics.contains(&relic) { "var(--color-accent)" } else { "transparent" },
+                                            if should_fade_item(&relic) { "0.3" } else { "1" }
+                                        ),
+                                        disabled: guide_data().relics.len() >= 2 && !guide_data().relics.contains(&relic),
+                                        onclick: {
+                                            let relic_clone = relic.clone();
+                                            move |_| {
+                                                let mut data = guide_data();
+                                                if let Some(pos) = data.relics.iter().position(|x| x == &relic_clone) {
+                                                    // Relic is selected, remove it
+                                                    data.relics.remove(pos);
+                                                } else if data.relics.len() < 2 {
+                                                    // Relic not selected, add it
+                                                    data.relics.push(relic_clone.clone());
+                                                }
+                                                guide_data.set(data);
+                                            }
+                                        },
+                                        
+                                        img {
+                                            src: format!("/assets/items/{}.png", format_item_image_name(&relic)),
+                                            style: "width: 100%; height: 100%;",
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                // Tier 3 items section (bottom-left)
+                div {
+                    style: "background: var(--color-bg-secondary); border-radius: 8px; padding: 16px;",
+                    
+                    h4 {
+                        style: "margin: 0 0 12px 0; font-size: 14px; font-weight: 600; color: var(--color-text-primary); text-transform: uppercase; letter-spacing: 1px;",
+                        "Tier 3 Items"
+                    }
+                    
+                    div {
+                        style: "display: grid; grid-template-columns: repeat(auto-fill, minmax(48px, 1fr)); gap: 6px; min-height: 200px; max-height: 300px; overflow-y: auto; padding-right: 8px;",
+                        
+                        for item in regular_items.iter().filter(|item| get_item_tier(item) == 3) {
                             if !should_hide_item(&item) {
                                 button {
                                     key: "{item}",
                                     style: format!(
-                                        "aspect-ratio: 1; padding: 0; border: 2px solid {}; border-radius: 4px; cursor: pointer; background: var(--color-bg-secondary); transition: all 0.2s ease; opacity: {};",
-                                        if guide_data().build.contains(&item) { "var(--color-accent)" } else { "var(--color-border)" },
+                                        "aspect-ratio: 1; padding: 0; border: 2px solid {}; border-radius: 4px; cursor: pointer; background: var(--color-bg-tertiary); transition: all 0.2s ease; opacity: {};",
+                                        if guide_data().build.contains(&item) { "var(--color-accent)" } else { "transparent" },
                                         if should_fade_item(&item) { "0.3" } else { "1" }
                                     ),
-                                    disabled: {
-                                        let build = guide_data().build;
-                                        let has_starter = build.iter().any(|i| i.starts_with("s_"));
-                                        build.len() >= 6 && !build.contains(&item) && (has_starter && item.starts_with("s_"))
-                                    },
+                                    disabled: guide_data().build.len() >= 6 && !guide_data().build.contains(&item),
                                     onclick: {
                                         let item_clone = item.clone();
                                         move |_| {
@@ -1340,59 +1411,190 @@ fn BuildAndItemsSection(guide_data: Signal<GuideData>, search_query: Signal<Stri
                                                 // Item is in build, remove it
                                                 data.build.remove(pos);
                                             } else if data.build.len() < 6 {
-                                                let has_starter = data.build.iter().any(|i| i.starts_with("s_"));
-                                                
-                                                if !has_starter || item_clone.starts_with("s_") {
-                                                    if item_clone.starts_with("s_") && has_starter {
-                                                        data.build.retain(|i| !i.starts_with("s_"));
-                                                    }
-                                                    data.build.push(item_clone.clone());
-                                                }
+                                                // Item not in build, add it
+                                                data.build.push(item_clone.clone());
                                             }
                                             guide_data.set(data);
                                         }
                                     },
                                     
                                     img {
-                                        src: format!("/assets/items/{}.png", item),
+                                        src: format!("/assets/items/{}.png", item.replace("-", "")),
                                         style: "width: 100%; height: 100%;",
                                     }
                                 }
                             }
                         }
                     }
+                }
+                
+                // Glyph items section or Tier 1&2 section (bottom-right)
+                div {
+                    style: "background: var(--color-bg-secondary); border-radius: 8px; padding: 16px;",
                     
-                    // Available relics
-                    div {
-                        style: "display: grid; grid-template-columns: repeat(auto-fill, minmax(48px, 1fr)); gap: 6px;",
+                    // Show glyphs if available, otherwise show tier 1&2 if enabled
+                    if !glyph_items.is_empty() {
+                        h4 {
+                            style: "margin: 0 0 12px 0; font-size: 14px; font-weight: 600; color: var(--color-text-primary); text-transform: uppercase; letter-spacing: 1px;",
+                            "Glyph Items (Tier 4)"
+                        }
                         
-                        for relic in available_relics {
-                            if !should_hide_item(&relic) {
+                        div {
+                            style: "display: grid; grid-template-columns: repeat(auto-fill, minmax(48px, 1fr)); gap: 6px; min-height: 200px; max-height: 300px; overflow-y: auto; padding-right: 8px;",
+                            
+                            for item in &glyph_items {
+                                if !should_hide_item(&item) {
+                                    button {
+                                        key: "{item}",
+                                        style: format!(
+                                            "aspect-ratio: 1; padding: 0; border: 2px solid {}; border-radius: 4px; cursor: pointer; background: var(--color-bg-tertiary); transition: all 0.2s ease; opacity: {};",
+                                            if guide_data().build.contains(&item) { "var(--color-accent)" } else { "transparent" },
+                                            if should_fade_item(&item) { "0.3" } else { "1" }
+                                        ),
+                                        disabled: guide_data().build.len() >= 6 && !guide_data().build.contains(&item),
+                                        onclick: {
+                                            let item_clone = item.clone();
+                                            move |_| {
+                                                let mut data = guide_data();
+                                                if let Some(pos) = data.build.iter().position(|x| x == &item_clone) {
+                                                    // Item is in build, remove it
+                                                    data.build.remove(pos);
+                                                } else if data.build.len() < 6 {
+                                                    // Check if this is a glyph and if its base item is in the build
+                                                    if let Some(item_data) = ITEMS.get(&item_clone) {
+                                                        if item_data.effects.contains_key(&Effect::Glyph) {
+                                                            // For glyph items, just add them normally
+                                                            // In a full implementation, we might parse the base item from the effect string
+                                                        }
+                                                    }
+                                                    // No base item found, add normally
+                                                    data.build.push(item_clone.clone());
+                                                }
+                                                guide_data.set(data);
+                                            }
+                                        },
+                                        
+                                        img {
+                                            src: format!("/assets/items/{}.png", format_item_image_name(&item)),
+                                            style: "width: 100%; height: 100%;",
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    } else if tier1_enabled() || tier2_enabled() {
+                        h4 {
+                            style: "margin: 0 0 12px 0; font-size: 14px; font-weight: 600; color: var(--color-text-primary); text-transform: uppercase; letter-spacing: 1px;",
+                            {
+                                if tier1_enabled() && tier2_enabled() {
+                                    "Tier 1 & 2 Items"
+                                } else if tier1_enabled() {
+                                    "Tier 1 Items"
+                                } else {
+                                    "Tier 2 Items"
+                                }
+                            }
+                        }
+                        
+                        div {
+                            style: "display: grid; grid-template-columns: repeat(auto-fill, minmax(48px, 1fr)); gap: 6px; min-height: 200px; max-height: 300px; overflow-y: auto; padding-right: 8px;",
+                            
+                            for item in regular_items.iter().filter(|item| {
+                                let tier = get_item_tier(item);
+                                (tier == 1 && tier1_enabled()) || (tier == 2 && tier2_enabled())
+                            }) {
+                                if !should_hide_item(&item) {
+                                    button {
+                                        key: "{item}",
+                                        style: format!(
+                                            "aspect-ratio: 1; padding: 0; border: 2px solid {}; border-radius: 4px; cursor: pointer; background: var(--color-bg-tertiary); transition: all 0.2s ease; opacity: {};",
+                                            if guide_data().build.contains(&item) { "var(--color-accent)" } else { "transparent" },
+                                            if should_fade_item(&item) { "0.3" } else { "1" }
+                                        ),
+                                        disabled: guide_data().build.len() >= 6 && !guide_data().build.contains(&item),
+                                        onclick: {
+                                            let item_clone = item.clone();
+                                            move |_| {
+                                                let mut data = guide_data();
+                                                if let Some(pos) = data.build.iter().position(|x| x == &item_clone) {
+                                                    // Item is in build, remove it
+                                                    data.build.remove(pos);
+                                                } else if data.build.len() < 6 {
+                                                    // Item not in build, add it
+                                                    data.build.push(item_clone.clone());
+                                                }
+                                                guide_data.set(data);
+                                            }
+                                        },
+                                        
+                                        img {
+                                            src: format!("/assets/items/{}.png", format_item_image_name(&item)),
+                                            style: "width: 100%; height: 100%;",
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    } else {
+                        div {
+                            style: "color: var(--color-text-secondary); text-align: center; padding: 80px 20px;",
+                            "Enable Tier 1 or Tier 2 items to see them here"
+                        }
+                    }
+                }
+            }
+            
+            // Additional row for Tier 1 & 2 if glyphs are shown and tiers are enabled
+            if !glyph_items.is_empty() && (tier1_enabled() || tier2_enabled()) {
+                div {
+                    style: "background: var(--color-bg-secondary); border-radius: 8px; padding: 16px; margin-top: 16px;",
+                    
+                    h4 {
+                        style: "margin: 0 0 12px 0; font-size: 14px; font-weight: 600; color: var(--color-text-primary); text-transform: uppercase; letter-spacing: 1px;",
+                        {
+                            if tier1_enabled() && tier2_enabled() {
+                                "Tier 1 & 2 Items"
+                            } else if tier1_enabled() {
+                                "Tier 1 Items"
+                            } else {
+                                "Tier 2 Items"
+                            }
+                        }
+                    }
+                    
+                    div {
+                        style: "display: grid; grid-template-columns: repeat(auto-fill, minmax(48px, 1fr)); gap: 6px; max-height: 200px; overflow-y: auto; padding-right: 8px;",
+                        
+                        for item in regular_items.iter().filter(|item| {
+                            let tier = get_item_tier(item);
+                            (tier == 1 && tier1_enabled()) || (tier == 2 && tier2_enabled())
+                        }) {
+                            if !should_hide_item(&item) {
                                 button {
-                                    key: "{relic}",
+                                    key: "{item}",
                                     style: format!(
-                                        "aspect-ratio: 1; padding: 0; border: 2px solid {}; border-radius: 4px; cursor: pointer; background: var(--color-bg-secondary); transition: all 0.2s ease; opacity: {};",
-                                        if guide_data().relics.contains(&relic) { "var(--color-accent)" } else { "var(--color-border)" },
-                                        if should_fade_item(&relic) { "0.3" } else { "1" }
+                                        "aspect-ratio: 1; padding: 0; border: 2px solid {}; border-radius: 4px; cursor: pointer; background: var(--color-bg-tertiary); transition: all 0.2s ease; opacity: {};",
+                                        if guide_data().build.contains(&item) { "var(--color-accent)" } else { "transparent" },
+                                        if should_fade_item(&item) { "0.3" } else { "1" }
                                     ),
-                                    disabled: guide_data().relics.len() >= 2 && !guide_data().relics.contains(&relic),
+                                    disabled: guide_data().build.len() >= 6 && !guide_data().build.contains(&item),
                                     onclick: {
-                                        let relic_clone = relic.clone();
+                                        let item_clone = item.clone();
                                         move |_| {
                                             let mut data = guide_data();
-                                            if let Some(pos) = data.relics.iter().position(|x| x == &relic_clone) {
-                                                // Relic is selected, remove it
-                                                data.relics.remove(pos);
-                                            } else if data.relics.len() < 2 {
-                                                // Relic not selected, add it
-                                                data.relics.push(relic_clone.clone());
+                                            if let Some(pos) = data.build.iter().position(|x| x == &item_clone) {
+                                                // Item is in build, remove it
+                                                data.build.remove(pos);
+                                            } else if data.build.len() < 6 {
+                                                // Item not in build, add it
+                                                data.build.push(item_clone.clone());
                                             }
                                             guide_data.set(data);
                                         }
                                     },
                                     
                                     img {
-                                        src: format!("/assets/items/{}.png", relic),
+                                        src: format!("/assets/items/{}.png", item.replace("-", "")),
                                         style: "width: 100%; height: 100%;",
                                     }
                                 }
@@ -1671,8 +1873,8 @@ fn SkillOrderSection(guide_data: Signal<GuideData>, god_info: Option<crate::data
                             }
                         }
                         
-                        // Skill rows
-                        for (skill_idx, ability) in god.abilities.iter().enumerate() {
+                        // Skill rows (skip passive at index 0)
+                        for (idx, ability) in god.abilities.iter().enumerate().skip(1) {
                             div {
                                 style: "display: grid; grid-template-columns: 40px repeat(20, 1fr); gap: 4px;",
                                 
@@ -1684,18 +1886,18 @@ fn SkillOrderSection(guide_data: Signal<GuideData>, god_info: Option<crate::data
                                             // Count how many times this skill appears at or before this level
                                             let skill_count_at_level = guide_data().skill_order.iter()
                                                 .take(level + 1)
-                                                .filter(|&&s| s == (skill_idx as u8 + 1))
+                                                .filter(|&&s| s == ((idx - 1) as u8 + 1))
                                                 .count();
                                             // Count how many times this skill appears before this level
                                             let skill_count_before = if level > 0 {
                                                 guide_data().skill_order.iter()
                                                     .take(level)
-                                                    .filter(|&&s| s == (skill_idx as u8 + 1))
+                                                    .filter(|&&s| s == ((idx - 1) as u8 + 1))
                                                     .count()
                                             } else { 0 };
                                             // This level is selected if the count increased
                                             let is_selected = skill_count_at_level > skill_count_before;
-                                            let can_select = can_level_skill(skill_idx, level, &guide_data().skill_order);
+                                            let can_select = can_level_skill(idx - 1, level, &guide_data().skill_order);
                                             
                                             format!(
                                                 "aspect-ratio: 1; border: 1px solid var(--color-border); border-radius: 4px; background: {}; color: {}; cursor: {}; font-size: 12px; opacity: {};",
@@ -1721,33 +1923,33 @@ fn SkillOrderSection(guide_data: Signal<GuideData>, god_info: Option<crate::data
                                             // Count how many times this skill appears at or before this level
                                             let skill_count_at_level = guide_data().skill_order.iter()
                                                 .take(level + 1)
-                                                .filter(|&&s| s == (skill_idx as u8 + 1))
+                                                .filter(|&&s| s == ((idx - 1) as u8 + 1))
                                                 .count();
                                             // Count how many times this skill appears before this level
                                             let skill_count_before = if level > 0 {
                                                 guide_data().skill_order.iter()
                                                     .take(level)
-                                                    .filter(|&&s| s == (skill_idx as u8 + 1))
+                                                    .filter(|&&s| s == ((idx - 1) as u8 + 1))
                                                     .count()
                                             } else { 0 };
                                             let is_selected = skill_count_at_level > skill_count_before;
-                                            let can_select = can_level_skill(skill_idx, level, &guide_data().skill_order);
+                                            let can_select = can_level_skill(idx - 1, level, &guide_data().skill_order);
                                             !can_select && !is_selected
                                         },
                                         onclick: move |_| {
-                                            let can_select = can_level_skill(skill_idx, level, &guide_data().skill_order);
+                                            let can_select = can_level_skill(idx - 1, level, &guide_data().skill_order);
                                             
                                             let mut data = guide_data();
                                             
                                             // Count points up to this level to see if this skill is selected here
                                             let skill_count_at_level = data.skill_order.iter()
                                                 .take(level + 1)
-                                                .filter(|&&s| s == (skill_idx as u8 + 1))
+                                                .filter(|&&s| s == ((idx - 1) as u8 + 1))
                                                 .count();
                                             let skill_count_before = if level > 0 {
                                                 data.skill_order.iter()
                                                     .take(level)
-                                                    .filter(|&&s| s == (skill_idx as u8 + 1))
+                                                    .filter(|&&s| s == ((idx - 1) as u8 + 1))
                                                     .count()
                                             } else { 0 };
                                             let is_selected_here = skill_count_at_level > skill_count_before;
@@ -1755,14 +1957,14 @@ fn SkillOrderSection(guide_data: Signal<GuideData>, god_info: Option<crate::data
                                             if is_selected_here {
                                                 // Find and remove the first occurrence of this skill after position 'level-1'
                                                 for i in level..data.skill_order.len() {
-                                                    if data.skill_order[i] == (skill_idx as u8 + 1) {
+                                                    if data.skill_order[i] == ((idx - 1) as u8 + 1) {
                                                         data.skill_order.remove(i);
                                                         break;
                                                     }
                                                 }
                                             } else if can_select {
                                                 // Add the skill point at this level
-                                                data.skill_order.push(skill_idx as u8 + 1);
+                                                data.skill_order.push((idx - 1) as u8 + 1);
                                             }
                                             
                                             guide_data.set(data);
@@ -1772,13 +1974,13 @@ fn SkillOrderSection(guide_data: Signal<GuideData>, god_info: Option<crate::data
                                             // Count how many times this skill appears at or before this level
                                             let skill_count_at_level = guide_data().skill_order.iter()
                                                 .take(level + 1)
-                                                .filter(|&&s| s == (skill_idx as u8 + 1))
+                                                .filter(|&&s| s == ((idx - 1) as u8 + 1))
                                                 .count();
                                             // Count how many times this skill appears before this level
                                             let skill_count_before = if level > 0 {
                                                 guide_data().skill_order.iter()
                                                     .take(level)
-                                                    .filter(|&&s| s == (skill_idx as u8 + 1))
+                                                    .filter(|&&s| s == ((idx - 1) as u8 + 1))
                                                     .count()
                                             } else { 0 };
                                             // This level is selected if the count increased

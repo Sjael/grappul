@@ -25,10 +25,11 @@ pub fn TimelinePiece(props: TimelinePieceProps) -> Element {
             if let Some(items) = &props.entry.items {
                 div {
                     class: "items",
-                    for item in items {
+                    for (idx, item) in items.iter().enumerate() {
                         Item {
+                            key: "{props.entry.percent}_{idx}_{item}",
                             item: item.clone(),
-                            size: 30
+                            size: 24
                         }
                     }
                 }

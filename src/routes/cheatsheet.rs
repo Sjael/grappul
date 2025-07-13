@@ -1,5 +1,5 @@
 use dioxus::prelude::*;
-use crate::components::{Tooltip, ClassFilters, RoleFilters, Header, Item, NoBuildCTA};
+use crate::components::{Tooltip, ClassFilters, RoleFilters, Header, Item};
 use crate::data::gods::GODS;
 use crate::data::guides::GUIDES;
 use crate::{FilteredClass, FilteredRole, SelectedRole, SelectedGod};
@@ -19,7 +19,7 @@ pub fn Cheatsheet() -> Element {
     // Set up keyboard event listener to focus search on any letter key
     use_effect(move || {
         let handle_keydown = {
-            let search_input_id = search_input_id.clone();
+            let search_input_id = search_input_id;
             move |event: web_sys::KeyboardEvent| {
                 // Check if it's a single letter key and no modifiers
                 if event.key().len() == 1 && 
@@ -254,8 +254,7 @@ pub fn Cheatsheet() -> Element {
                                 "data-god-name": "{name}",
                                 CheatsheetCard {
                                     god_name: (*name).clone(),
-                                    god_class: god.class.clone(),
-                                    god_roles: god.roles.clone(),
+                                    god_info: (*god).clone(),
                                     filtered_role: filter_role.0.clone(),
                                     selected_role: sel_role.0.clone(),
                                     filtered_class: selected_class.0.clone(),
@@ -274,14 +273,14 @@ pub fn Cheatsheet() -> Element {
 #[component]
 fn CheatsheetCard(
     god_name: String, 
-    god_class: String, 
-    god_roles: Vec<String>,
+    god_info: crate::data::gods::God,
     filtered_role: Option<String>,
     selected_role: Option<String>,
     filtered_class: Option<String>,
 ) -> Element {
     let mut selected_god = use_context::<Signal<SelectedGod>>();
     let mut selected_role_signal = use_context::<Signal<SelectedRole>>();
+    let mut is_hovered = use_signal(|| false);
     
     // Get all guides for the god (no filtering)
     let all_guides = GUIDES.get(&god_name)
@@ -298,22 +297,13 @@ fn CheatsheetCard(
         }
         roles.into_iter().collect()
     } else {
-        god_roles.clone()
+        god_info.roles.clone()
     };
     
     // Sort roles alphabetically for consistent ordering
     unique_roles.sort();
     
-    let display_name = god_name.split('_')
-        .map(|word| {
-            let mut chars = word.chars();
-            match chars.next() {
-                None => String::new(),
-                Some(first) => first.to_uppercase().collect::<String>() + chars.as_str(),
-            }
-        })
-        .collect::<Vec<String>>()
-        .join(" ");
+    let display_name = god_info.display_name.clone();
     
     rsx! {
         div {
@@ -330,6 +320,8 @@ fn CheatsheetCard(
             ", 
                 if has_builds_for_filters { "1" } else { "0.5" }
             ),
+            onmouseenter: move |_| is_hovered.set(true),
+            onmouseleave: move |_| is_hovered.set(false),
             
             // Header with god icon and name
             div {
@@ -352,14 +344,49 @@ fn CheatsheetCard(
                     }
                     
                     // Role badges - inline with name
-                    div {
-                        style: "display: flex; gap: 4px; flex-wrap: wrap;",
-                        
-                        for role in &unique_roles {
-                            RoleBadgeButton {
-                                role: role.clone()
+                    if has_builds_for_filters {
+                        div {
+                            style: "display: flex; gap: 4px; flex-wrap: wrap;",
+                            
+                            for role in &unique_roles {
+                                RoleBadgeButton {
+                                    role: role.clone()
+                                }
                             }
                         }
+                    } else {
+                        span {
+                            style: "font-size: 12px; color: var(--color-text-secondary);",
+                            "No guides yet"
+                        }
+                    }
+                }
+                
+                // Create button - only show on hover when no builds
+                if !has_builds_for_filters && is_hovered() {
+                    button {
+                        style: "padding: 4px 12px; background: var(--color-accent); color: white; border: none; border-radius: 4px; font-size: 11px; font-weight: 500; cursor: pointer; transition: all 0.2s ease; display: flex; align-items: center; gap: 4px; opacity: 0; animation: fadeIn 0.2s ease forwards;",
+                        onclick: move |e| {
+                            e.stop_propagation();
+                            navigator().push(Route::GuideCreator);
+                        },
+                        
+                        // Plus icon
+                        svg {
+                            width: "12",
+                            height: "12",
+                            view_box: "0 0 24 24",
+                            fill: "none",
+                            stroke: "currentColor",
+                            stroke_width: "3",
+                            stroke_linecap: "round",
+                            stroke_linejoin: "round",
+                            
+                            line { x1: "12", y1: "5", x2: "12", y2: "19" }
+                            line { x1: "5", y1: "12", x2: "19", y2: "12" }
+                        }
+                        
+                        "Create"
                     }
                 }
             }
@@ -369,7 +396,7 @@ fn CheatsheetCard(
                 div {
                     style: "display: flex; flex-direction: column; gap: 4px;",
                     
-                    for (idx, guide_data) in all_guides.iter().enumerate() {
+                    for (_idx, guide_data) in all_guides.iter().enumerate() {
                         // Clickable build container
                         div {
                             class: "build-container",
@@ -400,50 +427,17 @@ fn CheatsheetCard(
                                             for item in guide_data.build.iter().take(6) {
                                                 Item { 
                                                     item: item.clone(),
-                                                    size: 32
+                                                    size: 24
                                                 }
                                             }
                                         }
                                     }
                                     
                                 }
-                                
-                                // Skill order - only show if it exists
-                                if !guide_data.skill_order.is_empty() {
-                                    div {
-                                        style: "display: flex; align-items: center; gap: 4px;",
-                                        
-                                        span {
-                                            style: "font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--color-text-secondary); font-weight: 600;",
-                                            "Skills:"
-                                        }
-                                        
-                                        div {
-                                            style: "display: flex; align-items: center; gap: 4px;",
-                                            
-                                            for (idx, &skill) in guide_data.skill_order.iter().take(5).enumerate() {
-                                                span {
-                                                    style: "display: inline-flex; align-items: center; justify-content: center; width: 16px; height: 16px; background: var(--color-accent-alpha); border-radius: 2px; font-size: 9px; font-weight: 600; color: var(--color-accent);",
-                                                    { format!("{}", skill + 1) }
-                                                }
-                                                
-                                                if idx < 4 {
-                                                    span {
-                                                        style: "color: var(--color-text-secondary); font-size: 8px;",
-                                                        "→"
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
                             }
                         }
                     }
                 }
-            } else {
-                // No builds available CTA - smaller, single row
-                NoBuildCTA { god_name: god_name.clone() }
             }
         }
     }

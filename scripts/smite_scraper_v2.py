@@ -96,10 +96,10 @@ class SmiteScraper:
         """Convert name to lowercase with underscores, matching Rust slugify"""
         # Remove apostrophes and quotes
         name = name.replace("'", "").replace('"', '')
-        # Remove special characters except alphanumeric, spaces and hyphens
-        name = re.sub(r'[^\w\s-]', '', name)
-        # Replace spaces and hyphens with underscores
-        name = re.sub(r'[-\s]+', '_', name)
+        # Remove special characters except alphanumeric and spaces
+        name = re.sub(r'[^\w\s]', '', name)
+        # Replace spaces with underscores
+        name = re.sub(r'[\s]+', '_', name)
         return name.lower()
     
     def scrape_god_icons(self):
@@ -299,12 +299,12 @@ class SmiteScraper:
                                 items[key] = item_data
                             else:
                                 # Fallback: create basic item data if individual scrape fails
-                                tags = self._determine_item_tags(display_name, category)
+                                tags = self._determine_item_tags(display_name, category, 0, {}, {}, None)
                                 items[key] = {
                                     'display_name': display_name,
                                     'price': 0,
                                     'stats': {},
-                                    'effects': [],
+                                    'effects': {},
                                     'tags': tags
                                 }
         
@@ -433,7 +433,7 @@ class SmiteScraper:
                         # Try to find any table that looks like an infobox
                         for table in soup.find_all('table'):
                             # Check if it has item-related headers
-                            if any(keyword in str(table).lower() for keyword in ['cost:', 'stats:', 'tier:']):
+                            if any(keyword in str(table).lower() for keyword in ['cost:', 'stats:', 'tier:', 'passive', 'active', 'glyph', 'aura']):
                                 infobox = table
                                 logger.debug(f"Found alternative infobox for {display_name}")
                                 break
@@ -486,8 +486,8 @@ class SmiteScraper:
             # Extract effects (passive/active) with improved method
             effects = self._extract_item_effects_improved(soup)
             
-            # Determine tags
-            tags = self._determine_item_tags(display_name, category)
+            # Determine tags based on all item properties
+            tags = self._determine_item_tags(display_name, category, cost, stats, effects, soup)
             
             # Download image
             image_url = ""
@@ -517,6 +517,11 @@ class SmiteScraper:
     def _extract_item_stats_improved(self, soup: BeautifulSoup, infobox: BeautifulSoup) -> Dict[str, int]:
         """Extract item stats from infobox or page content as dictionary"""
         stats = {}
+        
+        # Debug logging
+        item_name = soup.find('h1', {'class': 'page-header__title'})
+        if item_name:
+            logger.debug(f"Extracting stats for: {item_name.get_text(strip=True)}")
         
         # Map display names to ItemStat enum values
         stat_mapping = {
@@ -552,6 +557,7 @@ class SmiteScraper:
             'Mag. Lifesteal': 'MagicalLifesteal',
             'Crit Chance': 'CriticalStrikeChance',
             'Critical Chance': 'CriticalStrikeChance',
+            'Crit': 'CriticalStrikeChance',
             'CDR': 'CooldownReduction',
             'Move Speed': 'MovementSpeed',
         }
@@ -577,18 +583,20 @@ class SmiteScraper:
                 # Also try to parse the whole element text
                 if not (label_elem and value_elem):
                     elem_text = stat_elem.get_text(strip=True)
-                    # Look for pattern like "Physical Power: +30"
+                    # Look for pattern like "Physical Power: +30" or "Critical Strike Chance: +20%"
                     for stat_name, stat_key in all_mappings.items():
-                        pattern = rf'{re.escape(stat_name)}[:\s]*[+]?(\d+)'
+                        pattern = rf'{re.escape(stat_name)}[:\s]*[+]?(\d+)\s*%?'
                         match = re.search(pattern, elem_text, re.IGNORECASE)
                         if match:
                             stats[stat_key] = int(match.group(1))
+                            if '%' in elem_text and stat_key in ['CriticalStrikeChance', 'CooldownReduction']:
+                                logger.debug(f"Found percentage stat: {stat_name} = {match.group(1)}%")
                 
                 if label_elem and value_elem:
                     label_text = label_elem.get_text(strip=True).replace(':', '')
                     value_text = value_elem.get_text(strip=True)
-                    # Extract numeric value
-                    match = re.search(r'[+]?(\d+)', value_text)
+                    # Extract numeric value (handle percentages with or without space)
+                    match = re.search(r'[+]?(\d+)\s*%?', value_text)
                     if match:
                         value = int(match.group(1))
                         if label_text in all_mappings:
@@ -608,8 +616,8 @@ class SmiteScraper:
                             if len(cells) >= 2:
                                 stat_name = cells[0].get_text(strip=True)
                                 stat_value = cells[1].get_text(strip=True)
-                                # Extract numeric value
-                                match = re.search(r'[+]?(\d+)', stat_value)
+                                # Extract numeric value (handle percentages with or without space)
+                                match = re.search(r'[+]?(\d+)\s*%?', stat_value)
                                 if match:
                                     value = int(match.group(1))
                                     if stat_name in all_mappings:
@@ -619,9 +627,10 @@ class SmiteScraper:
         if not stats and infobox:
             stats_text = self._extract_infobox_value(infobox, 'Stats')
             if stats_text:
-                # Parse combined stats string like "+10 Physical Protection+10 Magical Protection+100 Health+7 MP5"
-                # Split by + but keep the + sign for positive values
-                stat_parts = re.findall(r'\+?(\d+)\s+([^+]+)', stats_text)
+                # Parse combined stats string like "+10 Physical Protection+10 Magical Protection+100 Health+7 MP5+20% Critical Strike Chance"
+                # Split by + but keep the + sign for positive values, handle percentages
+                # Updated pattern to handle space before % sign
+                stat_parts = re.findall(r'\+?(\d+)\s*%?\s+([^+]+)', stats_text)
                 for value_str, stat_name in stat_parts:
                     stat_name = stat_name.strip()
                     value = int(value_str)
@@ -633,9 +642,9 @@ class SmiteScraper:
         
         return stats
     
-    def _extract_item_effects_improved(self, soup: BeautifulSoup) -> List[str]:
+    def _extract_item_effects_improved(self, soup: BeautifulSoup) -> Dict[str, str]:
         """Extract item effects with improved passive detection"""
-        effects = []
+        effects = {}
         
         content = soup.find('div', {'class': 'mw-parser-output'})
         if not content:
@@ -643,8 +652,21 @@ class SmiteScraper:
         
         # Method 1: Look for passive/active sections
         for header in content.find_all(['h2', 'h3', 'h4']):
-            header_text = header.get_text(strip=True).lower()
-            if any(keyword in header_text for keyword in ['passive', 'active', 'effect', 'aura']):
+            header_text = header.get_text(strip=True)
+            header_lower = header_text.lower()
+            
+            # Determine effect type
+            effect_type = None
+            if 'passive' in header_lower:
+                effect_type = 'Passive'
+            elif 'aura' in header_lower:
+                effect_type = 'Aura'
+            elif 'active' in header_lower:
+                effect_type = 'Active'
+            elif 'glyph' in header_lower:
+                effect_type = 'Glyph'
+            
+            if effect_type:
                 # Get the description from following elements
                 current = header.find_next_sibling()
                 effect_text = []
@@ -652,7 +674,7 @@ class SmiteScraper:
                 while current and current.name not in ['h2', 'h3', 'h4']:
                     if current.name == 'p':
                         text = current.get_text(strip=True)
-                        if text and len(text) > 10:  # Avoid very short text
+                        if text and len(text) > 10:
                             effect_text.append(text)
                     elif current.name == 'ul':
                         # Handle bullet points
@@ -670,29 +692,71 @@ class SmiteScraper:
                     if effect_text:
                         break
                 
-                if effect_text:
-                    effects.extend(effect_text)
+                if effect_text and effect_type not in effects:
+                    effects[effect_type] = ' '.join(effect_text)
         
         # Method 2: Look for specific passive indicators in paragraphs
         if not effects:
             for p in content.find_all('p'):
                 text = p.get_text(strip=True)
-                if any(indicator in text for indicator in ['PASSIVE:', 'Passive:', 'ACTIVE:', 'Active:', 'Using this item', 'AURA:', 'Aura:']):
-                    if len(text) > 20:  # Make sure it's a meaningful description
-                        effects.append(text)
+                
+                # Check for passive indicators
+                if any(indicator in text for indicator in ['PASSIVE:', 'Passive:']):
+                    if len(text) > 20 and 'Passive' not in effects:
+                        # Remove the prefix
+                        for prefix in ['PASSIVE:', 'Passive:']:
+                            if text.startswith(prefix):
+                                text = text[len(prefix):].strip()
+                                break
+                        effects['Passive'] = text
+                
+                # Check for aura indicators
+                elif any(indicator in text for indicator in ['AURA:', 'Aura:']):
+                    if len(text) > 20 and 'Aura' not in effects:
+                        # Remove the prefix
+                        for prefix in ['AURA:', 'Aura:']:
+                            if text.startswith(prefix):
+                                text = text[len(prefix):].strip()
+                                break
+                        effects['Aura'] = text
+                
+                # Check for active indicators
+                elif any(indicator in text for indicator in ['ACTIVE:', 'Active:', 'Using this item']):
+                    if len(text) > 20 and 'Active' not in effects:
+                        # Remove the prefix
+                        for prefix in ['ACTIVE:', 'Active:']:
+                            if text.startswith(prefix):
+                                text = text[len(prefix):].strip()
+                                break
+                        effects['Active'] = text
+                
+                # Check for glyph indicators
+                elif any(indicator in text for indicator in ['GLYPH:', 'Glyph:']):
+                    if len(text) > 20 and 'Glyph' not in effects:
+                        # Remove the prefix
+                        for prefix in ['GLYPH:', 'Glyph:']:
+                            if text.startswith(prefix):
+                                text = text[len(prefix):].strip()
+                                break
+                        effects['Glyph'] = text
         
         # Method 3: Look for tables with passive information
         if not effects:
             for table in content.find_all('table', {'class': 'wikitable'}):
                 # Check if table contains passive info
                 table_text = table.get_text(strip=True).lower()
-                if 'passive' in table_text or 'effect' in table_text:
+                if 'passive' in table_text or 'effect' in table_text or 'aura' in table_text:
                     # Extract text from table cells
                     for cell in table.find_all(['td', 'th']):
                         text = cell.get_text(strip=True)
                         if len(text) > 30 and not text.isdigit():  # Long text, not just numbers
-                            effects.append(text)
-                            break
+                            # Parse multiple effects from the text
+                            parsed_effects = self._parse_effects_from_text(text)
+                            for effect_type, effect_desc in parsed_effects.items():
+                                if effect_type not in effects:
+                                    effects[effect_type] = effect_desc
+                            if parsed_effects:
+                                break
         
         # Method 4: Check infobox for passive field
         if not effects:
@@ -705,24 +769,100 @@ class SmiteScraper:
                     infobox = tables[0]
             
             if infobox:
-                # Look for passive in various formats
-                for label in ['Passive Effect', 'Passive', 'Effect', 'Active Effect', 'Active', 'Aura']:
+                # Look for passive effects
+                for label in ['Passive Effect', 'Passive', 'Aura']:
                     passive_value = self._extract_infobox_value(infobox, label)
                     if passive_value and len(passive_value) > 20:
-                        effects.append(passive_value)
+                        # Parse multiple effects from the text
+                        parsed_effects = self._parse_effects_from_text(passive_value)
+                        for effect_type, effect_desc in parsed_effects.items():
+                            if effect_type not in effects:
+                                effects[effect_type] = effect_desc
+                        break
+                
+                # Look for active effects
+                for label in ['Active Effect', 'Active']:
+                    active_value = self._extract_infobox_value(infobox, label)
+                    if active_value and len(active_value) > 20:
+                        # Remove any active prefix
+                        for prefix in ['ACTIVE:', 'Active:', 'ACTIVE -', 'Active -']:
+                            if active_value.startswith(prefix):
+                                active_value = active_value[len(prefix):].strip()
+                                break
+                        if 'Active' not in effects:
+                            effects['Active'] = active_value
+                        break
+                
+                # Look for glyph effects
+                for label in ['Glyph Effect', 'Glyph']:
+                    glyph_value = self._extract_infobox_value(infobox, label)
+                    if glyph_value and len(glyph_value) > 20:
+                        # Remove any glyph prefix
+                        for prefix in ['GLYPH:', 'Glyph:', 'GLYPH -', 'Glyph -']:
+                            if glyph_value.startswith(prefix):
+                                glyph_value = glyph_value[len(prefix):].strip()
+                                break
+                        if 'Glyph' not in effects:
+                            effects['Glyph'] = glyph_value
                         break
         
-        # Clean up effects - remove duplicates and very short entries
-        unique_effects = []
-        seen = set()
-        for effect in effects:
-            # Normalize the effect text
-            normalized = effect.lower().strip()
-            if normalized not in seen and len(effect) > 20:
-                seen.add(normalized)
-                unique_effects.append(effect)
+        return effects
+    
+    def _parse_effects_from_text(self, text: str) -> Dict[str, str]:
+        """Parse multiple effects from a single text block"""
+        parsed_effects = {}
         
-        return unique_effects[:3]  # Limit to 3 effects to avoid too much text
+        # Split by common effect type indicators
+        # Look for patterns like "PASSIVE:", "AURA:", etc.
+        effect_patterns = [
+            (r'PASSIVE\s*[-:]', 'Passive'),
+            (r'Passive\s*[-:]', 'Passive'),
+            (r'AURA\s*[-:]', 'Aura'),
+            (r'Aura\s*[-:]', 'Aura'),
+            (r'ACTIVE\s*[-:]', 'Active'),
+            (r'Active\s*[-:]', 'Active'),
+            (r'GLYPH\s*[-:]', 'Glyph'),
+            (r'Glyph\s*[-:]', 'Glyph'),
+        ]
+        
+        # Try to split the text by effect type markers
+        remaining_text = text
+        found_effects = []
+        
+        for pattern, effect_type in effect_patterns:
+            matches = list(re.finditer(pattern, remaining_text))
+            for match in matches:
+                found_effects.append((match.start(), match.end(), effect_type))
+        
+        # Sort by position
+        found_effects.sort(key=lambda x: x[0])
+        
+        if found_effects:
+            # Extract text for each effect
+            for i, (start, end, effect_type) in enumerate(found_effects):
+                # Get text from this marker to the next (or end of string)
+                if i + 1 < len(found_effects):
+                    next_start = found_effects[i + 1][0]
+                    effect_text = remaining_text[end:next_start].strip()
+                else:
+                    effect_text = remaining_text[end:].strip()
+                
+                if effect_text and len(effect_text) > 10:
+                    parsed_effects[effect_type] = effect_text
+        else:
+            # No explicit markers found, check content for clues
+            text_lower = text.lower()
+            if 'aura' in text_lower and 'allies' in text_lower:
+                parsed_effects['Aura'] = text
+            elif 'using this item' in text_lower or 'activate' in text_lower:
+                parsed_effects['Active'] = text
+            elif 'glyph' in text_lower:
+                parsed_effects['Glyph'] = text
+            else:
+                # Default to passive
+                parsed_effects['Passive'] = text
+        
+        return parsed_effects
     
     def _scrape_relics_from_page(self, soup: BeautifulSoup) -> Dict[str, Dict]:
         """Scrape relics from the relics page"""
@@ -776,35 +916,38 @@ class SmiteScraper:
         
         try:
             # Relics have no stats, just effects
-            stats = []
-            effects = []
+            stats = {}
+            effects = {}
             
             # Extract active effect - look in multiple places
             content = soup.find('div', {'class': 'mw-parser-output'})
             if content:
                 # Look for effect description
+                effect_text = ""
                 for elem in content.find_all(['p', 'div', 'li']):
                     text = elem.get_text(strip=True)
                     if 'Using this item' in text or 'Active:' in text or 'Effect:' in text:
-                        effects.append(text)
+                        effect_text = text
                         break
                 
                 # If no effect found, look for first meaningful paragraph
-                if not effects:
+                if not effect_text:
                     for p in content.find_all('p'):
                         text = p.get_text(strip=True)
                         if len(text) > 30 and not any(skip in text for skip in ['Relic', 'item', 'Tier']):
-                            effects.append(text)
+                            effect_text = text
                             break
+                
+                if effect_text:
+                    # Remove any Active: prefix
+                    for prefix in ['ACTIVE:', 'Active:', 'ACTIVE -', 'Active -']:
+                        if effect_text.startswith(prefix):
+                            effect_text = effect_text[len(prefix):].strip()
+                            break
+                    effects['Active'] = effect_text
             
-            # Determine tags based on tier
+            # Relics are always tagged as Relic
             tags = ['Relic']
-            if tier == 1:
-                tags.append('Tier1')
-            elif tier == 2:
-                tags.append('Tier2')
-            elif tier == 3:
-                tags.append('Tier3')
             
             # Download image
             image_url = ""
@@ -868,9 +1011,13 @@ class SmiteScraper:
             # Extract abilities without relying on infobox
             god_abilities = self._extract_abilities_improved(god_soup, god_name)
             
+            # Extract class information from the god's page
+            god_class = self._extract_god_class(god_soup)
+            
             # Build god data
             god_data = {
                 'display_name': god_name,
+                'class': god_class,
                 'abilities': [self._slugify(ability['display_name']) for ability in god_abilities]
             }
             
@@ -882,6 +1029,63 @@ class SmiteScraper:
                 abilities[ability_slug] = ability
         
         return gods, abilities
+    
+    def _extract_god_class(self, soup: BeautifulSoup) -> str:
+        """Extract god class from the god's wiki page"""
+        # Default value in case we can't find the class
+        default_class = "Unknown"
+        
+        # Try to find the infobox first
+        infobox = soup.find('aside', {'class': 'portable-infobox'})
+        
+        # If no portable-infobox, try to find the first table (often the infobox)
+        if not infobox:
+            tables = soup.find_all('table')
+            if tables:
+                # Check first table - it's usually the infobox
+                first_table = tables[0]
+                # Verify it has god-related content
+                table_text = first_table.get_text(strip=True).lower()
+                if any(keyword in table_text for keyword in ['class:', 'pantheon:', 'title:']):
+                    infobox = first_table
+        
+        if infobox:
+            # Try to extract class from infobox
+            class_value = self._extract_infobox_value(infobox, 'Class')
+            if class_value:
+                # Normalize the class value
+                class_lower = class_value.lower().strip()
+                if 'guardian' in class_lower:
+                    return 'Guardian'
+                elif 'mage' in class_lower:
+                    return 'Mage'
+                elif 'hunter' in class_lower:
+                    return 'Hunter'
+                elif 'warrior' in class_lower:
+                    return 'Warrior'
+                elif 'assassin' in class_lower:
+                    return 'Assassin'
+        
+        # If not found in infobox, search page content for class information
+        content = soup.find('div', {'class': 'mw-parser-output'})
+        if content:
+            # Look for class information in the first few paragraphs
+            for p in content.find_all('p')[:5]:  # Check first 5 paragraphs
+                text = p.get_text(strip=True).lower()
+                # Look for patterns like "is a Guardian god" or "is an Assassin"
+                if 'is a guardian' in text or 'is the guardian' in text:
+                    return 'Guardian'
+                elif 'is a mage' in text or 'is the mage' in text:
+                    return 'Mage'
+                elif 'is a hunter' in text or 'is the hunter' in text or 'is an hunter' in text:
+                    return 'Hunter'
+                elif 'is a warrior' in text or 'is the warrior' in text:
+                    return 'Warrior'
+                elif 'is an assassin' in text or 'is the assassin' in text:
+                    return 'Assassin'
+        
+        logger.warning(f"Could not determine class for god, using default: {default_class}")
+        return default_class
     
     def _extract_god_links_from_main_page(self, soup: BeautifulSoup) -> Dict[str, str]:
         """Extract god links from the main wiki page - specifically from mp-heroes div"""
@@ -1354,30 +1558,80 @@ class SmiteScraper:
         
         return ""
     
-    def _determine_item_tags(self, display_name: str, category: str) -> List[str]:
-        """Determine tags for an item"""
+    def _determine_item_tags(self, display_name: str, category: str, price: int, stats: Dict[str, int], effects: Dict[str, str], soup: Optional[BeautifulSoup]) -> List[str]:
+        """Determine tags for an item based on all available information"""
         tags = []
         display_lower = display_name.lower()
         
-        # Map categories to tags
-        if category == 'starter':
-            tags.append('Starter')
-            if any(word in display_lower for word in ['spear', 'blade', 'pendulum', 'brooch']):
-                tags.append('Evolved')
-        elif category == 'consumable':
+        # Check if it's a relic (relics have no price and usually have Active effects)
+        if price == 0 and 'Active' in effects and not any(word in display_lower for word in ['potion', 'ward', 'bomb']):
+            tags.append('Relic')
+            return tags
+        
+        # Check if it's a consumable
+        if any(word in display_lower for word in ['potion', 'ward', 'bomb', 'elixir']):
             tags.append('Consumable')
-        elif category == 'tier1':
-            tags.append('Tier1')
-        elif category == 'tier2':
-            tags.append('Tier2')
-        elif category == 'tier3':
-            tags.append('Tier3')
-        elif category == 'glyph':
+            return tags
+        
+        # Check if it's a shard (shards typically have "shard" in the name)
+        if 'shard' in display_lower:
+            tags.append('Shard')
+            return tags
+        
+        # Check if it's a starter item
+        if category == 'starter' or any(word in display_lower for word in ['starter', 'mask', 'blessing', 'gift', 'toll', 'focus', 'embrace', 'cowl']):
+            tags.append('Starter')
+        
+        # Check if it's a glyph item (has Glyph effect or specific names)
+        if 'Glyph' in effects or 'glyph' in display_lower or any(word in display_lower for word in ['eldritch', 'amulet of silence', 'amulet of the stronghold']):
             tags.append('Glyph')
-            tags.append('Tier4')
-        elif category == 'evolved':
+            if 'Tier4' not in tags:
+                tags.append('Tier4')
+        
+        # Check if it's an evolved item
+        if 'evolved' in display_lower or category == 'evolved':
             tags.append('Evolved')
-            tags.append('Tier3')
+            # Remove any tier tags that might have been added
+            tags = [t for t in tags if t not in ['Tier1', 'Tier2']]
+            if not any(t in tags for t in ['Tier3', 'Tier4']):
+                tags.append('Tier3')
+        
+        # Determine tier based on price if not already set
+        if not any(t in tags for t in ['Tier1', 'Tier2', 'Tier3', 'Tier4', 'Consumable', 'Relic', 'Starter']):
+            if category == 'tier1' or (price > 0 and price <= 800):
+                tags.append('Tier1')
+            elif category == 'tier2' or (price > 800 and price <= 1500):
+                tags.append('Tier2')
+            elif category == 'tier3' or price > 1500:
+                tags.append('Tier3')
+        
+        # Additional checks based on soup content if available
+        if soup:
+            content_text = soup.get_text().lower()
+            
+            # Check for tier mentions in the page content
+            if 'tier 1' in content_text and 'Tier1' not in tags:
+                tags.append('Tier1')
+            elif 'tier 2' in content_text and 'Tier2' not in tags:
+                tags.append('Tier2')
+            elif 'tier 3' in content_text and 'Tier3' not in tags:
+                tags.append('Tier3')
+            elif 'tier 4' in content_text and 'Tier4' not in tags:
+                tags.append('Tier4')
+            
+            # Check for evolved items in content
+            if 'evolved' in content_text and 'Evolved' not in tags:
+                tags.append('Evolved')
+        
+        # Ensure we have at least some tag
+        if not tags:
+            # Default to tier based on price
+            if price <= 800:
+                tags.append('Tier1')
+            elif price <= 1500:
+                tags.append('Tier2')
+            else:
+                tags.append('Tier3')
         
         return tags
     

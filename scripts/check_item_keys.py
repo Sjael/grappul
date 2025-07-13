@@ -12,10 +12,10 @@ def slugify(name: str) -> str:
     """Convert name to lowercase with underscores, matching Rust slugify"""
     # Remove apostrophes and quotes
     name = name.replace("'", "").replace('"', '')
-    # Remove special characters except alphanumeric, spaces and hyphens
-    name = re.sub(r'[^\w\s-]', '', name)
-    # Replace spaces and hyphens with underscores
-    name = re.sub(r'[-\s]+', '_', name)
+    # Remove special characters except alphanumeric and spaces
+    name = re.sub(r'[^\w\s]', '', name)
+    # Replace spaces with underscores
+    name = re.sub(r'[\s]+', '_', name)
     return name.lower()
 
 
